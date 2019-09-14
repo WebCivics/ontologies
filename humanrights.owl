@@ -41,7 +41,14 @@ dc:title rdf:type owl:AnnotationProperty .
 
 ###  http://ns.thecharter.eco/causeOf
 :causeOf rdf:type owl:ObjectProperty ;
-         rdfs:subPropertyOf :causality .
+         rdfs:subPropertyOf :causality ;
+         owl:inverseOf :consequenceOf .
+
+
+###  http://ns.thecharter.eco/committedTo
+:committedTo rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :status ;
+             owl:inverseOf :notCommittedTo .
 
 
 ###  http://ns.thecharter.eco/consequenceOf
@@ -52,30 +59,41 @@ dc:title rdf:type owl:AnnotationProperty .
 ###  http://ns.thecharter.eco/enforceable
 :enforceable rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :status ;
+             owl:inverseOf :unenforceable ;
              rdfs:comment "is legally enforceable" .
 
 
 ###  http://ns.thecharter.eco/hasObligation
 :hasObligation rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :status ;
+               owl:inverseOf :noObligation ;
                rdfs:comment "has an obligation to" .
 
 
 ###  http://ns.thecharter.eco/hasResponsibilityTo
 :hasResponsibilityTo rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf :status ;
+                     owl:inverseOf :noResponsibilityTo ;
                      rdfs:comment "has a responsibility" .
 
 
 ###  http://ns.thecharter.eco/hasRight
 :hasRight rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :status ;
+          owl:inverseOf :noRight ;
           rdfs:comment "has a right, either legal or moral" .
+
+
+###  http://ns.thecharter.eco/inBreachOf
+:inBreachOf rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :status ;
+            owl:inverseOf :upholding .
 
 
 ###  http://ns.thecharter.eco/negativelyAffected
 :negativelyAffected rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf :affectedBy .
+                    rdfs:subPropertyOf :affectedBy ;
+                    owl:inverseOf :postivelyAffected .
 
 
 ###  http://ns.thecharter.eco/noObligation
@@ -84,15 +102,26 @@ dc:title rdf:type owl:AnnotationProperty .
               rdfs:comment "has no obligation" .
 
 
+###  http://ns.thecharter.eco/noResponsibilityTo
+:noResponsibilityTo rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf :status .
+
+
 ###  http://ns.thecharter.eco/noRight
 :noRight rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :status ;
          rdfs:comment "does not have a legal right" .
 
 
+###  http://ns.thecharter.eco/notCommittedTo
+:notCommittedTo rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :status .
+
+
 ###  http://ns.thecharter.eco/notRatified
 :notRatified rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :status ;
+             owl:inverseOf :ratified ;
              rdfs:comment "has not agreed by legal instrument" .
 
 
@@ -118,9 +147,15 @@ dc:title rdf:type owl:AnnotationProperty .
                rdfs:comment "is not enforceable by law" .
 
 
+###  http://ns.thecharter.eco/upholding
+:upholding rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf :status .
+
+
 ###  http://ns.thecharter.eco/un/udhr/comply
 :comply rdf:type owl:ObjectProperty ;
         rdfs:subPropertyOf :validation ;
+        owl:inverseOf :non-comply ;
         rdfs:comment "act in accordance with a wish or command." .
 
 
@@ -241,6 +276,11 @@ dc:title rdf:type owl:AnnotationProperty .
                   rdfs:subClassOf :informationalAsset .
 
 
+###  http://ns.thecharter.eco/executive
+:executive rdf:type owl:Class ;
+           rdfs:subClassOf :separationOfPowers .
+
+
 ###  http://ns.thecharter.eco/fauna
 :fauna rdf:type owl:Class ;
        rdfs:subClassOf :naturalWorld .
@@ -263,6 +303,11 @@ dc:title rdf:type owl:AnnotationProperty .
                     owl:disjointWith :language .
 
 
+###  http://ns.thecharter.eco/judiciary
+:judiciary rdf:type owl:Class ;
+           rdfs:subClassOf :separationOfPowers .
+
+
 ###  http://ns.thecharter.eco/language
 :language rdf:type owl:Class ;
           rdfs:subClassOf :infoSphere .
@@ -271,6 +316,11 @@ dc:title rdf:type owl:AnnotationProperty .
 ###  http://ns.thecharter.eco/legalAsset
 :legalAsset rdf:type owl:Class ;
             rdfs:subClassOf :law .
+
+
+###  http://ns.thecharter.eco/legislature
+:legislature rdf:type owl:Class ;
+             rdfs:subClassOf :separationOfPowers .
 
 
 ###  http://ns.thecharter.eco/moralRights
@@ -289,6 +339,7 @@ dc:title rdf:type owl:AnnotationProperty .
                                    rdfs:subClassOf :unitedNations ;
                                    owl:disjointWith :CRC ;
                                    dc:title "United Nations Universal Declaration of Human Rights" ;
+                                   rdfs:isDefinedBy :unitedNations ;
                                    rdfs:seeAlso "https://www.un.org/en/universal-declaration-human-rights/index.html" .
 
 
@@ -4214,6 +4265,14 @@ owl:Thing rdfs:label "Human Rights Ontology"@en .
                 :economicResource
                 :creativeWork
                 :law
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :executive
+                :judiciary
+                :legislature
               )
 ] .
 
