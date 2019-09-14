@@ -1,0 +1,734 @@
+Prefix: : <http://ns.thecharter.eco/un/udhr/>
+Prefix: dc: <http://purl.org/dc/elements/1.1/>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+
+Ontology: <http://ns.thecharter.eco/un/udhr/>
+
+
+Annotations: 
+    dc:description "Universal Declaration of Human Rights (UDHR) vocabulary described using W3C RDF Schema and the Web Ontology Language.",
+    dc:title "Universal Declaration of Human Rights (UDHR) vocabulary",
+    rdfs:comment "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood."
+
+AnnotationProperty: dc:description
+
+    
+AnnotationProperty: dc:title
+
+    
+AnnotationProperty: rdfs:comment
+
+    
+AnnotationProperty: rdfs:isDefinedBy
+
+    
+AnnotationProperty: rdfs:label
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_10>
+
+    Annotations: 
+        rdfs:comment "Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 10"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_11>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_11_2>
+
+    Annotations: 
+        rdfs:comment "No one shall be held guilty of any penal offence on account of any act or omission which did not constitute a penal offence, under national or international law, at the time when it was committed. Nor shall a heavier penalty be imposed than the one that was applicable at the time the penal offence was committed.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 11 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_11>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_12>
+
+    Annotations: 
+        rdfs:comment "No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 12"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_13>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "Article 13"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_13_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to freedom of movement and residence within the borders of each state.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 13 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_13>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_13_2>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to leave any country, including his own, and to return to his country.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 13 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_13>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_14>
+
+    Annotations: 
+        rdfs:label "article 14"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_14_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to seek and to enjoy in other countries asylum from persecution.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 14 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_14>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_14_2>
+
+    Annotations: 
+        rdfs:comment "This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes or from acts contrary to the purposes and principles of the United Nations.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 14 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_14>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_15>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 15"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_15_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to a nationality.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 15 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_15>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_15_2>
+
+    Annotations: 
+        rdfs:comment "No one shall be arbitrarily deprived of his nationality nor denied the right to change his nationality.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 15 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_15>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_16>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 16"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_16_1>
+
+    Annotations: 
+        rdfs:comment "Men and women of full age, without any limitation due to race, nationality or religion, have the right to marry and to found a family. They are entitled to equal rights as to marriage, during marriage and at its dissolution.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 16 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_16>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_16_2>
+
+    Annotations: 
+        rdfs:comment "Marriage shall be entered into only with the free and full consent of the intending spouses."@en,
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 16 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_16>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_16_3>
+
+    Annotations: 
+        rdfs:comment "The family is the natural and fundamental group unit of society and is entitled to protection by society and the State."@en,
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 16 (3)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_16>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_17>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 17"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_17_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to own property alone as well as in association with others.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 17 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_17>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_17_2>
+
+    Annotations: 
+        rdfs:comment "No one shall be arbitrarily deprived of his property.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 17 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_17>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_18>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 18"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_19>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 19"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_1>
+
+    Annotations: 
+        rdfs:comment "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 1"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_20>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 20"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_20_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to freedom of peaceful assembly and association.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 20 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_20>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_20_2>
+
+    Annotations: 
+        rdfs:comment "No one may be compelled to belong to an association.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 20 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_20>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_21>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 21"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_21_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to take part in the government of his country, directly or through freely chosen representatives.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 21 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_21>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_21_2>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right of equal access to public service in his country.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 21 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_21>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_21_3>
+
+    Annotations: 
+        rdfs:comment "The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 21 (3)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_21>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_22>
+
+    Annotations: 
+        rdfs:comment "Everyone, as a member of society, has the right to social security and is entitled to realization, through national effort and international co-operation and in accordance with the organization and resources of each State, of the economic, social and cultural rights indispensable for his dignity and the free development of his personality.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 22"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_23>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 23"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_23_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to work, to free choice of employment, to just and favourable conditions of work and to protection against unemployment.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 23 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_23>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_23_2>
+
+    Annotations: 
+        rdfs:comment "Everyone, without any discrimination, has the right to equal pay for equal work."@en,
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 23 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_23>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_23_3>
+
+    Annotations: 
+        rdfs:comment "Everyone who works has the right to just and favourable remuneration ensuring for himself and his family an existence worthy of human dignity, and supplemented, if necessary, by other means of social protection.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 23 (3)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_23>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_23_4>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to form and to join trade unions for the protection of his interests.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 23 (4)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_23>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_24>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to rest and leisure, including reasonable limitation of working hours and periodic holidays with pay.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 24"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_25>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 25"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_25_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to a standard of living adequate for the health and well-being of himself and of his family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 25 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_25>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_25_2>
+
+    Annotations: 
+        rdfs:comment "Motherhood and childhood are entitled to special care and assistance. All children, whether born in or out of wedlock, shall enjoy the same social protection.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 25 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_25>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_26>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 25 (2)"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_26_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 26 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_26>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_26_2>
+
+    Annotations: 
+        rdfs:comment "Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms. It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 26 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_26>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_26_3>
+
+    Annotations: 
+        rdfs:comment "Parents have a prior right to choose the kind of education that shall be given to their children.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 26 (3)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_26>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_27>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 27"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_27_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 27 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_27>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_27_2>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to the protection of the moral and material interests resulting from any scientific, literary or artistic production of which he is the author.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 27 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_27>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_28>
+
+    Annotations: 
+        rdfs:comment "Everyone is entitled to a social and international order in which the rights and freedoms set forth in this Declaration can be fully realized.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 28"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_29>
+
+    Annotations: 
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 29"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_29_1>
+
+    Annotations: 
+        rdfs:comment "Everyone has duties to the community in which alone the free and full development of his personality is possible.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 29 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_29>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_29_2>
+
+    Annotations: 
+        rdfs:comment "In the exercise of his rights and freedoms, everyone shall be subject only to such limitations as are determined by law solely for the purpose of securing due recognition and respect for the rights and freedoms of others and of meeting the just requirements of morality, public order and the general welfare in a democratic society.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 29 (2)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_29>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_29_3>
+
+    Annotations: 
+        rdfs:comment "These rights and freedoms may in no case be exercised contrary to the purposes and principles of the United Nations.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 29 (3)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_29>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_2>
+
+    Annotations: 
+        rdfs:comment "Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 2"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_30>
+
+    Annotations: 
+        rdfs:comment "Nothing in this Declaration may be interpreted as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms set forth herein.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 30"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_3>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to life, liberty and security of person.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 3"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_4>
+
+    Annotations: 
+        rdfs:comment "No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.",
+        rdfs:label "article 4"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_5>
+
+    Annotations: 
+        rdfs:comment "No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 5"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_6>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to recognition everywhere as a person before the law.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 6"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_7>
+
+    Annotations: 
+        rdfs:comment "All are equal before the law and are entitled without any discrimination to equal protection of the law. All are entitled to equal protection against any discrimination in violation of this Declaration and against any incitement to such discrimination.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 7"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_8>
+
+    Annotations: 
+        rdfs:comment "Everyone has the right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted him by the constitution or by law.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 8"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/Article_9>
+
+    Annotations: 
+        rdfs:comment "No one shall be subjected to arbitrary arrest, detention or exile.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 9"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/article_11_1>
+
+    Annotations: 
+        rdfs:comment "Everyone charged with a penal offence has the right to be presumed innocent until proved guilty according to law in a public trial at which he has had all the guarantees necessary for his defence.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "article 11 (1)"
+    
+    SubClassOf: 
+        <urn:absolute:webcivics.github.io/community/un/Article_11>
+    
+    
+Class: <urn:absolute:webcivics.github.io/community/un/preamble>
+
+    Annotations: 
+        rdfs:comment "Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,
+
+Whereas disregard and contempt for human rights have resulted in barbarous acts which have outraged the conscience of mankind, and the advent of a world in which human beings shall enjoy freedom of speech and belief and freedom from fear and want has been proclaimed as the highest aspiration of the common people,
+
+Whereas it is essential, if man is not to be compelled to have recourse, as a last resort, to rebellion against tyranny and oppression, that human rights should be protected by the rule of law,
+
+Whereas it is essential to promote the development of friendly relations between nations,
+
+Whereas the peoples of the United Nations have in the Charter reaffirmed their faith in fundamental human rights, in the dignity and worth of the human person and in the equal rights of men and women and have determined to promote social progress and better standards of life in larger freedom,
+
+Whereas Member States have pledged themselves to achieve, in co-operation with the United Nations, the promotion of universal respect for and observance of human rights and fundamental freedoms,
+
+Whereas a common understanding of these rights and freedoms is of the greatest importance for the full realization of this pledge,
+
+Now, Therefore THE GENERAL ASSEMBLY proclaims THIS UNIVERSAL DECLARATION OF HUMAN RIGHTS as a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive by teaching and education to promote respect for these rights and freedoms and by progressive measures, national and international, to secure their universal and effective recognition and observance, both among the peoples of Member States themselves and among the peoples of territories under their jurisdiction.",
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/>,
+        rdfs:label "Preamble"
+    
+    SubClassOf: 
+        owl:Thing
+    
+    
+Class: owl:Thing
+
+    Annotations: 
+        rdfs:isDefinedBy "https://www.un.org/en/universal-declaration-human-rights/index.html"@en,
+        rdfs:label "Universal Declaration of Human Rights"@en
+    
+    

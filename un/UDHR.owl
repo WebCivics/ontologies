@@ -26,6 +26,7 @@ owl:Thing rdfs:isDefinedBy "https://www.un.org/en/universal-declaration-human-ri
 :preamble rdf:type owl:Class ;
           rdfs:subClassOf owl:Thing ;
           rdfs:label "Preamble" ;
+          rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
           rdfs:comment "Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,
 
 Whereas disregard and contempt for human rights have resulted in barbarous acts which have outraged the conscience of mankind, and the advent of a world in which human beings shall enjoy freedom of speech and belief and freedom from fear and want has been proclaimed as the highest aspiration of the common people,
@@ -48,6 +49,7 @@ Now, Therefore THE GENERAL ASSEMBLY proclaims THIS UNIVERSAL DECLARATION OF HUMA
 :Article_1 rdf:type owl:Class ;
            rdfs:subClassOf owl:Thing ;
            rdfs:label "article 1" ;
+          rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
            rdfs:comment "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood." .
 
 
@@ -55,6 +57,7 @@ Now, Therefore THE GENERAL ASSEMBLY proclaims THIS UNIVERSAL DECLARATION OF HUMA
 :Article_2 rdf:type owl:Class ;
         rdfs:subClassOf owl:Thing ;
         rdfs:label "article 2" ;
+        rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
         rdfs:comment "Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty." .
 
 
@@ -62,6 +65,7 @@ Now, Therefore THE GENERAL ASSEMBLY proclaims THIS UNIVERSAL DECLARATION OF HUMA
 :Article_3 rdf:type owl:Class ;
 rdfs:subClassOf owl:Thing ;
 rdfs:label "article 3" ;
+rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
 rdfs:comment "Everyone has the right to life, liberty and security of person." .
 
 
@@ -76,6 +80,7 @@ rdfs:comment "No one shall be held in slavery or servitude; slavery and the slav
 :Article_5 rdf:type owl:Class ;
 rdfs:subClassOf owl:Thing ;
 rdfs:label "article 5" ;
+rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
 rdfs:comment "No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment." .
 
 
@@ -83,6 +88,7 @@ rdfs:comment "No one shall be subjected to torture or to cruel, inhuman or degra
 :Article_6 rdf:type owl:Class ;
 rdfs:subClassOf owl:Thing ;
 rdfs:label "article 6" ;
+rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
 rdfs:comment "Everyone has the right to recognition everywhere as a person before the law." .
 
 
@@ -90,6 +96,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_7  rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 7" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "All are equal before the law and are entitled without any discrimination to equal protection of the law. All are entitled to equal protection against any discrimination in violation of this Declaration and against any incitement to such discrimination." .
 
 
@@ -97,6 +104,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_8  rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 8" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "Everyone has the right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted him by the constitution or by law." .
 
 
@@ -104,23 +112,27 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_9  rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 9" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "No one shall be subjected to arbitrary arrest, detention or exile." .
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_10
 :Article_10 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 10" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_11
 :Article_11 rdf:type owl:Class ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:subClassOf owl:Thing .
 
 ###  urn:absolute:webcivics.github.io/community/un/article_11_1
 :article_11_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_11 ;
               rdfs:label "article 11 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone charged with a penal offence has the right to be presumed innocent until proved guilty according to law in a public trial at which he has had all the guarantees necessary for his defence." .
 
 
@@ -128,6 +140,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_11_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_11 ;
               rdfs:label "article 11 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "No one shall be held guilty of any penal offence on account of any act or omission which did not constitute a penal offence, under national or international law, at the time when it was committed. Nor shall a heavier penalty be imposed than the one that was applicable at the time the penal offence was committed." .
 
 
@@ -135,11 +148,14 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_12 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 12" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_13
 :Article_13 rdf:type owl:Class ;
+            rdfs:label "Article 13" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:subClassOf owl:Thing .
 
 
@@ -147,6 +163,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_13_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_13 ;
               rdfs:label "article 13 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to freedom of movement and residence within the borders of each state." .
 
 
@@ -154,11 +171,13 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_13_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_13 ;
               rdfs:label "article 13 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to leave any country, including his own, and to return to his country." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_14
 :Article_14 rdf:type owl:Class ;
+            rdfs:label "article 14" ;
             rdfs:subClassOf owl:Thing .
 
 
@@ -166,6 +185,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_14_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_14 ;
               rdfs:label "article 14 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to seek and to enjoy in other countries asylum from persecution." .
 
 
@@ -173,11 +193,14 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_14_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_14 ;
               rdfs:label "article 14 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes or from acts contrary to the purposes and principles of the United Nations." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_15
 :Article_15 rdf:type owl:Class ;
+            rdfs:label "article 15" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:subClassOf owl:Thing .
 
 
@@ -185,6 +208,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_15_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_15 ;
               rdfs:label "article 15 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to a nationality." .
 
 
@@ -192,11 +216,14 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_15_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_15 ;
               rdfs:label "article 15 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "No one shall be arbitrarily deprived of his nationality nor denied the right to change his nationality." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_16
 :Article_16 rdf:type owl:Class ;
+            rdfs:label "article 16" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:subClassOf owl:Thing .
 
 
@@ -204,6 +231,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_16_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_16 ;
               rdfs:label "article 16 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Men and women of full age, without any limitation due to race, nationality or religion, have the right to marry and to found a family. They are entitled to equal rights as to marriage, during marriage and at its dissolution." .
 
 
@@ -211,6 +239,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_16_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_16 ;
               rdfs:label "article 16 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Marriage shall be entered into only with the free and full consent of the intending spouses."@en .
 
 
@@ -218,11 +247,14 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_16_3 rdf:type owl:Class ;
               rdfs:subClassOf :Article_16 ;
               rdfs:label "article 16 (3)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "The family is the natural and fundamental group unit of society and is entitled to protection by society and the State."@en .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_17
 :Article_17 rdf:type owl:Class ;
+            rdfs:label "article 17" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:subClassOf owl:Thing .
 
 
@@ -230,6 +262,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_17_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_17 ;
               rdfs:label "article 17 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to own property alone as well as in association with others." .
 
 
@@ -237,6 +270,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_17_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_17 ;
               rdfs:label "article 17 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "No one shall be arbitrarily deprived of his property." .
 
 
@@ -244,6 +278,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_18 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 18" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance." .
 
 
@@ -251,12 +286,15 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_19 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 19" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers." .
 
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_20
 :Article_20 rdf:type owl:Class ;
+            rdfs:label "article 20" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:subClassOf owl:Thing .
 
 
@@ -264,6 +302,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_20_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_20 ;
               rdfs:label "article 20 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to freedom of peaceful assembly and association." .
 
 
@@ -271,11 +310,14 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_20_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_20 ;
               rdfs:label "article 20 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "No one may be compelled to belong to an association." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_21
 :Article_21 rdf:type owl:Class ;
+            rdfs:label "article 21" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:subClassOf owl:Thing .
 
 
@@ -283,6 +325,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_21_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_21 ;
               rdfs:label "article 21 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to take part in the government of his country, directly or through freely chosen representatives." .
 
 
@@ -290,6 +333,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_21_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_21 ;
               rdfs:label "article 21 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right of equal access to public service in his country." .
 
 
@@ -297,6 +341,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_21_3 rdf:type owl:Class ;
               rdfs:subClassOf :Article_21 ;
               rdfs:label "article 21 (3)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures." .
 
 
@@ -304,19 +349,22 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_22 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 22" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "Everyone, as a member of society, has the right to social security and is entitled to realization, through national effort and international co-operation and in accordance with the organization and resources of each State, of the economic, social and cultural rights indispensable for his dignity and the free development of his personality." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_23
 :Article_23 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
-            rdfs:comment ""@en .
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+            rdfs:label "article 23" .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_23_1
 :Article_23_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_23 ;
               rdfs:label "article 23 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to work, to free choice of employment, to just and favourable conditions of work and to protection against unemployment." .
 
 
@@ -324,6 +372,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_23_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_23 ;
               rdfs:label "article 23 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone, without any discrimination, has the right to equal pay for equal work."@en .
 
 
@@ -331,6 +380,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_23_3 rdf:type owl:Class ;
               rdfs:subClassOf :Article_23 ;
               rdfs:label "article 23 (3)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone who works has the right to just and favourable remuneration ensuring for himself and his family an existence worthy of human dignity, and supplemented, if necessary, by other means of social protection." .
 
 
@@ -338,6 +388,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_23_4 rdf:type owl:Class ;
               rdfs:subClassOf :Article_23 ;
               rdfs:label "article 23 (4)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to form and to join trade unions for the protection of his interests." .
 
 
@@ -345,37 +396,44 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_24 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 24" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "Everyone has the right to rest and leisure, including reasonable limitation of working hours and periodic holidays with pay." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_25
 :Article_25 rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing .
+            rdfs:subClassOf owl:Thing ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+            rdfs:label "article 25" .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_25_1
 :Article_25_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_25 ;
               rdfs:label "article 25 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to a standard of living adequate for the health and well-being of himself and of his family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_25_2
 :Article_25_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_25 ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:label "article 25 (2)" ;
               rdfs:comment "Motherhood and childhood are entitled to special care and assistance. All children, whether born in or out of wedlock, shall enjoy the same social protection." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_26
 :Article_26 rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing .
-
+            rdfs:subClassOf owl:Thing ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+            rdfs:label "article 25 (2)" .
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_26_1
 :Article_26_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_26 ;
               rdfs:label "article 26 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit." .
 
 
@@ -383,6 +441,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_26_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_26 ;
               rdfs:label "article 26 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms. It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace." .
 
 
@@ -390,18 +449,21 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_26_3 rdf:type owl:Class ;
               rdfs:subClassOf :Article_26 ;
               rdfs:label "article 26 (3)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Parents have a prior right to choose the kind of education that shall be given to their children." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_27
 :Article_27 rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing .
-
+            rdfs:subClassOf owl:Thing ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+            rdfs:label "article 27" .
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_27_1
 :Article_27_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_27 ;
               rdfs:label "article 27 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits." .
 
 
@@ -409,6 +471,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_27_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_27 ;
               rdfs:label "article 27 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has the right to the protection of the moral and material interests resulting from any scientific, literary or artistic production of which he is the author." .
 
 
@@ -416,18 +479,21 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_28 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 28" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
             rdfs:comment "Everyone is entitled to a social and international order in which the rights and freedoms set forth in this Declaration can be fully realized." .
 
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_29
 :Article_29 rdf:type owl:Class ;
-            rdfs:subClassOf owl:Thing .
-
+            rdfs:subClassOf owl:Thing ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+            rdfs:label "article 29" .
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_29_1
 :Article_29_1 rdf:type owl:Class ;
               rdfs:subClassOf :Article_29 ;
               rdfs:label "article 29 (1)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "Everyone has duties to the community in which alone the free and full development of his personality is possible." .
 
 
@@ -435,6 +501,7 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_29_2 rdf:type owl:Class ;
               rdfs:subClassOf :Article_29 ;
               rdfs:label "article 29 (2)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "In the exercise of his rights and freedoms, everyone shall be subject only to such limitations as are determined by law solely for the purpose of securing due recognition and respect for the rights and freedoms of others and of meeting the just requirements of morality, public order and the general welfare in a democratic society." .
 
 
@@ -442,10 +509,12 @@ rdfs:comment "Everyone has the right to recognition everywhere as a person befor
 :Article_29_3 rdf:type owl:Class ;
               rdfs:subClassOf :Article_29 ;
               rdfs:label "article 29 (3)" ;
+              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
               rdfs:comment "These rights and freedoms may in no case be exercised contrary to the purposes and principles of the United Nations." .
 
 ###  urn:absolute:webcivics.github.io/community/un/Article_30
 :Article_30 rdf:type owl:Class ;
             rdfs:subClassOf owl:Thing ;
             rdfs:label "article 30" ;
+            rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;            
             rdfs:comment "Nothing in this Declaration may be interpreted as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms set forth herein." .
