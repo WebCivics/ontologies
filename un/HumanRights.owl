@@ -1,0 +1,2808 @@
+@prefix : <http://ns.thecharter.eco/un/udhr/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ns.thecharter.eco/un/udhr/> .
+
+<http://ns.thecharter.eco/un/udhr/> rdf:type owl:Ontology ;
+                                     dc:description "Universal Declaration of Human Rights (UDHR) vocabulary described using W3C RDF Schema and the Web Ontology Language." ;
+                                     dc:title "Universal Declaration of Human Rights (UDHR) vocabulary" ;
+                                     rdfs:comment "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood." .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ns.thecharter.eco/un/udhr
+<http://ns.thecharter.eco/un/udhr> rdf:type owl:Class ;
+                                   rdfs:subClassOf :UNCharters ;
+                                   owl:disjointWith :CRC ;
+                                   rdfs:comment "United Nations Universal Declaration of Human Rights" ;
+                                   rdfs:isDefinedBy "https://www.un.org/en/universal-declaration-human-rights/index.html" .
+
+
+###  http://ns.thecharter.eco/un/udhr/Admiration
+:Admiration rdf:type owl:Class ;
+            rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Adoration
+:Adoration rdf:type owl:Class ;
+           rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Amusement
+:Amusement rdf:type owl:Class ;
+           rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Anxiety
+:Anxiety rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Awe
+:Awe rdf:type owl:Class ;
+     rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Awkwardness
+:Awkwardness rdf:type owl:Class ;
+             rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Belief
+:Belief rdf:type owl:Class ;
+        rdfs:subClassOf :MoralGrammar ;
+        rdfs:comment "An acceptance that something exists or is true, especially one without proof. trust, faith, or confidence in (someone or something)." .
+
+
+###  http://ns.thecharter.eco/un/udhr/Boredom
+:Boredom rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRC
+:CRC rdf:type owl:Class ;
+     rdfs:subClassOf :UNCharters ;
+     rdfs:comment "Convention on the Rights of the Child" ;
+     rdfs:isDefinedBy "https://www.ohchr.org/en/professionalinterest/pages/crc.aspx" .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_1
+:CRCArticle_1 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_10
+:CRCArticle_10 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_10_1
+:CRCArticle_10_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_10 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_10_2
+:CRCArticle_10_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_10 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_11
+:CRCArticle_11 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_11_1
+:CRCArticle_11_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_11 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_11_2
+:CRCArticle_11_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_11 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_12
+:CRCArticle_12 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_12_1
+:CRCArticle_12_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_12 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_12_2
+:CRCArticle_12_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_12 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_13
+:CRCArticle_13 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_13_1
+:CRCArticle_13_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_13 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_13_2
+:CRCArticle_13_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_13 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_13_2a
+:CRCArticle_13_2a rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_13_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_13_2b
+:CRCArticle_13_2b rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_13_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_14
+:CRCArticle_14 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_14_1
+:CRCArticle_14_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_14 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_14_2
+:CRCArticle_14_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_14 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_14_3
+:CRCArticle_14_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_14 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_15
+:CRCArticle_15 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_15_1
+:CRCArticle_15_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_15 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_15_2
+:CRCArticle_15_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_15 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_16
+:CRCArticle_16 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_16_1
+:CRCArticle_16_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_16 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_16_2
+:CRCArticle_16_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_16 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_17
+:CRCArticle_17 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_17a
+:CRCArticle_17a rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_17 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_17b
+:CRCArticle_17b rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_17 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_17c
+:CRCArticle_17c rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_17 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_17d
+:CRCArticle_17d rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_17 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_17e
+:CRCArticle_17e rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_17 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_18
+:CRCArticle_18 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_18_1
+:CRCArticle_18_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_18 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_18_2
+:CRCArticle_18_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_18 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_18_3
+:CRCArticle_18_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_18 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_2
+:CRCArticle_2 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_20
+:CRCArticle_20 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_20_1
+:CRCArticle_20_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_20 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_20_2
+:CRCArticle_20_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_20 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_21
+:CRCArticle_21 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_21a
+:CRCArticle_21a rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_21 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_21b
+:CRCArticle_21b rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_21 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_21c
+:CRCArticle_21c rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_21 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_21d
+:CRCArticle_21d rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_21 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_21e
+:CRCArticle_21e rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_21 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_22
+:CRCArticle_22 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_22_1
+:CRCArticle_22_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_22 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_22_2
+:CRCArticle_22_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_22 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_23
+:CRCArticle_23 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_23_1
+:CRCArticle_23_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_23 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_23_2
+:CRCArticle_23_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_23 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_23_3
+:CRCArticle_23_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_23 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_23_4
+:CRCArticle_23_4 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_23 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24
+:CRCArticle_24 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_1
+:CRCArticle_24_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_24 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_2
+:CRCArticle_24_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_24 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_2a
+:CRCArticle_24_2a rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_24_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_2b
+:CRCArticle_24_2b rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_24_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_2c
+:CRCArticle_24_2c rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_24_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_2d
+:CRCArticle_24_2d rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_24_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_2e
+:CRCArticle_24_2e rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_24_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_2f
+:CRCArticle_24_2f rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_24_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_3
+:CRCArticle_24_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_24 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_24_4
+:CRCArticle_24_4 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_24 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_25
+:CRCArticle_25 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_26
+:CRCArticle_26 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_26_1
+:CRCArticle_26_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_26 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_26_2
+:CRCArticle_26_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_26 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_27
+:CRCArticle_27 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_27_1
+:CRCArticle_27_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_27 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_27_2
+:CRCArticle_27_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_27 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_27_3
+:CRCArticle_27_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_27 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_27_4
+:CRCArticle_27_4 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_27 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28
+:CRCArticle_28 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28_1
+:CRCArticle_28_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_28 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28_1a
+:CRCArticle_28_1a rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_28_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28_1b
+:CRCArticle_28_1b rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_28_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28_1c
+:CRCArticle_28_1c rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_28_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28_1d
+:CRCArticle_28_1d rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_28_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28_1e
+:CRCArticle_28_1e rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_28_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28_2
+:CRCArticle_28_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_28 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_28_3
+:CRCArticle_28_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_28 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29
+:CRCArticle_29 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29_1
+:CRCArticle_29_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_29 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29_1a
+:CRCArticle_29_1a rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_29_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29_1b
+:CRCArticle_29_1b rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_29_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29_1c
+:CRCArticle_29_1c rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_29_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29_1d
+:CRCArticle_29_1d rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_29_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29_1e
+:CRCArticle_29_1e rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_29_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29_2
+:CRCArticle_29_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_29 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_29_3
+:CRCArticle_29_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_29 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_2_1
+:CRCArticle_2_1 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_2_2
+:CRCArticle_2_2 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_3
+:CRCArticle_3 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_30
+:CRCArticle_30 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_31
+:CRCArticle_31 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_31_1
+:CRCArticle_31_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_31 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_31_2
+:CRCArticle_31_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_31 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_32
+:CRCArticle_32 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_32_1
+:CRCArticle_32_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_32 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_32_2
+:CRCArticle_32_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_32 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_32_2a
+:CRCArticle_32_2a rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_32_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_32_2b
+:CRCArticle_32_2b rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_32_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_32_2c
+:CRCArticle_32_2c rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_32_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_33
+:CRCArticle_33 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_34
+:CRCArticle_34 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_34a
+:CRCArticle_34a rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_34 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_34b
+:CRCArticle_34b rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_34 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_34c
+:CRCArticle_34c rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_34 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_35
+:CRCArticle_35 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_36
+:CRCArticle_36 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_37
+:CRCArticle_37 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_37a
+:CRCArticle_37a rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_37 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_37b
+:CRCArticle_37b rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_37 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_37c
+:CRCArticle_37c rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_37 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_37d
+:CRCArticle_37d rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_37 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_38
+:CRCArticle_38 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_38_1
+:CRCArticle_38_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_38 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_38_2
+:CRCArticle_38_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_38 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_38_3
+:CRCArticle_38_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_38 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_38_4
+:CRCArticle_38_4 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_38 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_39
+:CRCArticle_39 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_3_1
+:CRCArticle_3_1 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_3 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_3_2
+:CRCArticle_3_2 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_3 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_3_3
+:CRCArticle_3_3 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_3 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_4
+:CRCArticle_4 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40
+:CRCArticle_40 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_1
+:CRCArticle_40_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_40 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2
+:CRCArticle_40_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_40 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2a
+:CRCArticle_40_2a rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_40_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2b
+:CRCArticle_40_2b rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_40_2 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2b_i
+:CRCArticle_40_2b_i rdf:type owl:Class ;
+                    rdfs:subClassOf :CRCArticle_40_2b .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2b_ii
+:CRCArticle_40_2b_ii rdf:type owl:Class ;
+                     rdfs:subClassOf :CRCArticle_40_2b .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2b_iii
+:CRCArticle_40_2b_iii rdf:type owl:Class ;
+                      rdfs:subClassOf :CRCArticle_40_2b .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2b_iv
+:CRCArticle_40_2b_iv rdf:type owl:Class ;
+                     rdfs:subClassOf :CRCArticle_40_2b .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2b_v
+:CRCArticle_40_2b_v rdf:type owl:Class ;
+                    rdfs:subClassOf :CRCArticle_40_2b .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2b_vi
+:CRCArticle_40_2b_vi rdf:type owl:Class ;
+                     rdfs:subClassOf :CRCArticle_40_2b .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_2b_vii
+:CRCArticle_40_2b_vii rdf:type owl:Class ;
+                      rdfs:subClassOf :CRCArticle_40_2b .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_3
+:CRCArticle_40_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_40 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_3a
+:CRCArticle_40_3a rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_40_3 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_40_3b
+:CRCArticle_40_3b rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_40_3 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_41
+:CRCArticle_41 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_41a
+:CRCArticle_41a rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_41 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_41b
+:CRCArticle_41b rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_41 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_42
+:CRCArticle_42 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43
+:CRCArticle_43 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_1
+:CRCArticle_43_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_10
+:CRCArticle_43_10 rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_11
+:CRCArticle_43_11 rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_12
+:CRCArticle_43_12 rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_2
+:CRCArticle_43_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_3
+:CRCArticle_43_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_4
+:CRCArticle_43_4 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_5
+:CRCArticle_43_5 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_6
+:CRCArticle_43_6 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_7
+:CRCArticle_43_7 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_8
+:CRCArticle_43_8 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_43_9
+:CRCArticle_43_9 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_43 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44
+:CRCArticle_44 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44_1
+:CRCArticle_44_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_44 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44_1a
+:CRCArticle_44_1a rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_44_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44_1b
+:CRCArticle_44_1b rdf:type owl:Class ;
+                  rdfs:subClassOf :CRCArticle_44_1 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44_2
+:CRCArticle_44_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_44 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44_3
+:CRCArticle_44_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_44 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44_4
+:CRCArticle_44_4 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_44 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44_5
+:CRCArticle_44_5 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_44 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_44_6
+:CRCArticle_44_6 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_44 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_45
+:CRCArticle_45 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_45a
+:CRCArticle_45a rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_45 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_45b
+:CRCArticle_45b rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_45 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_45c
+:CRCArticle_45c rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_45 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_45d
+:CRCArticle_45d rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_45 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_46
+:CRCArticle_46 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_47
+:CRCArticle_47 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_48
+:CRCArticle_48 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_49
+:CRCArticle_49 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_49_1
+:CRCArticle_49_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_49 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_49_2
+:CRCArticle_49_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_49 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_5
+:CRCArticle_5 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_50
+:CRCArticle_50 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_50_1
+:CRCArticle_50_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_50 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_50_2
+:CRCArticle_50_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_50 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_50_3
+:CRCArticle_50_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_50 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_51
+:CRCArticle_51 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_51_1
+:CRCArticle_51_1 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_51 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_51_2
+:CRCArticle_51_2 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_51 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_51_3
+:CRCArticle_51_3 rdf:type owl:Class ;
+                 rdfs:subClassOf :CRCArticle_51 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_52
+:CRCArticle_52 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_53
+:CRCArticle_53 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_54
+:CRCArticle_54 rdf:type owl:Class ;
+               rdfs:subClassOf :CRCPartIII .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_6
+:CRCArticle_6 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_6_1
+:CRCArticle_6_1 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_6 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_6_2
+:CRCArticle_6_2 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_6 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_7
+:CRCArticle_7 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_7_1
+:CRCArticle_7_1 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_7 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_7_2
+:CRCArticle_7_2 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_7 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_8
+:CRCArticle_8 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_8_1
+:CRCArticle_8_1 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_8 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_8_2
+:CRCArticle_8_2 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_8 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_9
+:CRCArticle_9 rdf:type owl:Class ;
+              rdfs:subClassOf :CRCPartI .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_9_1
+:CRCArticle_9_1 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_9 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_9_2
+:CRCArticle_9_2 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_9 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_9_3
+:CRCArticle_9_3 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_9 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCArticle_9_4
+:CRCArticle_9_4 rdf:type owl:Class ;
+                rdfs:subClassOf :CRCArticle_9 .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCPartI
+:CRCPartI rdf:type owl:Class ;
+          rdfs:subClassOf :CRCPreamble .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCPartII
+:CRCPartII rdf:type owl:Class ;
+           rdfs:subClassOf :CRCPreamble .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCPartIII
+:CRCPartIII rdf:type owl:Class ;
+            rdfs:subClassOf :CRCPreamble .
+
+
+###  http://ns.thecharter.eco/un/udhr/CRCPreamble
+:CRCPreamble rdf:type owl:Class ;
+             rdfs:subClassOf :CRC ;
+             rdfs:comment """The States Parties to the present Convention,
+
+Considering that, in accordance with the principles proclaimed in the Charter of the United Nations, recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,
+
+Bearing in mind that the peoples of the United Nations have, in the Charter, reaffirmed their faith in fundamental human rights and in the dignity and worth of the human person, and have determined to promote social progress and better standards of life in larger freedom,
+
+Recognizing that the United Nations has, in the Universal Declaration of Human Rights and in the International Covenants on Human Rights, proclaimed and agreed that everyone is entitled to all the rights and freedoms set forth therein, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status,
+
+Recalling that, in the Universal Declaration of Human Rights, the United Nations has proclaimed that childhood is entitled to special care and assistance,
+
+Convinced that the family, as the fundamental group of society and the natural environment for the growth and well-being of all its members and particularly children, should be afforded the necessary protection and assistance so that it can fully assume its responsibilities within the community,
+
+Recognizing that the child, for the full and harmonious development of his or her personality, should grow up in a family environment, in an atmosphere of happiness, love and understanding,
+
+Considering that the child should be fully prepared to live an individual life in society, and brought up in the spirit of the ideals proclaimed in the Charter of the United Nations, and in particular in the spirit of peace, dignity, tolerance, freedom, equality and solidarity,
+
+Bearing in mind that the need to extend particular care to the child has been stated in the Geneva Declaration of the Rights of the Child of 1924 and in the Declaration of the Rights of the Child adopted by the General Assembly on 20 November 1959 and recognized in the Universal Declaration of Human Rights, in the International Covenant on Civil and Political Rights (in particular in articles 23 and 24), in the International Covenant on Economic, Social and Cultural Rights (in particular in article 10) and in the statutes and relevant instruments of specialized agencies and international organizations concerned with the welfare of children,
+
+Bearing in mind that, as indicated in the Declaration of the Rights of the Child, \"the child, by reason of his physical and mental immaturity, needs special safeguards and care, including appropriate legal protection, before as well as after birth\",
+
+Recalling the provisions of the Declaration on Social and Legal Principles relating to the Protection and Welfare of Children, with Special Reference to Foster Placement and Adoption Nationally and Internationally; the United Nations Standard Minimum Rules for the Administration of Juvenile Justice (The Beijing Rules); and the Declaration on the Protection of Women and Children in Emergency and Armed Conflict, Recognizing that, in all countries in the world, there are children living in exceptionally difficult conditions, and that such children need special consideration,
+
+Taking due account of the importance of the traditions and cultural values of each people for the protection and harmonious development of the child, Recognizing the importance of international co-operation for improving the living conditions of children in every country, in particular in the developing countries,
+
+Have agreed as follows:""" .
+
+
+###  http://ns.thecharter.eco/un/udhr/Calmness
+:Calmness rdf:type owl:Class ;
+          rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Confusion
+:Confusion rdf:type owl:Class ;
+           rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Craving
+:Craving rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Dignity
+:Dignity rdf:type owl:Class ;
+         rdfs:subClassOf :MoralGrammar ;
+         rdfs:comment "the state or quality of being worthy of honour or respect." .
+
+
+###  http://ns.thecharter.eco/un/udhr/Disgust
+:Disgust rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Entrancement
+:Entrancement rdf:type owl:Class ;
+              rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Envy
+:Envy rdf:type owl:Class ;
+      rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Excitement
+:Excitement rdf:type owl:Class ;
+            rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Fear
+:Fear rdf:type owl:Class ;
+      rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Horror
+:Horror rdf:type owl:Class ;
+        rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Interest
+:Interest rdf:type owl:Class ;
+          rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Joy
+:Joy rdf:type owl:Class ;
+     rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Justice
+:Justice rdf:type owl:Class ;
+         rdfs:subClassOf :MoralGrammar ;
+         rdfs:comment "just behaviour or treatment.  the administration of the law or authority in maintaining this. the administration of the law or authority in maintaining this." .
+
+
+###  http://ns.thecharter.eco/un/udhr/MoralGrammar
+:MoralGrammar rdf:type owl:Class .
+
+
+###  http://ns.thecharter.eco/un/udhr/Nostalgia
+:Nostalgia rdf:type owl:Class ;
+           rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Romance
+:Romance rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Sadness
+:Sadness rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Satisfaction
+:Satisfaction rdf:type owl:Class ;
+              rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Spirit
+:Spirit rdf:type owl:Class ;
+        rdfs:subClassOf :MoralGrammar ;
+        rdfs:comment "the non-physical part of a person which is the seat of emotions and character; the soul." .
+
+
+###  http://ns.thecharter.eco/un/udhr/Sympathy
+:Sympathy rdf:type owl:Class ;
+          rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/Triumph
+:Triumph rdf:type owl:Class ;
+         rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/UNCharters
+:UNCharters rdf:type owl:Class .
+
+
+###  http://ns.thecharter.eco/un/udhr/act
+:act rdf:type owl:Class ;
+     rdfs:subClassOf :wisdom .
+
+
+###  http://ns.thecharter.eco/un/udhr/aestheticAppreciation
+:aestheticAppreciation rdf:type owl:Class ;
+                       rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/agent
+:agent rdf:type owl:Class ;
+       rdfs:subClassOf :juristionalRelations ;
+       rdfs:comment "a person who acts on behalf of another person or group. a person or thing that takes an active role or produces a specified effect." ;
+       rdfs:isDefinedBy "http://xmlns.com/foaf/spec/#term_Agent" .
+
+
+###  http://ns.thecharter.eco/un/udhr/agentOfAuthority
+:agentOfAuthority rdf:type owl:Class ;
+                  rdfs:subClassOf :association .
+
+
+###  http://ns.thecharter.eco/un/udhr/associate
+:associate rdf:type owl:Class ;
+           rdfs:subClassOf :businessAssociate .
+
+
+###  http://ns.thecharter.eco/un/udhr/association
+:association rdf:type owl:Class ;
+             rdfs:subClassOf :social .
+
+
+###  http://ns.thecharter.eco/un/udhr/aunt
+:aunt rdf:type owl:Class ;
+      rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/biologicalFamily
+:biologicalFamily rdf:type owl:Class ;
+                  rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/boss
+:boss rdf:type owl:Class ;
+      rdfs:subClassOf :businessAssociate .
+
+
+###  http://ns.thecharter.eco/un/udhr/brother
+:brother rdf:type owl:Class ;
+         rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/businessAssociate
+:businessAssociate rdf:type owl:Class ;
+                   rdfs:subClassOf :association .
+
+
+###  http://ns.thecharter.eco/un/udhr/businessPartner
+:businessPartner rdf:type owl:Class ;
+                 rdfs:subClassOf :businessAssociate .
+
+
+###  http://ns.thecharter.eco/un/udhr/canonLaw
+:canonLaw rdf:type owl:Class ;
+          rdfs:subClassOf :legalFramework .
+
+
+###  http://ns.thecharter.eco/un/udhr/citizen
+:citizen rdf:type owl:Class ;
+         rdfs:subClassOf :entitiesByLaw .
+
+
+###  http://ns.thecharter.eco/un/udhr/civilLaw
+:civilLaw rdf:type owl:Class ;
+          rdfs:subClassOf :legalFramework .
+
+
+###  http://ns.thecharter.eco/un/udhr/closeFriend
+:closeFriend rdf:type owl:Class ;
+             rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/colleague
+:colleague rdf:type owl:Class ;
+           rdfs:subClassOf :businessAssociate .
+
+
+###  http://ns.thecharter.eco/un/udhr/commerce
+:commerce rdf:type owl:Class ;
+          rdfs:subClassOf :trade .
+
+
+###  http://ns.thecharter.eco/un/udhr/commonLaw
+:commonLaw rdf:type owl:Class ;
+           rdfs:subClassOf :legalFramework .
+
+
+###  http://ns.thecharter.eco/un/udhr/communist
+:communist rdf:type owl:Class ;
+           rdfs:subClassOf :governanceType .
+
+
+###  http://ns.thecharter.eco/un/udhr/communityRelation
+:communityRelation rdf:type owl:Class ;
+                   rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/counsin
+:counsin rdf:type owl:Class ;
+         rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/customer
+:customer rdf:type owl:Class ;
+          rdfs:subClassOf :businessAssociate .
+
+
+###  http://ns.thecharter.eco/un/udhr/democratic
+:democratic rdf:type owl:Class ;
+            rdfs:subClassOf :governanceType .
+
+
+###  http://ns.thecharter.eco/un/udhr/domesticAgent
+:domesticAgent rdf:type owl:Class ;
+               rdfs:subClassOf :agent .
+
+
+###  http://ns.thecharter.eco/un/udhr/emotion
+:emotion rdf:type owl:Class ;
+         rdfs:subClassOf :livedExperience .
+
+
+###  http://ns.thecharter.eco/un/udhr/emotionalHealth
+:emotionalHealth rdf:type owl:Class ;
+                 rdfs:subClassOf :health .
+
+
+###  http://ns.thecharter.eco/un/udhr/empatheticPain
+:empatheticPain rdf:type owl:Class ;
+                rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/empire
+:empire rdf:type owl:Class ;
+        rdfs:subClassOf :governanceType .
+
+
+###  http://ns.thecharter.eco/un/udhr/employee
+:employee rdf:type owl:Class ;
+          rdfs:subClassOf :businessAssociate .
+
+
+###  http://ns.thecharter.eco/un/udhr/entitiesByLaw
+:entitiesByLaw rdf:type owl:Class ;
+               rdfs:subClassOf :legalConcept ;
+               rdfs:comment "an individual, company, or other entity which has legal rights and is subject to obligations." .
+
+
+###  http://ns.thecharter.eco/un/udhr/esteemNeeds
+:esteemNeeds rdf:type owl:Class ;
+             rdfs:subClassOf :wellBeing .
+
+
+###  http://ns.thecharter.eco/un/udhr/family
+:family rdf:type owl:Class ;
+        rdfs:subClassOf :social .
+
+
+###  http://ns.thecharter.eco/un/udhr/familyDoctor
+:familyDoctor rdf:type owl:Class ;
+              rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/familyFriend
+:familyFriend rdf:type owl:Class ;
+              rdfs:subClassOf :family ,
+                              :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/father
+:father rdf:type owl:Class ;
+        rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/federalLaw
+:federalLaw rdf:type owl:Class ;
+            rdfs:subClassOf :law .
+
+
+###  http://ns.thecharter.eco/un/udhr/foreignAgent
+:foreignAgent rdf:type owl:Class ;
+              rdfs:subClassOf :agent .
+
+
+###  http://ns.thecharter.eco/un/udhr/formerCloseFriend
+:formerCloseFriend rdf:type owl:Class ;
+                   rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/formerFriend
+:formerFriend rdf:type owl:Class ;
+              rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/formerSexualRelationFriend
+:formerSexualRelationFriend rdf:type owl:Class ;
+                            rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/friend
+:friend rdf:type owl:Class ;
+        rdfs:subClassOf :association .
+
+
+###  http://ns.thecharter.eco/un/udhr/friendOfFriend
+:friendOfFriend rdf:type owl:Class ;
+                rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/giftOrDonation
+:giftOrDonation rdf:type owl:Class ;
+                rdfs:subClassOf :trade .
+
+
+###  http://ns.thecharter.eco/un/udhr/godFather
+:godFather rdf:type owl:Class ;
+           rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/godMother
+:godMother rdf:type owl:Class ;
+           rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/governancePrinciples
+:governancePrinciples rdf:type owl:Class ;
+                      rdfs:subClassOf :governanceStructure .
+
+
+###  http://ns.thecharter.eco/un/udhr/governanceStructure
+:governanceStructure rdf:type owl:Class ;
+                     rdfs:subClassOf :legalConcept ;
+                     rdfs:comment "the language framework and historical format distinguishing particular forms of legal construct." .
+
+
+###  http://ns.thecharter.eco/un/udhr/governanceType
+:governanceType rdf:type owl:Class ;
+                rdfs:subClassOf :governanceStructure ;
+                owl:disjointWith :legalFramework .
+
+
+###  http://ns.thecharter.eco/un/udhr/governmentWorker
+:governmentWorker rdf:type owl:Class ;
+                  rdfs:subClassOf :agentOfAuthority .
+
+
+###  http://ns.thecharter.eco/un/udhr/grandfather
+:grandfather rdf:type owl:Class ;
+             rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/grandmother
+:grandmother rdf:type owl:Class ;
+             rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/grandparent
+:grandparent rdf:type owl:Class ;
+             rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/health
+:health rdf:type owl:Class ;
+        rdfs:subClassOf :livedExperience .
+
+
+###  http://ns.thecharter.eco/un/udhr/healthWorker
+:healthWorker rdf:type owl:Class ;
+              rdfs:subClassOf :agentOfAuthority .
+
+
+###  http://ns.thecharter.eco/un/udhr/ignorance
+:ignorance rdf:type owl:Class ;
+           rdfs:subClassOf :wisdom .
+
+
+###  http://ns.thecharter.eco/un/udhr/internationalConvention
+:internationalConvention rdf:type owl:Class ;
+                         rdfs:subClassOf :legalInstrument ;
+                         owl:disjointWith :internationalDeclaration .
+
+
+###  http://ns.thecharter.eco/un/udhr/internationalDeclaration
+:internationalDeclaration rdf:type owl:Class ;
+                          rdfs:subClassOf :legalInstrument .
+
+
+###  http://ns.thecharter.eco/un/udhr/internationalLaw
+:internationalLaw rdf:type owl:Class ;
+                  rdfs:subClassOf :law .
+
+
+###  http://ns.thecharter.eco/un/udhr/internationalTrade
+:internationalTrade rdf:type owl:Class ;
+                    rdfs:subClassOf :trade ;
+                    rdfs:comment "nternational trade is the exchange of capital, goods, and services across international borders or territories." .
+
+
+###  http://ns.thecharter.eco/un/udhr/internationalTreaty
+:internationalTreaty rdf:type owl:Class ;
+                     rdfs:subClassOf :governancePrinciples .
+
+
+###  http://ns.thecharter.eco/un/udhr/investor
+:investor rdf:type owl:Class ;
+          rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/judge
+:judge rdf:type owl:Class ;
+       rdfs:subClassOf :agentOfAuthority .
+
+
+###  http://ns.thecharter.eco/un/udhr/jurisPrudence
+:jurisPrudence rdf:type owl:Class ;
+               rdfs:subClassOf :governancePrinciples .
+
+
+###  http://ns.thecharter.eco/un/udhr/jurisdictionalSovereignty
+:jurisdictionalSovereignty rdf:type owl:Class ;
+                           rdfs:subClassOf :governancePrinciples .
+
+
+###  http://ns.thecharter.eco/un/udhr/juristionalRelations
+:juristionalRelations rdf:type owl:Class ;
+                      rdfs:subClassOf :entitiesByLaw .
+
+
+###  http://ns.thecharter.eco/un/udhr/kingdom
+:kingdom rdf:type owl:Class ;
+         rdfs:subClassOf :governanceType .
+
+
+###  http://ns.thecharter.eco/un/udhr/know
+:know rdf:type owl:Class ;
+      rdfs:subClassOf :wisdom .
+
+
+###  http://ns.thecharter.eco/un/udhr/law
+:law rdf:type owl:Class ;
+     rdfs:subClassOf :legalConcept ;
+     rdfs:comment "the system of rules which a particular country or community recognizes as regulating the actions of its members and which it may enforce by the imposition of penalties." .
+
+
+###  http://ns.thecharter.eco/un/udhr/lawEnforcementOfficer
+:lawEnforcementOfficer rdf:type owl:Class ;
+                       rdfs:subClassOf :agentOfAuthority .
+
+
+###  http://ns.thecharter.eco/un/udhr/learn
+:learn rdf:type owl:Class ;
+       rdfs:subClassOf :wisdom .
+
+
+###  http://ns.thecharter.eco/un/udhr/legalAlien
+:legalAlien rdf:type owl:Class ;
+            rdfs:subClassOf :entitiesByLaw ;
+            rdfs:comment "In law, an alien is a person who is not a citizen or national of a given country" .
+
+
+###  http://ns.thecharter.eco/un/udhr/legalConcept
+:legalConcept rdf:type owl:Class .
+
+
+###  http://ns.thecharter.eco/un/udhr/legalFramework
+:legalFramework rdf:type owl:Class ;
+                rdfs:subClassOf :governanceStructure .
+
+
+###  http://ns.thecharter.eco/un/udhr/legalInstrument
+:legalInstrument rdf:type owl:Class ;
+                 rdfs:subClassOf :legalConcept ;
+                 rdfs:comment "a form of official document that is accepted as evidence by law" .
+
+
+###  http://ns.thecharter.eco/un/udhr/legalMinor
+:legalMinor rdf:type owl:Class ;
+            rdfs:subClassOf :entitiesByLaw ;
+            rdfs:comment "A person under a certain age, usually the age of majority, which legally demarcates childhood from adulthood" .
+
+
+###  http://ns.thecharter.eco/un/udhr/legalPerson
+:legalPerson rdf:type owl:Class ;
+             rdfs:subClassOf :entitiesByLaw .
+
+
+###  http://ns.thecharter.eco/un/udhr/livedExperience
+:livedExperience rdf:type owl:Class ;
+                 rdfs:comment "vocabulary terms relating to physical / meta-physical consious human experiences and predicates relating to those states." .
+
+
+###  http://ns.thecharter.eco/un/udhr/localTrade
+:localTrade rdf:type owl:Class ;
+            rdfs:subClassOf :trade .
+
+
+###  http://ns.thecharter.eco/un/udhr/loveAndBelongingnessNeeds
+:loveAndBelongingnessNeeds rdf:type owl:Class ;
+                           rdfs:subClassOf :wellBeing .
+
+
+###  http://ns.thecharter.eco/un/udhr/migrant
+:migrant rdf:type owl:Class ;
+         rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/mother
+:mother rdf:type owl:Class ;
+        rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/nationalTrade
+:nationalTrade rdf:type owl:Class ;
+               rdfs:subClassOf :trade .
+
+
+###  http://ns.thecharter.eco/un/udhr/nationhood
+:nationhood rdf:type owl:Class ;
+            rdfs:subClassOf :juristionalRelations ;
+            rdfs:comment "the fact or status of being a nation; national identity or independence." .
+
+
+###  http://ns.thecharter.eco/un/udhr/naturalPerson
+:naturalPerson rdf:type owl:Class ;
+               rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/nephew
+:nephew rdf:type owl:Class ;
+        rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/newFriend
+:newFriend rdf:type owl:Class ;
+           rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/niece
+:niece rdf:type owl:Class ;
+       rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/noLegalStatus
+:noLegalStatus rdf:type owl:Class ;
+               rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/nonBiologicalFamily
+:nonBiologicalFamily rdf:type owl:Class ;
+                     rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/oldFriend
+:oldFriend rdf:type owl:Class ;
+           rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/onlineCloseFriend
+:onlineCloseFriend rdf:type owl:Class ;
+                   rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/onlineFriend
+:onlineFriend rdf:type owl:Class ;
+              rdfs:subClassOf :friend .
+
+
+###  http://ns.thecharter.eco/un/udhr/personaFicta
+:personaFicta rdf:type owl:Class ;
+              rdfs:subClassOf :juristionalRelations ;
+              rdfs:comment "A juridical or artificial person" .
+
+
+###  http://ns.thecharter.eco/un/udhr/persons
+:persons rdf:type owl:Class ;
+         rdfs:subClassOf :entitiesByLaw .
+
+
+###  http://ns.thecharter.eco/un/udhr/physicalHealth
+:physicalHealth rdf:type owl:Class ;
+                rdfs:subClassOf :health .
+
+
+###  http://ns.thecharter.eco/un/udhr/physiologicalNeeds
+:physiologicalNeeds rdf:type owl:Class ;
+                    rdfs:subClassOf :wellBeing .
+
+
+###  http://ns.thecharter.eco/un/udhr/psychologicalHeealth
+:psychologicalHeealth rdf:type owl:Class ;
+                      rdfs:subClassOf :health .
+
+
+###  http://ns.thecharter.eco/un/udhr/refugee
+:refugee rdf:type owl:Class ;
+         rdfs:subClassOf :entitiesByLaw .
+
+
+###  http://ns.thecharter.eco/un/udhr/religiousLeader
+:religiousLeader rdf:type owl:Class ;
+                 rdfs:subClassOf :agentOfAuthority .
+
+
+###  http://ns.thecharter.eco/un/udhr/republic
+:republic rdf:type owl:Class ;
+          rdfs:subClassOf :governanceType .
+
+
+###  http://ns.thecharter.eco/un/udhr/resident
+:resident rdf:type owl:Class ;
+          rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/rightsHolder
+:rightsHolder rdf:type owl:Class ;
+              rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/romanLaw
+:romanLaw rdf:type owl:Class ;
+          rdfs:subClassOf :legalFramework .
+
+
+###  http://ns.thecharter.eco/un/udhr/ruleOfLaw
+:ruleOfLaw rdf:type owl:Class ;
+           rdfs:subClassOf :governancePrinciples .
+
+
+###  http://ns.thecharter.eco/un/udhr/safetyNeeds
+:safetyNeeds rdf:type owl:Class ;
+             rdfs:subClassOf :wellBeing .
+
+
+###  http://ns.thecharter.eco/un/udhr/selfActualizationNeeds
+:selfActualizationNeeds rdf:type owl:Class ;
+                        rdfs:subClassOf :wellBeing .
+
+
+###  http://ns.thecharter.eco/un/udhr/separationOfPowers
+:separationOfPowers rdf:type owl:Class ;
+                    rdfs:subClassOf :governancePrinciples .
+
+
+###  http://ns.thecharter.eco/un/udhr/sexualDesire
+:sexualDesire rdf:type owl:Class ;
+              rdfs:subClassOf :emotion .
+
+
+###  http://ns.thecharter.eco/un/udhr/sharialaw
+:sharialaw rdf:type owl:Class ;
+           rdfs:subClassOf :legalFramework .
+
+
+###  http://ns.thecharter.eco/un/udhr/sister
+:sister rdf:type owl:Class ;
+        rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/social
+:social rdf:type owl:Class ;
+        rdfs:subClassOf :livedExperience .
+
+
+###  http://ns.thecharter.eco/un/udhr/socialHealth
+:socialHealth rdf:type owl:Class ;
+              rdfs:subClassOf :health .
+
+
+###  http://ns.thecharter.eco/un/udhr/socialWorker
+:socialWorker rdf:type owl:Class ;
+              rdfs:subClassOf :agentOfAuthority .
+
+
+###  http://ns.thecharter.eco/un/udhr/socialist
+:socialist rdf:type owl:Class ;
+           rdfs:subClassOf :governanceType .
+
+
+###  http://ns.thecharter.eco/un/udhr/spiritualAdvisor
+:spiritualAdvisor rdf:type owl:Class ;
+                  rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/stateLaw
+:stateLaw rdf:type owl:Class ;
+          rdfs:subClassOf :law .
+
+
+###  http://ns.thecharter.eco/un/udhr/stateLess
+:stateLess rdf:type owl:Class ;
+           rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/taxPayer
+:taxPayer rdf:type owl:Class ;
+          rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/teacher
+:teacher rdf:type owl:Class ;
+         rdfs:subClassOf :agentOfAuthority .
+
+
+###  http://ns.thecharter.eco/un/udhr/trade
+:trade rdf:type owl:Class ;
+       rdfs:subClassOf :legalConcept .
+
+
+###  http://ns.thecharter.eco/un/udhr/uncle
+:uncle rdf:type owl:Class ;
+       rdfs:subClassOf :family .
+
+
+###  http://ns.thecharter.eco/un/udhr/unknown
+:unknown rdf:type owl:Class ;
+         rdfs:subClassOf :wisdom .
+
+
+###  http://ns.thecharter.eco/un/udhr/visaHolder
+:visaHolder rdf:type owl:Class ;
+            rdfs:subClassOf :entitiesByLaw .
+
+
+###  http://ns.thecharter.eco/un/udhr/visitor
+:visitor rdf:type owl:Class ;
+         rdfs:subClassOf :juristionalRelations .
+
+
+###  http://ns.thecharter.eco/un/udhr/wellBeing
+:wellBeing rdf:type owl:Class ;
+           rdfs:subClassOf :livedExperience .
+
+
+###  http://ns.thecharter.eco/un/udhr/wisdom
+:wisdom rdf:type owl:Class ;
+        rdfs:subClassOf :livedExperience .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle-1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle-1> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood." ;
+                                                              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                              rdfs:label "UDHR Article 1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_10
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_10> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:comment "Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him." ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 10" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_11
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11> ;
+                                                                 rdfs:comment "Everyone charged with a penal offence has the right to be presumed innocent until proved guilty according to law in a public trial at which he has had all the guarantees necessary for his defence." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 11.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11> ;
+                                                                 rdfs:comment "No one shall be held guilty of any penal offence on account of any act or omission which did not constitute a penal offence, under national or international law, at the time when it was committed. Nor shall a heavier penalty be imposed than the one that was applicable at the time the penal offence was committed." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 11.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_12
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_12> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:comment "No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks." ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 12" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_13
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 13" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13> ;
+                                                                 rdfs:comment "Everyone has the right to freedom of movement and residence within the borders of each state." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 13.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13> ;
+                                                                 rdfs:comment "Everyone has the right to leave any country, including his own, and to return to his country." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 13.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_14
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:label "UDHR Article 14" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14> ;
+                                                                 rdfs:comment "Everyone has the right to seek and to enjoy in other countries asylum from persecution." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 14.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14> ;
+                                                                 rdfs:comment "This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes or from acts contrary to the purposes and principles of the United Nations." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 14.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_15
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 15" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15> ;
+                                                                 rdfs:comment "Everyone has the right to a nationality." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 15.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15> ;
+                                                                 rdfs:comment "No one shall be arbitrarily deprived of his nationality nor denied the right to change his nationality." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 15.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_16
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 16" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16> ;
+                                                                 rdfs:comment "Men and women of full age, without any limitation due to race, nationality or religion, have the right to marry and to found a family. They are entitled to equal rights as to marriage, during marriage and at its dissolution." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 16.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16> ;
+                                                                 rdfs:comment "Marriage shall be entered into only with the free and full consent of the intending spouses."@en ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 16.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16> ;
+                                                                 rdfs:comment "The family is the natural and fundamental group unit of society and is entitled to protection by society and the State."@en ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 16.3" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_17
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 17" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17> ;
+                                                                 rdfs:comment "Everyone has the right to own property alone as well as in association with others." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 17.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17> ;
+                                                                 rdfs:comment "No one shall be arbitrarily deprived of his property." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 17.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_18
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_18> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:comment "Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance." ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 18" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_19
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_19> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:comment "Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers." ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 19" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_2> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty." ;
+                                                              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                              rdfs:label "UDHR Article 2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_20
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 20" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20> ;
+                                                                 rdfs:comment "Everyone has the right to freedom of peaceful assembly and association." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 20.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20> ;
+                                                                 rdfs:comment "No one may be compelled to belong to an association." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 20.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_21
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 21" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21> ;
+                                                                 rdfs:comment "Everyone has the right to take part in the government of his country, directly or through freely chosen representatives." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 21.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21> ;
+                                                                 rdfs:comment "Everyone has the right of equal access to public service in his country." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 21.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21> ;
+                                                                 rdfs:comment "The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 21.3" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_22
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_22> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:comment "Everyone, as a member of society, has the right to social security and is entitled to realization, through national effort and international co-operation and in accordance with the organization and resources of each State, of the economic, social and cultural rights indispensable for his dignity and the free development of his personality." ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 22" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_23
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 23" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> ;
+                                                                 rdfs:comment "Everyone has the right to work, to free choice of employment, to just and favourable conditions of work and to protection against unemployment." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 23.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> ;
+                                                                 rdfs:comment "Everyone, without any discrimination, has the right to equal pay for equal work."@en ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 23.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> ;
+                                                                 rdfs:comment "Everyone who works has the right to just and favourable remuneration ensuring for himself and his family an existence worthy of human dignity, and supplemented, if necessary, by other means of social protection." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 23.3" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> ;
+                                                                 rdfs:comment "Everyone has the right to form and to join trade unions for the protection of his interests." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 23.4" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_24
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_24> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:comment "Everyone has the right to rest and leisure, including reasonable limitation of working hours and periodic holidays with pay." ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 24" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_25
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 25" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25> ;
+                                                                 rdfs:comment "Everyone has the right to a standard of living adequate for the health and well-being of himself and of his family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 25.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25> ;
+                                                                 rdfs:comment "Motherhood and childhood are entitled to special care and assistance. All children, whether born in or out of wedlock, shall enjoy the same social protection." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 25.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_26
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 25" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26> ;
+                                                                 rdfs:comment "Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 26.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26> ;
+                                                                 rdfs:comment "Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms. It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 26.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26> ;
+                                                                 rdfs:comment "Parents have a prior right to choose the kind of education that shall be given to their children." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 26.3" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_27
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 27" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27> ;
+                                                                 rdfs:comment "Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 27.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27> ;
+                                                                 rdfs:comment "Everyone has the right to the protection of the moral and material interests resulting from any scientific, literary or artistic production of which he is the author." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 27.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_28
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_28> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:comment "Everyone is entitled to a social and international order in which the rights and freedoms set forth in this Declaration can be fully realized." ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 28" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_29
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 29" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29> ;
+                                                                 rdfs:comment "Everyone has duties to the community in which alone the free and full development of his personality is possible." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 29.1" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29> ;
+                                                                 rdfs:comment "In the exercise of his rights and freedoms, everyone shall be subject only to such limitations as are determined by law solely for the purpose of securing due recognition and respect for the rights and freedoms of others and of meeting the just requirements of morality, public order and the general welfare in a democratic society." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 29.2" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3> rdf:type owl:Class ;
+                                                                 rdfs:subClassOf <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29> ;
+                                                                 rdfs:comment "These rights and freedoms may in no case be exercised contrary to the purposes and principles of the United Nations." ;
+                                                                 rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                                 rdfs:label "UDHR Article 29.3" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_3
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_3> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "Everyone has the right to life, liberty and security of person." ;
+                                                              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                              rdfs:label "UDHR Article 3" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_30
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_30> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                               rdfs:comment "Nothing in this Declaration may be interpreted as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms set forth herein." ;
+                                                               rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                               rdfs:label "UDHR Article 30" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_4
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_4> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms." ;
+                                                              rdfs:label "UDHR Article 4" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_5
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_5> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment." ;
+                                                              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                              rdfs:label "UDHR Article 5" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_6
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_6> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "Everyone has the right to recognition everywhere as a person before the law." ;
+                                                              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                              rdfs:label "UDHR Article 6" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_7
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_7> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "All are equal before the law and are entitled without any discrimination to equal protection of the law. All are entitled to equal protection against any discrimination in violation of this Declaration and against any incitement to such discrimination." ;
+                                                              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                              rdfs:label "UDHR Article 7" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_8
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_8> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "Everyone has the right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted him by the constitution or by law." ;
+                                                              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                              rdfs:label "UDHR Article 8" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRArticle_9
+<urn:absolute:webcivics.github.io/community/un/UDHRArticle_9> rdf:type owl:Class ;
+                                                              rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                              rdfs:comment "No one shall be subjected to arbitrary arrest, detention or exile." ;
+                                                              rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                              rdfs:label "UDHR Article 9" .
+
+
+###  urn:absolute:webcivics.github.io/community/un/UDHRPreamble
+<urn:absolute:webcivics.github.io/community/un/UDHRPreamble> rdf:type owl:Class ;
+                                                             rdfs:subClassOf <http://ns.thecharter.eco/un/udhr> ;
+                                                             rdfs:comment """Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,
+
+Whereas disregard and contempt for human rights have resulted in barbarous acts which have outraged the conscience of mankind, and the advent of a world in which human beings shall enjoy freedom of speech and belief and freedom from fear and want has been proclaimed as the highest aspiration of the common people,
+
+Whereas it is essential, if man is not to be compelled to have recourse, as a last resort, to rebellion against tyranny and oppression, that human rights should be protected by the rule of law,
+
+Whereas it is essential to promote the development of friendly relations between nations,
+
+Whereas the peoples of the United Nations have in the Charter reaffirmed their faith in fundamental human rights, in the dignity and worth of the human person and in the equal rights of men and women and have determined to promote social progress and better standards of life in larger freedom,
+
+Whereas Member States have pledged themselves to achieve, in co-operation with the United Nations, the promotion of universal respect for and observance of human rights and fundamental freedoms,
+
+Whereas a common understanding of these rights and freedoms is of the greatest importance for the full realization of this pledge,
+
+Now, Therefore THE GENERAL ASSEMBLY proclaims THIS UNIVERSAL DECLARATION OF HUMAN RIGHTS as a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive by teaching and education to promote respect for these rights and freedoms and by progressive measures, national and international, to secure their universal and effective recognition and observance, both among the peoples of Member States themselves and among the peoples of territories under their jurisdiction.""" ;
+                                                             rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr/> ;
+                                                             rdfs:label "UDHR Preamble" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+owl:Thing rdfs:label "Human Rights Ontology"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Admiration
+                :Adoration
+                :Amusement
+                :Anxiety
+                :Awe
+                :Awkwardness
+                :Boredom
+                :Calmness
+                :Confusion
+                :Craving
+                :Disgust
+                :Entrancement
+                :Envy
+                :Excitement
+                :Fear
+                :Horror
+                :Interest
+                :Joy
+                :Nostalgia
+                :Romance
+                :Sadness
+                :Satisfaction
+                :Sympathy
+                :Triumph
+                :aestheticAppreciation
+                :empatheticPain
+                :sexualDesire
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Belief
+                :Dignity
+                :Justice
+                :MoralGrammar
+                :Spirit
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CRCArticle_1
+                :CRCArticle_10
+                :CRCArticle_11
+                :CRCArticle_12
+                :CRCArticle_13
+                :CRCArticle_14
+                :CRCArticle_15
+                :CRCArticle_16
+                :CRCArticle_16_1
+                :CRCArticle_16_2
+                :CRCArticle_17
+                :CRCArticle_18
+                :CRCArticle_2
+                :CRCArticle_20
+                :CRCArticle_21
+                :CRCArticle_22
+                :CRCArticle_23
+                :CRCArticle_24
+                :CRCArticle_25
+                :CRCArticle_26
+                :CRCArticle_27
+                :CRCArticle_28
+                :CRCArticle_29
+                :CRCArticle_3
+                :CRCArticle_30
+                :CRCArticle_31
+                :CRCArticle_32
+                :CRCArticle_33
+                :CRCArticle_34
+                :CRCArticle_35
+                :CRCArticle_36
+                :CRCArticle_37
+                :CRCArticle_38
+                :CRCArticle_39
+                :CRCArticle_4
+                :CRCArticle_40
+                :CRCArticle_5
+                :CRCArticle_6
+                :CRCArticle_7
+                :CRCArticle_8
+                :CRCArticle_9
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :act
+                :ignorance
+                :know
+                :learn
+                :unknown
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :act
+                :know
+                :learn
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :agent
+                :citizen
+                :entitiesByLaw
+                :internationalTrade
+                :law
+                :legalAlien
+                :nationhood
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :agent
+                :citizen
+                :entitiesByLaw
+                :internationalTrade
+                :law
+                :nationhood
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :agent
+                :domesticAgent
+                :foreignAgent
+                :legalMinor
+                :legalPerson
+                :naturalPerson
+                :personaFicta
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :agentOfAuthority
+                :boss
+                :businessAssociate
+                :customer
+                :friend
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :associate
+                :boss
+                :businessPartner
+                :colleague
+                :customer
+                :employee
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :aunt
+                :biologicalFamily
+                :brother
+                :counsin
+                :familyDoctor
+                :familyFriend
+                :father
+                :godFather
+                :godMother
+                :grandfather
+                :grandmother
+                :grandparent
+                :mother
+                :nephew
+                :niece
+                :nonBiologicalFamily
+                :sister
+                :spiritualAdvisor
+                :uncle
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :canonLaw
+                :civilLaw
+                :commonLaw
+                :communist
+                :democratic
+                :empire
+                :entitiesByLaw
+                :governanceStructure
+                :internationalDeclaration
+                :internationalTreaty
+                :jurisdictionalSovereignty
+                :kingdom
+                :law
+                :romanLaw
+                :ruleOfLaw
+                :separationOfPowers
+                :sharialaw
+                :socialist
+                :trade
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :citizen
+                :investor
+                :legalAlien
+                :migrant
+                :nationhood
+                :noLegalStatus
+                :refugee
+                :resident
+                :rightsHolder
+                :stateLess
+                :taxPayer
+                :visaHolder
+                :visitor
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :closeFriend
+                :communityRelation
+                :familyFriend
+                :formerCloseFriend
+                :formerFriend
+                :formerSexualRelationFriend
+                :friendOfFriend
+                :newFriend
+                :oldFriend
+                :onlineCloseFriend
+                :onlineFriend
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :commerce
+                :giftOrDonation
+                :internationalTrade
+                :localTrade
+                :nationalTrade
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :domesticAgent
+                :foreignAgent
+                :legalAlien
+                :legalMinor
+                :naturalPerson
+                :personaFicta
+                :taxPayer
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :emotion
+                :family
+                :health
+                :social
+                :wellBeing
+                :wisdom
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :emotion
+                :family
+                :health
+                :wellBeing
+                :wisdom
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :emotionalHealth
+                :physicalHealth
+                :psychologicalHeealth
+                :socialHealth
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :entitiesByLaw
+                :governanceStructure
+                :internationalDeclaration
+                :law
+                :legalInstrument
+                :trade
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :entitiesByLaw
+                :juristionalRelations
+                :law
+                :nationhood
+                :trade
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :entitiesByLaw
+                :law
+                :ruleOfLaw
+                :separationOfPowers
+                :trade
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :esteemNeeds
+                :loveAndBelongingnessNeeds
+                :physiologicalNeeds
+                :safetyNeeds
+                :selfActualizationNeeds
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :federalLaw
+                :internationalLaw
+                :stateLaw
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :governmentWorker
+                :healthWorker
+                :judge
+                :lawEnforcementOfficer
+                :religiousLeader
+                :socialWorker
+                :teacher
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :governmentWorker
+                :judge
+                :lawEnforcementOfficer
+                :teacher
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :internationalTreaty
+                :jurisPrudence
+                :jurisdictionalSovereignty
+                :ruleOfLaw
+                :separationOfPowers
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :legalAlien
+                :naturalPerson
+                :personaFicta
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

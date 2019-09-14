@@ -1,0 +1,2432 @@
+Prefix(:=<http://ns.thecharter.eco/un/udhr/>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://ns.thecharter.eco/un/udhr/>
+Annotation(dc:description "Universal Declaration of Human Rights (UDHR) vocabulary described using W3C RDF Schema and the Web Ontology Language.")
+Annotation(dc:title "Universal Declaration of Human Rights (UDHR) vocabulary")
+Annotation(rdfs:comment "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.")
+
+Declaration(Class(<http://ns.thecharter.eco/un/udhr>))
+Declaration(Class(:Admiration))
+Declaration(Class(:Adoration))
+Declaration(Class(:Amusement))
+Declaration(Class(:Anxiety))
+Declaration(Class(:Awe))
+Declaration(Class(:Awkwardness))
+Declaration(Class(:Belief))
+Declaration(Class(:Boredom))
+Declaration(Class(:CRC))
+Declaration(Class(:CRCArticle_1))
+Declaration(Class(:CRCArticle_10))
+Declaration(Class(:CRCArticle_10_1))
+Declaration(Class(:CRCArticle_10_2))
+Declaration(Class(:CRCArticle_11))
+Declaration(Class(:CRCArticle_11_1))
+Declaration(Class(:CRCArticle_11_2))
+Declaration(Class(:CRCArticle_12))
+Declaration(Class(:CRCArticle_12_1))
+Declaration(Class(:CRCArticle_12_2))
+Declaration(Class(:CRCArticle_13))
+Declaration(Class(:CRCArticle_13_1))
+Declaration(Class(:CRCArticle_13_2))
+Declaration(Class(:CRCArticle_13_2a))
+Declaration(Class(:CRCArticle_13_2b))
+Declaration(Class(:CRCArticle_14))
+Declaration(Class(:CRCArticle_14_1))
+Declaration(Class(:CRCArticle_14_2))
+Declaration(Class(:CRCArticle_14_3))
+Declaration(Class(:CRCArticle_15))
+Declaration(Class(:CRCArticle_15_1))
+Declaration(Class(:CRCArticle_15_2))
+Declaration(Class(:CRCArticle_16))
+Declaration(Class(:CRCArticle_16_1))
+Declaration(Class(:CRCArticle_16_2))
+Declaration(Class(:CRCArticle_17))
+Declaration(Class(:CRCArticle_17a))
+Declaration(Class(:CRCArticle_17b))
+Declaration(Class(:CRCArticle_17c))
+Declaration(Class(:CRCArticle_17d))
+Declaration(Class(:CRCArticle_17e))
+Declaration(Class(:CRCArticle_18))
+Declaration(Class(:CRCArticle_18_1))
+Declaration(Class(:CRCArticle_18_2))
+Declaration(Class(:CRCArticle_18_3))
+Declaration(Class(:CRCArticle_2))
+Declaration(Class(:CRCArticle_20))
+Declaration(Class(:CRCArticle_20_1))
+Declaration(Class(:CRCArticle_20_2))
+Declaration(Class(:CRCArticle_21))
+Declaration(Class(:CRCArticle_21a))
+Declaration(Class(:CRCArticle_21b))
+Declaration(Class(:CRCArticle_21c))
+Declaration(Class(:CRCArticle_21d))
+Declaration(Class(:CRCArticle_21e))
+Declaration(Class(:CRCArticle_22))
+Declaration(Class(:CRCArticle_22_1))
+Declaration(Class(:CRCArticle_22_2))
+Declaration(Class(:CRCArticle_23))
+Declaration(Class(:CRCArticle_23_1))
+Declaration(Class(:CRCArticle_23_2))
+Declaration(Class(:CRCArticle_23_3))
+Declaration(Class(:CRCArticle_23_4))
+Declaration(Class(:CRCArticle_24))
+Declaration(Class(:CRCArticle_24_1))
+Declaration(Class(:CRCArticle_24_2))
+Declaration(Class(:CRCArticle_24_2a))
+Declaration(Class(:CRCArticle_24_2b))
+Declaration(Class(:CRCArticle_24_2c))
+Declaration(Class(:CRCArticle_24_2d))
+Declaration(Class(:CRCArticle_24_2e))
+Declaration(Class(:CRCArticle_24_2f))
+Declaration(Class(:CRCArticle_24_3))
+Declaration(Class(:CRCArticle_24_4))
+Declaration(Class(:CRCArticle_25))
+Declaration(Class(:CRCArticle_26))
+Declaration(Class(:CRCArticle_26_1))
+Declaration(Class(:CRCArticle_26_2))
+Declaration(Class(:CRCArticle_27))
+Declaration(Class(:CRCArticle_27_1))
+Declaration(Class(:CRCArticle_27_2))
+Declaration(Class(:CRCArticle_27_3))
+Declaration(Class(:CRCArticle_27_4))
+Declaration(Class(:CRCArticle_28))
+Declaration(Class(:CRCArticle_28_1))
+Declaration(Class(:CRCArticle_28_1a))
+Declaration(Class(:CRCArticle_28_1b))
+Declaration(Class(:CRCArticle_28_1c))
+Declaration(Class(:CRCArticle_28_1d))
+Declaration(Class(:CRCArticle_28_1e))
+Declaration(Class(:CRCArticle_28_2))
+Declaration(Class(:CRCArticle_28_3))
+Declaration(Class(:CRCArticle_29))
+Declaration(Class(:CRCArticle_29_1))
+Declaration(Class(:CRCArticle_29_1a))
+Declaration(Class(:CRCArticle_29_1b))
+Declaration(Class(:CRCArticle_29_1c))
+Declaration(Class(:CRCArticle_29_1d))
+Declaration(Class(:CRCArticle_29_1e))
+Declaration(Class(:CRCArticle_29_2))
+Declaration(Class(:CRCArticle_29_3))
+Declaration(Class(:CRCArticle_2_1))
+Declaration(Class(:CRCArticle_2_2))
+Declaration(Class(:CRCArticle_3))
+Declaration(Class(:CRCArticle_30))
+Declaration(Class(:CRCArticle_31))
+Declaration(Class(:CRCArticle_31_1))
+Declaration(Class(:CRCArticle_31_2))
+Declaration(Class(:CRCArticle_32))
+Declaration(Class(:CRCArticle_32_1))
+Declaration(Class(:CRCArticle_32_2))
+Declaration(Class(:CRCArticle_32_2a))
+Declaration(Class(:CRCArticle_32_2b))
+Declaration(Class(:CRCArticle_32_2c))
+Declaration(Class(:CRCArticle_33))
+Declaration(Class(:CRCArticle_34))
+Declaration(Class(:CRCArticle_34a))
+Declaration(Class(:CRCArticle_34b))
+Declaration(Class(:CRCArticle_34c))
+Declaration(Class(:CRCArticle_35))
+Declaration(Class(:CRCArticle_36))
+Declaration(Class(:CRCArticle_37))
+Declaration(Class(:CRCArticle_37a))
+Declaration(Class(:CRCArticle_37b))
+Declaration(Class(:CRCArticle_37c))
+Declaration(Class(:CRCArticle_37d))
+Declaration(Class(:CRCArticle_38))
+Declaration(Class(:CRCArticle_38_1))
+Declaration(Class(:CRCArticle_38_2))
+Declaration(Class(:CRCArticle_38_3))
+Declaration(Class(:CRCArticle_38_4))
+Declaration(Class(:CRCArticle_39))
+Declaration(Class(:CRCArticle_3_1))
+Declaration(Class(:CRCArticle_3_2))
+Declaration(Class(:CRCArticle_3_3))
+Declaration(Class(:CRCArticle_4))
+Declaration(Class(:CRCArticle_40))
+Declaration(Class(:CRCArticle_40_1))
+Declaration(Class(:CRCArticle_40_2))
+Declaration(Class(:CRCArticle_40_2a))
+Declaration(Class(:CRCArticle_40_2b))
+Declaration(Class(:CRCArticle_40_2b_i))
+Declaration(Class(:CRCArticle_40_2b_ii))
+Declaration(Class(:CRCArticle_40_2b_iii))
+Declaration(Class(:CRCArticle_40_2b_iv))
+Declaration(Class(:CRCArticle_40_2b_v))
+Declaration(Class(:CRCArticle_40_2b_vi))
+Declaration(Class(:CRCArticle_40_2b_vii))
+Declaration(Class(:CRCArticle_40_3))
+Declaration(Class(:CRCArticle_40_3a))
+Declaration(Class(:CRCArticle_40_3b))
+Declaration(Class(:CRCArticle_41))
+Declaration(Class(:CRCArticle_41a))
+Declaration(Class(:CRCArticle_41b))
+Declaration(Class(:CRCArticle_42))
+Declaration(Class(:CRCArticle_43))
+Declaration(Class(:CRCArticle_43_1))
+Declaration(Class(:CRCArticle_43_10))
+Declaration(Class(:CRCArticle_43_11))
+Declaration(Class(:CRCArticle_43_12))
+Declaration(Class(:CRCArticle_43_2))
+Declaration(Class(:CRCArticle_43_3))
+Declaration(Class(:CRCArticle_43_4))
+Declaration(Class(:CRCArticle_43_5))
+Declaration(Class(:CRCArticle_43_6))
+Declaration(Class(:CRCArticle_43_7))
+Declaration(Class(:CRCArticle_43_8))
+Declaration(Class(:CRCArticle_43_9))
+Declaration(Class(:CRCArticle_44))
+Declaration(Class(:CRCArticle_44_1))
+Declaration(Class(:CRCArticle_44_1a))
+Declaration(Class(:CRCArticle_44_1b))
+Declaration(Class(:CRCArticle_44_2))
+Declaration(Class(:CRCArticle_44_3))
+Declaration(Class(:CRCArticle_44_4))
+Declaration(Class(:CRCArticle_44_5))
+Declaration(Class(:CRCArticle_44_6))
+Declaration(Class(:CRCArticle_45))
+Declaration(Class(:CRCArticle_45a))
+Declaration(Class(:CRCArticle_45b))
+Declaration(Class(:CRCArticle_45c))
+Declaration(Class(:CRCArticle_45d))
+Declaration(Class(:CRCArticle_46))
+Declaration(Class(:CRCArticle_47))
+Declaration(Class(:CRCArticle_48))
+Declaration(Class(:CRCArticle_49))
+Declaration(Class(:CRCArticle_49_1))
+Declaration(Class(:CRCArticle_49_2))
+Declaration(Class(:CRCArticle_5))
+Declaration(Class(:CRCArticle_50))
+Declaration(Class(:CRCArticle_50_1))
+Declaration(Class(:CRCArticle_50_2))
+Declaration(Class(:CRCArticle_50_3))
+Declaration(Class(:CRCArticle_51))
+Declaration(Class(:CRCArticle_51_1))
+Declaration(Class(:CRCArticle_51_2))
+Declaration(Class(:CRCArticle_51_3))
+Declaration(Class(:CRCArticle_52))
+Declaration(Class(:CRCArticle_53))
+Declaration(Class(:CRCArticle_54))
+Declaration(Class(:CRCArticle_6))
+Declaration(Class(:CRCArticle_6_1))
+Declaration(Class(:CRCArticle_6_2))
+Declaration(Class(:CRCArticle_7))
+Declaration(Class(:CRCArticle_7_1))
+Declaration(Class(:CRCArticle_7_2))
+Declaration(Class(:CRCArticle_8))
+Declaration(Class(:CRCArticle_8_1))
+Declaration(Class(:CRCArticle_8_2))
+Declaration(Class(:CRCArticle_9))
+Declaration(Class(:CRCArticle_9_1))
+Declaration(Class(:CRCArticle_9_2))
+Declaration(Class(:CRCArticle_9_3))
+Declaration(Class(:CRCArticle_9_4))
+Declaration(Class(:CRCPartI))
+Declaration(Class(:CRCPartII))
+Declaration(Class(:CRCPartIII))
+Declaration(Class(:CRCPreamble))
+Declaration(Class(:Calmness))
+Declaration(Class(:Confusion))
+Declaration(Class(:Craving))
+Declaration(Class(:Dignity))
+Declaration(Class(:Disgust))
+Declaration(Class(:Entrancement))
+Declaration(Class(:Envy))
+Declaration(Class(:Excitement))
+Declaration(Class(:Fear))
+Declaration(Class(:Horror))
+Declaration(Class(:Interest))
+Declaration(Class(:Joy))
+Declaration(Class(:Justice))
+Declaration(Class(:MoralGrammar))
+Declaration(Class(:Nostalgia))
+Declaration(Class(:Romance))
+Declaration(Class(:Sadness))
+Declaration(Class(:Satisfaction))
+Declaration(Class(:Spirit))
+Declaration(Class(:Sympathy))
+Declaration(Class(:Triumph))
+Declaration(Class(:UNCharters))
+Declaration(Class(:act))
+Declaration(Class(:aestheticAppreciation))
+Declaration(Class(:agent))
+Declaration(Class(:agentOfAuthority))
+Declaration(Class(:associate))
+Declaration(Class(:association))
+Declaration(Class(:aunt))
+Declaration(Class(:biologicalFamily))
+Declaration(Class(:boss))
+Declaration(Class(:brother))
+Declaration(Class(:businessAssociate))
+Declaration(Class(:businessPartner))
+Declaration(Class(:canonLaw))
+Declaration(Class(:citizen))
+Declaration(Class(:civilLaw))
+Declaration(Class(:closeFriend))
+Declaration(Class(:colleague))
+Declaration(Class(:commerce))
+Declaration(Class(:commonLaw))
+Declaration(Class(:communist))
+Declaration(Class(:communityRelation))
+Declaration(Class(:counsin))
+Declaration(Class(:customer))
+Declaration(Class(:democratic))
+Declaration(Class(:domesticAgent))
+Declaration(Class(:emotion))
+Declaration(Class(:emotionalHealth))
+Declaration(Class(:empatheticPain))
+Declaration(Class(:empire))
+Declaration(Class(:employee))
+Declaration(Class(:entitiesByLaw))
+Declaration(Class(:esteemNeeds))
+Declaration(Class(:family))
+Declaration(Class(:familyDoctor))
+Declaration(Class(:familyFriend))
+Declaration(Class(:father))
+Declaration(Class(:federalLaw))
+Declaration(Class(:foreignAgent))
+Declaration(Class(:formerCloseFriend))
+Declaration(Class(:formerFriend))
+Declaration(Class(:formerSexualRelationFriend))
+Declaration(Class(:friend))
+Declaration(Class(:friendOfFriend))
+Declaration(Class(:giftOrDonation))
+Declaration(Class(:godFather))
+Declaration(Class(:godMother))
+Declaration(Class(:governancePrinciples))
+Declaration(Class(:governanceStructure))
+Declaration(Class(:governanceType))
+Declaration(Class(:governmentWorker))
+Declaration(Class(:grandfather))
+Declaration(Class(:grandmother))
+Declaration(Class(:grandparent))
+Declaration(Class(:health))
+Declaration(Class(:healthWorker))
+Declaration(Class(:humanAgency))
+Declaration(Class(:ignorance))
+Declaration(Class(:internationalConvention))
+Declaration(Class(:internationalDeclaration))
+Declaration(Class(:internationalLaw))
+Declaration(Class(:internationalTrade))
+Declaration(Class(:internationalTreaty))
+Declaration(Class(:investor))
+Declaration(Class(:judge))
+Declaration(Class(:jurisPrudence))
+Declaration(Class(:jurisdictionalSovereignty))
+Declaration(Class(:juristionalRelations))
+Declaration(Class(:kingdom))
+Declaration(Class(:know))
+Declaration(Class(:law))
+Declaration(Class(:lawEnforcementOfficer))
+Declaration(Class(:learn))
+Declaration(Class(:legalAlien))
+Declaration(Class(:legalConcept))
+Declaration(Class(:legalFramework))
+Declaration(Class(:legalInstrument))
+Declaration(Class(:legalMinor))
+Declaration(Class(:legalPerson))
+Declaration(Class(:livedExperience))
+Declaration(Class(:localTrade))
+Declaration(Class(:loveAndBelongingnessNeeds))
+Declaration(Class(:migrant))
+Declaration(Class(:mother))
+Declaration(Class(:nationalTrade))
+Declaration(Class(:nationhood))
+Declaration(Class(:naturalPerson))
+Declaration(Class(:nephew))
+Declaration(Class(:newFriend))
+Declaration(Class(:niece))
+Declaration(Class(:noLegalStatus))
+Declaration(Class(:nonBiologicalFamily))
+Declaration(Class(:oldFriend))
+Declaration(Class(:onlineCloseFriend))
+Declaration(Class(:onlineFriend))
+Declaration(Class(:personaFicta))
+Declaration(Class(:persons))
+Declaration(Class(:physicalHealth))
+Declaration(Class(:physiologicalNeeds))
+Declaration(Class(:psychologicalHeealth))
+Declaration(Class(:refugee))
+Declaration(Class(:religiousLeader))
+Declaration(Class(:republic))
+Declaration(Class(:resident))
+Declaration(Class(:rightsHolder))
+Declaration(Class(:romanLaw))
+Declaration(Class(:ruleOfLaw))
+Declaration(Class(:safetyNeeds))
+Declaration(Class(:selfActualizationNeeds))
+Declaration(Class(:separationOfPowers))
+Declaration(Class(:sexualDesire))
+Declaration(Class(:sharialaw))
+Declaration(Class(:sister))
+Declaration(Class(:social))
+Declaration(Class(:socialHealth))
+Declaration(Class(:socialWorker))
+Declaration(Class(:socialist))
+Declaration(Class(:spiritualAdvisor))
+Declaration(Class(:stateLaw))
+Declaration(Class(:stateLess))
+Declaration(Class(:taxPayer))
+Declaration(Class(:teacher))
+Declaration(Class(:trade))
+Declaration(Class(:uncle))
+Declaration(Class(:unknown))
+Declaration(Class(:visaHolder))
+Declaration(Class(:visitor))
+Declaration(Class(:wellBeing))
+Declaration(Class(:wisdom))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle-1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_10>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_12>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_18>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_19>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_22>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_24>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_28>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_3>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_30>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_4>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_5>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_6>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_7>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_8>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_9>))
+Declaration(Class(<urn:absolute:webcivics.github.io/community/un/UDHRPreamble>))
+Declaration(AnnotationProperty(dc:description))
+Declaration(AnnotationProperty(dc:title))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://ns.thecharter.eco/un/udhr> (<http://ns.thecharter.eco/un/udhr>)
+
+AnnotationAssertion(rdfs:comment <http://ns.thecharter.eco/un/udhr> "United Nations Universal Declaration of Human Rights")
+AnnotationAssertion(rdfs:isDefinedBy <http://ns.thecharter.eco/un/udhr> "https://www.un.org/en/universal-declaration-human-rights/index.html")
+SubClassOf(<http://ns.thecharter.eco/un/udhr> :UNCharters)
+DisjointClasses(<http://ns.thecharter.eco/un/udhr> :CRC)
+
+# Class: :Admiration (:Admiration)
+
+SubClassOf(:Admiration :emotion)
+
+# Class: :Adoration (:Adoration)
+
+SubClassOf(:Adoration :emotion)
+
+# Class: :Amusement (:Amusement)
+
+SubClassOf(:Amusement :emotion)
+
+# Class: :Anxiety (:Anxiety)
+
+SubClassOf(:Anxiety :emotion)
+
+# Class: :Awe (:Awe)
+
+SubClassOf(:Awe :emotion)
+
+# Class: :Awkwardness (:Awkwardness)
+
+SubClassOf(:Awkwardness :emotion)
+
+# Class: :Belief (:Belief)
+
+AnnotationAssertion(rdfs:comment :Belief "An acceptance that something exists or is true, especially one without proof. trust, faith, or confidence in (someone or something).")
+SubClassOf(:Belief :MoralGrammar)
+
+# Class: :Boredom (:Boredom)
+
+SubClassOf(:Boredom :emotion)
+
+# Class: :CRC (:CRC)
+
+AnnotationAssertion(rdfs:comment :CRC "Convention on the Rights of the Child")
+AnnotationAssertion(rdfs:isDefinedBy :CRC "https://www.ohchr.org/en/professionalinterest/pages/crc.aspx")
+SubClassOf(:CRC :UNCharters)
+
+# Class: :CRCArticle_1 (:CRCArticle_1)
+
+SubClassOf(:CRCArticle_1 :CRCPartI)
+
+# Class: :CRCArticle_10 (:CRCArticle_10)
+
+SubClassOf(:CRCArticle_10 :CRCPartI)
+
+# Class: :CRCArticle_10_1 (:CRCArticle_10_1)
+
+SubClassOf(:CRCArticle_10_1 :CRCArticle_10)
+
+# Class: :CRCArticle_10_2 (:CRCArticle_10_2)
+
+SubClassOf(:CRCArticle_10_2 :CRCArticle_10)
+
+# Class: :CRCArticle_11 (:CRCArticle_11)
+
+SubClassOf(:CRCArticle_11 :CRCPartI)
+
+# Class: :CRCArticle_11_1 (:CRCArticle_11_1)
+
+SubClassOf(:CRCArticle_11_1 :CRCArticle_11)
+
+# Class: :CRCArticle_11_2 (:CRCArticle_11_2)
+
+SubClassOf(:CRCArticle_11_2 :CRCArticle_11)
+
+# Class: :CRCArticle_12 (:CRCArticle_12)
+
+SubClassOf(:CRCArticle_12 :CRCPartI)
+
+# Class: :CRCArticle_12_1 (:CRCArticle_12_1)
+
+SubClassOf(:CRCArticle_12_1 :CRCArticle_12)
+
+# Class: :CRCArticle_12_2 (:CRCArticle_12_2)
+
+SubClassOf(:CRCArticle_12_2 :CRCArticle_12)
+
+# Class: :CRCArticle_13 (:CRCArticle_13)
+
+SubClassOf(:CRCArticle_13 :CRCPartI)
+
+# Class: :CRCArticle_13_1 (:CRCArticle_13_1)
+
+SubClassOf(:CRCArticle_13_1 :CRCArticle_13)
+
+# Class: :CRCArticle_13_2 (:CRCArticle_13_2)
+
+SubClassOf(:CRCArticle_13_2 :CRCArticle_13)
+
+# Class: :CRCArticle_13_2a (:CRCArticle_13_2a)
+
+SubClassOf(:CRCArticle_13_2a :CRCArticle_13_2)
+
+# Class: :CRCArticle_13_2b (:CRCArticle_13_2b)
+
+SubClassOf(:CRCArticle_13_2b :CRCArticle_13_2)
+
+# Class: :CRCArticle_14 (:CRCArticle_14)
+
+SubClassOf(:CRCArticle_14 :CRCPartI)
+
+# Class: :CRCArticle_14_1 (:CRCArticle_14_1)
+
+SubClassOf(:CRCArticle_14_1 :CRCArticle_14)
+
+# Class: :CRCArticle_14_2 (:CRCArticle_14_2)
+
+SubClassOf(:CRCArticle_14_2 :CRCArticle_14)
+
+# Class: :CRCArticle_14_3 (:CRCArticle_14_3)
+
+SubClassOf(:CRCArticle_14_3 :CRCArticle_14)
+
+# Class: :CRCArticle_15 (:CRCArticle_15)
+
+SubClassOf(:CRCArticle_15 :CRCPartI)
+
+# Class: :CRCArticle_15_1 (:CRCArticle_15_1)
+
+SubClassOf(:CRCArticle_15_1 :CRCArticle_15)
+
+# Class: :CRCArticle_15_2 (:CRCArticle_15_2)
+
+SubClassOf(:CRCArticle_15_2 :CRCArticle_15)
+
+# Class: :CRCArticle_16 (:CRCArticle_16)
+
+SubClassOf(:CRCArticle_16 :CRCPartI)
+
+# Class: :CRCArticle_16_1 (:CRCArticle_16_1)
+
+SubClassOf(:CRCArticle_16_1 :CRCArticle_16)
+
+# Class: :CRCArticle_16_2 (:CRCArticle_16_2)
+
+SubClassOf(:CRCArticle_16_2 :CRCArticle_16)
+
+# Class: :CRCArticle_17 (:CRCArticle_17)
+
+SubClassOf(:CRCArticle_17 :CRCPartI)
+
+# Class: :CRCArticle_17a (:CRCArticle_17a)
+
+SubClassOf(:CRCArticle_17a :CRCArticle_17)
+
+# Class: :CRCArticle_17b (:CRCArticle_17b)
+
+SubClassOf(:CRCArticle_17b :CRCArticle_17)
+
+# Class: :CRCArticle_17c (:CRCArticle_17c)
+
+SubClassOf(:CRCArticle_17c :CRCArticle_17)
+
+# Class: :CRCArticle_17d (:CRCArticle_17d)
+
+SubClassOf(:CRCArticle_17d :CRCArticle_17)
+
+# Class: :CRCArticle_17e (:CRCArticle_17e)
+
+SubClassOf(:CRCArticle_17e :CRCArticle_17)
+
+# Class: :CRCArticle_18 (:CRCArticle_18)
+
+SubClassOf(:CRCArticle_18 :CRCPartI)
+
+# Class: :CRCArticle_18_1 (:CRCArticle_18_1)
+
+SubClassOf(:CRCArticle_18_1 :CRCArticle_18)
+
+# Class: :CRCArticle_18_2 (:CRCArticle_18_2)
+
+SubClassOf(:CRCArticle_18_2 :CRCArticle_18)
+
+# Class: :CRCArticle_18_3 (:CRCArticle_18_3)
+
+SubClassOf(:CRCArticle_18_3 :CRCArticle_18)
+
+# Class: :CRCArticle_2 (:CRCArticle_2)
+
+SubClassOf(:CRCArticle_2 :CRCPartI)
+
+# Class: :CRCArticle_20 (:CRCArticle_20)
+
+SubClassOf(:CRCArticle_20 :CRCPartI)
+
+# Class: :CRCArticle_20_1 (:CRCArticle_20_1)
+
+SubClassOf(:CRCArticle_20_1 :CRCArticle_20)
+
+# Class: :CRCArticle_20_2 (:CRCArticle_20_2)
+
+SubClassOf(:CRCArticle_20_2 :CRCArticle_20)
+
+# Class: :CRCArticle_21 (:CRCArticle_21)
+
+SubClassOf(:CRCArticle_21 :CRCPartI)
+
+# Class: :CRCArticle_21a (:CRCArticle_21a)
+
+SubClassOf(:CRCArticle_21a :CRCArticle_21)
+
+# Class: :CRCArticle_21b (:CRCArticle_21b)
+
+SubClassOf(:CRCArticle_21b :CRCArticle_21)
+
+# Class: :CRCArticle_21c (:CRCArticle_21c)
+
+SubClassOf(:CRCArticle_21c :CRCArticle_21)
+
+# Class: :CRCArticle_21d (:CRCArticle_21d)
+
+SubClassOf(:CRCArticle_21d :CRCArticle_21)
+
+# Class: :CRCArticle_21e (:CRCArticle_21e)
+
+SubClassOf(:CRCArticle_21e :CRCArticle_21)
+
+# Class: :CRCArticle_22 (:CRCArticle_22)
+
+SubClassOf(:CRCArticle_22 :CRCPartI)
+
+# Class: :CRCArticle_22_1 (:CRCArticle_22_1)
+
+SubClassOf(:CRCArticle_22_1 :CRCArticle_22)
+
+# Class: :CRCArticle_22_2 (:CRCArticle_22_2)
+
+SubClassOf(:CRCArticle_22_2 :CRCArticle_22)
+
+# Class: :CRCArticle_23 (:CRCArticle_23)
+
+SubClassOf(:CRCArticle_23 :CRCPartI)
+
+# Class: :CRCArticle_23_1 (:CRCArticle_23_1)
+
+SubClassOf(:CRCArticle_23_1 :CRCArticle_23)
+
+# Class: :CRCArticle_23_2 (:CRCArticle_23_2)
+
+SubClassOf(:CRCArticle_23_2 :CRCArticle_23)
+
+# Class: :CRCArticle_23_3 (:CRCArticle_23_3)
+
+SubClassOf(:CRCArticle_23_3 :CRCArticle_23)
+
+# Class: :CRCArticle_23_4 (:CRCArticle_23_4)
+
+SubClassOf(:CRCArticle_23_4 :CRCArticle_23)
+
+# Class: :CRCArticle_24 (:CRCArticle_24)
+
+SubClassOf(:CRCArticle_24 :CRCPartI)
+
+# Class: :CRCArticle_24_1 (:CRCArticle_24_1)
+
+SubClassOf(:CRCArticle_24_1 :CRCArticle_24)
+
+# Class: :CRCArticle_24_2 (:CRCArticle_24_2)
+
+SubClassOf(:CRCArticle_24_2 :CRCArticle_24)
+
+# Class: :CRCArticle_24_2a (:CRCArticle_24_2a)
+
+SubClassOf(:CRCArticle_24_2a :CRCArticle_24_2)
+
+# Class: :CRCArticle_24_2b (:CRCArticle_24_2b)
+
+SubClassOf(:CRCArticle_24_2b :CRCArticle_24_2)
+
+# Class: :CRCArticle_24_2c (:CRCArticle_24_2c)
+
+SubClassOf(:CRCArticle_24_2c :CRCArticle_24_2)
+
+# Class: :CRCArticle_24_2d (:CRCArticle_24_2d)
+
+SubClassOf(:CRCArticle_24_2d :CRCArticle_24_2)
+
+# Class: :CRCArticle_24_2e (:CRCArticle_24_2e)
+
+SubClassOf(:CRCArticle_24_2e :CRCArticle_24_2)
+
+# Class: :CRCArticle_24_2f (:CRCArticle_24_2f)
+
+SubClassOf(:CRCArticle_24_2f :CRCArticle_24_2)
+
+# Class: :CRCArticle_24_3 (:CRCArticle_24_3)
+
+SubClassOf(:CRCArticle_24_3 :CRCArticle_24)
+
+# Class: :CRCArticle_24_4 (:CRCArticle_24_4)
+
+SubClassOf(:CRCArticle_24_4 :CRCArticle_24)
+
+# Class: :CRCArticle_25 (:CRCArticle_25)
+
+SubClassOf(:CRCArticle_25 :CRCPartI)
+
+# Class: :CRCArticle_26 (:CRCArticle_26)
+
+SubClassOf(:CRCArticle_26 :CRCPartI)
+
+# Class: :CRCArticle_26_1 (:CRCArticle_26_1)
+
+SubClassOf(:CRCArticle_26_1 :CRCArticle_26)
+
+# Class: :CRCArticle_26_2 (:CRCArticle_26_2)
+
+SubClassOf(:CRCArticle_26_2 :CRCArticle_26)
+
+# Class: :CRCArticle_27 (:CRCArticle_27)
+
+SubClassOf(:CRCArticle_27 :CRCPartI)
+
+# Class: :CRCArticle_27_1 (:CRCArticle_27_1)
+
+SubClassOf(:CRCArticle_27_1 :CRCArticle_27)
+
+# Class: :CRCArticle_27_2 (:CRCArticle_27_2)
+
+SubClassOf(:CRCArticle_27_2 :CRCArticle_27)
+
+# Class: :CRCArticle_27_3 (:CRCArticle_27_3)
+
+SubClassOf(:CRCArticle_27_3 :CRCArticle_27)
+
+# Class: :CRCArticle_27_4 (:CRCArticle_27_4)
+
+SubClassOf(:CRCArticle_27_4 :CRCArticle_27)
+
+# Class: :CRCArticle_28 (:CRCArticle_28)
+
+SubClassOf(:CRCArticle_28 :CRCPartI)
+
+# Class: :CRCArticle_28_1 (:CRCArticle_28_1)
+
+SubClassOf(:CRCArticle_28_1 :CRCArticle_28)
+
+# Class: :CRCArticle_28_1a (:CRCArticle_28_1a)
+
+SubClassOf(:CRCArticle_28_1a :CRCArticle_28_1)
+
+# Class: :CRCArticle_28_1b (:CRCArticle_28_1b)
+
+SubClassOf(:CRCArticle_28_1b :CRCArticle_28_1)
+
+# Class: :CRCArticle_28_1c (:CRCArticle_28_1c)
+
+SubClassOf(:CRCArticle_28_1c :CRCArticle_28_1)
+
+# Class: :CRCArticle_28_1d (:CRCArticle_28_1d)
+
+SubClassOf(:CRCArticle_28_1d :CRCArticle_28_1)
+
+# Class: :CRCArticle_28_1e (:CRCArticle_28_1e)
+
+SubClassOf(:CRCArticle_28_1e :CRCArticle_28_1)
+
+# Class: :CRCArticle_28_2 (:CRCArticle_28_2)
+
+SubClassOf(:CRCArticle_28_2 :CRCArticle_28)
+
+# Class: :CRCArticle_28_3 (:CRCArticle_28_3)
+
+SubClassOf(:CRCArticle_28_3 :CRCArticle_28)
+
+# Class: :CRCArticle_29 (:CRCArticle_29)
+
+SubClassOf(:CRCArticle_29 :CRCPartI)
+
+# Class: :CRCArticle_29_1 (:CRCArticle_29_1)
+
+SubClassOf(:CRCArticle_29_1 :CRCArticle_29)
+
+# Class: :CRCArticle_29_1a (:CRCArticle_29_1a)
+
+SubClassOf(:CRCArticle_29_1a :CRCArticle_29_1)
+
+# Class: :CRCArticle_29_1b (:CRCArticle_29_1b)
+
+SubClassOf(:CRCArticle_29_1b :CRCArticle_29_1)
+
+# Class: :CRCArticle_29_1c (:CRCArticle_29_1c)
+
+SubClassOf(:CRCArticle_29_1c :CRCArticle_29_1)
+
+# Class: :CRCArticle_29_1d (:CRCArticle_29_1d)
+
+SubClassOf(:CRCArticle_29_1d :CRCArticle_29_1)
+
+# Class: :CRCArticle_29_1e (:CRCArticle_29_1e)
+
+SubClassOf(:CRCArticle_29_1e :CRCArticle_29_1)
+
+# Class: :CRCArticle_29_2 (:CRCArticle_29_2)
+
+SubClassOf(:CRCArticle_29_2 :CRCArticle_29)
+
+# Class: :CRCArticle_29_3 (:CRCArticle_29_3)
+
+SubClassOf(:CRCArticle_29_3 :CRCArticle_29)
+
+# Class: :CRCArticle_2_1 (:CRCArticle_2_1)
+
+SubClassOf(:CRCArticle_2_1 :CRCArticle_2)
+
+# Class: :CRCArticle_2_2 (:CRCArticle_2_2)
+
+SubClassOf(:CRCArticle_2_2 :CRCArticle_2)
+
+# Class: :CRCArticle_3 (:CRCArticle_3)
+
+SubClassOf(:CRCArticle_3 :CRCPartI)
+
+# Class: :CRCArticle_30 (:CRCArticle_30)
+
+SubClassOf(:CRCArticle_30 :CRCPartI)
+
+# Class: :CRCArticle_31 (:CRCArticle_31)
+
+SubClassOf(:CRCArticle_31 :CRCPartI)
+
+# Class: :CRCArticle_31_1 (:CRCArticle_31_1)
+
+SubClassOf(:CRCArticle_31_1 :CRCArticle_31)
+
+# Class: :CRCArticle_31_2 (:CRCArticle_31_2)
+
+SubClassOf(:CRCArticle_31_2 :CRCArticle_31)
+
+# Class: :CRCArticle_32 (:CRCArticle_32)
+
+SubClassOf(:CRCArticle_32 :CRCPartI)
+
+# Class: :CRCArticle_32_1 (:CRCArticle_32_1)
+
+SubClassOf(:CRCArticle_32_1 :CRCArticle_32)
+
+# Class: :CRCArticle_32_2 (:CRCArticle_32_2)
+
+SubClassOf(:CRCArticle_32_2 :CRCArticle_32)
+
+# Class: :CRCArticle_32_2a (:CRCArticle_32_2a)
+
+SubClassOf(:CRCArticle_32_2a :CRCArticle_32_2)
+
+# Class: :CRCArticle_32_2b (:CRCArticle_32_2b)
+
+SubClassOf(:CRCArticle_32_2b :CRCArticle_32_2)
+
+# Class: :CRCArticle_32_2c (:CRCArticle_32_2c)
+
+SubClassOf(:CRCArticle_32_2c :CRCArticle_32_2)
+
+# Class: :CRCArticle_33 (:CRCArticle_33)
+
+SubClassOf(:CRCArticle_33 :CRCPartI)
+
+# Class: :CRCArticle_34 (:CRCArticle_34)
+
+SubClassOf(:CRCArticle_34 :CRCPartI)
+
+# Class: :CRCArticle_34a (:CRCArticle_34a)
+
+SubClassOf(:CRCArticle_34a :CRCArticle_34)
+
+# Class: :CRCArticle_34b (:CRCArticle_34b)
+
+SubClassOf(:CRCArticle_34b :CRCArticle_34)
+
+# Class: :CRCArticle_34c (:CRCArticle_34c)
+
+SubClassOf(:CRCArticle_34c :CRCArticle_34)
+
+# Class: :CRCArticle_35 (:CRCArticle_35)
+
+SubClassOf(:CRCArticle_35 :CRCPartI)
+
+# Class: :CRCArticle_36 (:CRCArticle_36)
+
+SubClassOf(:CRCArticle_36 :CRCPartI)
+
+# Class: :CRCArticle_37 (:CRCArticle_37)
+
+SubClassOf(:CRCArticle_37 :CRCPartI)
+
+# Class: :CRCArticle_37a (:CRCArticle_37a)
+
+SubClassOf(:CRCArticle_37a :CRCArticle_37)
+
+# Class: :CRCArticle_37b (:CRCArticle_37b)
+
+SubClassOf(:CRCArticle_37b :CRCArticle_37)
+
+# Class: :CRCArticle_37c (:CRCArticle_37c)
+
+SubClassOf(:CRCArticle_37c :CRCArticle_37)
+
+# Class: :CRCArticle_37d (:CRCArticle_37d)
+
+SubClassOf(:CRCArticle_37d :CRCArticle_37)
+
+# Class: :CRCArticle_38 (:CRCArticle_38)
+
+SubClassOf(:CRCArticle_38 :CRCPartI)
+
+# Class: :CRCArticle_38_1 (:CRCArticle_38_1)
+
+SubClassOf(:CRCArticle_38_1 :CRCArticle_38)
+
+# Class: :CRCArticle_38_2 (:CRCArticle_38_2)
+
+SubClassOf(:CRCArticle_38_2 :CRCArticle_38)
+
+# Class: :CRCArticle_38_3 (:CRCArticle_38_3)
+
+SubClassOf(:CRCArticle_38_3 :CRCArticle_38)
+
+# Class: :CRCArticle_38_4 (:CRCArticle_38_4)
+
+SubClassOf(:CRCArticle_38_4 :CRCArticle_38)
+
+# Class: :CRCArticle_39 (:CRCArticle_39)
+
+SubClassOf(:CRCArticle_39 :CRCPartI)
+
+# Class: :CRCArticle_3_1 (:CRCArticle_3_1)
+
+SubClassOf(:CRCArticle_3_1 :CRCArticle_3)
+
+# Class: :CRCArticle_3_2 (:CRCArticle_3_2)
+
+SubClassOf(:CRCArticle_3_2 :CRCArticle_3)
+
+# Class: :CRCArticle_3_3 (:CRCArticle_3_3)
+
+SubClassOf(:CRCArticle_3_3 :CRCArticle_3)
+
+# Class: :CRCArticle_4 (:CRCArticle_4)
+
+SubClassOf(:CRCArticle_4 :CRCPartI)
+
+# Class: :CRCArticle_40 (:CRCArticle_40)
+
+SubClassOf(:CRCArticle_40 :CRCPartI)
+
+# Class: :CRCArticle_40_1 (:CRCArticle_40_1)
+
+SubClassOf(:CRCArticle_40_1 :CRCArticle_40)
+
+# Class: :CRCArticle_40_2 (:CRCArticle_40_2)
+
+SubClassOf(:CRCArticle_40_2 :CRCArticle_40)
+
+# Class: :CRCArticle_40_2a (:CRCArticle_40_2a)
+
+SubClassOf(:CRCArticle_40_2a :CRCArticle_40_2)
+
+# Class: :CRCArticle_40_2b (:CRCArticle_40_2b)
+
+SubClassOf(:CRCArticle_40_2b :CRCArticle_40_2)
+
+# Class: :CRCArticle_40_2b_i (:CRCArticle_40_2b_i)
+
+SubClassOf(:CRCArticle_40_2b_i :CRCArticle_40_2b)
+
+# Class: :CRCArticle_40_2b_ii (:CRCArticle_40_2b_ii)
+
+SubClassOf(:CRCArticle_40_2b_ii :CRCArticle_40_2b)
+
+# Class: :CRCArticle_40_2b_iii (:CRCArticle_40_2b_iii)
+
+SubClassOf(:CRCArticle_40_2b_iii :CRCArticle_40_2b)
+
+# Class: :CRCArticle_40_2b_iv (:CRCArticle_40_2b_iv)
+
+SubClassOf(:CRCArticle_40_2b_iv :CRCArticle_40_2b)
+
+# Class: :CRCArticle_40_2b_v (:CRCArticle_40_2b_v)
+
+SubClassOf(:CRCArticle_40_2b_v :CRCArticle_40_2b)
+
+# Class: :CRCArticle_40_2b_vi (:CRCArticle_40_2b_vi)
+
+SubClassOf(:CRCArticle_40_2b_vi :CRCArticle_40_2b)
+
+# Class: :CRCArticle_40_2b_vii (:CRCArticle_40_2b_vii)
+
+SubClassOf(:CRCArticle_40_2b_vii :CRCArticle_40_2b)
+
+# Class: :CRCArticle_40_3 (:CRCArticle_40_3)
+
+SubClassOf(:CRCArticle_40_3 :CRCArticle_40)
+
+# Class: :CRCArticle_40_3a (:CRCArticle_40_3a)
+
+SubClassOf(:CRCArticle_40_3a :CRCArticle_40_3)
+
+# Class: :CRCArticle_40_3b (:CRCArticle_40_3b)
+
+SubClassOf(:CRCArticle_40_3b :CRCArticle_40_3)
+
+# Class: :CRCArticle_41 (:CRCArticle_41)
+
+SubClassOf(:CRCArticle_41 :CRCPartII)
+
+# Class: :CRCArticle_41a (:CRCArticle_41a)
+
+SubClassOf(:CRCArticle_41a :CRCArticle_41)
+
+# Class: :CRCArticle_41b (:CRCArticle_41b)
+
+SubClassOf(:CRCArticle_41b :CRCArticle_41)
+
+# Class: :CRCArticle_42 (:CRCArticle_42)
+
+SubClassOf(:CRCArticle_42 :CRCPartII)
+
+# Class: :CRCArticle_43 (:CRCArticle_43)
+
+SubClassOf(:CRCArticle_43 :CRCPartII)
+
+# Class: :CRCArticle_43_1 (:CRCArticle_43_1)
+
+SubClassOf(:CRCArticle_43_1 :CRCArticle_43)
+
+# Class: :CRCArticle_43_10 (:CRCArticle_43_10)
+
+SubClassOf(:CRCArticle_43_10 :CRCArticle_43)
+
+# Class: :CRCArticle_43_11 (:CRCArticle_43_11)
+
+SubClassOf(:CRCArticle_43_11 :CRCArticle_43)
+
+# Class: :CRCArticle_43_12 (:CRCArticle_43_12)
+
+SubClassOf(:CRCArticle_43_12 :CRCArticle_43)
+
+# Class: :CRCArticle_43_2 (:CRCArticle_43_2)
+
+SubClassOf(:CRCArticle_43_2 :CRCArticle_43)
+
+# Class: :CRCArticle_43_3 (:CRCArticle_43_3)
+
+SubClassOf(:CRCArticle_43_3 :CRCArticle_43)
+
+# Class: :CRCArticle_43_4 (:CRCArticle_43_4)
+
+SubClassOf(:CRCArticle_43_4 :CRCArticle_43)
+
+# Class: :CRCArticle_43_5 (:CRCArticle_43_5)
+
+SubClassOf(:CRCArticle_43_5 :CRCArticle_43)
+
+# Class: :CRCArticle_43_6 (:CRCArticle_43_6)
+
+SubClassOf(:CRCArticle_43_6 :CRCArticle_43)
+
+# Class: :CRCArticle_43_7 (:CRCArticle_43_7)
+
+SubClassOf(:CRCArticle_43_7 :CRCArticle_43)
+
+# Class: :CRCArticle_43_8 (:CRCArticle_43_8)
+
+SubClassOf(:CRCArticle_43_8 :CRCArticle_43)
+
+# Class: :CRCArticle_43_9 (:CRCArticle_43_9)
+
+SubClassOf(:CRCArticle_43_9 :CRCArticle_43)
+
+# Class: :CRCArticle_44 (:CRCArticle_44)
+
+SubClassOf(:CRCArticle_44 :CRCPartII)
+
+# Class: :CRCArticle_44_1 (:CRCArticle_44_1)
+
+SubClassOf(:CRCArticle_44_1 :CRCArticle_44)
+
+# Class: :CRCArticle_44_1a (:CRCArticle_44_1a)
+
+SubClassOf(:CRCArticle_44_1a :CRCArticle_44_1)
+
+# Class: :CRCArticle_44_1b (:CRCArticle_44_1b)
+
+SubClassOf(:CRCArticle_44_1b :CRCArticle_44_1)
+
+# Class: :CRCArticle_44_2 (:CRCArticle_44_2)
+
+SubClassOf(:CRCArticle_44_2 :CRCArticle_44)
+
+# Class: :CRCArticle_44_3 (:CRCArticle_44_3)
+
+SubClassOf(:CRCArticle_44_3 :CRCArticle_44)
+
+# Class: :CRCArticle_44_4 (:CRCArticle_44_4)
+
+SubClassOf(:CRCArticle_44_4 :CRCArticle_44)
+
+# Class: :CRCArticle_44_5 (:CRCArticle_44_5)
+
+SubClassOf(:CRCArticle_44_5 :CRCArticle_44)
+
+# Class: :CRCArticle_44_6 (:CRCArticle_44_6)
+
+SubClassOf(:CRCArticle_44_6 :CRCArticle_44)
+
+# Class: :CRCArticle_45 (:CRCArticle_45)
+
+SubClassOf(:CRCArticle_45 :CRCPartII)
+
+# Class: :CRCArticle_45a (:CRCArticle_45a)
+
+SubClassOf(:CRCArticle_45a :CRCArticle_45)
+
+# Class: :CRCArticle_45b (:CRCArticle_45b)
+
+SubClassOf(:CRCArticle_45b :CRCArticle_45)
+
+# Class: :CRCArticle_45c (:CRCArticle_45c)
+
+SubClassOf(:CRCArticle_45c :CRCArticle_45)
+
+# Class: :CRCArticle_45d (:CRCArticle_45d)
+
+SubClassOf(:CRCArticle_45d :CRCArticle_45)
+
+# Class: :CRCArticle_46 (:CRCArticle_46)
+
+SubClassOf(:CRCArticle_46 :CRCPartIII)
+
+# Class: :CRCArticle_47 (:CRCArticle_47)
+
+SubClassOf(:CRCArticle_47 :CRCPartIII)
+
+# Class: :CRCArticle_48 (:CRCArticle_48)
+
+SubClassOf(:CRCArticle_48 :CRCPartIII)
+
+# Class: :CRCArticle_49 (:CRCArticle_49)
+
+SubClassOf(:CRCArticle_49 :CRCPartIII)
+
+# Class: :CRCArticle_49_1 (:CRCArticle_49_1)
+
+SubClassOf(:CRCArticle_49_1 :CRCArticle_49)
+
+# Class: :CRCArticle_49_2 (:CRCArticle_49_2)
+
+SubClassOf(:CRCArticle_49_2 :CRCArticle_49)
+
+# Class: :CRCArticle_5 (:CRCArticle_5)
+
+SubClassOf(:CRCArticle_5 :CRCPartI)
+
+# Class: :CRCArticle_50 (:CRCArticle_50)
+
+SubClassOf(:CRCArticle_50 :CRCPartIII)
+
+# Class: :CRCArticle_50_1 (:CRCArticle_50_1)
+
+SubClassOf(:CRCArticle_50_1 :CRCArticle_50)
+
+# Class: :CRCArticle_50_2 (:CRCArticle_50_2)
+
+SubClassOf(:CRCArticle_50_2 :CRCArticle_50)
+
+# Class: :CRCArticle_50_3 (:CRCArticle_50_3)
+
+SubClassOf(:CRCArticle_50_3 :CRCArticle_50)
+
+# Class: :CRCArticle_51 (:CRCArticle_51)
+
+SubClassOf(:CRCArticle_51 :CRCPartIII)
+
+# Class: :CRCArticle_51_1 (:CRCArticle_51_1)
+
+SubClassOf(:CRCArticle_51_1 :CRCArticle_51)
+
+# Class: :CRCArticle_51_2 (:CRCArticle_51_2)
+
+SubClassOf(:CRCArticle_51_2 :CRCArticle_51)
+
+# Class: :CRCArticle_51_3 (:CRCArticle_51_3)
+
+SubClassOf(:CRCArticle_51_3 :CRCArticle_51)
+
+# Class: :CRCArticle_52 (:CRCArticle_52)
+
+SubClassOf(:CRCArticle_52 :CRCPartIII)
+
+# Class: :CRCArticle_53 (:CRCArticle_53)
+
+SubClassOf(:CRCArticle_53 :CRCPartIII)
+
+# Class: :CRCArticle_54 (:CRCArticle_54)
+
+SubClassOf(:CRCArticle_54 :CRCPartIII)
+
+# Class: :CRCArticle_6 (:CRCArticle_6)
+
+SubClassOf(:CRCArticle_6 :CRCPartI)
+
+# Class: :CRCArticle_6_1 (:CRCArticle_6_1)
+
+SubClassOf(:CRCArticle_6_1 :CRCArticle_6)
+
+# Class: :CRCArticle_6_2 (:CRCArticle_6_2)
+
+SubClassOf(:CRCArticle_6_2 :CRCArticle_6)
+
+# Class: :CRCArticle_7 (:CRCArticle_7)
+
+SubClassOf(:CRCArticle_7 :CRCPartI)
+
+# Class: :CRCArticle_7_1 (:CRCArticle_7_1)
+
+SubClassOf(:CRCArticle_7_1 :CRCArticle_7)
+
+# Class: :CRCArticle_7_2 (:CRCArticle_7_2)
+
+SubClassOf(:CRCArticle_7_2 :CRCArticle_7)
+
+# Class: :CRCArticle_8 (:CRCArticle_8)
+
+SubClassOf(:CRCArticle_8 :CRCPartI)
+
+# Class: :CRCArticle_8_1 (:CRCArticle_8_1)
+
+SubClassOf(:CRCArticle_8_1 :CRCArticle_8)
+
+# Class: :CRCArticle_8_2 (:CRCArticle_8_2)
+
+SubClassOf(:CRCArticle_8_2 :CRCArticle_8)
+
+# Class: :CRCArticle_9 (:CRCArticle_9)
+
+SubClassOf(:CRCArticle_9 :CRCPartI)
+
+# Class: :CRCArticle_9_1 (:CRCArticle_9_1)
+
+SubClassOf(:CRCArticle_9_1 :CRCArticle_9)
+
+# Class: :CRCArticle_9_2 (:CRCArticle_9_2)
+
+SubClassOf(:CRCArticle_9_2 :CRCArticle_9)
+
+# Class: :CRCArticle_9_3 (:CRCArticle_9_3)
+
+SubClassOf(:CRCArticle_9_3 :CRCArticle_9)
+
+# Class: :CRCArticle_9_4 (:CRCArticle_9_4)
+
+SubClassOf(:CRCArticle_9_4 :CRCArticle_9)
+
+# Class: :CRCPartI (:CRCPartI)
+
+SubClassOf(:CRCPartI :CRCPreamble)
+
+# Class: :CRCPartII (:CRCPartII)
+
+SubClassOf(:CRCPartII :CRCPreamble)
+
+# Class: :CRCPartIII (:CRCPartIII)
+
+SubClassOf(:CRCPartIII :CRCPreamble)
+
+# Class: :CRCPreamble (:CRCPreamble)
+
+AnnotationAssertion(rdfs:comment :CRCPreamble "The States Parties to the present Convention,
+
+Considering that, in accordance with the principles proclaimed in the Charter of the United Nations, recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,
+
+Bearing in mind that the peoples of the United Nations have, in the Charter, reaffirmed their faith in fundamental human rights and in the dignity and worth of the human person, and have determined to promote social progress and better standards of life in larger freedom,
+
+Recognizing that the United Nations has, in the Universal Declaration of Human Rights and in the International Covenants on Human Rights, proclaimed and agreed that everyone is entitled to all the rights and freedoms set forth therein, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status,
+
+Recalling that, in the Universal Declaration of Human Rights, the United Nations has proclaimed that childhood is entitled to special care and assistance,
+
+Convinced that the family, as the fundamental group of society and the natural environment for the growth and well-being of all its members and particularly children, should be afforded the necessary protection and assistance so that it can fully assume its responsibilities within the community,
+
+Recognizing that the child, for the full and harmonious development of his or her personality, should grow up in a family environment, in an atmosphere of happiness, love and understanding,
+
+Considering that the child should be fully prepared to live an individual life in society, and brought up in the spirit of the ideals proclaimed in the Charter of the United Nations, and in particular in the spirit of peace, dignity, tolerance, freedom, equality and solidarity,
+
+Bearing in mind that the need to extend particular care to the child has been stated in the Geneva Declaration of the Rights of the Child of 1924 and in the Declaration of the Rights of the Child adopted by the General Assembly on 20 November 1959 and recognized in the Universal Declaration of Human Rights, in the International Covenant on Civil and Political Rights (in particular in articles 23 and 24), in the International Covenant on Economic, Social and Cultural Rights (in particular in article 10) and in the statutes and relevant instruments of specialized agencies and international organizations concerned with the welfare of children,
+
+Bearing in mind that, as indicated in the Declaration of the Rights of the Child, \"the child, by reason of his physical and mental immaturity, needs special safeguards and care, including appropriate legal protection, before as well as after birth\",
+
+Recalling the provisions of the Declaration on Social and Legal Principles relating to the Protection and Welfare of Children, with Special Reference to Foster Placement and Adoption Nationally and Internationally; the United Nations Standard Minimum Rules for the Administration of Juvenile Justice (The Beijing Rules); and the Declaration on the Protection of Women and Children in Emergency and Armed Conflict, Recognizing that, in all countries in the world, there are children living in exceptionally difficult conditions, and that such children need special consideration,
+
+Taking due account of the importance of the traditions and cultural values of each people for the protection and harmonious development of the child, Recognizing the importance of international co-operation for improving the living conditions of children in every country, in particular in the developing countries,
+
+Have agreed as follows:")
+SubClassOf(:CRCPreamble :CRC)
+
+# Class: :Calmness (:Calmness)
+
+SubClassOf(:Calmness :emotion)
+
+# Class: :Confusion (:Confusion)
+
+SubClassOf(:Confusion :emotion)
+
+# Class: :Craving (:Craving)
+
+SubClassOf(:Craving :emotion)
+
+# Class: :Dignity (:Dignity)
+
+AnnotationAssertion(rdfs:comment :Dignity "the state or quality of being worthy of honour or respect.")
+SubClassOf(:Dignity :MoralGrammar)
+
+# Class: :Disgust (:Disgust)
+
+SubClassOf(:Disgust :emotion)
+
+# Class: :Entrancement (:Entrancement)
+
+SubClassOf(:Entrancement :emotion)
+
+# Class: :Envy (:Envy)
+
+SubClassOf(:Envy :emotion)
+
+# Class: :Excitement (:Excitement)
+
+SubClassOf(:Excitement :emotion)
+
+# Class: :Fear (:Fear)
+
+SubClassOf(:Fear :emotion)
+
+# Class: :Horror (:Horror)
+
+SubClassOf(:Horror :emotion)
+
+# Class: :Interest (:Interest)
+
+SubClassOf(:Interest :emotion)
+
+# Class: :Joy (:Joy)
+
+SubClassOf(:Joy :emotion)
+
+# Class: :Justice (:Justice)
+
+AnnotationAssertion(rdfs:comment :Justice "just behaviour or treatment.  the administration of the law or authority in maintaining this. the administration of the law or authority in maintaining this.")
+SubClassOf(:Justice :MoralGrammar)
+
+# Class: :MoralGrammar (:MoralGrammar)
+
+SubClassOf(:MoralGrammar :humanAgency)
+
+# Class: :Nostalgia (:Nostalgia)
+
+SubClassOf(:Nostalgia :emotion)
+
+# Class: :Romance (:Romance)
+
+SubClassOf(:Romance :emotion)
+
+# Class: :Sadness (:Sadness)
+
+SubClassOf(:Sadness :emotion)
+
+# Class: :Satisfaction (:Satisfaction)
+
+SubClassOf(:Satisfaction :emotion)
+
+# Class: :Spirit (:Spirit)
+
+AnnotationAssertion(rdfs:comment :Spirit "the non-physical part of a person which is the seat of emotions and character; the soul.")
+SubClassOf(:Spirit :MoralGrammar)
+
+# Class: :Sympathy (:Sympathy)
+
+SubClassOf(:Sympathy :emotion)
+
+# Class: :Triumph (:Triumph)
+
+SubClassOf(:Triumph :emotion)
+
+# Class: :act (:act)
+
+SubClassOf(:act :wisdom)
+
+# Class: :aestheticAppreciation (:aestheticAppreciation)
+
+SubClassOf(:aestheticAppreciation :emotion)
+
+# Class: :agent (:agent)
+
+AnnotationAssertion(rdfs:comment :agent "a person who acts on behalf of another person or group. a person or thing that takes an active role or produces a specified effect.")
+AnnotationAssertion(rdfs:isDefinedBy :agent "http://xmlns.com/foaf/spec/#term_Agent")
+SubClassOf(:agent :juristionalRelations)
+
+# Class: :agentOfAuthority (:agentOfAuthority)
+
+SubClassOf(:agentOfAuthority :association)
+
+# Class: :associate (:associate)
+
+SubClassOf(:associate :businessAssociate)
+
+# Class: :association (:association)
+
+SubClassOf(:association :social)
+
+# Class: :aunt (:aunt)
+
+SubClassOf(:aunt :family)
+
+# Class: :biologicalFamily (:biologicalFamily)
+
+SubClassOf(:biologicalFamily :family)
+
+# Class: :boss (:boss)
+
+SubClassOf(:boss :businessAssociate)
+
+# Class: :brother (:brother)
+
+SubClassOf(:brother :family)
+
+# Class: :businessAssociate (:businessAssociate)
+
+SubClassOf(:businessAssociate :association)
+
+# Class: :businessPartner (:businessPartner)
+
+SubClassOf(:businessPartner :businessAssociate)
+
+# Class: :canonLaw (:canonLaw)
+
+SubClassOf(:canonLaw :legalFramework)
+
+# Class: :citizen (:citizen)
+
+SubClassOf(:citizen :entitiesByLaw)
+
+# Class: :civilLaw (:civilLaw)
+
+SubClassOf(:civilLaw :legalFramework)
+
+# Class: :closeFriend (:closeFriend)
+
+SubClassOf(:closeFriend :friend)
+
+# Class: :colleague (:colleague)
+
+SubClassOf(:colleague :businessAssociate)
+
+# Class: :commerce (:commerce)
+
+SubClassOf(:commerce :trade)
+
+# Class: :commonLaw (:commonLaw)
+
+SubClassOf(:commonLaw :legalFramework)
+
+# Class: :communist (:communist)
+
+SubClassOf(:communist :governanceType)
+
+# Class: :communityRelation (:communityRelation)
+
+SubClassOf(:communityRelation :friend)
+
+# Class: :counsin (:counsin)
+
+SubClassOf(:counsin :family)
+
+# Class: :customer (:customer)
+
+SubClassOf(:customer :businessAssociate)
+
+# Class: :democratic (:democratic)
+
+SubClassOf(:democratic :governanceType)
+
+# Class: :domesticAgent (:domesticAgent)
+
+SubClassOf(:domesticAgent :agent)
+
+# Class: :emotion (:emotion)
+
+SubClassOf(:emotion :livedExperience)
+
+# Class: :emotionalHealth (:emotionalHealth)
+
+SubClassOf(:emotionalHealth :health)
+
+# Class: :empatheticPain (:empatheticPain)
+
+SubClassOf(:empatheticPain :emotion)
+
+# Class: :empire (:empire)
+
+SubClassOf(:empire :governanceType)
+
+# Class: :employee (:employee)
+
+SubClassOf(:employee :businessAssociate)
+
+# Class: :entitiesByLaw (:entitiesByLaw)
+
+AnnotationAssertion(rdfs:comment :entitiesByLaw "an individual, company, or other entity which has legal rights and is subject to obligations.")
+SubClassOf(:entitiesByLaw :legalConcept)
+
+# Class: :esteemNeeds (:esteemNeeds)
+
+SubClassOf(:esteemNeeds :wellBeing)
+
+# Class: :family (:family)
+
+SubClassOf(:family :social)
+
+# Class: :familyDoctor (:familyDoctor)
+
+SubClassOf(:familyDoctor :family)
+
+# Class: :familyFriend (:familyFriend)
+
+SubClassOf(:familyFriend :family)
+SubClassOf(:familyFriend :friend)
+
+# Class: :father (:father)
+
+SubClassOf(:father :family)
+
+# Class: :federalLaw (:federalLaw)
+
+SubClassOf(:federalLaw :law)
+
+# Class: :foreignAgent (:foreignAgent)
+
+SubClassOf(:foreignAgent :agent)
+
+# Class: :formerCloseFriend (:formerCloseFriend)
+
+SubClassOf(:formerCloseFriend :friend)
+
+# Class: :formerFriend (:formerFriend)
+
+SubClassOf(:formerFriend :friend)
+
+# Class: :formerSexualRelationFriend (:formerSexualRelationFriend)
+
+SubClassOf(:formerSexualRelationFriend :friend)
+
+# Class: :friend (:friend)
+
+SubClassOf(:friend :association)
+
+# Class: :friendOfFriend (:friendOfFriend)
+
+SubClassOf(:friendOfFriend :friend)
+
+# Class: :giftOrDonation (:giftOrDonation)
+
+SubClassOf(:giftOrDonation :trade)
+
+# Class: :godFather (:godFather)
+
+SubClassOf(:godFather :family)
+
+# Class: :godMother (:godMother)
+
+SubClassOf(:godMother :family)
+
+# Class: :governancePrinciples (:governancePrinciples)
+
+SubClassOf(:governancePrinciples :governanceStructure)
+
+# Class: :governanceStructure (:governanceStructure)
+
+AnnotationAssertion(rdfs:comment :governanceStructure "the language framework and historical format distinguishing particular forms of legal construct.")
+SubClassOf(:governanceStructure :legalConcept)
+
+# Class: :governanceType (:governanceType)
+
+SubClassOf(:governanceType :governanceStructure)
+DisjointClasses(:governanceType :legalFramework)
+
+# Class: :governmentWorker (:governmentWorker)
+
+SubClassOf(:governmentWorker :agentOfAuthority)
+
+# Class: :grandfather (:grandfather)
+
+SubClassOf(:grandfather :family)
+
+# Class: :grandmother (:grandmother)
+
+SubClassOf(:grandmother :family)
+
+# Class: :grandparent (:grandparent)
+
+SubClassOf(:grandparent :family)
+
+# Class: :health (:health)
+
+SubClassOf(:health :livedExperience)
+
+# Class: :healthWorker (:healthWorker)
+
+SubClassOf(:healthWorker :agentOfAuthority)
+
+# Class: :ignorance (:ignorance)
+
+SubClassOf(:ignorance :wisdom)
+
+# Class: :internationalConvention (:internationalConvention)
+
+SubClassOf(:internationalConvention :legalInstrument)
+DisjointClasses(:internationalConvention :internationalDeclaration)
+
+# Class: :internationalDeclaration (:internationalDeclaration)
+
+SubClassOf(:internationalDeclaration :legalInstrument)
+
+# Class: :internationalLaw (:internationalLaw)
+
+SubClassOf(:internationalLaw :law)
+
+# Class: :internationalTrade (:internationalTrade)
+
+AnnotationAssertion(rdfs:comment :internationalTrade "nternational trade is the exchange of capital, goods, and services across international borders or territories.")
+SubClassOf(:internationalTrade :trade)
+
+# Class: :internationalTreaty (:internationalTreaty)
+
+SubClassOf(:internationalTreaty :governancePrinciples)
+
+# Class: :investor (:investor)
+
+SubClassOf(:investor :juristionalRelations)
+
+# Class: :judge (:judge)
+
+SubClassOf(:judge :agentOfAuthority)
+
+# Class: :jurisPrudence (:jurisPrudence)
+
+SubClassOf(:jurisPrudence :governancePrinciples)
+
+# Class: :jurisdictionalSovereignty (:jurisdictionalSovereignty)
+
+SubClassOf(:jurisdictionalSovereignty :governancePrinciples)
+
+# Class: :juristionalRelations (:juristionalRelations)
+
+SubClassOf(:juristionalRelations :entitiesByLaw)
+
+# Class: :kingdom (:kingdom)
+
+SubClassOf(:kingdom :governanceType)
+
+# Class: :know (:know)
+
+SubClassOf(:know :wisdom)
+
+# Class: :law (:law)
+
+AnnotationAssertion(rdfs:comment :law "the system of rules which a particular country or community recognizes as regulating the actions of its members and which it may enforce by the imposition of penalties.")
+SubClassOf(:law :legalConcept)
+
+# Class: :lawEnforcementOfficer (:lawEnforcementOfficer)
+
+SubClassOf(:lawEnforcementOfficer :agentOfAuthority)
+
+# Class: :learn (:learn)
+
+SubClassOf(:learn :wisdom)
+
+# Class: :legalAlien (:legalAlien)
+
+AnnotationAssertion(rdfs:comment :legalAlien "In law, an alien is a person who is not a citizen or national of a given country")
+SubClassOf(:legalAlien :entitiesByLaw)
+
+# Class: :legalFramework (:legalFramework)
+
+SubClassOf(:legalFramework :governanceStructure)
+
+# Class: :legalInstrument (:legalInstrument)
+
+AnnotationAssertion(rdfs:comment :legalInstrument "a form of official document that is accepted as evidence by law")
+SubClassOf(:legalInstrument :legalConcept)
+
+# Class: :legalMinor (:legalMinor)
+
+AnnotationAssertion(rdfs:comment :legalMinor "A person under a certain age, usually the age of majority, which legally demarcates childhood from adulthood")
+SubClassOf(:legalMinor :entitiesByLaw)
+
+# Class: :legalPerson (:legalPerson)
+
+SubClassOf(:legalPerson :entitiesByLaw)
+
+# Class: :livedExperience (:livedExperience)
+
+AnnotationAssertion(rdfs:comment :livedExperience "vocabulary terms relating to physical / meta-physical consious human experiences and predicates relating to those states.")
+SubClassOf(:livedExperience :humanAgency)
+
+# Class: :localTrade (:localTrade)
+
+SubClassOf(:localTrade :trade)
+
+# Class: :loveAndBelongingnessNeeds (:loveAndBelongingnessNeeds)
+
+SubClassOf(:loveAndBelongingnessNeeds :wellBeing)
+
+# Class: :migrant (:migrant)
+
+SubClassOf(:migrant :juristionalRelations)
+
+# Class: :mother (:mother)
+
+SubClassOf(:mother :family)
+
+# Class: :nationalTrade (:nationalTrade)
+
+SubClassOf(:nationalTrade :trade)
+
+# Class: :nationhood (:nationhood)
+
+AnnotationAssertion(rdfs:comment :nationhood "the fact or status of being a nation; national identity or independence.")
+SubClassOf(:nationhood :juristionalRelations)
+
+# Class: :naturalPerson (:naturalPerson)
+
+SubClassOf(:naturalPerson :juristionalRelations)
+
+# Class: :nephew (:nephew)
+
+SubClassOf(:nephew :family)
+
+# Class: :newFriend (:newFriend)
+
+SubClassOf(:newFriend :friend)
+
+# Class: :niece (:niece)
+
+SubClassOf(:niece :family)
+
+# Class: :noLegalStatus (:noLegalStatus)
+
+SubClassOf(:noLegalStatus :juristionalRelations)
+
+# Class: :nonBiologicalFamily (:nonBiologicalFamily)
+
+SubClassOf(:nonBiologicalFamily :family)
+
+# Class: :oldFriend (:oldFriend)
+
+SubClassOf(:oldFriend :friend)
+
+# Class: :onlineCloseFriend (:onlineCloseFriend)
+
+SubClassOf(:onlineCloseFriend :friend)
+
+# Class: :onlineFriend (:onlineFriend)
+
+SubClassOf(:onlineFriend :friend)
+
+# Class: :personaFicta (:personaFicta)
+
+AnnotationAssertion(rdfs:comment :personaFicta "A juridical or artificial person")
+SubClassOf(:personaFicta :juristionalRelations)
+
+# Class: :persons (:persons)
+
+SubClassOf(:persons :entitiesByLaw)
+
+# Class: :physicalHealth (:physicalHealth)
+
+SubClassOf(:physicalHealth :health)
+
+# Class: :physiologicalNeeds (:physiologicalNeeds)
+
+SubClassOf(:physiologicalNeeds :wellBeing)
+
+# Class: :psychologicalHeealth (:psychologicalHeealth)
+
+SubClassOf(:psychologicalHeealth :health)
+
+# Class: :refugee (:refugee)
+
+SubClassOf(:refugee :entitiesByLaw)
+
+# Class: :religiousLeader (:religiousLeader)
+
+SubClassOf(:religiousLeader :agentOfAuthority)
+
+# Class: :republic (:republic)
+
+SubClassOf(:republic :governanceType)
+
+# Class: :resident (:resident)
+
+SubClassOf(:resident :juristionalRelations)
+
+# Class: :rightsHolder (:rightsHolder)
+
+SubClassOf(:rightsHolder :juristionalRelations)
+
+# Class: :romanLaw (:romanLaw)
+
+SubClassOf(:romanLaw :legalFramework)
+
+# Class: :ruleOfLaw (:ruleOfLaw)
+
+SubClassOf(:ruleOfLaw :governancePrinciples)
+
+# Class: :safetyNeeds (:safetyNeeds)
+
+SubClassOf(:safetyNeeds :wellBeing)
+
+# Class: :selfActualizationNeeds (:selfActualizationNeeds)
+
+SubClassOf(:selfActualizationNeeds :wellBeing)
+
+# Class: :separationOfPowers (:separationOfPowers)
+
+SubClassOf(:separationOfPowers :governancePrinciples)
+
+# Class: :sexualDesire (:sexualDesire)
+
+SubClassOf(:sexualDesire :emotion)
+
+# Class: :sharialaw (:sharialaw)
+
+SubClassOf(:sharialaw :legalFramework)
+
+# Class: :sister (:sister)
+
+SubClassOf(:sister :family)
+
+# Class: :social (:social)
+
+SubClassOf(:social :livedExperience)
+
+# Class: :socialHealth (:socialHealth)
+
+SubClassOf(:socialHealth :health)
+
+# Class: :socialWorker (:socialWorker)
+
+SubClassOf(:socialWorker :agentOfAuthority)
+
+# Class: :socialist (:socialist)
+
+SubClassOf(:socialist :governanceType)
+
+# Class: :spiritualAdvisor (:spiritualAdvisor)
+
+SubClassOf(:spiritualAdvisor :family)
+
+# Class: :stateLaw (:stateLaw)
+
+SubClassOf(:stateLaw :law)
+
+# Class: :stateLess (:stateLess)
+
+SubClassOf(:stateLess :juristionalRelations)
+
+# Class: :taxPayer (:taxPayer)
+
+SubClassOf(:taxPayer :juristionalRelations)
+
+# Class: :teacher (:teacher)
+
+SubClassOf(:teacher :agentOfAuthority)
+
+# Class: :trade (:trade)
+
+SubClassOf(:trade :legalConcept)
+
+# Class: :uncle (:uncle)
+
+SubClassOf(:uncle :family)
+
+# Class: :unknown (:unknown)
+
+SubClassOf(:unknown :wisdom)
+
+# Class: :visaHolder (:visaHolder)
+
+SubClassOf(:visaHolder :entitiesByLaw)
+
+# Class: :visitor (:visitor)
+
+SubClassOf(:visitor :juristionalRelations)
+
+# Class: :wellBeing (:wellBeing)
+
+SubClassOf(:wellBeing :livedExperience)
+
+# Class: :wisdom (:wisdom)
+
+SubClassOf(:wisdom :livedExperience)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle-1> (UDHR Article 1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle-1> "All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle-1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle-1> "UDHR Article 1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle-1> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_10> (UDHR Article 10)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_10> "Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_10> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_10> "UDHR Article 10")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_10> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11> (<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11>)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11> <http://ns.thecharter.eco/un/udhr/>)
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1> (UDHR Article 11.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1> "Everyone charged with a penal offence has the right to be presumed innocent until proved guilty according to law in a public trial at which he has had all the guarantees necessary for his defence.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1> "UDHR Article 11.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2> (UDHR Article 11.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2> "No one shall be held guilty of any penal offence on account of any act or omission which did not constitute a penal offence, under national or international law, at the time when it was committed. Nor shall a heavier penalty be imposed than the one that was applicable at the time the penal offence was committed.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2> "UDHR Article 11.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_11>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_12> (UDHR Article 12)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_12> "No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_12> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_12> "UDHR Article 12")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_12> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13> (UDHR Article 13)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13> "UDHR Article 13")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1> (UDHR Article 13.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1> "Everyone has the right to freedom of movement and residence within the borders of each state.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1> "UDHR Article 13.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2> (UDHR Article 13.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2> "Everyone has the right to leave any country, including his own, and to return to his country.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2> "UDHR Article 13.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_13>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14> (UDHR Article 14)
+
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14> "UDHR Article 14")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1> (UDHR Article 14.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1> "Everyone has the right to seek and to enjoy in other countries asylum from persecution.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1> "UDHR Article 14.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2> (UDHR Article 14.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2> "This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes or from acts contrary to the purposes and principles of the United Nations.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2> "UDHR Article 14.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_14>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15> (UDHR Article 15)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15> "UDHR Article 15")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1> (UDHR Article 15.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1> "Everyone has the right to a nationality.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1> "UDHR Article 15.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2> (UDHR Article 15.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2> "No one shall be arbitrarily deprived of his nationality nor denied the right to change his nationality.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2> "UDHR Article 15.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_15>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16> (UDHR Article 16)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16> "UDHR Article 16")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1> (UDHR Article 16.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1> "Men and women of full age, without any limitation due to race, nationality or religion, have the right to marry and to found a family. They are entitled to equal rights as to marriage, during marriage and at its dissolution.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1> "UDHR Article 16.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2> (UDHR Article 16.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2> "Marriage shall be entered into only with the free and full consent of the intending spouses."@en)
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2> "UDHR Article 16.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3> (UDHR Article 16.3)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3> "The family is the natural and fundamental group unit of society and is entitled to protection by society and the State."@en)
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3> "UDHR Article 16.3")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_16>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17> (UDHR Article 17)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17> "UDHR Article 17")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1> (UDHR Article 17.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1> "Everyone has the right to own property alone as well as in association with others.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1> "UDHR Article 17.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2> (UDHR Article 17.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2> "No one shall be arbitrarily deprived of his property.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2> "UDHR Article 17.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_17>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_18> (UDHR Article 18)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_18> "Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_18> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_18> "UDHR Article 18")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_18> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_19> (UDHR Article 19)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_19> "Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_19> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_19> "UDHR Article 19")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_19> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_2> (UDHR Article 2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_2> "Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_2> "UDHR Article 2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_2> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20> (UDHR Article 20)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20> "UDHR Article 20")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1> (UDHR Article 20.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1> "Everyone has the right to freedom of peaceful assembly and association.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1> "UDHR Article 20.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2> (UDHR Article 20.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2> "No one may be compelled to belong to an association.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2> "UDHR Article 20.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_20>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21> (UDHR Article 21)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21> "UDHR Article 21")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1> (UDHR Article 21.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1> "Everyone has the right to take part in the government of his country, directly or through freely chosen representatives.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1> "UDHR Article 21.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2> (UDHR Article 21.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2> "Everyone has the right of equal access to public service in his country.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2> "UDHR Article 21.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3> (UDHR Article 21.3)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3> "The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3> "UDHR Article 21.3")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_21>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_22> (UDHR Article 22)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_22> "Everyone, as a member of society, has the right to social security and is entitled to realization, through national effort and international co-operation and in accordance with the organization and resources of each State, of the economic, social and cultural rights indispensable for his dignity and the free development of his personality.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_22> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_22> "UDHR Article 22")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_22> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> (UDHR Article 23)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> "UDHR Article 23")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1> (UDHR Article 23.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1> "Everyone has the right to work, to free choice of employment, to just and favourable conditions of work and to protection against unemployment.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1> "UDHR Article 23.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2> (UDHR Article 23.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2> "Everyone, without any discrimination, has the right to equal pay for equal work."@en)
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2> "UDHR Article 23.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3> (UDHR Article 23.3)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3> "Everyone who works has the right to just and favourable remuneration ensuring for himself and his family an existence worthy of human dignity, and supplemented, if necessary, by other means of social protection.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3> "UDHR Article 23.3")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4> (UDHR Article 23.4)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4> "Everyone has the right to form and to join trade unions for the protection of his interests.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4> "UDHR Article 23.4")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_23>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_24> (UDHR Article 24)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_24> "Everyone has the right to rest and leisure, including reasonable limitation of working hours and periodic holidays with pay.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_24> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_24> "UDHR Article 24")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_24> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25> (UDHR Article 25)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25> "UDHR Article 25")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1> (UDHR Article 25.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1> "Everyone has the right to a standard of living adequate for the health and well-being of himself and of his family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1> "UDHR Article 25.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2> (UDHR Article 25.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2> "Motherhood and childhood are entitled to special care and assistance. All children, whether born in or out of wedlock, shall enjoy the same social protection.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2> "UDHR Article 25.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_25>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26> (UDHR Article 25)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26> "UDHR Article 25")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1> (UDHR Article 26.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1> "Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1> "UDHR Article 26.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2> (UDHR Article 26.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2> "Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms. It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2> "UDHR Article 26.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3> (UDHR Article 26.3)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3> "Parents have a prior right to choose the kind of education that shall be given to their children.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3> "UDHR Article 26.3")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_26>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27> (UDHR Article 27)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27> "UDHR Article 27")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1> (UDHR Article 27.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1> "Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1> "UDHR Article 27.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2> (UDHR Article 27.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2> "Everyone has the right to the protection of the moral and material interests resulting from any scientific, literary or artistic production of which he is the author.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2> "UDHR Article 27.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_27>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_28> (UDHR Article 28)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_28> "Everyone is entitled to a social and international order in which the rights and freedoms set forth in this Declaration can be fully realized.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_28> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_28> "UDHR Article 28")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_28> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29> (UDHR Article 29)
+
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29> "UDHR Article 29")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1> (UDHR Article 29.1)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1> "Everyone has duties to the community in which alone the free and full development of his personality is possible.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1> "UDHR Article 29.1")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2> (UDHR Article 29.2)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2> "In the exercise of his rights and freedoms, everyone shall be subject only to such limitations as are determined by law solely for the purpose of securing due recognition and respect for the rights and freedoms of others and of meeting the just requirements of morality, public order and the general welfare in a democratic society.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2> "UDHR Article 29.2")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3> (UDHR Article 29.3)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3> "These rights and freedoms may in no case be exercised contrary to the purposes and principles of the United Nations.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3> "UDHR Article 29.3")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3> <urn:absolute:webcivics.github.io/community/un/UDHRArticle_29>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_3> (UDHR Article 3)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_3> "Everyone has the right to life, liberty and security of person.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_3> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_3> "UDHR Article 3")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_3> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_30> (UDHR Article 30)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_30> "Nothing in this Declaration may be interpreted as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms set forth herein.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_30> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_30> "UDHR Article 30")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_30> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_4> (UDHR Article 4)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_4> "No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.")
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_4> "UDHR Article 4")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_4> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_5> (UDHR Article 5)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_5> "No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_5> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_5> "UDHR Article 5")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_5> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_6> (UDHR Article 6)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_6> "Everyone has the right to recognition everywhere as a person before the law.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_6> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_6> "UDHR Article 6")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_6> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_7> (UDHR Article 7)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_7> "All are equal before the law and are entitled without any discrimination to equal protection of the law. All are entitled to equal protection against any discrimination in violation of this Declaration and against any incitement to such discrimination.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_7> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_7> "UDHR Article 7")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_7> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_8> (UDHR Article 8)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_8> "Everyone has the right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted him by the constitution or by law.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_8> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_8> "UDHR Article 8")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_8> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRArticle_9> (UDHR Article 9)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRArticle_9> "No one shall be subjected to arbitrary arrest, detention or exile.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRArticle_9> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRArticle_9> "UDHR Article 9")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRArticle_9> <http://ns.thecharter.eco/un/udhr>)
+
+# Class: <urn:absolute:webcivics.github.io/community/un/UDHRPreamble> (UDHR Preamble)
+
+AnnotationAssertion(rdfs:comment <urn:absolute:webcivics.github.io/community/un/UDHRPreamble> "Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,
+
+Whereas disregard and contempt for human rights have resulted in barbarous acts which have outraged the conscience of mankind, and the advent of a world in which human beings shall enjoy freedom of speech and belief and freedom from fear and want has been proclaimed as the highest aspiration of the common people,
+
+Whereas it is essential, if man is not to be compelled to have recourse, as a last resort, to rebellion against tyranny and oppression, that human rights should be protected by the rule of law,
+
+Whereas it is essential to promote the development of friendly relations between nations,
+
+Whereas the peoples of the United Nations have in the Charter reaffirmed their faith in fundamental human rights, in the dignity and worth of the human person and in the equal rights of men and women and have determined to promote social progress and better standards of life in larger freedom,
+
+Whereas Member States have pledged themselves to achieve, in co-operation with the United Nations, the promotion of universal respect for and observance of human rights and fundamental freedoms,
+
+Whereas a common understanding of these rights and freedoms is of the greatest importance for the full realization of this pledge,
+
+Now, Therefore THE GENERAL ASSEMBLY proclaims THIS UNIVERSAL DECLARATION OF HUMAN RIGHTS as a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive by teaching and education to promote respect for these rights and freedoms and by progressive measures, national and international, to secure their universal and effective recognition and observance, both among the peoples of Member States themselves and among the peoples of territories under their jurisdiction.")
+AnnotationAssertion(rdfs:isDefinedBy <urn:absolute:webcivics.github.io/community/un/UDHRPreamble> <http://ns.thecharter.eco/un/udhr/>)
+AnnotationAssertion(rdfs:label <urn:absolute:webcivics.github.io/community/un/UDHRPreamble> "UDHR Preamble")
+SubClassOf(<urn:absolute:webcivics.github.io/community/un/UDHRPreamble> <http://ns.thecharter.eco/un/udhr>)
+
+
+DisjointClasses(:Admiration :Adoration :Amusement :Anxiety :Awe :Awkwardness :Boredom :Calmness :Confusion :Craving :Disgust :Entrancement :Envy :Excitement :Fear :Horror :Interest :Joy :Nostalgia :Romance :Sadness :Satisfaction :Sympathy :Triumph :aestheticAppreciation :empatheticPain :sexualDesire)
+DisjointClasses(:Belief :Dignity :Justice :MoralGrammar :Spirit)
+DisjointClasses(:CRCArticle_1 :CRCArticle_10 :CRCArticle_11 :CRCArticle_12 :CRCArticle_13 :CRCArticle_14 :CRCArticle_15 :CRCArticle_16 :CRCArticle_16_1 :CRCArticle_16_2 :CRCArticle_17 :CRCArticle_18 :CRCArticle_2 :CRCArticle_20 :CRCArticle_21 :CRCArticle_22 :CRCArticle_23 :CRCArticle_24 :CRCArticle_25 :CRCArticle_26 :CRCArticle_27 :CRCArticle_28 :CRCArticle_29 :CRCArticle_3 :CRCArticle_30 :CRCArticle_31 :CRCArticle_32 :CRCArticle_33 :CRCArticle_34 :CRCArticle_35 :CRCArticle_36 :CRCArticle_37 :CRCArticle_38 :CRCArticle_39 :CRCArticle_4 :CRCArticle_40 :CRCArticle_5 :CRCArticle_6 :CRCArticle_7 :CRCArticle_8 :CRCArticle_9)
+DisjointClasses(:act :ignorance :know :learn :unknown)
+DisjointClasses(:act :know :learn)
+DisjointClasses(:agent :citizen :entitiesByLaw :internationalTrade :law :legalAlien :nationhood)
+DisjointClasses(:agent :citizen :entitiesByLaw :internationalTrade :law :nationhood)
+DisjointClasses(:agent :domesticAgent :foreignAgent :legalMinor :legalPerson :naturalPerson :personaFicta)
+DisjointClasses(:agentOfAuthority :boss :businessAssociate :customer :friend)
+DisjointClasses(:associate :boss :businessPartner :colleague :customer :employee)
+DisjointClasses(:aunt :biologicalFamily :brother :counsin :familyDoctor :familyFriend :father :godFather :godMother :grandfather :grandmother :grandparent :mother :nephew :niece :nonBiologicalFamily :sister :spiritualAdvisor :uncle)
+DisjointClasses(:canonLaw :civilLaw :commonLaw :communist :democratic :empire :entitiesByLaw :governanceStructure :internationalDeclaration :internationalTreaty :jurisdictionalSovereignty :kingdom :law :romanLaw :ruleOfLaw :separationOfPowers :sharialaw :socialist :trade)
+DisjointClasses(:citizen :investor :legalAlien :migrant :nationhood :noLegalStatus :refugee :resident :rightsHolder :stateLess :taxPayer :visaHolder :visitor)
+DisjointClasses(:closeFriend :communityRelation :familyFriend :formerCloseFriend :formerFriend :formerSexualRelationFriend :friendOfFriend :newFriend :oldFriend :onlineCloseFriend :onlineFriend)
+DisjointClasses(:commerce :giftOrDonation :internationalTrade :localTrade :nationalTrade)
+DisjointClasses(:domesticAgent :foreignAgent :legalAlien :legalMinor :naturalPerson :personaFicta :taxPayer)
+DisjointClasses(:emotion :family :health :social :wellBeing :wisdom)
+DisjointClasses(:emotion :family :health :wellBeing :wisdom)
+DisjointClasses(:emotionalHealth :physicalHealth :psychologicalHeealth :socialHealth)
+DisjointClasses(:entitiesByLaw :governanceStructure :internationalDeclaration :law :legalInstrument :trade)
+DisjointClasses(:entitiesByLaw :juristionalRelations :law :nationhood :trade)
+DisjointClasses(:entitiesByLaw :law :ruleOfLaw :separationOfPowers :trade)
+DisjointClasses(:esteemNeeds :loveAndBelongingnessNeeds :physiologicalNeeds :safetyNeeds :selfActualizationNeeds)
+DisjointClasses(:federalLaw :internationalLaw :stateLaw)
+DisjointClasses(:governmentWorker :healthWorker :judge :lawEnforcementOfficer :religiousLeader :socialWorker :teacher)
+DisjointClasses(:governmentWorker :judge :lawEnforcementOfficer :teacher)
+DisjointClasses(:internationalTreaty :jurisPrudence :jurisdictionalSovereignty :ruleOfLaw :separationOfPowers)
+DisjointClasses(:legalAlien :naturalPerson :personaFicta)
+AnnotationAssertion(rdfs:label owl:Thing "Human Rights Ontology"@en)
+)
