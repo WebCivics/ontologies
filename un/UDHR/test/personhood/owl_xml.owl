@@ -1,0 +1,4430 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://webcivics.github.io/ontologies/un/UDHR/test/personhood/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://webcivics.github.io/ontologies/un/UDHR/test/personhood/">
+    <Prefix name="" IRI="http://ns.thecharter.eco/un/udhr/"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal>Universal Declaration of Human Rights (UDHR) vocabulary described using W3C RDF Schema and the Web Ontology Language.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>Universal Declaration of Human Rights (UDHR) vocabulary</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Admiration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Adoration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Amusement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Anxiety"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Awe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Awkwardness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Belief"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Boredom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRC"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_10_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_10_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_11"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_11_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_11_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_12"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_12_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_12_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_13"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_13_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_13_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_13_2a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_13_2b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_14"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_14_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_14_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_14_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_15"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_15_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_15_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_16"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_16_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_16_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_17"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_17a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_17b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_17c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_17d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_17e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_18"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_18_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_18_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_18_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_20"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_20_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_20_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_21"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_21a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_21b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_21c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_21d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_21e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_22"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_22_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_22_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_23"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_23_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_23_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_23_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_23_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_2a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_2b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_2c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_2d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_2e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_2f"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_24_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_25"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_26"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_26_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_26_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_27"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_27_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_27_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_27_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_27_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28_1a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28_1b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28_1c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28_1d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28_1e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_28_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29_1a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29_1b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29_1c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29_1d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29_1e"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_29_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_2_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_2_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_30"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_31"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_31_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_31_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_32"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_32_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_32_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_32_2a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_32_2b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_32_2c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_33"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_34"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_34a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_34b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_34c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_35"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_36"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_37"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_37a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_37b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_37c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_37d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_38"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_38_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_38_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_38_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_38_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_39"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_3_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_3_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_3_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2b_i"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2b_ii"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2b_iii"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2b_iv"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2b_v"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2b_vi"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_2b_vii"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_3a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_40_3b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_41"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_41a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_41b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_42"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_11"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_12"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_43_9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44_1a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44_1b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44_5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_44_6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_45"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_45a"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_45b"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_45c"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_45d"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_46"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_47"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_48"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_49"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_49_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_49_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_50"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_50_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_50_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_50_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_51"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_51_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_51_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_51_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_52"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_53"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_54"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_6_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_6_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_7_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_7_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_8_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_8_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_9_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_9_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_9_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCArticle_9_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCPartI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCPartII"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCPartIII"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="CRCPreamble"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Calmness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Confusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Craving"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Dignity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Disgust"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Entrancement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Envy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Excitement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Fear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Horror"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Instruments"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Interest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Joy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Justice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="MoralGrammar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Nostalgia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Romance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sadness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Satisfaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Spirit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Sympathy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Triumph"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="act"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="aestheticAppreciation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="agentOfAuthority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="associate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="association"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="aunt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="biologicalFamily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="boss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="brother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="businessAssociate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="businessPartner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="canonLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="charters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="citizen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="civilLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="closeFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="colleague"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="commerce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="commonLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="communist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="communityRelation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="conventions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="counsin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="customer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="democratic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="domesticAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="emotion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="emotionalHealth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="empatheticPain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="empire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="entitiesByLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="esteemNeeds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="familyDoctor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="familyFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="federalLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="foreignAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="formerCloseFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="formerFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="formerSexualRelationFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="friend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="friendOfFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="giftOrDonation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="godFather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="godMother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="governancePrinciples"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="governanceStructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="governanceType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="governmentWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="grandfather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="grandmother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="grandparent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="health"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="healthWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="humanAgency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ignorance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="internationalCharters"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="internationalContracts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="internationalConvention"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="internationalDeclaration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="internationalLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="internationalTrade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="internationalTreaty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="investor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="judge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="jurisPrudence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="jurisdictionalSovereignty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="juristionalRelations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="kingdom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="know"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="lawEnforcementOfficer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="learn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="legalAlien"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="legalConcept"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="legalFramework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="legalInstrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="legalMinor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="legalPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="livedExperience"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="localTrade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="loveAndBelongingnessNeeds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="migrant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="nationalTrade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="nationhood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="naturalPerson"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="nephew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="newFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="niece"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="noLegalStatus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="nonBiologicalFamily"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="oldFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="onlineCloseFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="onlineFriend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="personaFicta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="persons"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="physicalHealth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="physiologicalNeeds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="psychologicalHeealth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="refugee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="religiousLeader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="republic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="resident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="rightsHolder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="romanLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="ruleOfLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="safetyNeeds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="selfActualizationNeeds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="separationOfPowers"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="sexualDesire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="sharialaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="sister"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="social"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="socialHealth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="socialWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="socialist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="spiritualAdvisor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="stateLaw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="stateLess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="taxPayer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="teacher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="trade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="uncle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="unitedNations"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="unknown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="visaHolder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="visitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="wellBeing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="wisdom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle-1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_11"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_12"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_13"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_14"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_15"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_17"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_18"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_19"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_20"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_22"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_24"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_25"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_27"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_28"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_3"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_30"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_4"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_5"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_6"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_7"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_8"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_9"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRPreamble"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+        <Class IRI="charters"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Admiration"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Adoration"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Amusement"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Anxiety"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Awe"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Awkwardness"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Belief"/>
+        <Class IRI="MoralGrammar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Boredom"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRC"/>
+        <Class IRI="conventions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_1"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_10"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_10_1"/>
+        <Class IRI="CRCArticle_10"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_10_2"/>
+        <Class IRI="CRCArticle_10"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_11"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_11_1"/>
+        <Class IRI="CRCArticle_11"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_11_2"/>
+        <Class IRI="CRCArticle_11"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_12"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_12_1"/>
+        <Class IRI="CRCArticle_12"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_12_2"/>
+        <Class IRI="CRCArticle_12"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_13"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_13_1"/>
+        <Class IRI="CRCArticle_13"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_13_2"/>
+        <Class IRI="CRCArticle_13"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_13_2a"/>
+        <Class IRI="CRCArticle_13_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_13_2b"/>
+        <Class IRI="CRCArticle_13_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_14"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_14_1"/>
+        <Class IRI="CRCArticle_14"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_14_2"/>
+        <Class IRI="CRCArticle_14"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_14_3"/>
+        <Class IRI="CRCArticle_14"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_15"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_15_1"/>
+        <Class IRI="CRCArticle_15"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_15_2"/>
+        <Class IRI="CRCArticle_15"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_16"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_16_1"/>
+        <Class IRI="CRCArticle_16"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_16_2"/>
+        <Class IRI="CRCArticle_16"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_17"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_17a"/>
+        <Class IRI="CRCArticle_17"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_17b"/>
+        <Class IRI="CRCArticle_17"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_17c"/>
+        <Class IRI="CRCArticle_17"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_17d"/>
+        <Class IRI="CRCArticle_17"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_17e"/>
+        <Class IRI="CRCArticle_17"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_18"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_18_1"/>
+        <Class IRI="CRCArticle_18"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_18_2"/>
+        <Class IRI="CRCArticle_18"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_18_3"/>
+        <Class IRI="CRCArticle_18"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_2"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_20"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_20_1"/>
+        <Class IRI="CRCArticle_20"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_20_2"/>
+        <Class IRI="CRCArticle_20"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_21"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_21a"/>
+        <Class IRI="CRCArticle_21"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_21b"/>
+        <Class IRI="CRCArticle_21"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_21c"/>
+        <Class IRI="CRCArticle_21"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_21d"/>
+        <Class IRI="CRCArticle_21"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_21e"/>
+        <Class IRI="CRCArticle_21"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_22"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_22_1"/>
+        <Class IRI="CRCArticle_22"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_22_2"/>
+        <Class IRI="CRCArticle_22"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_23"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_23_1"/>
+        <Class IRI="CRCArticle_23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_23_2"/>
+        <Class IRI="CRCArticle_23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_23_3"/>
+        <Class IRI="CRCArticle_23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_23_4"/>
+        <Class IRI="CRCArticle_23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_1"/>
+        <Class IRI="CRCArticle_24"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_2"/>
+        <Class IRI="CRCArticle_24"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_2a"/>
+        <Class IRI="CRCArticle_24_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_2b"/>
+        <Class IRI="CRCArticle_24_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_2c"/>
+        <Class IRI="CRCArticle_24_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_2d"/>
+        <Class IRI="CRCArticle_24_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_2e"/>
+        <Class IRI="CRCArticle_24_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_2f"/>
+        <Class IRI="CRCArticle_24_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_3"/>
+        <Class IRI="CRCArticle_24"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_24_4"/>
+        <Class IRI="CRCArticle_24"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_25"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_26"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_26_1"/>
+        <Class IRI="CRCArticle_26"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_26_2"/>
+        <Class IRI="CRCArticle_26"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_27"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_27_1"/>
+        <Class IRI="CRCArticle_27"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_27_2"/>
+        <Class IRI="CRCArticle_27"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_27_3"/>
+        <Class IRI="CRCArticle_27"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_27_4"/>
+        <Class IRI="CRCArticle_27"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28_1"/>
+        <Class IRI="CRCArticle_28"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28_1a"/>
+        <Class IRI="CRCArticle_28_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28_1b"/>
+        <Class IRI="CRCArticle_28_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28_1c"/>
+        <Class IRI="CRCArticle_28_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28_1d"/>
+        <Class IRI="CRCArticle_28_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28_1e"/>
+        <Class IRI="CRCArticle_28_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28_2"/>
+        <Class IRI="CRCArticle_28"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_28_3"/>
+        <Class IRI="CRCArticle_28"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29_1"/>
+        <Class IRI="CRCArticle_29"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29_1a"/>
+        <Class IRI="CRCArticle_29_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29_1b"/>
+        <Class IRI="CRCArticle_29_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29_1c"/>
+        <Class IRI="CRCArticle_29_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29_1d"/>
+        <Class IRI="CRCArticle_29_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29_1e"/>
+        <Class IRI="CRCArticle_29_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29_2"/>
+        <Class IRI="CRCArticle_29"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_29_3"/>
+        <Class IRI="CRCArticle_29"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_2_1"/>
+        <Class IRI="CRCArticle_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_2_2"/>
+        <Class IRI="CRCArticle_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_3"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_30"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_31"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_31_1"/>
+        <Class IRI="CRCArticle_31"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_31_2"/>
+        <Class IRI="CRCArticle_31"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_32"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_32_1"/>
+        <Class IRI="CRCArticle_32"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_32_2"/>
+        <Class IRI="CRCArticle_32"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_32_2a"/>
+        <Class IRI="CRCArticle_32_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_32_2b"/>
+        <Class IRI="CRCArticle_32_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_32_2c"/>
+        <Class IRI="CRCArticle_32_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_33"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_34"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_34a"/>
+        <Class IRI="CRCArticle_34"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_34b"/>
+        <Class IRI="CRCArticle_34"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_34c"/>
+        <Class IRI="CRCArticle_34"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_35"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_36"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_37"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_37a"/>
+        <Class IRI="CRCArticle_37"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_37b"/>
+        <Class IRI="CRCArticle_37"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_37c"/>
+        <Class IRI="CRCArticle_37"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_37d"/>
+        <Class IRI="CRCArticle_37"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_38"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_38_1"/>
+        <Class IRI="CRCArticle_38"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_38_2"/>
+        <Class IRI="CRCArticle_38"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_38_3"/>
+        <Class IRI="CRCArticle_38"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_38_4"/>
+        <Class IRI="CRCArticle_38"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_39"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_3_1"/>
+        <Class IRI="CRCArticle_3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_3_2"/>
+        <Class IRI="CRCArticle_3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_3_3"/>
+        <Class IRI="CRCArticle_3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_4"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_1"/>
+        <Class IRI="CRCArticle_40"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2"/>
+        <Class IRI="CRCArticle_40"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2a"/>
+        <Class IRI="CRCArticle_40_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2b"/>
+        <Class IRI="CRCArticle_40_2"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2b_i"/>
+        <Class IRI="CRCArticle_40_2b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2b_ii"/>
+        <Class IRI="CRCArticle_40_2b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2b_iii"/>
+        <Class IRI="CRCArticle_40_2b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2b_iv"/>
+        <Class IRI="CRCArticle_40_2b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2b_v"/>
+        <Class IRI="CRCArticle_40_2b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2b_vi"/>
+        <Class IRI="CRCArticle_40_2b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_2b_vii"/>
+        <Class IRI="CRCArticle_40_2b"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_3"/>
+        <Class IRI="CRCArticle_40"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_3a"/>
+        <Class IRI="CRCArticle_40_3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_40_3b"/>
+        <Class IRI="CRCArticle_40_3"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_41"/>
+        <Class IRI="CRCPartII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_41a"/>
+        <Class IRI="CRCArticle_41"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_41b"/>
+        <Class IRI="CRCArticle_41"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_42"/>
+        <Class IRI="CRCPartII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43"/>
+        <Class IRI="CRCPartII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_1"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_10"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_11"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_12"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_2"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_3"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_4"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_5"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_6"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_7"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_8"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_43_9"/>
+        <Class IRI="CRCArticle_43"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44"/>
+        <Class IRI="CRCPartII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44_1"/>
+        <Class IRI="CRCArticle_44"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44_1a"/>
+        <Class IRI="CRCArticle_44_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44_1b"/>
+        <Class IRI="CRCArticle_44_1"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44_2"/>
+        <Class IRI="CRCArticle_44"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44_3"/>
+        <Class IRI="CRCArticle_44"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44_4"/>
+        <Class IRI="CRCArticle_44"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44_5"/>
+        <Class IRI="CRCArticle_44"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_44_6"/>
+        <Class IRI="CRCArticle_44"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_45"/>
+        <Class IRI="CRCPartII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_45a"/>
+        <Class IRI="CRCArticle_45"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_45b"/>
+        <Class IRI="CRCArticle_45"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_45c"/>
+        <Class IRI="CRCArticle_45"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_45d"/>
+        <Class IRI="CRCArticle_45"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_46"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_47"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_48"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_49"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_49_1"/>
+        <Class IRI="CRCArticle_49"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_49_2"/>
+        <Class IRI="CRCArticle_49"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_5"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_50"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_50_1"/>
+        <Class IRI="CRCArticle_50"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_50_2"/>
+        <Class IRI="CRCArticle_50"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_50_3"/>
+        <Class IRI="CRCArticle_50"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_51"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_51_1"/>
+        <Class IRI="CRCArticle_51"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_51_2"/>
+        <Class IRI="CRCArticle_51"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_51_3"/>
+        <Class IRI="CRCArticle_51"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_52"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_53"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_54"/>
+        <Class IRI="CRCPartIII"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_6"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_6_1"/>
+        <Class IRI="CRCArticle_6"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_6_2"/>
+        <Class IRI="CRCArticle_6"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_7"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_7_1"/>
+        <Class IRI="CRCArticle_7"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_7_2"/>
+        <Class IRI="CRCArticle_7"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_8"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_8_1"/>
+        <Class IRI="CRCArticle_8"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_8_2"/>
+        <Class IRI="CRCArticle_8"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_9"/>
+        <Class IRI="CRCPartI"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_9_1"/>
+        <Class IRI="CRCArticle_9"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_9_2"/>
+        <Class IRI="CRCArticle_9"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_9_3"/>
+        <Class IRI="CRCArticle_9"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCArticle_9_4"/>
+        <Class IRI="CRCArticle_9"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCPartI"/>
+        <Class IRI="CRCPreamble"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCPartII"/>
+        <Class IRI="CRCPreamble"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCPartIII"/>
+        <Class IRI="CRCPreamble"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="CRCPreamble"/>
+        <Class IRI="CRC"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Calmness"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Confusion"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Craving"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Dignity"/>
+        <Class IRI="MoralGrammar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Disgust"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Entrancement"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Envy"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Excitement"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Fear"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Horror"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Interest"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Joy"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Justice"/>
+        <Class IRI="MoralGrammar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="MoralGrammar"/>
+        <Class IRI="humanAgency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Nostalgia"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Romance"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sadness"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Satisfaction"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Spirit"/>
+        <Class IRI="MoralGrammar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Sympathy"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="Triumph"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="act"/>
+        <Class IRI="wisdom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="aestheticAppreciation"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="agent"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="agentOfAuthority"/>
+        <Class IRI="association"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="associate"/>
+        <Class IRI="businessAssociate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="association"/>
+        <Class IRI="social"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="aunt"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="biologicalFamily"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="boss"/>
+        <Class IRI="businessAssociate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="brother"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="businessAssociate"/>
+        <Class IRI="association"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="businessPartner"/>
+        <Class IRI="businessAssociate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="canonLaw"/>
+        <Class IRI="legalFramework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="charters"/>
+        <Class IRI="unitedNations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="citizen"/>
+        <Class IRI="entitiesByLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="civilLaw"/>
+        <Class IRI="legalFramework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="closeFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="colleague"/>
+        <Class IRI="businessAssociate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="commerce"/>
+        <Class IRI="trade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="commonLaw"/>
+        <Class IRI="legalFramework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="communist"/>
+        <Class IRI="governanceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="communityRelation"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="conventions"/>
+        <Class IRI="unitedNations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="counsin"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="customer"/>
+        <Class IRI="businessAssociate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="democratic"/>
+        <Class IRI="governanceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="domesticAgent"/>
+        <Class IRI="agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="emotion"/>
+        <Class IRI="livedExperience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="emotionalHealth"/>
+        <Class IRI="health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="empatheticPain"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="empire"/>
+        <Class IRI="governanceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="employee"/>
+        <Class IRI="businessAssociate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="entitiesByLaw"/>
+        <Class IRI="legalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="esteemNeeds"/>
+        <Class IRI="wellBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="family"/>
+        <Class IRI="social"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="familyDoctor"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="familyFriend"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="familyFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="father"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="federalLaw"/>
+        <Class IRI="law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="foreignAgent"/>
+        <Class IRI="agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="formerCloseFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="formerFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="formerSexualRelationFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="friend"/>
+        <Class IRI="association"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="friendOfFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="giftOrDonation"/>
+        <Class IRI="trade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="godFather"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="godMother"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="governancePrinciples"/>
+        <Class IRI="governanceStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="governanceStructure"/>
+        <Class IRI="legalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="governanceType"/>
+        <Class IRI="governanceStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="governmentWorker"/>
+        <Class IRI="agentOfAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="grandfather"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="grandmother"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="grandparent"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="health"/>
+        <Class IRI="livedExperience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="healthWorker"/>
+        <Class IRI="agentOfAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ignorance"/>
+        <Class IRI="wisdom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="internationalCharters"/>
+        <Class IRI="legalInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="internationalContracts"/>
+        <Class IRI="legalInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="internationalConvention"/>
+        <Class IRI="legalInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="internationalDeclaration"/>
+        <Class IRI="legalInstrument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="internationalLaw"/>
+        <Class IRI="law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="internationalTrade"/>
+        <Class IRI="trade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="internationalTreaty"/>
+        <Class IRI="governancePrinciples"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="investor"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="judge"/>
+        <Class IRI="agentOfAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="jurisPrudence"/>
+        <Class IRI="governancePrinciples"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="jurisdictionalSovereignty"/>
+        <Class IRI="governancePrinciples"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="juristionalRelations"/>
+        <Class IRI="entitiesByLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="kingdom"/>
+        <Class IRI="governanceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="know"/>
+        <Class IRI="wisdom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="law"/>
+        <Class IRI="legalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="lawEnforcementOfficer"/>
+        <Class IRI="agentOfAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="learn"/>
+        <Class IRI="wisdom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="legalAlien"/>
+        <Class IRI="entitiesByLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="legalFramework"/>
+        <Class IRI="governanceStructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="legalInstrument"/>
+        <Class IRI="legalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="legalMinor"/>
+        <Class IRI="entitiesByLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="legalPerson"/>
+        <Class IRI="entitiesByLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="livedExperience"/>
+        <Class IRI="humanAgency"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="localTrade"/>
+        <Class IRI="trade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="loveAndBelongingnessNeeds"/>
+        <Class IRI="wellBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="migrant"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="mother"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="nationalTrade"/>
+        <Class IRI="trade"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="nationhood"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="naturalPerson"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="nephew"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="newFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="niece"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="noLegalStatus"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="nonBiologicalFamily"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="oldFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="onlineCloseFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="onlineFriend"/>
+        <Class IRI="friend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="personaFicta"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="persons"/>
+        <Class IRI="entitiesByLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="physicalHealth"/>
+        <Class IRI="health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="physiologicalNeeds"/>
+        <Class IRI="wellBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="psychologicalHeealth"/>
+        <Class IRI="health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="refugee"/>
+        <Class IRI="entitiesByLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="religiousLeader"/>
+        <Class IRI="agentOfAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="republic"/>
+        <Class IRI="governanceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="resident"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="rightsHolder"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="romanLaw"/>
+        <Class IRI="legalFramework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="ruleOfLaw"/>
+        <Class IRI="governancePrinciples"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="safetyNeeds"/>
+        <Class IRI="wellBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="selfActualizationNeeds"/>
+        <Class IRI="wellBeing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="separationOfPowers"/>
+        <Class IRI="governancePrinciples"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="sexualDesire"/>
+        <Class IRI="emotion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="sharialaw"/>
+        <Class IRI="legalFramework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="sister"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="social"/>
+        <Class IRI="livedExperience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="socialHealth"/>
+        <Class IRI="health"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="socialWorker"/>
+        <Class IRI="agentOfAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="socialist"/>
+        <Class IRI="governanceType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="spiritualAdvisor"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="stateLaw"/>
+        <Class IRI="law"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="stateLess"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="taxPayer"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="teacher"/>
+        <Class IRI="agentOfAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="trade"/>
+        <Class IRI="legalConcept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="uncle"/>
+        <Class IRI="family"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="unitedNations"/>
+        <Class IRI="Instruments"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="unknown"/>
+        <Class IRI="wisdom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="visaHolder"/>
+        <Class IRI="entitiesByLaw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="visitor"/>
+        <Class IRI="juristionalRelations"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="wellBeing"/>
+        <Class IRI="livedExperience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="wisdom"/>
+        <Class IRI="livedExperience"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle-1"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_10"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_11"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_11"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_11"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_12"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_13"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_13"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_13"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_14"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_14"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_14"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_15"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_15"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_15"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_16"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_17"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_17"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_17"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_18"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_19"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_2"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_20"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_20"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_20"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_21"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_22"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_23"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_24"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_25"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_25"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_25"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_26"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_27"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_27"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_27"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_28"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3"/>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_29"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_3"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_30"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_4"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_5"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_6"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_7"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_8"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRArticle_9"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="urn:absolute:webcivics.github.io/community/un/UDHRPreamble"/>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+        <Class IRI="CRC"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://ns.thecharter.eco/un/udhr"/>
+        <Class IRI="CRC"/>
+        <Class IRI="charters"/>
+        <Class IRI="conventions"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Admiration"/>
+        <Class IRI="Adoration"/>
+        <Class IRI="Amusement"/>
+        <Class IRI="Anxiety"/>
+        <Class IRI="Awe"/>
+        <Class IRI="Awkwardness"/>
+        <Class IRI="Boredom"/>
+        <Class IRI="Calmness"/>
+        <Class IRI="Confusion"/>
+        <Class IRI="Craving"/>
+        <Class IRI="Disgust"/>
+        <Class IRI="Entrancement"/>
+        <Class IRI="Envy"/>
+        <Class IRI="Excitement"/>
+        <Class IRI="Fear"/>
+        <Class IRI="Horror"/>
+        <Class IRI="Interest"/>
+        <Class IRI="Joy"/>
+        <Class IRI="Nostalgia"/>
+        <Class IRI="Romance"/>
+        <Class IRI="Sadness"/>
+        <Class IRI="Satisfaction"/>
+        <Class IRI="Sympathy"/>
+        <Class IRI="Triumph"/>
+        <Class IRI="aestheticAppreciation"/>
+        <Class IRI="empatheticPain"/>
+        <Class IRI="sexualDesire"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="Belief"/>
+        <Class IRI="Dignity"/>
+        <Class IRI="Justice"/>
+        <Class IRI="MoralGrammar"/>
+        <Class IRI="Spirit"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="CRCArticle_1"/>
+        <Class IRI="CRCArticle_10"/>
+        <Class IRI="CRCArticle_11"/>
+        <Class IRI="CRCArticle_12"/>
+        <Class IRI="CRCArticle_13"/>
+        <Class IRI="CRCArticle_14"/>
+        <Class IRI="CRCArticle_15"/>
+        <Class IRI="CRCArticle_16"/>
+        <Class IRI="CRCArticle_16_1"/>
+        <Class IRI="CRCArticle_16_2"/>
+        <Class IRI="CRCArticle_17"/>
+        <Class IRI="CRCArticle_18"/>
+        <Class IRI="CRCArticle_2"/>
+        <Class IRI="CRCArticle_20"/>
+        <Class IRI="CRCArticle_21"/>
+        <Class IRI="CRCArticle_22"/>
+        <Class IRI="CRCArticle_23"/>
+        <Class IRI="CRCArticle_24"/>
+        <Class IRI="CRCArticle_25"/>
+        <Class IRI="CRCArticle_26"/>
+        <Class IRI="CRCArticle_27"/>
+        <Class IRI="CRCArticle_28"/>
+        <Class IRI="CRCArticle_29"/>
+        <Class IRI="CRCArticle_3"/>
+        <Class IRI="CRCArticle_30"/>
+        <Class IRI="CRCArticle_31"/>
+        <Class IRI="CRCArticle_32"/>
+        <Class IRI="CRCArticle_33"/>
+        <Class IRI="CRCArticle_34"/>
+        <Class IRI="CRCArticle_35"/>
+        <Class IRI="CRCArticle_36"/>
+        <Class IRI="CRCArticle_37"/>
+        <Class IRI="CRCArticle_38"/>
+        <Class IRI="CRCArticle_39"/>
+        <Class IRI="CRCArticle_4"/>
+        <Class IRI="CRCArticle_40"/>
+        <Class IRI="CRCArticle_5"/>
+        <Class IRI="CRCArticle_6"/>
+        <Class IRI="CRCArticle_7"/>
+        <Class IRI="CRCArticle_8"/>
+        <Class IRI="CRCArticle_9"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="act"/>
+        <Class IRI="ignorance"/>
+        <Class IRI="know"/>
+        <Class IRI="learn"/>
+        <Class IRI="unknown"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="act"/>
+        <Class IRI="know"/>
+        <Class IRI="learn"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="agent"/>
+        <Class IRI="citizen"/>
+        <Class IRI="entitiesByLaw"/>
+        <Class IRI="internationalTrade"/>
+        <Class IRI="law"/>
+        <Class IRI="legalAlien"/>
+        <Class IRI="nationhood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="agent"/>
+        <Class IRI="citizen"/>
+        <Class IRI="entitiesByLaw"/>
+        <Class IRI="internationalTrade"/>
+        <Class IRI="law"/>
+        <Class IRI="nationhood"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="agent"/>
+        <Class IRI="domesticAgent"/>
+        <Class IRI="foreignAgent"/>
+        <Class IRI="legalMinor"/>
+        <Class IRI="legalPerson"/>
+        <Class IRI="naturalPerson"/>
+        <Class IRI="personaFicta"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="agentOfAuthority"/>
+        <Class IRI="boss"/>
+        <Class IRI="businessAssociate"/>
+        <Class IRI="customer"/>
+        <Class IRI="friend"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="associate"/>
+        <Class IRI="boss"/>
+        <Class IRI="businessPartner"/>
+        <Class IRI="colleague"/>
+        <Class IRI="customer"/>
+        <Class IRI="employee"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="aunt"/>
+        <Class IRI="biologicalFamily"/>
+        <Class IRI="brother"/>
+        <Class IRI="counsin"/>
+        <Class IRI="familyDoctor"/>
+        <Class IRI="familyFriend"/>
+        <Class IRI="father"/>
+        <Class IRI="godFather"/>
+        <Class IRI="godMother"/>
+        <Class IRI="grandfather"/>
+        <Class IRI="grandmother"/>
+        <Class IRI="grandparent"/>
+        <Class IRI="mother"/>
+        <Class IRI="nephew"/>
+        <Class IRI="niece"/>
+        <Class IRI="nonBiologicalFamily"/>
+        <Class IRI="sister"/>
+        <Class IRI="spiritualAdvisor"/>
+        <Class IRI="uncle"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="canonLaw"/>
+        <Class IRI="civilLaw"/>
+        <Class IRI="commonLaw"/>
+        <Class IRI="communist"/>
+        <Class IRI="democratic"/>
+        <Class IRI="empire"/>
+        <Class IRI="entitiesByLaw"/>
+        <Class IRI="governanceStructure"/>
+        <Class IRI="internationalDeclaration"/>
+        <Class IRI="internationalTreaty"/>
+        <Class IRI="jurisdictionalSovereignty"/>
+        <Class IRI="kingdom"/>
+        <Class IRI="law"/>
+        <Class IRI="romanLaw"/>
+        <Class IRI="ruleOfLaw"/>
+        <Class IRI="separationOfPowers"/>
+        <Class IRI="sharialaw"/>
+        <Class IRI="socialist"/>
+        <Class IRI="trade"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="charters"/>
+        <Class IRI="conventions"/>
+        <Class IRI="unitedNations"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="citizen"/>
+        <Class IRI="investor"/>
+        <Class IRI="legalAlien"/>
+        <Class IRI="migrant"/>
+        <Class IRI="nationhood"/>
+        <Class IRI="noLegalStatus"/>
+        <Class IRI="refugee"/>
+        <Class IRI="resident"/>
+        <Class IRI="rightsHolder"/>
+        <Class IRI="stateLess"/>
+        <Class IRI="taxPayer"/>
+        <Class IRI="visaHolder"/>
+        <Class IRI="visitor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="closeFriend"/>
+        <Class IRI="communityRelation"/>
+        <Class IRI="familyFriend"/>
+        <Class IRI="formerCloseFriend"/>
+        <Class IRI="formerFriend"/>
+        <Class IRI="formerSexualRelationFriend"/>
+        <Class IRI="friendOfFriend"/>
+        <Class IRI="newFriend"/>
+        <Class IRI="oldFriend"/>
+        <Class IRI="onlineCloseFriend"/>
+        <Class IRI="onlineFriend"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="commerce"/>
+        <Class IRI="giftOrDonation"/>
+        <Class IRI="internationalTrade"/>
+        <Class IRI="localTrade"/>
+        <Class IRI="nationalTrade"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="domesticAgent"/>
+        <Class IRI="foreignAgent"/>
+        <Class IRI="legalAlien"/>
+        <Class IRI="legalMinor"/>
+        <Class IRI="naturalPerson"/>
+        <Class IRI="personaFicta"/>
+        <Class IRI="taxPayer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="emotion"/>
+        <Class IRI="family"/>
+        <Class IRI="health"/>
+        <Class IRI="social"/>
+        <Class IRI="wellBeing"/>
+        <Class IRI="wisdom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="emotion"/>
+        <Class IRI="family"/>
+        <Class IRI="health"/>
+        <Class IRI="wellBeing"/>
+        <Class IRI="wisdom"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="emotionalHealth"/>
+        <Class IRI="physicalHealth"/>
+        <Class IRI="psychologicalHeealth"/>
+        <Class IRI="socialHealth"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="entitiesByLaw"/>
+        <Class IRI="governanceStructure"/>
+        <Class IRI="internationalDeclaration"/>
+        <Class IRI="law"/>
+        <Class IRI="legalInstrument"/>
+        <Class IRI="trade"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="entitiesByLaw"/>
+        <Class IRI="juristionalRelations"/>
+        <Class IRI="law"/>
+        <Class IRI="nationhood"/>
+        <Class IRI="trade"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="entitiesByLaw"/>
+        <Class IRI="law"/>
+        <Class IRI="ruleOfLaw"/>
+        <Class IRI="separationOfPowers"/>
+        <Class IRI="trade"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="esteemNeeds"/>
+        <Class IRI="loveAndBelongingnessNeeds"/>
+        <Class IRI="physiologicalNeeds"/>
+        <Class IRI="safetyNeeds"/>
+        <Class IRI="selfActualizationNeeds"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="federalLaw"/>
+        <Class IRI="internationalLaw"/>
+        <Class IRI="stateLaw"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="governanceType"/>
+        <Class IRI="legalFramework"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="governmentWorker"/>
+        <Class IRI="healthWorker"/>
+        <Class IRI="judge"/>
+        <Class IRI="lawEnforcementOfficer"/>
+        <Class IRI="religiousLeader"/>
+        <Class IRI="socialWorker"/>
+        <Class IRI="teacher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="governmentWorker"/>
+        <Class IRI="judge"/>
+        <Class IRI="lawEnforcementOfficer"/>
+        <Class IRI="teacher"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="internationalCharters"/>
+        <Class IRI="internationalContracts"/>
+        <Class IRI="internationalConvention"/>
+        <Class IRI="internationalDeclaration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="internationalCharters"/>
+        <Class IRI="internationalConvention"/>
+        <Class IRI="internationalDeclaration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="internationalConvention"/>
+        <Class IRI="internationalDeclaration"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="internationalTreaty"/>
+        <Class IRI="jurisPrudence"/>
+        <Class IRI="jurisdictionalSovereignty"/>
+        <Class IRI="ruleOfLaw"/>
+        <Class IRI="separationOfPowers"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="legalAlien"/>
+        <Class IRI="naturalPerson"/>
+        <Class IRI="personaFicta"/>
+    </DisjointClasses>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://ns.thecharter.eco/un/udhr</IRI>
+        <Literal>United Nations Universal Declaration of Human Rights</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://ns.thecharter.eco/un/udhr</IRI>
+        <Literal>https://www.un.org/en/universal-declaration-human-rights/index.html</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal xml:lang="en">Human Rights Ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Belief</IRI>
+        <Literal>An acceptance that something exists or is true, especially one without proof. trust, faith, or confidence in (someone or something).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CRC</IRI>
+        <Literal>Convention on the Rights of the Child</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>CRC</IRI>
+        <Literal>https://www.ohchr.org/en/professionalinterest/pages/crc.aspx</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>CRCPreamble</IRI>
+        <Literal>The States Parties to the present Convention,
+
+Considering that, in accordance with the principles proclaimed in the Charter of the United Nations, recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,
+
+Bearing in mind that the peoples of the United Nations have, in the Charter, reaffirmed their faith in fundamental human rights and in the dignity and worth of the human person, and have determined to promote social progress and better standards of life in larger freedom,
+
+Recognizing that the United Nations has, in the Universal Declaration of Human Rights and in the International Covenants on Human Rights, proclaimed and agreed that everyone is entitled to all the rights and freedoms set forth therein, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status,
+
+Recalling that, in the Universal Declaration of Human Rights, the United Nations has proclaimed that childhood is entitled to special care and assistance,
+
+Convinced that the family, as the fundamental group of society and the natural environment for the growth and well-being of all its members and particularly children, should be afforded the necessary protection and assistance so that it can fully assume its responsibilities within the community,
+
+Recognizing that the child, for the full and harmonious development of his or her personality, should grow up in a family environment, in an atmosphere of happiness, love and understanding,
+
+Considering that the child should be fully prepared to live an individual life in society, and brought up in the spirit of the ideals proclaimed in the Charter of the United Nations, and in particular in the spirit of peace, dignity, tolerance, freedom, equality and solidarity,
+
+Bearing in mind that the need to extend particular care to the child has been stated in the Geneva Declaration of the Rights of the Child of 1924 and in the Declaration of the Rights of the Child adopted by the General Assembly on 20 November 1959 and recognized in the Universal Declaration of Human Rights, in the International Covenant on Civil and Political Rights (in particular in articles 23 and 24), in the International Covenant on Economic, Social and Cultural Rights (in particular in article 10) and in the statutes and relevant instruments of specialized agencies and international organizations concerned with the welfare of children,
+
+Bearing in mind that, as indicated in the Declaration of the Rights of the Child, &quot;the child, by reason of his physical and mental immaturity, needs special safeguards and care, including appropriate legal protection, before as well as after birth&quot;,
+
+Recalling the provisions of the Declaration on Social and Legal Principles relating to the Protection and Welfare of Children, with Special Reference to Foster Placement and Adoption Nationally and Internationally; the United Nations Standard Minimum Rules for the Administration of Juvenile Justice (The Beijing Rules); and the Declaration on the Protection of Women and Children in Emergency and Armed Conflict, Recognizing that, in all countries in the world, there are children living in exceptionally difficult conditions, and that such children need special consideration,
+
+Taking due account of the importance of the traditions and cultural values of each people for the protection and harmonious development of the child, Recognizing the importance of international co-operation for improving the living conditions of children in every country, in particular in the developing countries,
+
+Have agreed as follows:</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Dignity</IRI>
+        <Literal>the state or quality of being worthy of honour or respect.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Justice</IRI>
+        <Literal>just behaviour or treatment.  the administration of the law or authority in maintaining this. the administration of the law or authority in maintaining this.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Spirit</IRI>
+        <Literal>the non-physical part of a person which is the seat of emotions and character; the soul.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>agent</IRI>
+        <Literal>a person who acts on behalf of another person or group. a person or thing that takes an active role or produces a specified effect.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>agent</IRI>
+        <Literal>http://xmlns.com/foaf/spec/#term_Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>entitiesByLaw</IRI>
+        <Literal>an individual, company, or other entity which has legal rights and is subject to obligations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>governanceStructure</IRI>
+        <Literal>the language framework and historical format distinguishing particular forms of legal construct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>internationalTrade</IRI>
+        <Literal>nternational trade is the exchange of capital, goods, and services across international borders or territories.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>law</IRI>
+        <Literal>the system of rules which a particular country or community recognizes as regulating the actions of its members and which it may enforce by the imposition of penalties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>legalAlien</IRI>
+        <Literal>In law, an alien is a person who is not a citizen or national of a given country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>legalInstrument</IRI>
+        <Literal>a form of official document that is accepted as evidence by law</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>legalMinor</IRI>
+        <Literal>A person under a certain age, usually the age of majority, which legally demarcates childhood from adulthood</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>livedExperience</IRI>
+        <Literal>vocabulary terms relating to physical / meta-physical consious human experiences and predicates relating to those states.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>nationhood</IRI>
+        <Literal>the fact or status of being a nation; national identity or independence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>personaFicta</IRI>
+        <Literal>A juridical or artificial person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle-1</IRI>
+        <Literal>All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle-1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle-1</IRI>
+        <Literal>UDHR Article 1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_10</IRI>
+        <Literal>Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_10</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_10</IRI>
+        <Literal>UDHR Article 10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_11</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1</IRI>
+        <Literal>Everyone charged with a penal offence has the right to be presumed innocent until proved guilty according to law in a public trial at which he has had all the guarantees necessary for his defence.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_1</IRI>
+        <Literal>UDHR Article 11.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2</IRI>
+        <Literal>No one shall be held guilty of any penal offence on account of any act or omission which did not constitute a penal offence, under national or international law, at the time when it was committed. Nor shall a heavier penalty be imposed than the one that was applicable at the time the penal offence was committed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_11_2</IRI>
+        <Literal>UDHR Article 11.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_12</IRI>
+        <Literal>No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_12</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_12</IRI>
+        <Literal>UDHR Article 12</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_13</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_13</IRI>
+        <Literal>UDHR Article 13</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1</IRI>
+        <Literal>Everyone has the right to freedom of movement and residence within the borders of each state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_1</IRI>
+        <Literal>UDHR Article 13.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2</IRI>
+        <Literal>Everyone has the right to leave any country, including his own, and to return to his country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_13_2</IRI>
+        <Literal>UDHR Article 13.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_14</IRI>
+        <Literal>UDHR Article 14</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1</IRI>
+        <Literal>Everyone has the right to seek and to enjoy in other countries asylum from persecution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_1</IRI>
+        <Literal>UDHR Article 14.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2</IRI>
+        <Literal>This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes or from acts contrary to the purposes and principles of the United Nations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_14_2</IRI>
+        <Literal>UDHR Article 14.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_15</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_15</IRI>
+        <Literal>UDHR Article 15</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1</IRI>
+        <Literal>Everyone has the right to a nationality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_1</IRI>
+        <Literal>UDHR Article 15.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2</IRI>
+        <Literal>No one shall be arbitrarily deprived of his nationality nor denied the right to change his nationality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_15_2</IRI>
+        <Literal>UDHR Article 15.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16</IRI>
+        <Literal>UDHR Article 16</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1</IRI>
+        <Literal>Men and women of full age, without any limitation due to race, nationality or religion, have the right to marry and to found a family. They are entitled to equal rights as to marriage, during marriage and at its dissolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_1</IRI>
+        <Literal>UDHR Article 16.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2</IRI>
+        <Literal xml:lang="en">Marriage shall be entered into only with the free and full consent of the intending spouses.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_2</IRI>
+        <Literal>UDHR Article 16.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3</IRI>
+        <Literal xml:lang="en">The family is the natural and fundamental group unit of society and is entitled to protection by society and the State.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_16_3</IRI>
+        <Literal>UDHR Article 16.3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_17</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_17</IRI>
+        <Literal>UDHR Article 17</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1</IRI>
+        <Literal>Everyone has the right to own property alone as well as in association with others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_1</IRI>
+        <Literal>UDHR Article 17.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2</IRI>
+        <Literal>No one shall be arbitrarily deprived of his property.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_17_2</IRI>
+        <Literal>UDHR Article 17.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_18</IRI>
+        <Literal>Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_18</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_18</IRI>
+        <Literal>UDHR Article 18</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_19</IRI>
+        <Literal>Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_19</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_19</IRI>
+        <Literal>UDHR Article 19</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_2</IRI>
+        <Literal>Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status. Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_2</IRI>
+        <Literal>UDHR Article 2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_20</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_20</IRI>
+        <Literal>UDHR Article 20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1</IRI>
+        <Literal>Everyone has the right to freedom of peaceful assembly and association.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_1</IRI>
+        <Literal>UDHR Article 20.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2</IRI>
+        <Literal>No one may be compelled to belong to an association.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_20_2</IRI>
+        <Literal>UDHR Article 20.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21</IRI>
+        <Literal>UDHR Article 21</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1</IRI>
+        <Literal>Everyone has the right to take part in the government of his country, directly or through freely chosen representatives.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_1</IRI>
+        <Literal>UDHR Article 21.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2</IRI>
+        <Literal>Everyone has the right of equal access to public service in his country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_2</IRI>
+        <Literal>UDHR Article 21.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3</IRI>
+        <Literal>The will of the people shall be the basis of the authority of government; this will shall be expressed in periodic and genuine elections which shall be by universal and equal suffrage and shall be held by secret vote or by equivalent free voting procedures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_21_3</IRI>
+        <Literal>UDHR Article 21.3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_22</IRI>
+        <Literal>Everyone, as a member of society, has the right to social security and is entitled to realization, through national effort and international co-operation and in accordance with the organization and resources of each State, of the economic, social and cultural rights indispensable for his dignity and the free development of his personality.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_22</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_22</IRI>
+        <Literal>UDHR Article 22</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23</IRI>
+        <Literal>UDHR Article 23</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1</IRI>
+        <Literal>Everyone has the right to work, to free choice of employment, to just and favourable conditions of work and to protection against unemployment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_1</IRI>
+        <Literal>UDHR Article 23.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2</IRI>
+        <Literal xml:lang="en">Everyone, without any discrimination, has the right to equal pay for equal work.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_2</IRI>
+        <Literal>UDHR Article 23.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3</IRI>
+        <Literal>Everyone who works has the right to just and favourable remuneration ensuring for himself and his family an existence worthy of human dignity, and supplemented, if necessary, by other means of social protection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_3</IRI>
+        <Literal>UDHR Article 23.3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4</IRI>
+        <Literal>Everyone has the right to form and to join trade unions for the protection of his interests.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_23_4</IRI>
+        <Literal>UDHR Article 23.4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_24</IRI>
+        <Literal>Everyone has the right to rest and leisure, including reasonable limitation of working hours and periodic holidays with pay.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_24</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_24</IRI>
+        <Literal>UDHR Article 24</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_25</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_25</IRI>
+        <Literal>UDHR Article 25</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1</IRI>
+        <Literal>Everyone has the right to a standard of living adequate for the health and well-being of himself and of his family, including food, clothing, housing and medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_1</IRI>
+        <Literal>UDHR Article 25.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2</IRI>
+        <Literal>Motherhood and childhood are entitled to special care and assistance. All children, whether born in or out of wedlock, shall enjoy the same social protection.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_25_2</IRI>
+        <Literal>UDHR Article 25.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26</IRI>
+        <Literal>UDHR Article 25</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1</IRI>
+        <Literal>Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_1</IRI>
+        <Literal>UDHR Article 26.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2</IRI>
+        <Literal>Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms. It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_2</IRI>
+        <Literal>UDHR Article 26.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3</IRI>
+        <Literal>Parents have a prior right to choose the kind of education that shall be given to their children.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_26_3</IRI>
+        <Literal>UDHR Article 26.3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_27</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_27</IRI>
+        <Literal>UDHR Article 27</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1</IRI>
+        <Literal>Everyone has the right freely to participate in the cultural life of the community, to enjoy the arts and to share in scientific advancement and its benefits.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_1</IRI>
+        <Literal>UDHR Article 27.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2</IRI>
+        <Literal>Everyone has the right to the protection of the moral and material interests resulting from any scientific, literary or artistic production of which he is the author.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_27_2</IRI>
+        <Literal>UDHR Article 27.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_28</IRI>
+        <Literal>Everyone is entitled to a social and international order in which the rights and freedoms set forth in this Declaration can be fully realized.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_28</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_28</IRI>
+        <Literal>UDHR Article 28</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29</IRI>
+        <Literal>UDHR Article 29</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1</IRI>
+        <Literal>Everyone has duties to the community in which alone the free and full development of his personality is possible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_1</IRI>
+        <Literal>UDHR Article 29.1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2</IRI>
+        <Literal>In the exercise of his rights and freedoms, everyone shall be subject only to such limitations as are determined by law solely for the purpose of securing due recognition and respect for the rights and freedoms of others and of meeting the just requirements of morality, public order and the general welfare in a democratic society.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_2</IRI>
+        <Literal>UDHR Article 29.2</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3</IRI>
+        <Literal>These rights and freedoms may in no case be exercised contrary to the purposes and principles of the United Nations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_29_3</IRI>
+        <Literal>UDHR Article 29.3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_3</IRI>
+        <Literal>Everyone has the right to life, liberty and security of person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_3</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_3</IRI>
+        <Literal>UDHR Article 3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_30</IRI>
+        <Literal>Nothing in this Declaration may be interpreted as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms set forth herein.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_30</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_30</IRI>
+        <Literal>UDHR Article 30</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_4</IRI>
+        <Literal>No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_4</IRI>
+        <Literal>UDHR Article 4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_5</IRI>
+        <Literal>No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_5</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_5</IRI>
+        <Literal>UDHR Article 5</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_6</IRI>
+        <Literal>Everyone has the right to recognition everywhere as a person before the law.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_6</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_6</IRI>
+        <Literal>UDHR Article 6</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_7</IRI>
+        <Literal>All are equal before the law and are entitled without any discrimination to equal protection of the law. All are entitled to equal protection against any discrimination in violation of this Declaration and against any incitement to such discrimination.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_7</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_7</IRI>
+        <Literal>UDHR Article 7</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_8</IRI>
+        <Literal>Everyone has the right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted him by the constitution or by law.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_8</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_8</IRI>
+        <Literal>UDHR Article 8</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_9</IRI>
+        <Literal>No one shall be subjected to arbitrary arrest, detention or exile.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_9</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRArticle_9</IRI>
+        <Literal>UDHR Article 9</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRPreamble</IRI>
+        <Literal>Whereas recognition of the inherent dignity and of the equal and inalienable rights of all members of the human family is the foundation of freedom, justice and peace in the world,
+
+Whereas disregard and contempt for human rights have resulted in barbarous acts which have outraged the conscience of mankind, and the advent of a world in which human beings shall enjoy freedom of speech and belief and freedom from fear and want has been proclaimed as the highest aspiration of the common people,
+
+Whereas it is essential, if man is not to be compelled to have recourse, as a last resort, to rebellion against tyranny and oppression, that human rights should be protected by the rule of law,
+
+Whereas it is essential to promote the development of friendly relations between nations,
+
+Whereas the peoples of the United Nations have in the Charter reaffirmed their faith in fundamental human rights, in the dignity and worth of the human person and in the equal rights of men and women and have determined to promote social progress and better standards of life in larger freedom,
+
+Whereas Member States have pledged themselves to achieve, in co-operation with the United Nations, the promotion of universal respect for and observance of human rights and fundamental freedoms,
+
+Whereas a common understanding of these rights and freedoms is of the greatest importance for the full realization of this pledge,
+
+Now, Therefore THE GENERAL ASSEMBLY proclaims THIS UNIVERSAL DECLARATION OF HUMAN RIGHTS as a common standard of achievement for all peoples and all nations, to the end that every individual and every organ of society, keeping this Declaration constantly in mind, shall strive by teaching and education to promote respect for these rights and freedoms and by progressive measures, national and international, to secure their universal and effective recognition and observance, both among the peoples of Member States themselves and among the peoples of territories under their jurisdiction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRPreamble</IRI>
+        <AbbreviatedIRI>:</AbbreviatedIRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>urn:absolute:webcivics.github.io/community/un/UDHRPreamble</IRI>
+        <Literal>UDHR Preamble</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
