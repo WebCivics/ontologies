@@ -1,0 +1,15 @@
+﻿Title: 'Sustainable Development Goal 1'.
+Author: 'SDGs by UN, RDF by Timothy Holborn'.
+Namespace: 'http://intent.eco/sdgs'.
+
+Comment: An attempt to describe SDGs in RDF.
+Comment: Try asking: 'Who-Or-What is entry[bibtex] that has-author[bibtex] that has-birth-date lower-than 1930-01-01'.
+
+a sustainable-development-goal is a thing.
+a SDG is a sustainable-development-goal.
+a SDG has targets and indicators.
+
+a sustainable-development-goal is a goal and has-targets and has-indicators.
+SDG1 has-name equal-to 'Sustainable Development Goal 1' and has-targets and indicators. 
+
+
