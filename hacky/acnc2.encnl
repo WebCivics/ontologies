@@ -1,0 +1,222 @@
+﻿Title: 'Charity Concepts'.
+Author: 'Timothy Holborn'.
+Namespace: 'http://webcivics.github.io/ontologies/au/namespace'.
+
+Part-1: 'First part of your ontology'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+
+Every natural-person is Human.
+Every human has a body.
+Every human has a qualities.
+Every organisation requires Humans.
+Charity is an organisation.
+Every charity has a subtype.
+Every subtype has a goal.
+Every subtype has an activities.
+Every activity is-part-of an activities.
+Work is an activity. 
+Every company requires Work.
+Work is done by Workers.
+Work requires Humans.
+Corporations is an organisations.
+
+
+
+
+Part-2: 'defining goals'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+Advancing-Health is a goal.
+Advancing-Education is a goal.
+Social-Welfare is a goal.
+Public-Welfare is a goal.
+Preventing-Sickness is a goal.
+Purpose is a goal.
+Relief is a goal.
+
+Advancing-Culture is a goal.
+Promoting-Culture is a goal.
+Fostering-Culture is a goal.
+Preserving-Australian-Heritage is a goal.
+Protecting-Australian-Heritage is a goal. 
+
+Part-3: 'defining attributes'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+Formal is an attribute.
+Vocational is an attribute.
+Education is an attribute.
+Care is an attribute.
+Poverty is an attribute.
+Distress is an attribute.
+Disadvantage is an attribute.
+Every human has a belief-system.
+Every belief-system has Beliefs.
+Distress is an attribute.
+Elderly is an attribute.
+Relief is an attribute.
+Behaviour is an attribute.
+Moral-Judgement is an attribute.
+Indigenous-Culture is an attribute. 
+Exempt is an attribute.
+Focus is an attribute.
+Group is an attribute.
+
+
+Part-4: 'defining activities'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+Relieving is an activity.
+Advancing is an activity.
+Learning is an activity.
+Tutoring is an activity.
+Teaching is an activity.
+Training is an activity.
+Research is an activity.
+Learning is an activity.
+Developing is an activity.
+Offering is an activity.
+Child-Care is an activity.
+Maintaining is an activity.
+Promotion is an activity.
+Protection is an activity.
+Community-Service is an activity.
+Public-Debate is an activity.
+Repair is an activity.
+Support is an activity.
+Dispute is an activity.
+Conflict is an activity.
+Raising-Funds is an activity.
+Observance is an activity.
+Respite is an activity.
+Moral-Grammar is an activity.
+Ethical-Conduct is an activity.
+Unethical-Conduct is an activity.
+Indigenous-Customs is an activity.
+Empathy is an activity.
+Offer is an offering.
+Funding is an activity.
+Art is an activity.
+Music is an activity.
+Performance is an activity.
+Planning is an activity.
+Experience is an activity.
+Process is an activity.
+Rehabilitation is an activity.
+Abuse is an activity.
+
+Every activity is-part-of Time.
+
+Part-4-1: 'defining performances'.
+
+Opera is a performance.
+Ballet is a performance.
+Lecturing is a performance.
+
+Every performance is an activity.
+
+Part-5: 'defining welfare'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+Welfare is a condition.
+Disease is a health-condition.
+Illness is a health-condition.
+Mental-Illness is a health-condition.
+Disability is a health-condition.
+Family-Planning is a health-service.
+Ambulance is a health-service.
+
+Part-6: 'defining places'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+
+Australia is a place.
+Kindergarten is a place.
+Kindergartens is a places.
+School is a place.
+Schools is a places.
+College is a place.
+Colleges is a places.
+University is a place.
+Training-Organisation is a place.
+Universities is a places.
+Hospital is a place.
+Hospitals is a places.
+Museums is a places.
+Theaters is a places.
+
+Part-7: 'defining awards and prizes'.
+Award is a gift.
+Scholarship is an award.
+Prize is an award.
+
+Part-8: 'defining accounting (organisations)'.
+Every foundations is an organisation.
+Every society is an organisation.
+Association is an organisation.
+
+Part-9: 'defining humanity'.
+Life-Skills is a human-qualities.
+Australians is a people.
+
+Part-10: 'defining space-time & circumstances'.
+
+
+Place is a location.
+International is a place.
+
+Disaster is an event.
+Cyclone is an event.
+Bushfire is an event.
+Flood is an event.
+Death is an event.
+Birth is an event.
+Child-Birth is an event.
+
+
+Part-11: 'defining Rules'.
+Principle is a moral-rule.
+Canons-Of-Conduct is a rules.
+Every system has a rules.
+Systems-Of-Rules defines Ethics.
+Ethics is defined by Standards-Of-Conduct.
+Standards-Of-Conduct is an activity.
+
+Part-12: 'defining knowledge'.
+Imagination is a non-linear-dimension.
+Fiction requires Imagination.
+Fiction is Fantasy.
+Fiction has a genres.
+Non-Fiction requires Evidence.
+Non-Fiction has a classifiers.
+Fact is a non-fiction.
+Every fact is-part-of a non-fiction.
+
+Something is a fact if-and-only-if-it has an evidence.
+Evidence requires Research.
+Theory has a concepts.
+Theory requires a work.
+Hypothesis is a theory that is not a fact.
+
+Time is temporal.
+Every activity requires Time.
+Every temporal event is defined by a subject.
+Every observer is a person.
+Knowledge has a subjects.
+Australian-Heritage is a knowledge.
+Space-Time is an attribute.
+Status-Of-Observer is an attribute.
+Every observer has a status.
+Status is defined by a subject.
+Every subject requires a knowledge.
+Knowledge requires Time.
+
+Part-13: 'defining tools'.
+Tool is a thing.
+Law is a tool.
+Company is a tool.
+Contract is a tool.
+Language is a tool.
+Evidence is a tool.
+Concept is a tool.

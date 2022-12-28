@@ -1,0 +1,374 @@
+﻿Title: 'Charity Concepts'.
+Author: 'Timothy Holborn'.
+Namespace: 'http://webcivics.github.io/ontologies/au/namespace'.
+
+Part-1: 'First part of your ontology'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+
+Every natural-person is Human.
+Every human has a body.
+Every human has qualities.
+Every organisation requires Humans.
+Charity is a organisation.
+Every charity has a subtype.
+Every subtype has a goal.
+Every subtype has activities.
+Every activity is-part-of activities.
+Work is an activity. 
+Every company requires Work.
+Work is done by Workers.
+Work requires Humans.
+Corporations are organisations.
+
+
+
+
+Part-2: 'defining goals'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+Advancing-Health is a goal.
+Advancing-Education is a goal.
+Social-Welfare is a goal.
+Public-Welfare is a goal.
+Preventing-Sickness is a goal.
+Purpose is a goal.
+Relief is a goal.
+
+Advancing-Culture is a goal.
+Promoting-Culture is a goal.
+Fostering-Culture is a goal.
+Preserving-Australian-Heritage is a goal.
+Protecting-Australian-Heritage is a goal. 
+
+Part-3: 'defining attributes'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+Formal is a attribute.
+Vocational is a attribute.
+Education is an attribute.
+Care is an attribute.
+Poverty is an attribute.
+Distress is an attribute.
+Disadvantage is an attribute.
+Every human has a belief-system.
+Every belief-system has Beliefs.
+Distress is an attribute.
+Elderly is an attribute.
+Relief is an attribute.
+Behaviour is an attribute.
+Moral-Judgement is an attribute.
+Indigenous-Culture is an attribute. 
+Exempt is an attribute.
+Focus is an attribute.
+Group is an attribute.
+
+
+Part-4: 'defining activities'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+Relieving is an activity.
+Advancing is an activity.
+Learning is an activity.
+Tutoring is an activity.
+Teaching is an activity.
+Training is an activity.
+Research is an activity.
+Learning is an activity.
+Developing is an activity.
+Offering is an activity.
+Child-Care is an activity.
+Maintaining is an activity.
+Promotion is an activity.
+Protection is an activity.
+Community-Service is an activity.
+Public-Debate is an activity.
+Repair is an activity.
+Support is an activity.
+Dispute is an activity.
+Conflict is an activity.
+Raising-Funds is an activity.
+Observance is an activity.
+Respite is an activity.
+Moral-Grammar is an activity.
+Ethical-Conduct is an activity.
+Unethical-Conduct is an activity.
+Indigenous-Customs is an activity.
+Empathy is an activity.
+Offer is an offering.
+Funding is an activity.
+Art is an activity.
+Music is an activity.
+Performance is an activity.
+Planning is an activity.
+Experience is an activity.
+Process is an activity.
+Rehabilitation is an activity.
+Abuse is an activity.
+
+Every activity is-part-of Time.
+
+Part-4-1: 'defining performances'.
+
+Opera is a performance.
+Ballet is a performance.
+Lecturing is a performance.
+
+Every performance is an activity.
+
+Part-5: 'defining welfare'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+Welfare is a condition.
+Disease is a health-condition.
+Illness is a health-condition.
+Mental-Illness is a health-condition.
+Disability is a health-condition.
+Family-Planning is a health-service.
+Ambulance is a health-service.
+
+Part-6: 'defining places'.
+
+Comment: 'You can put some additional comments. All these elements are OPTIONAL!'.
+
+Australia is a place.
+Kindergarten is a place.
+Kindergartens are places.
+School is a place.
+Schools are places.
+College is a place.
+Colleges are places.
+University is a place.
+Training-Organisation is a place.
+Universities are places.
+Hospital is a place.
+Hospitals are places.
+Museums are places.
+Theaters are places.
+
+Part-7: 'defining awards and prizes'.
+Award is a gift.
+Scholarship is an award.
+Prize is an award.
+
+Part-8: 'defining accounting (organisations)'.
+Every foundations is an organisation.
+Every society is an organisation.
+Association is a organisation.
+
+Part-9: 'defining humanity'.
+Life-Skills is a human-qualities.
+Australians are a people.
+
+Part-10: 'defining space-time & circumstances'.
+
+
+Place is a location.
+International is a place.
+
+Disaster is a event.
+Cyclone is an event.
+Bushfire is an event.
+Flood is an event.
+Death is an event.
+Birth is an event.
+Child-Birth is an event.
+
+
+Part-11: 'defining Rules'.
+Principle is a moral-rule.
+Canons-Of-Conduct are rules.
+Every system has rules.
+Systems-Of-Rules defines Ethics.
+Ethics are defined by Standards-Of-Conduct.
+Standards-Of-Conduct is an activity.
+
+Part-12: 'defining knowledge'.
+Imagination is a non-linear-dimension.
+Fiction requires Imagination.
+Fiction is Fantasy.
+Fiction has genres.
+Non-Fiction requires Evidence.
+Non-Fiction has classifiers.
+Fact is non-fiction.
+Every fact is-part-of non-fiction.
+
+Something is a fact if-and-only-if-it has evidence.
+Evidence requires Research.
+Theory has concepts.
+Theory requires work.
+Hypothesis is a theory that is not a fact.
+
+Time is temporal.
+Every activity requires Time.
+Every temporal event is defined by a subject.
+Every observer is a person.
+Knowledge has subjects.
+Australian-Heritage is knowledge.
+Space-Time is an attribute.
+Status-Of-Observer is an attribute.
+Every observer has a status.
+Status is defined by subject.
+Every subject requires knowledge.
+Knowledge requires Time.
+
+Part-13: 'defining tools'.
+Tool is a thing.
+Law is a tool.
+Company is a tool.
+Contract is a tool.
+Language is a tool.
+Evidence is a tool.
+Concept is a tool.
+
+the poverty,  or disadvantage of individuals or families
+
+
+
+Accommodation services for people experiencing homelessness
+ aid programs
+Services for refugees
+Soup kitchens
+Employment and training services for people who are unemployed
+Caring for, supporting and protecting children and young individuals
+
+Some examples of charities that care for, support and protect children and young individuals:
+
+ services
+Services for disadvantaged youth or 'at-risk' youth
+Caring for and supporting the aged
+
+Some examples of charities that support and care for the aged:
+
+Residential and non-residential care and assistance.
+Alzheimer's associations, arthritis services, respite services
+Community services that provide food, home visits, home maintenance and assistance with shopping for the elderly
+Organisations that provide social, sporting or recreational activities may be charitable if those activities are for the purposes of addressing the needs of the .
+Residential aged care facilities
+Caring for and supporting individuals with disabilities
+
+Some examples of charities caring for and ing individuals with disabilities:
+
+Residential and non-residential care
+Braille libraries
+Disability employment services
+Guide dog 
+Support groups for people living with particular disabilities
+Assisting the rebuilding, repairing or securing of assets after a disaster
+
+This is a specific provision in the Charities Act, and is separate from disaster  for individuals, which is also likely to be charitable and registrable with this subtype.
+
+Some examples of charities that assist with rebuilding, repairing or securing assets damaged by disaster:
+
+Charities  to  not-for-profit community buildings or other assets damaged by cyclone, bushfire or other disasters.
+
+
+Under the ACNC Act, 'Basic Religious Charities' are  from certain reporting requirements and the ACNC's Governance Standards. To be classified as a Basic Religious Charity, a charity can be registered only with the subtype of advancing religion and could not be registered as any other subtype (for example, it could not also be registered for the subtype of advancing education).
+
+5. Advancing culture
+ (but is not limited to this).
+
+Some examples of charities advancing culture:
+
+6. Promoting reconciliation, mutual respect and tolerance between groups of individuals that are in Australia
+Another purpose introduced by the Charities Act, Promoting reconciliation, mutual respect and tolerance between groups of individuals that are in Australia may include:
+
+Promoting harmony and reducing conflict between people from different races, religions or belief systems
+Eliminating discrimination and promoting equality
+Promoting restorative justice and other forms of conflict resolution or reconciliation, and
+Mediating, conciliating or reconciling those involved in dispute or conflict.
+The groups of individuals referred to in this subtype must be in Australia.
+
+7. Promoting or protecting human rights
+The Charities Act defines ‘human rights’ as having the same meaning given by the Human Rights Parliamentary Scrutiny Act 2011 (Cth). which is the rights and freedoms recognised or declared in the seven international conventions and covenants named in this Act, as they apply to Australia.
+
+The conventions and covenants are:
+
+International Convention on the Elimination of all Forms of Racial Discrimination
+International Covenant on Economic, Social and Cultural Rights.
+International Covenant on Civil and Political Rights
+Convention on the Elimination of All Forms of Discrimination Against Women
+Convention Against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment
+Convention on the Rights of the Child
+Convention on the Rights of Persons with Disabilities.
+People have other rights not covered by these conventions. Although these rights are important, they are not included in the definition of ‘human rights’ under the Charities Act. Subtype requests for promoting or protecting these other types of rights will be refused.
+
+Promoting or protecting human rights may include:
+
+monitoring s of human rights
+seeking redress and relieving needs for victims of human rights abuse
+research into human rights issues
+educating the public about human rights
+providing technical advice to governments and others on human rights
+raising awareness of human rights issues.
+
+To be eligible to be registered with this subtype, your charity’s objects and activities must be directed towards specifically achieving the promotion or protection of human rights.
+
+8. Advancing the security or safety of Australia or the Australian public
+Some examples of charities that advance the safety or security of Australia or its public are (but are not limited to):
+
+safe houses
+organisations that promote and support ‘neighbourhood watch’ programs
+organisations that promote the efficiency of the Australian Defence Force
+research organisations looking into defence and national security
+historical societies that record and research the history of the armed forces
+organisations that look after the welfare of the armed forces, including the dependants of injured or deceased veterans
+organisations that offer volunteer emergency or safety services, such as surf lifesaving associations.
+9. Preventing or relieving the suffering of animals
+Some examples of charities that prevent or relieve animal suffering include:
+
+Animal protection societies
+Animal refuges and shelters
+Organisations that protect endangered species
+Animal hospitals
+Scientific bodies studying animal behaviour
+10. Advancing the natural environment
+Advancing the natural environment includes (but is not limited to):
+
+protecting, preserving, caring for and educating the community about the natural environment
+preserving native flora and fauna
+rescuing or caring for native animals, and
+preserving or rehabilitating habitats.
+Some examples of charities that advance the natural environment are:
+
+Conservation bodies and 
+Land care groups
+Environmental education groups
+Natural resource organisations
+11. Any other purpose beneficial to the general public that may reasonably be regarded as analogous to, or within the spirit of, any of the purposes mentioned in the subtypes above.
+This purpose includes other purposes previously recognised by the courts as being charitable, and allows for the development of charitable purposes over time.
+
+If applying to register an organisation as a charity, before you select this subtype, consider whether your organisation's purposes fall within one of the other subtypes. If all of your organisation's purposes fall within other subtypes, do not select this subtype. If you believe that your organisation's purposes are similar to but not fully covered by the other subtypes, you can select this one.
+
+12. Advancing  (promoting or opposing a change to any matter established by law, policy or practice in the Commonwealth, a state, a territory or another country).
+Where the organisation's purpose is to promote a change, this change must further or be in aid of one of the 11 other purposes listed in the Charities Act. If the organisation's purpose is to oppose change, that change must not oppose or hinder one or more of the purposes listed in the Charities Act.
+
+Some examples of charities that advance public debate are:
+
+Human rights research bodies that provides law reform submissions to government
+Education research institutes that develops public policy position papers
+Other recognised charity subtypes
+13. Health Promotion Charity
+A Health Promotion Charity is a charitable institution whose principal activity is to promote the prevention or control of diseases in people. This may include providing public information about a disease, research to develop cures or treatments, or providing equipment to help people who are suffering from the disease.
+
+Some examples of Health Promotion Charities:
+
+Some community health care providers
+Some medical research organisations
+Organisations that work to raise awareness of human diseases
+
+
+14. Public Benevolent Institution
+A Public Benevolent Institution is a type of charitable institution whose main purpose is to relieve suffering that is serious enough to arouse a feeling of pity or compassion in members of the community. Such suffering could be caused by conditions such as poverty, sickness, helplessness or distress.
+
+Some examples of Public Benevolent Institutions:
+
+Some hospitals and hospices
+Some disability support services
+Some aged care services
+Providers of low-cost rental or subsidised housing for people in need
+For more information, see our factsheet on Public Benevolent Institutions.
+
+
+
+

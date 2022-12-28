@@ -1,0 +1,183 @@
+﻿<?xml version = '1.0' encoding = 'UTF-8'?>
+<rdf:RDF xmlns="http://ontorion.com/namespace#" xml:base="http://ontorion.com/namespace" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://ontorion.com/namespace#" />
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+  <!-- http://ontorion.com/namespace#dones -->
+  <owl:ObjectProperty rdf:about="http://ontorion.com/namespace#dones" />
+  <!-- http://ontorion.com/namespace#has -->
+  <owl:ObjectProperty rdf:about="http://ontorion.com/namespace#has" />
+  <!-- http://ontorion.com/namespace#isPartOf -->
+  <owl:ObjectProperty rdf:about="http://ontorion.com/namespace#isPartOf" />
+  <!-- http://ontorion.com/namespace#requires -->
+  <owl:ObjectProperty rdf:about="http://ontorion.com/namespace#requires" />
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+  <!-- http://ontorion.com/namespace#Activities -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Activities" />
+  <!-- http://ontorion.com/namespace#Activity -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Activity">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://ontorion.com/namespace#isPartOf" />
+        <owl:someValuesFrom rdf:resource="http://ontorion.com/namespace#Activities" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <!-- http://ontorion.com/namespace#Attribute -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Attribute" />
+  <!-- http://ontorion.com/namespace#Charity -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Charity">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://ontorion.com/namespace#has" />
+        <owl:someValuesFrom rdf:resource="http://ontorion.com/namespace#Subtype" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <!-- http://ontorion.com/namespace#Company -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Company">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://ontorion.com/namespace#requires" />
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:oneOf rdf:parseType="Collection">
+              <rdf:Description rdf:about="http://ontorion.com/namespace#Work" />
+            </owl:oneOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <!-- http://ontorion.com/namespace#Condition -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Condition" />
+  <!-- http://ontorion.com/namespace#Goal -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Goal" />
+  <!-- http://ontorion.com/namespace#HealthCondition -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#HealthCondition" />
+  <!-- http://ontorion.com/namespace#Place -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Place" />
+  <!-- http://ontorion.com/namespace#Places -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Places" />
+  <!-- http://ontorion.com/namespace#Subtype -->
+  <owl:Class rdf:about="http://ontorion.com/namespace#Subtype">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://ontorion.com/namespace#has" />
+        <owl:someValuesFrom rdf:resource="http://ontorion.com/namespace#Activities" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://ontorion.com/namespace#has" />
+        <owl:someValuesFrom rdf:resource="http://ontorion.com/namespace#Goal" />
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+  <!-- http://ontorion.com/namespace#Advancing -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Advancing">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Activity" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#AdvancingEducation -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#AdvancingEducation">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Goal" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#AdvancingHealth -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#AdvancingHealth">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Goal" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Charity -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Charity">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Company" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#College -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#College">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Place" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Colleges -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Colleges">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Places" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Disease -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Disease">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#HealthCondition" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Formal -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Formal">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Attribute" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Illness -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Illness">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#HealthCondition" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Kindergarten -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Kindergarten">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Place" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Kindergartens -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Kindergartens">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Places" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#MentalIllness -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#MentalIllness">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#HealthCondition" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Relieving -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Relieving">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Activity" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#School -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#School">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Place" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Schools -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Schools">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Places" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Training -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Training">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Activity" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Universities -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Universities">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Places" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#University -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#University">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Place" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Vocational -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Vocational">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Attribute" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Welfare -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Welfare">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Condition" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Work -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Work">
+    <rdf:type rdf:resource="http://ontorion.com/namespace#Activity" />
+    <dones rdf:resource="http://ontorion.com/namespace#Workers" />
+  </owl:NamedIndividual>
+  <!-- http://ontorion.com/namespace#Workers -->
+  <owl:NamedIndividual rdf:about="http://ontorion.com/namespace#Workers" />
+</rdf:RDF>
+<!--Generated by Cognitum FluentEditor2015, a part of Ontorion(TM) Knowledge Management Framework, (with support of OwlApi)-->
