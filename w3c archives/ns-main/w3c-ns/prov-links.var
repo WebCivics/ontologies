@@ -1,0 +1,10 @@
+URI: prov-links
+
+URI: prov-links.ttl
+Content-Type: text/turtle
+
+URI: prov-links.owl
+Content-Type: application/rdf+xml; qs=0.4
+
+URI: prov-links.xsd
+Content-Type: application/xml; qs=0.3

@@ -1,0 +1,551 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ns0: <http://purl.org/vocab/vann/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent>
+  a owl:Ontology ;
+  owl:versionIRI <https://openscience.adaptcentre.ie/ontologies/consent/v/consent_v1> ;
+  owl:imports <http://www.w3.org/ns/prov.owl> ;
+  dc11:title "Consent Ontology" ;
+  dc:abstract """The General Data Protection Regulations (GDPR) imposes greater
+restrictions on obtaining valid user consents involving the use of personal data.
+A semantic model of consent can make the concepts of consent explicit, estab-
+lish a common understanding and enable re-use of consent. Therefore, forming
+a semantic model of consent will satisfy the GDPR requirements of specificity
+and unambiguity and is an important step towards ensuring compliance. In this
+paper, we discuss obtaining an open vocabulary of expressing consent leverag-
+ing existing semantic models of provenance, processes, permission and obliga-
+tions. We also present a reference architecture for the management of data pro-
+cessing according to consent permission. This data management model utilizes
+the open vocabulary of consent and incorporates the change of context into the
+data processing activity. By identifying and incorporating changes to the rela-
+tional context between data controllers and data subjects into the data pro-
+cessing model, it aims to improve the integration of data management across
+different information systems specifically adhering to the GDPR and helping
+controllers to demonstrate compliance.""" ;
+  dc:created "2017-08-01" ;
+  dc:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dc:modified "2017-10-21" ;
+  ns0:preferredNamespacePrefix "Consent Ontology", "consent" ;
+  rdfs:comment "The consent ontology presents a way to define and describe consent in terms relevant to the GDPR." .
+
+dc11:title a owl:AnnotationProperty .
+dc:abstract a owl:AnnotationProperty .
+dc:created a owl:AnnotationProperty .
+dc:license a owl:AnnotationProperty .
+dc:modified a owl:AnnotationProperty .
+ns0:example a owl:AnnotationProperty .
+ns0:preferredNamespacePrefix a owl:AnnotationProperty .
+<http://purl.org/adaptcentre/openscience/ontologies/consent#activity_has_purpose>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Action> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Purpose> ;
+  rdfs:label "activity has purpose" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#consent_given_at>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Context> ;
+  rdfs:label "consent given at" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#consent_given_by>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Consenting_party> ;
+  rdfs:label "consent given by" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#consent_given_for>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:label "consent given for" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#data_has_a_category>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Data> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Category> ;
+  rdfs:label "data has a category" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#data_has_a_format>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Data> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Format> ;
+  rdfs:label "data has a format" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#permission_given_for_activity>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Action> ;
+  rdfs:label "permission given for activity" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#permission_given_for_condition>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Condition> ;
+  rdfs:label "permission given for condition" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#permission_given_for_data>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Data> ;
+  rdfs:label "permission given for data" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#permission_given_to>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:range <http://purl.org/adaptcentre/openscience/ontologies/consent#Allowed_party> ;
+  rdfs:comment "" ;
+  rdfs:label "permission given to" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Action>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:comment "'action' is used to identify what action is permitted by the consent." ;
+  rdfs:label "action" ;
+  prov:definition "'action' defines what action is permitted by the consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Activity>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Obligation> ;
+  rdfs:comment "This term 'activity' is used to define what to do when some 'event' occures related to consent. For example, when the consent expires (event), then re-solicit consent (activity) or when the consent is revoked (event) then stop processing (activity)." ;
+  rdfs:label "activity" ;
+  prov:definition """'Activity' defines what activiy is required to do when an event occures due to 
+
+
+Consent Obligation has an event and an activity. When that even occures that activity is required to be executed by the 'Consent Obligation'""" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Agreegated_analysis>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Purpose> ;
+  rdfs:label "agreegated analysis" ;
+  prov:definition "'agreegated analysis' is a subtype of 'purpose'. It means the data are allowed for analysis and the analysis can agreegate data from other sources as well." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Allowed_party>
+  a owl:Class ;
+  rdfs:subClassOf prov:Agent ;
+  rdfs:comment "'Allowed party' is used to indicate who the party (person or organisation) is that is allowed (or denied )to perform certain action on the particular data by this consent." ;
+  rdfs:label "allowed party" ;
+  prov:definition "'Allowed party' defines the party (person or organisation) that is allowed (or denied )to perform certain action on the particular data by this consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#App_based>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Format> ;
+  rdfs:comment "It identifies if the consent is taken in the form of mobile application." ;
+  rdfs:label "mobile application based" ;
+  prov:definition "It defines if the consent is taken in the form of mobile application." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Audio>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Format> ;
+  rdfs:comment "It is used to identify if the consent is taken in the form of audio." ;
+  rdfs:label "audio" ;
+  prov:definition "It identifies if the consent is taken in the form of audio." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Audio_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Single_format_data> ;
+  rdfs:label "audio data" ;
+  prov:definition "'audio data' defines the format of data is audio." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Business_type>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Share_with> ;
+  rdfs:comment "'business type' indicates the type of business the data is permitted to share by this consent." ;
+  rdfs:label "business type" ;
+  prov:definition "'business type' defines with what type of business the data is permitted to share by this consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Category>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Data> ;
+  rdfs:comment "'category' identifies the category of data such as personal data (sensitive or non sensitive) / non personal data etc." ;
+  rdfs:label "category" ;
+  prov:definition "'category' defines the category of data on which this consent applies." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Collect>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Permitted_Action> ;
+  rdfs:comment "'collect' indicates the action to collect data. This is used to identify if data collection is allowed by the consent's permission." ;
+  rdfs:label "collect" ;
+  prov:definition "'collect' defines the action to collect data." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Condition>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:comment "'condition' is used to mention if there is any condition based on which the permission mentioned in the consent will be applicable. In other words the permission mentioned in the consent is applicable only when the conditions are met." ;
+  rdfs:label "condition" ;
+  prov:definition "'condition' defines based on what condition the permission is applicable." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Consent>
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:isDefinedBy "‘consent’ of the data subject means any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her;" ;
+  rdfs:label "consent" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Format>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Context> ;
+  rdfs:comment "It is used to record at what format the consent was obtained." ;
+  rdfs:label "consent format" ;
+  prov:definition "'consent format' defines the format was used to obtain the consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Obligation>
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:label "consent obligation" ;
+  prov:definition "Obligations are the actions to be performated when an event occures. 'consent obligation' defines the obligation related to consent, i.e. it defines what action to perform when an event related to consent occures. For example, when the consent expires (event), then re-solicit consent (activity) or when the consent is revoked (event) then stop processing (activity)." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Consenting_party>
+  a owl:Class ;
+  rdfs:subClassOf prov:Agent ;
+  rdfs:label "consenting party" ;
+  prov:definition "'consenting party' is the person who is giving the consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Context>
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:comment "Context is used to keep track of the contextual information while giving, modifying or revoking consent." ;
+  rdfs:label "'Context'" ;
+  prov:definition "It defines at what context the consent was given." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:comment "'data' identifies to what data this consent is applicable." ;
+  rdfs:label "data" ;
+  prov:definition "'data' defines what data is premitted by this consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Data_Format>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Data> ;
+  rdfs:comment "'data format' identifies the format  data for which this consent is applicable." ;
+  rdfs:label "data format" ;
+  prov:definition "'data format' defines the format of data for which this consent is applicable." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Data_Subject>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consenting_party> ;
+  rdfs:label "data subject" ;
+  prov:definition "", "'data subject' is the person who is identified by the personal data or the data is about that person." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Data_Subject_Representative>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consenting_party> ;
+  rdfs:label "data subject's representative" ;
+  prov:definition "'data subject's representative' is the person who is consenting on behalf of the data subject." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Denied_Action>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Action> ;
+  rdfs:comment "'denied action' indicates the action that is denied by the consent." ;
+  rdfs:label "denied action" ;
+  prov:definition "'denied action' defines what action is denied by the consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Email_marketing>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Marketing> ;
+  rdfs:label "email marketing" ;
+  prov:definition "'email marketing' is a subtype of purpose 'marketing.'" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Event>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Obligation> ;
+  rdfs:label "event" ;
+  prov:definition """'event' defines the event based on which an activity is required to do. 
+
+
+Consent Obligation has an event and an activity. When that even occures that activity is required to be executed by the 'Consent Obligation'""" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Examine>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Use> ;
+  rdfs:label "examine" ;
+  prov:definition "'examine' is a subtype of action 'use'." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#For_profit>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Business_type> ;
+  rdfs:label "for profit" ;
+  prov:definition "'for profit' defines the business type of the organisation with whom the data is permitted to share is for profit." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Genetic_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Personal_data> ;
+  rdfs:comment "'genetic data' is a subtype of 'personal data'." ;
+  rdfs:label "genetic data" ;
+  prov:definition "'genetic data' identifies the of 'category' of data applicable by this consent is genetic data." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Granting_Context>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Context> ;
+  rdfs:comment "'granting context' says at what context the consent was given." ;
+  rdfs:label "granting context" ;
+  prov:definition "'granting context' defines at what context the consent was given." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Health_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Personal_data> ;
+  rdfs:comment "'health data' identifies the of 'category' of data applicable by this consent is health data.", "'health data' is a subtype of 'personal data'." ;
+  rdfs:label "health data" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Information_exchanged>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Context> ;
+  rdfs:comment "'information exchanged' says what information was provided while the consent was given." ;
+  rdfs:label "information exchanged" ;
+  prov:definition "'information exchanged' is used to note the information that was provided while the consent was given." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Legal_representative_of_data_subject>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Data_Subject_Representative> ;
+  rdfs:label "legal representative of data subject" ;
+  prov:definition "'legal representative of data subject' is the person who is legally consenting on behalf of the data subject." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Location>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Context> ;
+  rdfs:comment "'location' says where the consent is given." ;
+  rdfs:label "location" ;
+  prov:definition "'location' defines the context of where the consent is given." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Marketing>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Purpose> ;
+  rdfs:label "marketing" ;
+  prov:definition "'marketing' is a subtype of purpose." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Marketing_via_phone>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Marketing> ;
+  rdfs:label "phone marketing" ;
+  prov:definition "'phone marketing' is a subtype of purpose 'marketing.'" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Marketing_via_post>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Marketing> ;
+  rdfs:label "marketing by post" ;
+  prov:definition "'marketing by post' is a subtype of purpose marketing." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Marketing_via_text>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Marketing> ;
+  rdfs:label "marketing by text" ;
+  prov:definition "'marketing by text' is a subtype of purpose marketing." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Mixed_format_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Data_Format> ;
+  rdfs:comment "'mixed format data' indicates  if the data being consented has a mixed format i.e.  the data comtains various format. An example of mixed format data can be a combination of data of both audio and text format of data." ;
+  rdfs:label "mixed format data" ;
+  prov:definition "'mixed format data' defines if the data being consented has a mixed format. mixed format data combines the data of various format." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Modification_Context>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Context> ;
+  rdfs:comment "'modification context' is used to indicate at what context the consent is modified." ;
+  rdfs:label "modification context" ;
+  prov:definition "'modification context' defines at what context the consent is modified." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Modify>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Use> ;
+  rdfs:label "modify" ;
+  prov:definition "'modify' is a subtype of action 'use'." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Name_of_Controller>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Information_exchanged> ;
+  rdfs:label "name of controller" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Non_personal_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Category> ;
+  rdfs:comment "'non personal data' is a subtype of 'category' of data." ;
+  rdfs:label "non personal data" ;
+  prov:definition "'non personal data' identifies the  of 'category' of data applicable by this consent is not personal data." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Non_profit>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Business_type> ;
+  rdfs:label "non profit" ;
+  prov:definition "'non profit' defines the business type of the organisation with whom the data is permitted to share is non profit." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Online_form>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Format> ;
+  rdfs:label "online form" ;
+  prov:definition "It identifies if the consent is taken in the form of online form." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Online_opt_in_option>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Format> ;
+  rdfs:label "online opt in option" ;
+  prov:definition "It identifies if the consent is taken as an online opt-in option." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Organisation>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Share_with> ;
+  rdfs:label "organisation" ;
+  prov:definition "'organisation' identifies the organisation with whom the data is permitted to share." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Organisation_location>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Organisation> ;
+  rdfs:label "organisation's location" ;
+  prov:definition "'organisation's location' identifies the location of the organisation that is permitted by the consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Organisation_name>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Organisation> ;
+  rdfs:label "organisation's name" ;
+  prov:definition "'organisation's name' identifies the name of the organisation that is permitted by the consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Paper>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Format> ;
+  rdfs:label "paper" ;
+  prov:definition "It identifies if the consent is taken on paper." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Parent_of_data_subject>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Data_Subject_Representative> ;
+  rdfs:label "parent of data subject" ;
+  prov:definition "'parent of data subject' is the person who is the parent of data subject and consenting on behalf of the data subject where the data subject is a child." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Party_to_share_data_with>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Information_exchanged> ;
+  rdfs:label "party to share data with" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Permission>
+  a owl:Class ;
+  rdfs:subClassOf prov:Entity ;
+  rdfs:comment "'permission' is used to identify the authorisation granted by the consent." ;
+  rdfs:label "permission" ;
+  prov:definition "'permission' defines the authorisation granted by the consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Permitted_Action>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Action> ;
+  rdfs:comment "'permitted action' indicates the action that is allowed by the consent." ;
+  rdfs:label "permitted action" ;
+  prov:definition "'permitted action' defines the action that is allowed by the consent." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Personal_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Category> ;
+  rdfs:comment "'personal data' is a subtype of 'category' of data." ;
+  rdfs:label "personal data" ;
+  prov:definition "'personal data' identifies the of 'category' of data applicable by this consent is personal data." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Picture_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Single_format_data> ;
+  rdfs:label "picture data" ;
+  prov:definition "'picture data' defines the format of data is image." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Purpose>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Action> ;
+  rdfs:label "purpose" ;
+  prov:definition "'purpose' indicates for what purpose the action is allowed by the consent on the data" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Read>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Use> ;
+  rdfs:label "read" ;
+  prov:definition "'read' is a subtype of action 'use'." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Retention_time>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Information_exchanged> ;
+  rdfs:label "retention time" .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Revoking_Context>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Context> ;
+  rdfs:comment "'revoking context' is used to indicate at what context the consent is revoked." ;
+  rdfs:label "revoking context" ;
+  prov:definition "'revoking context' defines at what context the consent is revoked." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Scientific_Purpose>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Purpose> ;
+  rdfs:label "scientific purpose" ;
+  prov:definition "'scientific purpose' is a subtype of purpose." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Share_with>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Permitted_Action> ;
+  rdfs:comment "'share with' identifies who is allowed to share the data with by the consent." ;
+  rdfs:label "share with" ;
+  prov:definition "'share with' defines with whom the consent permits to share data." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Single_format_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Data_Format> ;
+  rdfs:comment "'singe format data' indicates  if the data being consented has a single format.  An example of mixed format data can be a combination of data of either audio and text format of data, not a combination of these." ;
+  rdfs:label "single format data" ;
+  prov:definition "'single format data' defines if the data being consented has a single format." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Solo_analysis>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Purpose> ;
+  rdfs:label "solo analysis" ;
+  prov:definition "'solo analysis' is a subtype of 'purpose'. It means the data are allowed for analysis from this single source only, it can not be  agreegate with data from other sources." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Store>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Permitted_Action> ;
+  rdfs:comment "'store' indicates the action to store data. This is used to identify if data storage is allowed by the consent's permission." ;
+  rdfs:label "store" ;
+  prov:definition "'store' defines the action to store data." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Text_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Single_format_data> ;
+  rdfs:label "text data" ;
+  prov:definition "'text data' defines the format of data is text." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Time>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Context> ;
+  rdfs:comment "'time' says when the consent is given." ;
+  rdfs:label "time" ;
+  prov:definition "'time' defines the context of when the consent is given." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Use>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Permitted_Action> ;
+  rdfs:comment "'use' indicates the action to use data. This is used to identify if data use is allowed by the consent's permission." ;
+  rdfs:label "use" ;
+  prov:definition "'use' indicates the action to use data." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Validity_time>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Permission> ;
+  rdfs:label "validity time" ;
+  prov:definition "'validity time' defines the validity time of consent. The consent is valid only within this validity time." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Video>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Consent_Format> ;
+  rdfs:label "video" ;
+  prov:definition "It identifies if the consent is taken in the form of video." .
+
+<http://purl.org/adaptcentre/openscience/ontologies/consent#Video_data>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/adaptcentre/openscience/ontologies/consent#Single_format_data> ;
+  rdfs:label "video data" ;
+  prov:definition "'video data' defines the format of data is video." .
+
+[]
+  a owl:AllDisjointClasses ;
+  owl:members (
+   <http://purl.org/adaptcentre/openscience/ontologies/consent#Audio_data>
+   <http://purl.org/adaptcentre/openscience/ontologies/consent#Picture_data>
+   <http://purl.org/adaptcentre/openscience/ontologies/consent#Text_data>
+   <http://purl.org/adaptcentre/openscience/ontologies/consent#Video_data>
+ ) .

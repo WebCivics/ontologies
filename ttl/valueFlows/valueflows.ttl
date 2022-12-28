@@ -1,0 +1,929 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns0: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+
+<https://w3id.org/valueflows/>
+  a owl:Ontology ;
+  dc:title "Value Flows Ontology" ;
+  dc:type <http://purl.org/adms/assettype/Ontology> ;
+  dc:status <http://purl.org/adms/status/UnderDevelopment> .
+
+<https://w3id.org/valueflows#Agent> a owl:Class .
+<https://w3id.org/valueflows#Unit> a owl:Class .
+<https://w3id.org/valueflows#QuantityValue> a owl:Class .
+<https://w3id.org/valueflows#SpatialThing> a owl:Class .
+<https://w3id.org/valueflows#Boolean> a owl:Class .
+<https://w3id.org/valueflows#Action>
+  a owl:Class ;
+  rdfs:label "vf:Action" ;
+  rdfs:subClassOf rdf:Property ;
+  ns0:term_status "testing" ;
+  rdfs:comment "An action verb defining the kind of event, commitment, or intent." .
+
+<https://w3id.org/valueflows#AgentRelationshipRole>
+  a owl:Class ;
+  rdfs:label "vf:AgentRelationshipRole" ;
+  rdfs:subClassOf rdf:Property ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "A relationship role defining the kind of association one agent can have with another." .
+
+<https://w3id.org/valueflows#RecipeResource>
+  a owl:Class ;
+  rdfs:label "vf:RecipeResource" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Specifies the resource as part of a recipe, for use in planning from recipe." .
+
+<https://w3id.org/valueflows#ResourceSpecification>
+  a owl:Class ;
+  rdfs:label "vf:ResourceSpecification" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Specification of a kind of resource. Could define a material item, service, digital item, currency account, etc." .
+
+<https://w3id.org/valueflows#RecipeProcess>
+  a owl:Class ;
+  rdfs:label "vf:RecipeProcess" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Specifies the process part of a recipe for use in planning from recipe." .
+
+<https://w3id.org/valueflows#ProcessSpecification>
+  a owl:Class ;
+  rdfs:label "vf:ProcessSpecification" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Specifies the kind of process." .
+
+<https://w3id.org/valueflows#RecipeFlow>
+  a owl:Class ;
+  rdfs:label "vf:RecipeFlow" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The linkage between a process recipe, an action that structures a recipe, and a resource specification." .
+
+<https://w3id.org/valueflows#ScenarioDefinition>
+  a owl:Class ;
+  rdfs:label "vf:ScenarioDefinition" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The type definition of one or more scenarios." .
+
+<https://w3id.org/valueflows#Plan>
+  a owl:Class ;
+  rdfs:label "vf:Plan" ;
+  ns0:term_status "testing" ;
+  rdfs:comment "A logical collection of processes that constitute a body of scheduled work with defined deliverable(s)." .
+
+<https://w3id.org/valueflows#Intent>
+  a owl:Class ;
+  rdfs:label "vf:Intent" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "A proposed or planned or estimated economic flow, prior to a commitment or agreement, which can lead to commitments and/or economic events." .
+
+<https://w3id.org/valueflows#Proposal>
+  a owl:Class ;
+  rdfs:label "vf:Proposal" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Published requests or offers, sometimes with what is expected in return." .
+
+<https://w3id.org/valueflows#ProposedIntent>
+  a owl:Class ;
+  rdfs:label "vf:ProposedIntent" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Represents many-to-many relationships between Proposals and Intents, supporting including intents in multiple proposals, as well as a proposal including multiple intents." .
+
+<https://w3id.org/valueflows#ProposedTo>
+  a owl:Class ;
+  rdfs:label "vf:ProposedTo" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "An agent to which the proposal is to be published." .
+
+<https://w3id.org/valueflows#Commitment>
+  a owl:Class ;
+  rdfs:label "vf:Commitment" ;
+  ns0:term_status "testing" ;
+  rdfs:comment "A planned economic flow that has been promised by an agent to another agent." .
+
+<https://w3id.org/valueflows#Satisfaction>
+  a owl:Class ;
+  rdfs:label "vf:Satisfaction" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Represents many-to-many relationships between intents and commitments or events that partially or full satisfy one or more intents." .
+
+<https://w3id.org/valueflows#Agreement>
+  a owl:Class ;
+  rdfs:label "vf:Agreement" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Any type of agreement among economic agents." .
+
+<https://w3id.org/valueflows#Scenario>
+  a owl:Class ;
+  rdfs:label "vf:Scenario" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "An estimated or analytical logical collection of higher level processes used for budgeting, analysis, plan refinement, etc." .
+
+<https://w3id.org/valueflows#EconomicResource>
+  a owl:Class ;
+  rdfs:label "vf:EconomicResource" ;
+  ns0:term_status "testing" ;
+  rdfs:comment "A resource which is useful to people or the ecosystem." .
+
+<https://w3id.org/valueflows#Process>
+  a owl:Class ;
+  rdfs:label "vf:Process" ;
+  ns0:term_status "testing" ;
+  rdfs:comment "An activity that changes inputs into outputs.  It could transform or transport economic resource(s)." .
+
+<https://w3id.org/valueflows#EconomicEvent>
+  a owl:Class ;
+  rdfs:label "vf:EconomicEvent" ;
+  ns0:term_status "testing" ;
+  rdfs:comment "An observed economic flow, as opposed to a flow planned to happen in the future. This could reflect a change in the quantity of an economic resource. It is also defined by its behavior in relation to the economic resource (see vf:action)" .
+
+<https://w3id.org/valueflows#AgentRelationship>
+  a owl:Class ;
+  rdfs:label "vf:AgentRelationship" ;
+  ns0:term_status "testing" ;
+  rdfs:comment "An ongoing voluntary association between 2 agents of any kind." .
+
+<https://w3id.org/valueflows#Fulfillment>
+  a owl:Class ;
+  rdfs:label "vf:Fulfillment" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Represents many-to-many relationships between commitments and economic events that fully or partially satisfy one or more commitments." .
+
+<https://w3id.org/valueflows#Claim>
+  a owl:Class ;
+  rdfs:label "vf:Claim" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "A claim for a future economic event(s) in reciprocity for an economic event that already occurred. For example, a claim for payment for goods received." .
+
+<https://w3id.org/valueflows#Settlement>
+  a owl:Class ;
+  rdfs:label "vf:Settlement" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Represents many-to-many relationships between claim and economic events that uflly or parially settle the one or more claims." .
+
+<https://w3id.org/valueflows#Appreciation>
+  a owl:Class ;
+  rdfs:label "vf:Appreciation" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "A way to tie an economic event that is given in loose fulfilment for another economic event, without commitments or expectations. Supports the gift economy." .
+
+<https://w3id.org/valueflows#action>
+  a owl:ObjectProperty ;
+  rdfs:label "action" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#RecipeFlow>
+     <https://w3id.org/valueflows#Claim>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "Relates a process input or output to a verb, such as consume, produce, work, improve, etc." .
+
+<https://w3id.org/valueflows#inputOf>
+  a owl:ObjectProperty ;
+  rdfs:label "input of" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#Process> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "Relates an input flow to it's process." .
+
+<https://w3id.org/valueflows#outputOf>
+  a owl:ObjectProperty ;
+  rdfs:label "output of" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#Process> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "Relates an output flow to it's process." .
+
+<https://w3id.org/valueflows#recipeInputOf>
+  a owl:ObjectProperty ;
+  rdfs:label "recipe input of" ;
+  rdfs:domain <https://w3id.org/valueflows#RecipeFlow> ;
+  rdfs:range <https://w3id.org/valueflows#RecipeProcess> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Relates an input flow to it's process in a recipe." .
+
+<https://w3id.org/valueflows#recipeOutputOf>
+  a owl:ObjectProperty ;
+  rdfs:label "recipe output of" ;
+  rdfs:domain <https://w3id.org/valueflows#RecipeFlow> ;
+  rdfs:range <https://w3id.org/valueflows#RecipeProcess> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Relates an output flow to it's process in a recipe." .
+
+<https://w3id.org/valueflows#plannedWithin>
+  a owl:ObjectProperty ;
+  rdfs:label "planned within" ;
+  rdfs:domain <https://w3id.org/valueflows#Process> ;
+  rdfs:range <https://w3id.org/valueflows#Plan> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "The process with its inputs and outputs is part of the plan." .
+
+<https://w3id.org/valueflows#independentDemandOf>
+  a owl:ObjectProperty ;
+  rdfs:label "independent demand of" ;
+  rdfs:range <https://w3id.org/valueflows#Plan> ;
+  rdfs:domain <https://w3id.org/valueflows#Commitment> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "Represents a desired deliverable expected from this plan." .
+
+<https://w3id.org/valueflows#resourceInventoriedAs>
+  a owl:ObjectProperty ;
+  rdfs:label "resource inventoried as" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#EconomicEvent>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#EconomicResource> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "Economic resource involved in the flow." .
+
+<https://w3id.org/valueflows#toResourceInventoriedAs>
+  a owl:ObjectProperty ;
+  rdfs:label "to resource inventoried as" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicEvent> ;
+  rdfs:range <https://w3id.org/valueflows#EconomicResource> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Additional economic resource on the economic event when needed by the receiver. Used when a transfer or move, or sometimes other actions, requires explicitly identifying an economic resource on the receiving side." .
+
+<https://w3id.org/valueflows#relationship>
+  a owl:ObjectProperty ;
+  rdfs:label "relationship" ;
+  rdfs:domain <https://w3id.org/valueflows#AgentRelationship> ;
+  rdfs:range <https://w3id.org/valueflows#AgentRelationshipRole> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "The role of an economic relationship that exists between 2 agents, such as member, trading partner." .
+
+<https://w3id.org/valueflows#appreciationOf>
+  a owl:ObjectProperty ;
+  rdfs:label "appreciation of" ;
+  rdfs:domain <https://w3id.org/valueflows#Appreciation> ;
+  rdfs:range <https://w3id.org/valueflows#EconomicEvent> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The economic event being appreciated (gift economy)." .
+
+<https://w3id.org/valueflows#appreciationWith>
+  a owl:ObjectProperty ;
+  rdfs:label "appreciation with" ;
+  rdfs:domain <https://w3id.org/valueflows#Appreciation> ;
+  rdfs:range <https://w3id.org/valueflows#EconomicEvent> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The economic event implemented in appreciation (gift economy)." .
+
+<https://w3id.org/valueflows#provider>
+  a owl:ObjectProperty ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#Claim>
+   ) ] ;
+  rdfs:label "provider" ;
+  rdfs:range <https://w3id.org/valueflows#Agent> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "The economic agent from whom the intended, committed, or actual economic event is initiated." .
+
+<https://w3id.org/valueflows#receiver>
+  a owl:ObjectProperty ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#Claim>
+   ) ] ;
+  rdfs:label "receiver" ;
+  rdfs:range <https://w3id.org/valueflows#Agent> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "The economic agent whom the intended, committed, or actual economic event is for." .
+
+<https://w3id.org/valueflows#subject>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/valueflows#AgentRelationship> ;
+  rdfs:label "subject" ;
+  rdfs:range foaf:#Agent ;
+  ns0:term_status "testing" ;
+  rdfs:comment "The subject of a relationship between 2 agents.  For example, if Mary is a member of a group, then Mary is the subject." .
+
+<https://w3id.org/valueflows#object>
+  a owl:ObjectProperty ;
+  rdfs:domain <https://w3id.org/valueflows#AgentRelationship> ;
+  rdfs:label "object" ;
+  rdfs:range foaf:#Agent ;
+  ns0:term_status "testing" ;
+  rdfs:comment "The object of a relationship between 2 agents.  For example, if Mary is a member of a group, then the group is the object." .
+
+<https://w3id.org/valueflows#inScopeOf>
+  a owl:ObjectProperty ;
+  rdfs:domain owl:Thing ;
+  rdfs:label "in scope of" ;
+  rdfs:range owl:Thing ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Grouping around something to create a boundary or context, used for documenting, accounting, planning." .
+
+<https://w3id.org/valueflows#agreedIn>
+  a owl:ObjectProperty ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#Claim>
+   ) ] ;
+  rdfs:label "agreed in" ;
+  rdfs:range owl:Thing ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Reference to an agreement between agents which specifies the rules, terms, policies, calculations, etc. which govern this flow." .
+
+<https://w3id.org/valueflows#triggeredBy>
+  a owl:ObjectProperty ;
+  rdfs:label "triggered by" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Claim>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#EconomicEvent> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "References an economic event that implied the claim or event, often based on a prior agreement." .
+
+<https://w3id.org/valueflows#settles>
+  a owl:ObjectProperty ;
+  rdfs:label "settles" ;
+  rdfs:domain <https://w3id.org/valueflows#Settlement> ;
+  rdfs:range <https://w3id.org/valueflows#Claim> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "References a claim that is fully or partially settled by the economic event." .
+
+<https://w3id.org/valueflows#settledBy>
+  a owl:ObjectProperty ;
+  rdfs:label "settled by" ;
+  rdfs:domain <https://w3id.org/valueflows#Settlement> ;
+  rdfs:range <https://w3id.org/valueflows#EconomicEvent> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "References an economic event that fully or partially settles the claim." .
+
+<https://w3id.org/valueflows#containedIn>
+  a owl:ObjectProperty ;
+  rdfs:label "contained in" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicResource> ;
+  rdfs:range <https://w3id.org/valueflows#EconomicResource> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Used when a stock economic resource contains units also defined as economic resources." .
+
+<https://w3id.org/valueflows#hasBeginning>
+  a owl:DatatypeProperty ;
+  rdfs:domain time:TemporalEntity ;
+  rdfs:range xsd:dateTimeStamp ;
+  ns0:term_status "unstable" ;
+  owl:propertyChainAxiom (
+   time:hasBeginning
+   time:inXSDDateTimeStamp
+ ) ;
+  rdfs:comment "Specific time marking the exact beginning of flow or process" .
+
+<https://w3id.org/valueflows#hasEnd>
+  a owl:DatatypeProperty ;
+  rdfs:domain time:TemporalEntity ;
+  rdfs:range xsd:dateTimeStamp ;
+  ns0:term_status "unstable" ;
+  owl:propertyChainAxiom (
+   time:hasEnd
+   time:inXSDDateTimeStamp
+ ) ;
+  rdfs:comment "Specific time marking the exact end of flow or process" .
+
+<https://w3id.org/valueflows#accountingQuantity>
+  a owl:ObjectProperty ;
+  rdfs:label "accounting quantity" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicResource> ;
+  rdfs:range <http://qudt.org/schema/qudt/QuantityValue> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The current amount and unit of the economic resource for which the agent has primary rights and responsibilities, sometimes thought of as ownership. This can be either stored or derived from economic events affecting the resource." .
+
+<https://w3id.org/valueflows#onhandQuantity>
+  a owl:ObjectProperty ;
+  rdfs:label "onhand quantity" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicResource> ;
+  rdfs:range <http://qudt.org/schema/qudt/QuantityValue> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The current amount and unit of the economic resource which is under direct control of the agent.  It may be more or less than the accounting quantity. This can be either stored or derived from economic events affecting the resource." .
+
+<https://w3id.org/valueflows#resourceQuantity>
+  a owl:ObjectProperty ;
+  rdfs:label "resource quantity" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#RecipeFlow>
+     <https://w3id.org/valueflows#Fulfillment>
+     <https://w3id.org/valueflows#Satisfaction>
+     <https://w3id.org/valueflows#Claim>
+     <https://w3id.org/valueflows#Settlement>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#QuantityValue> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The amount and unit of the economic resource counted or inventoried." .
+
+<https://w3id.org/valueflows#effortQuantity>
+  a owl:ObjectProperty ;
+  rdfs:label "effort quantity" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#RecipeFlow>
+     <https://w3id.org/valueflows#Fulfillment>
+     <https://w3id.org/valueflows#Satisfaction>
+     <https://w3id.org/valueflows#Claim>
+     <https://w3id.org/valueflows#Settlement>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#QuantityValue> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The amount and unit of the work or use or citation effort-based action. This is often a time duration, but also could be cycle counts or other measures of effort or usefulness." .
+
+<https://w3id.org/valueflows#availableQuantity>
+  a owl:ObjectProperty ;
+  rdfs:label "available quantity" ;
+  rdfs:domain <https://w3id.org/valueflows#Intent> ;
+  rdfs:range <http://qudt.org/schema/qudt/QuantityValue> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The quantity of the offered resource currently available." .
+
+<https://w3id.org/valueflows#unitBased>
+  a owl:DatatypeProperty ;
+  rdfs:label "unit based" ;
+  rdfs:domain <https://w3id.org/valueflows#Proposal> ;
+  rdfs:range xsd:boolean ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "This proposal contains unit based quantities, which can be multipied to create commitments; commonly seen in a price list or e-commerce." .
+
+<https://w3id.org/valueflows#currentLocation>
+  a owl:ObjectProperty ;
+  rdfs:label "current location" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicResource> ;
+  rdfs:range geo:SpatialThing ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The current place an economic resource is located.  Could be at any level of granularity, from a town to an address to a warehouse location.  Usually mappable." .
+
+<https://w3id.org/valueflows#primaryLocation>
+  a owl:ObjectProperty ;
+  rdfs:label "primary location" ;
+  rdfs:domain foaf:#Agent ;
+  rdfs:range geo:SpatialThing ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The main place an agent is located, often an address where activities occur and mail can be sent. This is usually a mappable geographic location.  It also could be a website address, as in the case of agents who have no physical location." .
+
+<https://w3id.org/valueflows#eligibleLocation>
+  a owl:ObjectProperty ;
+  rdfs:label "eligible location" ;
+  rdfs:domain <https://w3id.org/valueflows#Proposal> ;
+  rdfs:range geo:SpatialThing ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Location or area where the proposal is valid." .
+
+<https://w3id.org/valueflows#atLocation>
+  a owl:ObjectProperty ;
+  rdfs:label "at location" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#SpatialThing> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The place where an intent, commitment, or economic event occurs.  Usually mappable." .
+
+<https://w3id.org/valueflows#image>
+  a owl:DatatypeProperty ;
+  ns0:term_status "unstable" ;
+  rdfs:label "image" ;
+  rdfs:comment "The uri to an image relevant to the entity, such as a logo, avatar, photo, diagram, etc." .
+
+<https://w3id.org/valueflows#uri>
+  a owl:DatatypeProperty ;
+  ns0:term_status "unstable" ;
+  rdfs:label "uri" ;
+  rdfs:comment "The web address relevant to the entity." .
+
+<https://w3id.org/valueflows#name>
+  a owl:DatatypeProperty ;
+  rdfs:label "name" ;
+  rdfs:range xsd:string ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "An informal or formal textual identifier for an object. Does not imply uniqueness." .
+
+<https://w3id.org/valueflows#trackingIdentifier>
+  a owl:AnnotationProperty ;
+  rdfs:label "tracking identifier" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicResource> ;
+  rdfs:range xsd:string ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Sometimes called serial number, used when each item must have a trackable identifier (like a computer). Could also be used for other unique tracking identifiers needed for resources." .
+
+<https://w3id.org/valueflows#lot>
+  a owl:AnnotationProperty ;
+  rdfs:label "lot" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicResource> ;
+  rdfs:range <http://www.virtual-assembly.org/DataFoodConsortium/FullModel#ProductBatch> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Lot or batch of an economic resource, used to track forward or backwards to all occurrences of resources of that lot." .
+
+<https://w3id.org/valueflows#fulfilledBy>
+  a owl:ObjectProperty ;
+  rdfs:label "fulfilled by" ;
+  rdfs:range <https://w3id.org/valueflows#EconomicEvent> ;
+  rdfs:domain <https://w3id.org/valueflows#Fulfillment> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The economic event which completely or partially fulfills a commitment." .
+
+<https://w3id.org/valueflows#fulfills>
+  a owl:ObjectProperty ;
+  rdfs:label "fulfills" ;
+  rdfs:range <https://w3id.org/valueflows#Commitment> ;
+  rdfs:domain <https://w3id.org/valueflows#Fulfillment> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The commitment which is completely or partially fulfilled by an economic event." .
+
+<https://w3id.org/valueflows#satisfies>
+  a owl:ObjectProperty ;
+  rdfs:label "satisfies" ;
+  rdfs:domain <https://w3id.org/valueflows#Satisfaction> ;
+  rdfs:range <https://w3id.org/valueflows#Intent> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "An intent satisfied fully or partially by an economic event or commitment." .
+
+<https://w3id.org/valueflows#satisfiedBy>
+  a owl:ObjectProperty ;
+  rdfs:label "satisfied by" ;
+  rdfs:domain <https://w3id.org/valueflows#Satisfaction> ;
+  rdfs:range [ owl:unionOf (
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#EconomicEvent>
+   ) ] ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "A commitment or economic event fully or partially satisfying an intent" .
+
+<https://w3id.org/valueflows#publishes>
+  a owl:ObjectProperty ;
+  rdfs:label "publishes" ;
+  rdfs:domain <https://w3id.org/valueflows#ProposedIntent> ;
+  rdfs:range <https://w3id.org/valueflows#Intent> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The intent which is part of this published proposal." .
+
+<https://w3id.org/valueflows#publishedIn>
+  a owl:ObjectProperty ;
+  rdfs:label "published in" ;
+  rdfs:domain <https://w3id.org/valueflows#ProposedIntent> ;
+  rdfs:range <https://w3id.org/valueflows#Proposal> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The published proposal which this intent is part of." .
+
+<https://w3id.org/valueflows#proposed>
+  a owl:ObjectProperty ;
+  rdfs:label "proposed" ;
+  rdfs:domain <https://w3id.org/valueflows#ProposedTo> ;
+  rdfs:range <https://w3id.org/valueflows#Proposal> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The proposal that is published to a specific agent." .
+
+<https://w3id.org/valueflows#proposedTo>
+  a owl:ObjectProperty ;
+  rdfs:label "proposed to" ;
+  rdfs:domain <https://w3id.org/valueflows#ProposedTo> ;
+  rdfs:range foaf:#Agent ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The agent to which the proposal is published." .
+
+<https://w3id.org/valueflows#reciprocal>
+  a owl:DatatypeProperty ;
+  rdfs:label "reciprocal" ;
+  rdfs:domain <https://w3id.org/valueflows#ProposedIntent> ;
+  rdfs:range xsd:boolean ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "This is a reciprocal intent of this proposal, not primary. Not meant to be used for intent matching." .
+
+<https://w3id.org/valueflows#finished>
+  a owl:DatatypeProperty ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Process>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#Claim>
+   ) ] ;
+  rdfs:label "finished" ;
+  rdfs:range <https://w3id.org/valueflows#Boolean> ;
+  ns0:term_status "testing" ;
+  rdfs:comment "The commitment or intent or process is complete or not.  This is irrespective of if the original goal has been met, and indicates that no more will be done." .
+
+<https://w3id.org/valueflows#substitutable>
+  a owl:DatatypeProperty ;
+  rdfs:label "substitutable" ;
+  rdfs:domain <https://w3id.org/valueflows#RecipeResource> ;
+  rdfs:range xsd:boolean ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Defines if any resource of that type can be freely substituted for any other resource of that type when used, consumed, traded, etc." .
+
+<https://w3id.org/valueflows#unitOfResource>
+  a owl:ObjectProperty ;
+  rdfs:label "unit of resource" ;
+  rdfs:domain <https://w3id.org/valueflows#RecipeResource> ;
+  rdfs:range <http://qudt.org/schema/qudt/unit> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The unit used for this resource in the recipe." .
+
+<https://w3id.org/valueflows#unitOfEffort>
+  a owl:ObjectProperty ;
+  rdfs:label "unit of effort" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#RecipeResource>
+     <https://w3id.org/valueflows#EconomicResource>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#Unit> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The unit used for use or work or sometimes cite actions." .
+
+<https://w3id.org/valueflows#basedOn>
+  a owl:ObjectProperty ;
+  rdfs:label "based on" ;
+  rdfs:domain <https://w3id.org/valueflows#Process> ;
+  rdfs:range <https://w3id.org/valueflows#ProcessSpecification> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The recipe definition or standard specification for a process." .
+
+<https://w3id.org/valueflows#classifiedAs>
+  a owl:ObjectProperty ;
+  rdfs:label "classified as" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#Process>
+     <https://w3id.org/valueflows#EconomicResource>
+   ) ] ;
+  rdfs:range owl:Thing ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "References one or more concepts in a common taxonomy or other classification scheme for purposes of categorization or grouping." .
+
+<https://w3id.org/valueflows#resourceClassifiedAs>
+  a owl:ObjectProperty ;
+  rdfs:label "resource classified as" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#RecipeResource>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#RecipeFlow>
+     <https://w3id.org/valueflows#Claim>
+   ) ] ;
+  rdfs:range owl:Thing ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "References a concept in a common taxonomy or other classification scheme for purposes of categorization or grouping." .
+
+<https://w3id.org/valueflows#processClassifiedAs>
+  a owl:ObjectProperty ;
+  rdfs:label "process classified as" ;
+  rdfs:domain <https://w3id.org/valueflows#RecipeProcess> ;
+  rdfs:range owl:Thing ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "References a concept in a common taxonomy or other classification scheme for purposes of categorization or grouping." .
+
+<https://w3id.org/valueflows#processConformsTo>
+  a owl:ObjectProperty ;
+  rdfs:label "process conforms to" ;
+  rdfs:domain <https://w3id.org/valueflows#RecipeProcess> ;
+  rdfs:range <https://w3id.org/valueflows#ProcessSpecification> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The standard specification or definition of a process." .
+
+<https://w3id.org/valueflows#resourceConformsTo>
+  a owl:ObjectProperty ;
+  rdfs:label "resource conforms to" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#Intent>
+     <https://w3id.org/valueflows#EconomicEvent>
+     <https://w3id.org/valueflows#Claim>
+     <https://w3id.org/valueflows#RecipeResource>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#ResourceSpecification> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The primary resource specification or definition of an existing or potential economic resource. A resource will have only one, as this specifies exactly what the resource is. If not a vf:ResourceSpecification, this can be a link to another specification." .
+
+<https://w3id.org/valueflows#conformsTo>
+  a owl:ObjectProperty ;
+  rdfs:label "conforms to" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicResource> ;
+  rdfs:range <https://w3id.org/valueflows#ResourceSpecification> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The primary resource knowledge specification or definition of an existing or potential resource." .
+
+<https://w3id.org/valueflows#stage>
+  a owl:ObjectProperty ;
+  rdfs:label "stage" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#RecipeFlow>
+     <https://w3id.org/valueflows#EconomicResource>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#ProcessSpecification> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The last stage the desired economic resource went through." .
+
+<https://w3id.org/valueflows#state>
+  a owl:ObjectProperty ;
+  rdfs:label "state" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#Commitment>
+     <https://w3id.org/valueflows#RecipeFlow>
+     <https://w3id.org/valueflows#EconomicResource>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The state of the desired economic resource (pass or fail), after coming out of a test or review process." .
+
+<https://w3id.org/valueflows#refinementOf>
+  a owl:ObjectProperty ;
+  rdfs:label "refinement of" ;
+  rdfs:domain [ owl:unionOf (
+     <https://w3id.org/valueflows#Scenario>
+     <https://w3id.org/valueflows#Plan>
+   ) ] ;
+  rdfs:range <https://w3id.org/valueflows#Scenario> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "This scenario or plan refines another scenario, often as time moves closer or for more detail." .
+
+<https://w3id.org/valueflows#definedAs>
+  a owl:ObjectProperty ;
+  rdfs:label "defined as" ;
+  rdfs:domain <https://w3id.org/valueflows#Scenario> ;
+  rdfs:range <https://w3id.org/valueflows#ScenarioDefinition> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The scenario definition for this scenario, for example yearly budget." .
+
+<https://w3id.org/valueflows#recipeFlowResource>
+  a owl:ObjectProperty ;
+  rdfs:label "recipe flow resource" ;
+  rdfs:domain <https://w3id.org/valueflows#RecipeFlow> ;
+  rdfs:range <https://w3id.org/valueflows#RecipeResource> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "The resource definition referenced by this flow in the recipe." .
+
+<https://w3id.org/valueflows#clauseOf>
+  a owl:ObjectProperty ;
+  rdfs:label "clause of" ;
+  rdfs:domain <https://w3id.org/valueflows#Commitment> ;
+  rdfs:range <https://w3id.org/valueflows#Agreement> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "This commitment is part of the agreement." .
+
+<https://w3id.org/valueflows#realizationOf>
+  a owl:ObjectProperty ;
+  rdfs:label "realization of" ;
+  rdfs:domain <https://w3id.org/valueflows#EconomicEvent> ;
+  rdfs:range <https://w3id.org/valueflows#Agreement> ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "This economic event occurs as part of this agreement." .
+
+<https://w3id.org/valueflows#mappableAddress>
+  a owl:ObjectProperty ;
+  rdfs:label "mappable address" ;
+  rdfs:domain geo:SpatialThing ;
+  rdfs:range xsd:string ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "A textual address that can be mapped using mapping software." .
+
+<https://w3id.org/valueflows#increment>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "unstable" ;
+  rdfs:label "increment" ;
+  rdfs:comment "Parent property for all actions that can increment a resource." .
+
+<https://w3id.org/valueflows#decrement>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "unstable" ;
+  rdfs:label "decrement" ;
+  rdfs:comment "Parent property for all actions that can decrement a resource." .
+
+<https://w3id.org/valueflows#dropoff>
+  a <https://w3id.org/valueflows#Action> ;
+  rdfs:label "dropoff" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Transported resource or person leaves the process; the same resource or person appeared in the input." .
+
+<https://w3id.org/valueflows#pickup>
+  a <https://w3id.org/valueflows#Action> ;
+  rdfs:label "pickup" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Transported resource or person enters the process; the same resource will appear in the output." .
+
+<https://w3id.org/valueflows#consume>
+  a <https://w3id.org/valueflows#Action> ;
+  rdfs:label "consume" ;
+  ns0:term_status "testing" ;
+  rdfs:subPropertyOf <https://w3id.org/valueflows#decrement> ;
+  rdfs:comment "For example an ingredient or component composed into the output, after the process the ingredient is gone." .
+
+<https://w3id.org/valueflows#use>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "testing" ;
+  rdfs:label "use" ;
+  rdfs:comment "For example a tool used in process; after the process, the tool still exists." .
+
+<https://w3id.org/valueflows#work>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "testing" ;
+  rdfs:label "work" ;
+  rdfs:comment "Labor power applied to a process." .
+
+<https://w3id.org/valueflows#cite>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "testing" ;
+  rdfs:label "cite" ;
+  rdfs:comment "For example a design file, neither used nor consumed, the file remains available at all times." .
+
+<https://w3id.org/valueflows#produce>
+  a <https://w3id.org/valueflows#Action> ;
+  rdfs:label "produce" ;
+  ns0:term_status "testing" ;
+  rdfs:subPropertyOf <https://w3id.org/valueflows#increment> ;
+  rdfs:comment "New resource was created in that process or an existing stock resource was added to." .
+
+<https://w3id.org/valueflows#accept>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "testing" ;
+  rdfs:label "accept" ;
+  rdfs:comment "In processes like repair or modification or testing, the same resource will appear in the output." .
+
+<https://w3id.org/valueflows#modify>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "testing" ;
+  rdfs:label "modify" ;
+  rdfs:comment "In processes like repair or modification, the same resource will appear in the input." .
+
+<https://w3id.org/valueflows#pass>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "unstable" ;
+  rdfs:label "pass" ;
+  rdfs:comment "Possible output of a testing or reviewing process, indicating the resource passed, the same resource will appear in the input." .
+
+<https://w3id.org/valueflows#fail>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "unstable" ;
+  rdfs:label "fail" ;
+  rdfs:comment "Possible output of a testing or reviewing process, indicating the resource failed, the same resource will appear in the input." .
+
+<https://w3id.org/valueflows#deliver-service>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "unstable" ;
+  rdfs:label "deliver-service" ;
+  rdfs:comment "New service produced and delivered (a service implies that an agent actively receives the service)." .
+
+<https://w3id.org/valueflows#raise>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "unstable" ;
+  rdfs:label "raise" ;
+  rdfs:subPropertyOf <https://w3id.org/valueflows#increment> ;
+  rdfs:comment "Adjusts a quantity up based on a beginning balance or inventory count." .
+
+<https://w3id.org/valueflows#lower>
+  a <https://w3id.org/valueflows#Action> ;
+  ns0:term_status "unstable" ;
+  rdfs:label "lower" ;
+  rdfs:subPropertyOf <https://w3id.org/valueflows#decrement> ;
+  rdfs:comment "Adjusts a quantity down based on a beginning balance or inventory count." .
+
+<https://w3id.org/valueflows#transfer-complete>
+  a <https://w3id.org/valueflows#Action> ;
+  rdfs:label "transfer-complete" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Give full rights and responsibilities plus physical custody." .
+
+<https://w3id.org/valueflows#transfer-all-rights>
+  a <https://w3id.org/valueflows#Action> ;
+  rdfs:label "transfer-all-rights" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Give full (in the human realm) rights and responsibilities to another agent, without transferring physical custody." .
+
+<https://w3id.org/valueflows#transfer-custody>
+  a <https://w3id.org/valueflows#Action> ;
+  rdfs:label "transfer-custody" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Give physical custody and control of a resource, without full accounting or ownership rights." .
+
+<https://w3id.org/valueflows#move>
+  a <https://w3id.org/valueflows#Action> ;
+  rdfs:label "move" ;
+  ns0:term_status "unstable" ;
+  rdfs:comment "Change location and possibly identifier, if location is part of the identification, of a resource with no change of agent rights or possession." .

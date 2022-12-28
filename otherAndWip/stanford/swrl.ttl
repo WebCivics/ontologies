@@ -1,0 +1,241 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.w3.org/2003/11/swrl>
+  a owl:Ontology ;
+  rdfs:comment "OWL definition of the RDF Concrete Syntax for the Semantic Web Rule Language" ;
+  owl:versionInfo "$Id: swrl.owl,v 1.15 2004/11/09 11:58:28 mdean Exp $" .
+
+<http://www.w3.org/2003/11/swrl#Imp>
+  a owl:Class ;
+  rdfs:comment "implication (rule)" ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#head> ;
+    owl:allValuesFrom <http://www.w3.org/2003/11/swrl#AtomList>
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#head> ;
+    owl:maxCardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#body> ;
+    owl:allValuesFrom <http://www.w3.org/2003/11/swrl#AtomList>
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#body> ;
+    owl:maxCardinality "1"
+  ] .
+
+<http://www.w3.org/2003/11/swrl#head>
+  a owl:ObjectProperty ;
+  rdfs:comment "rule head (consequent):  List of Atom" .
+
+<http://www.w3.org/2003/11/swrl#body>
+  a owl:ObjectProperty ;
+  rdfs:comment "rule body (antecedent):  List of Atom" .
+
+<http://www.w3.org/2003/11/swrl#Variable>
+  a owl:Class ;
+  rdfs:comment "indicate that a URI is being used as a variable" .
+
+<http://www.w3.org/2003/11/swrl#Atom>
+  a owl:Class ;
+  rdfs:comment "common superclass" .
+
+<http://www.w3.org/2003/11/swrl#AtomList>
+  a owl:Class ;
+  rdfs:subClassOf rdf:List, [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:allValuesFrom <http://www.w3.org/2003/11/swrl#Atom>
+  ], [
+    a owl:Restriction ;
+    owl:onProperty rdf:first ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:allValuesFrom <http://www.w3.org/2003/11/swrl#AtomList>
+  ], [
+    a owl:Restriction ;
+    owl:onProperty rdf:rest ;
+    owl:cardinality "1"
+  ] .
+
+rdf:nil a <http://www.w3.org/2003/11/swrl#AtomList> .
+<http://www.w3.org/2003/11/swrl#argument1> a owl:ObjectProperty .
+<http://www.w3.org/2003/11/swrl#argument2>
+  a rdf:Property ;
+  rdfs:comment "can be a Literal or Resource" .
+
+<http://www.w3.org/2003/11/swrl#ClassAtom>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2003/11/swrl#Atom>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#classPredicate> ;
+    owl:allValuesFrom owl:Class
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#classPredicate> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:cardinality "1"
+  ] ;
+  rdfs:comment "consists of a classPredicate and argument1" .
+
+<http://www.w3.org/2003/11/swrl#classPredicate> a owl:ObjectProperty .
+<http://www.w3.org/2003/11/swrl#IndividualPropertyAtom>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2003/11/swrl#Atom>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#propertyPredicate> ;
+    owl:allValuesFrom owl:ObjectProperty
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#propertyPredicate> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument2> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument2> ;
+    owl:cardinality "1"
+  ] ;
+  rdfs:comment "consists of a propertyPredicate (owl:ObjectProperty), argument1 (owl:Thing), and argument2 (owl:Thing)" .
+
+<http://www.w3.org/2003/11/swrl#propertyPredicate> a owl:ObjectProperty .
+<http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2003/11/swrl#Atom>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#propertyPredicate> ;
+    owl:allValuesFrom owl:DatatypeProperty
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#propertyPredicate> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument2> ;
+    owl:allValuesFrom rdfs:Literal
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument2> ;
+    owl:cardinality "1"
+  ] ;
+  rdfs:comment "consists of a propertyPredicate (owl:DatatypeProperty), argument1 (owl:Thing), and argument2 (rdfs:Literal)" .
+
+<http://www.w3.org/2003/11/swrl#SameIndividualAtom>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2003/11/swrl#Atom>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument2> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument2> ;
+    owl:cardinality "1"
+  ] ;
+  rdfs:comment "consists of argument1 (owl:Thing) and argument2 (owl:Thing)" .
+
+<http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2003/11/swrl#Atom>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument2> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument2> ;
+    owl:cardinality "1"
+  ] ;
+  rdfs:comment "consists of argument1 (owl:Thing) and argument2 (owl:Thing)" .
+
+<http://www.w3.org/2003/11/swrl#BuiltinAtom>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2003/11/swrl#Atom>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#builtin> ;
+    owl:allValuesFrom <http://www.w3.org/2003/11/swrl#Builtin>
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#builtin> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#arguments> ;
+    owl:allValuesFrom rdf:List
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#arguments> ;
+    owl:cardinality "1"
+  ] ;
+  rdfs:comment "consists of a builtin and a List of arguments" .
+
+<http://www.w3.org/2003/11/swrl#Builtin> a owl:Class .
+<http://www.w3.org/2003/11/swrl#builtin> a owl:ObjectProperty .
+<http://www.w3.org/2003/11/swrl#arguments> a owl:ObjectProperty .
+<http://www.w3.org/2003/11/swrl#DataRangeAtom>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2003/11/swrl#Atom>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#dataRange> ;
+    owl:allValuesFrom owl:DataRange
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#dataRange> ;
+    owl:cardinality "1"
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:allValuesFrom owl:Thing
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2003/11/swrl#argument1> ;
+    owl:cardinality "1"
+  ] ;
+  rdfs:comment "consists of a dataRange and argument1" .
+
+<http://www.w3.org/2003/11/swrl#dataRange> a owl:ObjectProperty .

@@ -1,0 +1,49 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns0: <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#> .
+
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl> a owl:Ontology .
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity> a owl:Class .
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#RuleGroup>
+  a owl:Class ;
+  rdfs:subClassOf <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#Entity> .
+
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#hasRuleGroup>
+  a owl:ObjectProperty, owl:AnnotationProperty ;
+  rdfs:range <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#RuleGroup> ;
+  rdfs:domain <http://www.w3.org/2003/11/swrl#Imp> .
+
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#hasRuleCategory> a owl:DatatypeProperty, owl:AnnotationProperty .
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#hasBuiltInPhrase>
+  a owl:DatatypeProperty, owl:AnnotationProperty, owl:FunctionalProperty ;
+  rdfs:range xsd:string .
+
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>
+  a owl:DatatypeProperty, owl:FunctionalProperty, owl:AnnotationProperty ;
+  rdfs:range xsd:boolean ;
+  rdfs:domain <http://www.w3.org/2003/11/swrl#Imp> .
+
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleGroupEnabled>
+  a owl:DatatypeProperty, owl:FunctionalProperty ;
+  rdfs:range xsd:boolean ;
+  rdfs:domain <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#RuleGroup> .
+
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#hasPropertyPhrase>
+  a owl:FunctionalProperty, owl:AnnotationProperty, owl:DatatypeProperty ;
+  rdfs:range xsd:string .
+
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#hasClassPhrase>
+  a owl:FunctionalProperty, owl:AnnotationProperty, owl:DatatypeProperty ;
+  rdfs:range xsd:string .
+
+<http://www.w3.org/2003/11/swrlb#lessThan> ns0:hasBuiltInPhrase "IS LESS THAN"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ns0:hasBuiltInPhrase "IS LESS THAN OR EQUAL TO"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#divide> ns0:hasBuiltInPhrase "IS DIVISION OF"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#subtract> ns0:hasBuiltInPhrase "IS SUBTRACTION OF"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#equal> ns0:hasBuiltInPhrase "IS EQUAL TO"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#multiply> ns0:hasBuiltInPhrase "IS MULTIPLICATION OF"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ns0:hasBuiltInPhrase "IS GREATER THAN OR EQUAL TO"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#add> ns0:hasBuiltInPhrase "IS SUMMATION OF"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#greaterThan> ns0:hasBuiltInPhrase "IS GREATER THAN"^^xsd:string .
+<http://www.w3.org/2003/11/swrlb#notEqual> ns0:hasBuiltInPhrase "IS NOT EQUAL TO"^^xsd:string .

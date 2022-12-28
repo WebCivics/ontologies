@@ -1,0 +1,65 @@
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0: <http://www.w3.org/ns/pim/meeting#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://www.w3.org/ns/pim/meeting>
+  dc11:created "2016-06-25"^^xsd:date ;
+  dc11:title "An ontology for an online meeting" ;
+  rdfs:comment """An online meeting, in Solid world, is a collection of linked
+data resources which allow people to collaborate in real time toward the objectives of the meeting.
+The online state of a meeting may also evolve before the meeting as it is planned, and it should
+also in time evolve to give a clear idea of the take-aways for posterity""" .
+
+<http://www.w3.org/ns/pim/meeting#Meeting>
+  a rdfs:Class ;
+  ns0:label "meeting"@en, "reunion"@fr .
+
+ns0:VideoCallPage
+  a rdfs:Class ;
+  rdfs:comment """A web page (eg on appear.in, or wherever) for  a live video chat.
+    The URI should be as accurate as possible ideally without requiring meeting numbers, room numbers, etc to be entered.""" ;
+  rdfs:label "video call page"@en .
+
+ns0:actionItems
+  a rdf:Property ;
+  rdfs:label "action items" .
+
+ns0:agenda
+  a rdf:Property ;
+  rdfs:label "agenda" .
+
+ns0:attendeeGroup
+  a rdf:Property ;
+  rdfs:label "attendees"@en, "participants"@fr .
+
+ns0:chat
+  a rdf:Property ;
+  rdfs:comment "A live text-based chat object or chat document." ;
+  rdfs:label "chat" .
+
+ns0:nextMeeting
+  a rdf:Property ;
+  rdfs:label "next meeting" .
+
+ns0:previousMeeting
+  a rdf:Property ;
+  rdfs:label "previous meeting" .
+
+ns0:sharedNotes
+  a rdf:Property ;
+  rdfs:comment "A shared notepad to capture the course and result of the meeting" ;
+  rdfs:label "notes"@en, "notes"@fr .
+
+ns0:toolList a rdf:Property .
+ns0:trip
+  a rdf:Property ;
+  rdfs:label "trip" ;
+  rdfs:range <http://www.w3.org/ns/pim/trip#Trip> .
+
+ns0:videoCallPage
+  a rdf:Property ;
+  rdfs:comment """For a meeting, a web page (eg on appear.in, or wherever) for  a live video chat for the meeting.
+  The URI should be as accurate as possible ideally without requiring meeting numbers etc to be entered.""" ;
+  rdfs:label "video call"@en .

@@ -1,0 +1,6 @@
+*.Rproj
+*.Rproj.user
+*.py[co]
+*.sw[nop]
+*~
+.DS_Store

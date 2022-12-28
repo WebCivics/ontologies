@@ -1,0 +1,40 @@
+# $Id: .htaccess,v 1.11 2015/02/27 21:04:44 asambra Exp $
+<Files ~ "\.html">
+ForceType 'text/html; charset=UTF-8'
+</Files>
+
+<Files ~ "\.ttl">
+ForceType 'text/turtle; charset=UTF-8'
+</Files>
+
+RewriteEngine On
+RewriteBase /ns/formats/
+
+RewriteRule ^media_type$ vocab-data/media_type [R=303]
+RewriteRule ^preferred_suffix$ vocab-data/preferred_suffix [R=303]
+RewriteRule ^Format$ vocab-data/Format [R=303]
+
+RewriteRule ^Turtle$ data/Turtle [R=303]
+RewriteRule ^RDF_XML$ data/RDF_XML [R=303]
+RewriteRule ^N3$ data/N3 [R=303]
+RewriteRule ^microdata$ data/microdata [R=303]
+RewriteRule ^SPARQL_Results_XML$ data/SPARQL_Results_XML [R=303]
+RewriteRule ^SPARQL_Results_JSON$ data/SPARQL_Results_JSON [R=303]
+RewriteRule ^SPARQL_Results_TSV$ data/SPARQL_Results_TSV [R=303]
+RewriteRule ^SPARQL_Results_CSV$ data/SPARQL_Results_CSV [R=303]
+RewriteRule ^POWDER$ data/POWDER [R=303]
+RewriteRule ^POWDER-S$ data/POWDER-S [R=303]
+RewriteRule ^OWL_XML$ data/OWL_XML [R=303]
+RewriteRule ^OWL_Functional$ data/OWL_Functional [R=303]
+RewriteRule ^OWL_Manchester$ data/OWL_Functional [R=303]
+RewriteRule ^RIF_XML$ data/RIF_XML [R=303]
+RewriteRule ^RDFa$ data/RDFa [R=303]
+RewriteRule ^N-Triples$ data/N-Triples [R=303]
+RewriteRule ^LD_Patch$ data/LD_Patch [R=303]
+RewriteRule ^PROV-N$ data/PROV-N [R=303]
+RewriteRule ^PROV-XML$ data/PROV-XML [R=303]
+RewriteRule ^JSON-LD$ data/JSON-LD [R=303]
+RewriteRule ^N-Quads$ data/N-Quads [R=303]
+RewriteRule ^TriG$ data/TriG [R=303]
+RewriteRule ^RDF_JSON$ data/RDF_JSON [R=303]
+

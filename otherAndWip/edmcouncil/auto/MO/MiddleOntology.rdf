@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY dct "http://purl.org/dc/terms/">
+	<!ENTITY fibo-fnd-utl-av "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY sm "http://www.omg.org/techprocess/ab/SpecificationMetadata/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"
+	xmlns="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:fibo-fnd-utl-av="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:sm="http://www.omg.org/techprocess/ab/SpecificationMetadata/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/">
+		<rdfs:label>EDMC-AUTO Middle Ontology (MO)</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:</rdfs:comment>
+		<dct:abstract>The EDMC-AUTO middle ontology</dct:abstract>
+		<dct:license rdf:datatype="&xsd;anyURI">http://opensource.org/licenses/MIT</dct:license>
+		<sm:contentLanguage rdf:datatype="&xsd;anyURI">http://www.w3.org/standards/techs/owl#w3c_all</sm:contentLanguage>
+		<sm:copyright>Copyright (c) 2020 EDM Council, Inc.</sm:copyright>
+		<sm:dependsOn rdf:datatype="&xsd;anyURI">https://spec.edmcouncil.org/auto/ontology/MO/</sm:dependsOn>
+		<sm:fileAbbreviation>auto-mo-mo</sm:fileAbbreviation>
+		<sm:filename>MiddleOntology.rdf</sm:filename>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/"/>
+		<fibo-fnd-utl-av:hasMaturityLevel rdf:resource="&fibo-fnd-utl-av;Provisional"/>
+	</owl:Ontology>
+	
+	<owl:AnnotationProperty rdf:about="&dct;isPartOf">
+	</owl:AnnotationProperty>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Action">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Process"/>
+		<rdfs:label xml:lang="en">action</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Action</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Agent">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Object"/>
+		<rdfs:label xml:lang="en">agent</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Agent</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Continuant">
+		<rdfs:label xml:lang="en">Continuant</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Disposition">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/RealizableEntity"/>
+		<rdfs:label xml:lang="en">Disposition</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/GenericallyDependentContinuant">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Continuant"/>
+		<rdfs:label xml:lang="en">Generically dependent continuant</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/ImmaterialEntity">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/IndependentContinuant"/>
+		<rdfs:label xml:lang="en">Immaterial entity</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/IndependentContinuant">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Continuant"/>
+		<rdfs:label xml:lang="en">Independent continuant</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Location">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/ImmaterialEntity"/>
+		<rdfs:label xml:lang="en">location</rdfs:label>
+		<rdfs:label xml:lang="en">place</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Location</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/MaterialEntity">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/IndependentContinuant"/>
+		<rdfs:label xml:lang="en">Material entity</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Model">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/GenericallyDependentContinuant"/>
+		<rdfs:label xml:lang="en">model</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Model</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/NumericalValue">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/QuantitativeValue"/>
+		<rdfs:label xml:lang="en">numerical value</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:NumericalValue</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Object">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/MaterialEntity"/>
+		<rdfs:label xml:lang="en">object</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Object</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Occurrent">
+		<rdfs:label xml:lang="en">Occurrent</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Organization">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/ImmaterialEntity"/>
+		<rdfs:label xml:lang="en">organization</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Organization</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Person">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Agent"/>
+		<rdfs:label xml:lang="en">person</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Person</rdfs:comment>
+		<rdfs:comment xml:lang="en">Within the context of this manual, a fetus is considered part of a pregnant woman rather than a separate individual. After death, a human body is not considered to be a person.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+		<skos:definition xml:lang="en">Any living human.</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom>ANSI D.16-2017, section 2.1.1</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/PostalAddress">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/GenericallyDependentContinuant"/>
+		<rdfs:label xml:lang="en">postal address</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:PostalAddress</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Process">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Occurrent"/>
+		<rdfs:label xml:lang="en">process</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Process</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/PropertyValue">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Quality"/>
+		<rdfs:label xml:lang="en">property value</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:PropertyValue</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+		<skos:definition xml:lang="en">A property-value pair, e.g. representing a feature of a product or place.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/QualitativeValue">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/ValueSpace"/>
+		<rdfs:label xml:lang="en">qualitative value</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:QualitativeValue</rdfs:comment>
+		<dct:isPartOf rdf:resource="http://auto.schema.org"/>
+		<dct:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group"/>
+		<sm:directSource rdf:resource="https://schema.org/QualitativeValue"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+		<skos:definition xml:lang="en">a predefined value for a product characteristic, e.g. the power cord plug type &apos;US&apos; or the garment sizes &apos;S&apos;, &apos;M&apos;, &apos;L&apos;, and &apos;XL&apos;</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Quality">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/SpecificallyDependentContinuant"/>
+		<rdfs:label xml:lang="en">Quality</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/QuantitativeValue">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/ValueSpace"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasUnit"/>
+				<owl:onDataRange rdf:resource="&xsd;string"/>
+				<owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasValue"/>
+				<owl:someValuesFrom rdf:resource="&rdfs;Literal"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label xml:lang="en">quantitative value</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:QuantitativeValue</rdfs:comment>
+		<dct:isPartOf rdf:resource="http://auto.schema.org"/>
+		<dct:source rdf:resource="http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group"/>
+		<sm:directSource rdf:resource="https://schema.org/QuantitativeValue"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+		<skos:definition xml:lang="en">a point value or interval for product characteristics and other purposes</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/QuantitativeValueFloat">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/NumericalValue"/>
+		<rdfs:label xml:lang="en">quantitative value float</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:QuantitativeValueFloat</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/QuantitativeValueInteger">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/NumericalValue"/>
+		<rdfs:label xml:lang="en">quantitative value integer</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:QuantitativeValueInteger</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/RealizableEntity">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/SpecificallyDependentContinuant"/>
+		<rdfs:label xml:lang="en">Realizable entity</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Role">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/RealizableEntity"/>
+		<rdfs:label xml:lang="en">role</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:Role</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/SpecificallyDependentContinuant">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/Continuant"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/TextValue">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/ValueSpace"/>
+		<rdfs:label xml:lang="en">text value</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:TextValue</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:Class rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/ValueSpace">
+		<rdfs:label xml:lang="en">value space</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:ValueSpace</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:Class>
+	
+	<owl:DatatypeProperty rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasMaxValue">
+		<rdfs:subPropertyOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasValue"/>
+		<rdfs:label xml:lang="en">has max value</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:hasMaxValue</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:DatatypeProperty>
+	
+	<owl:DatatypeProperty rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasMinValue">
+		<rdfs:subPropertyOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasValue"/>
+		<rdfs:label xml:lang="en">has min value</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:hasMinValue</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:DatatypeProperty>
+	
+	<owl:ObjectProperty rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasPart">
+		<rdfs:label xml:lang="en">has part</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:hasPart</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+		<owl:inverseOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/isPartOf"/>
+	</owl:ObjectProperty>
+	
+	<owl:DatatypeProperty rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasUnit">
+		<rdfs:label xml:lang="en">has unit</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:hasUnit</rdfs:comment>
+		<rdfs:domain rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/QuantitativeValue"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:DatatypeProperty>
+	
+	<owl:DatatypeProperty rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/hasValue">
+		<rdfs:label xml:lang="en">has value</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:hasValue</rdfs:comment>
+		<rdfs:domain rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/QuantitativeValue"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:DatatypeProperty>
+	
+	<owl:ObjectProperty rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/isPartOf">
+		<rdfs:label xml:lang="en">is part of</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:isPartOf</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/valueReference">
+		<rdfs:label xml:lang="en">value reference</rdfs:label>
+		<rdfs:comment>QName: auto-mo-mo:valueReference</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+	</owl:ObjectProperty>
+	
+	<rdf:Description rdf:about="&fibo-fnd-utl-av;MaturityLevel">
+		<rdfs:subClassOf rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/QualitativeValue"/>
+	</rdf:Description>
+
+</rdf:RDF>

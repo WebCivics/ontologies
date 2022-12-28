@@ -1,0 +1,154 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc> a owl:Ontology .
+dc11:relation a owl:AnnotationProperty .
+dc:hasPart
+  a owl:AnnotationProperty ;
+  dc:hasVersion <http://dublincore.org/usage/terms/history/#hasPart-003> ;
+  rdfs:comment "A related resource that is included either physically or logically in the described resource."@en ;
+  rdfs:isDefinedBy dc: ;
+  rdfs:label "Has Part"@en ;
+  skos:note "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration."@en ;
+  rdfs:subPropertyOf dc11:relation, dc:relation .
+
+dc:hasVersion a owl:AnnotationProperty .
+dc:relation a owl:AnnotationProperty .
+<http://qrowd-project.eu/ontologies/crowd-voc#hasQuestionList>
+  a owl:AnnotationProperty ;
+  rdfs:range rdf:list ;
+  rdfs:domain <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#hasSubTasks>
+  a owl:AnnotationProperty ;
+  rdfs:range rdf:list ;
+  rdfs:domain <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+skos:note a owl:AnnotationProperty .
+rdf:list a rdfs:Datatype .
+<http://qrowd-project.eu/ontologies/crowd-voc#hasAggregationMethod>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  rdfs:domain <http://qrowd-project.eu/ontologies/crowd-voc#Task> ;
+  rdfs:range <http://qrowd-project.eu/ontologies/crowd-voc#AggregationMethod> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#hasMember>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#hasQCMechanism>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  rdfs:domain <http://qrowd-project.eu/ontologies/crowd-voc#Task> ;
+  rdfs:range <http://qrowd-project.eu/ontologies/crowd-voc#QCMechanism> .
+
+org:hasMember
+  a owl:ObjectProperty ;
+  owl:inverseOf org:memberOf ;
+  rdfs:domain org:Organization ;
+  rdfs:range foaf:Agent ;
+  rdfs:comment "Indica una persona che è membro della data Organization. È l'inverso di `org:memberOf` ed è fornita per  compatibilità con `foaf:member`."@it, "Indicates a person who is a member of the subject Organization. Inverse of `org:memberOf`, see that property for further clarification. Provided for compatibility with `foaf:member`."@en, "Indique une personne membre de l'Organisation sujet. Inverse de `org:memberOf`, voyez la description de cette propriété pour plus de précisions. Fourni pour la compatibilité avec `foaf:member`."@fr, "Persona que es miembro de la organización en cuestión. Es la relación inversa de `org:memberOf`, véase la descripción de esa propiedad para más detalles. Se prevé compatibilidad con foaf:member`."@es, "対象組織のメンバーであるエージェント（人または他の組織）を示します。org:memberOfの逆。さらに明確な説明については、そのプロパティーを参照してください。"@ja ;
+  rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+  rdfs:label "ha membro"@it, "has member"@en, "possède un membre"@fr, "tiene miembro"@es .
+
+org:hasMembership
+  a owl:ObjectProperty ;
+  owl:inverseOf org:member .
+
+org:member
+  a owl:ObjectProperty, owl:FunctionalProperty ;
+  rdfs:domain org:Membership ;
+  rdfs:range foaf:Agent ;
+  rdfs:comment "Indica la Person (o un altro Agent) coinvolto in una relazione di Membership. È l'inverso di `org:hasMembership`."@it, "Indicates the Person (or other Agent including Organization) involved in the Membership relationship. Inverse of `org:hasMembership`"@en, "Indique une personne (ou tout autre Agent, y compris une Organisation) impliqué dans la relation d'Engagement. Inverse de `org:hasMembership`"@fr, "Persona (u otro agente, incluyendo una organización) que participa en la relación de membresía. Es la relación inversa de `org:hasMembership`."@es, "構成員関係に含まれている人（または、組織を含んでいる他のエージェント）を示します。"@ja ;
+  rdfs:isDefinedBy <http://www.w3.org/ns/org> ;
+  rdfs:label "es condición de miembro sobre agente"@es, "member"@en, "membre"@fr, "membro"@it .
+
+org:memberOf a owl:ObjectProperty .
+<http://qrowd-project.eu/ontologies/crowd-voc#hasText>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://qrowd-project.eu/ontologies/crowd-voc#Question> ;
+  rdfs:range xsd:string .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#AggregationMethod> a owl:Class .
+<http://qrowd-project.eu/ontologies/crowd-voc#ClassificationTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#ContentCreationTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#ContentVerificationTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#Crowd>
+  a owl:Class ;
+  rdfs:subClassOf org:Organization, <https://www.w3.org/TR/prov-o/#Agent> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#Crowdworker>
+  a owl:Class ;
+  rdfs:subClassOf foaf:Agent, <https://www.w3.org/TR/prov-o/#Person> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#FeedbackTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#MediaTranscriptionTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#MetadataFindingTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#ModerationTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#QCMechanism> a owl:Class .
+<http://qrowd-project.eu/ontologies/crowd-voc#Question> a owl:Class .
+<http://qrowd-project.eu/ontologies/crowd-voc#RankingTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#SentimentAnalysisTask>
+  a owl:Class ;
+  rdfs:subClassOf <http://qrowd-project.eu/ontologies/crowd-voc#Task> .
+
+<http://qrowd-project.eu/ontologies/crowd-voc#Task>
+  a owl:Class ;
+  rdfs:subClassOf prov:Activity .
+
+dcat:Dataset a owl:Class .
+org:Membership a owl:Class .
+org:Organization a owl:Class .
+prov:Activity a owl:Class .
+foaf:Agent a owl:Class .
+<https://www.w3.org/TR/prov-o/#Agent> a owl:Class .
+<https://www.w3.org/TR/prov-o/#Person>
+  a owl:Class ;
+  rdfs:subClassOf <https://www.w3.org/TR/prov-o/#Agent> .
+
+[]
+  a owl:AllDisjointClasses ;
+  owl:members (
+   <http://qrowd-project.eu/ontologies/crowd-voc#ClassificationTask>
+   <http://qrowd-project.eu/ontologies/crowd-voc#ContentCreationTask>
+   <http://qrowd-project.eu/ontologies/crowd-voc#ContentVerificationTask>
+   <http://qrowd-project.eu/ontologies/crowd-voc#FeedbackTask>
+   <http://qrowd-project.eu/ontologies/crowd-voc#MediaTranscriptionTask>
+   <http://qrowd-project.eu/ontologies/crowd-voc#MetadataFindingTask>
+   <http://qrowd-project.eu/ontologies/crowd-voc#ModerationTask>
+   <http://qrowd-project.eu/ontologies/crowd-voc#RankingTask>
+   <http://qrowd-project.eu/ontologies/crowd-voc#SentimentAnalysisTask>
+ ) .

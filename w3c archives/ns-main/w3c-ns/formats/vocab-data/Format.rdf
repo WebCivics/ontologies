@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdfs:Class rdf:about="http://www.w3.org/ns/formats/Format">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <dcterms:creator>
+      <foaf:Person rdf:about="http://www.ivan-herman.net/foaf#me">
+        <foaf:workplaceHomepage rdf:resource="http://www.w3.org"/>
+        <foaf:name>Ivan Herman</foaf:name>
+        <foaf:mbox rdf:resource="mailto:ivan@w3.org"/>
+        <foaf:title>Semantic Web Activity Lead</foaf:title>
+        <rdfs:seeAlso rdf:resource="http://www.ivan-herman.net/foaf"/>
+      </foaf:Person>
+    </dcterms:creator>
+    <dcterms:modified>2013-03-25</dcterms:modified>
+    <rdfs:subClassOf rdf:resource="http://rdfs.org/ns/void#/TechnicalFeature"/>
+    <dcterms:created>2010-05-27</dcterms:created>
+    <dcterms:description>A unique, top-level Class URI for specific file formats. Media types do not uniquely identify file formats (eg, serialization formats for various abstract concepts), because not all specific cases do have distinct media types, instances in this class can be used instead for proper identification.</dcterms:description>
+  </rdfs:Class>
+</rdf:RDF>
+

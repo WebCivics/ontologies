@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  prefix="
+	  dcterms: http://purl.org/dc/terms/
+	  rdfs: http://www.w3.org/2000/01/rdf-schema# 
+	  foaf: http://xmlns.com/foaf/0.1/
+	  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+	  owl: http://www.w3.org/2002/07/owl#
+	  rdfs: http://www.w3.org/2000/01/rdf-schema#
+	  rdfa: http://www.w3.org/ns/rdfa#
+	  "
+  >
+  <head about="http://www.w3.org/ns/rdfa.html">
+	<base href="http://www.w3.org/ns/"/>
+    <title>RDFa Vocabulary for Term and Prefix Assignment</title>
+    <link type="text/css" rel="stylesheet" href="/StyleSheets/TR/base.css"/>
+	<style type="text/css">
+	  code {font-weight: bold}
+	</style>
+  </head>
+  <body about="rdfa:" typeof="owl:Ontology">
+    <div class="head">
+      <p><a href="http://www.w3.org/">
+		  <img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/>
+		</a>
+      </p>
+      <h1 property="dcterms:title">RDFa Vocabulary for Term and Prefix Assignment, and for Processor Graph Reporting</h1>
+    </div>
+
+    <p><span property="dcterms:description" datatype="">This document describes the RDFa Vocabulary for Term and Prefix Assignment. The Vocabulary is used to modify <a href="http://www.w3.org/TR/rdfa-core">RDFa&nbsp;1.1 processing behavior</a>.</span>
+    The URI of the vocabulary is <code>http://www.w3.org/ns/rdfa#</code> (abbreviated by <code>rdfa:</code> in this document).
+	<a href="rdfa.ttl">Turtle</a> and an <a href="rdfa.rdf">RDF/XML</a> versions of the vocabulary are also available.
+	The vocabulary is published by <a property="dcterms:publisher" href="http://www.w3.org" resource="http://www.w3.org/data#W3C">W3C</a></p>
+	
+	<p>For a precise definition of these vocabulary elements, see the
+	<a rel="rdfs:isDefinedBy" href="http://www.w3.org/TR/rdfa-core/#s_initialcontexts">RDFa Core&nbsp;1.1</a> specification.</p>
+	
+	<h2>Term and prefix assignment vocabulary</h2>
+	<p>This vocabulary contains terms to define prefix mappings and term assignments; these can be used
+	as part of the <code>@profile</code> mechanism of RDFa 1.1.</p>
+	
+	<p>The vocabulary defines three classes :</p>
+	<ul>
+	  <li about="rdfa:PrefixOrTermMapping" typeof="rdfs:Class owl:Class"><code>rdfa:PrefixOrTermMapping</code>
+		<span property="dcterms:description">is the top level class for prefix or term mappings</span>.
+	  </li>
+	  <li about="rdfa:PrefixMapping"><code rel="rdfs:subClassOf" resource="rdfa:PrefixOrTermMapping">rdfa:PrefixMapping</code>
+		<span property="dcterms:description">is the class for prefix mappings</span>.
+	  </li>
+	  <li about="rdfa:TermMapping"><code rel="rdfs:subClassOf" resource="rdfa:PrefixOrTermMapping">rdfa:TermMapping</code>
+		<span property="dcterms:description">is the class for term mappings</span>.
+	  </li>
+	  
+	</ul>
+	
+	<h3>Properties</h3>
+	<ul>
+	  <li about="rdfa:prefix" typeof="rdf:Property owl:DatatypeProperty"><code>rdfa:prefix</code>:
+		<span property="dcterms:description">defines a prefix mapping for a URI; the value is supposed to be a NMTOKEN</span>;
+		it is used on <span rel="rdfs:domain" resource="rdfa:PrefixMapping">prefix mapping instances</span>.
+	  </li>
+	  <li about="rdfa:term" typeof="rdf:Property owl:DatatypeProperty"><code>rdfa:term</code>:
+		<span property="dcterms:description">defines a term mapping for a URI; the value is supposed to be a NMTOKEN</span>;
+		it is used on <span rel="rdfs:domain" resource="rdfa:TermMapping">prefix mapping instances</span>.
+	  </li>
+	  <li about="rdfa:uri" typeof="rdf:Property owl:DatatypeProperty"><code>rdfa:uri</code>:
+		<span property="dcterms:description">defines the URI for either a prefix or a term mapping; the value is supposed to be an absolute URI</span>;
+		it is used on <span rel="rdfs:domain" resource="rdfa:PrefixOrTermMapping">either prefix or term mapping instances</span>.
+	  </li>
+	  <li about="rdfa:vocabulary" typeof="rdf:Property owl:DatatypeProperty"><code>rdfa:vocabulary</code>:
+		<span property="dcterms:description" datatype="">defines an absolute URI to be used as a default vocabulary; the value is can be any string; for documentation purposes it is advised to use the string 'true' or 'True'.</span>
+	  </li>
+	</ul>
+	
+	<h2>Processor Graph Reporting Vocabulary</h2>
+	
+	<p>The reporting mechanism is based on a hierachy of classes. <code>rdfa:PGClass</code>
+	<span about="rdfa:PGClass" typeof="rdfs:Class owl:Class" property="dcterms:description">is the top level class of the hierarchy</span>, with three subclasses:
+	<code>rdfa:Error</code> <span about="rdfa:Error" rel="rdfs:subClassOf" resource="rdfa:PGClass"
+							property="dcterms:description">is the class for all error conditions</span>,
+	<code>rdfa:Warning</code> <span about="rdfa:Warning" rel="rdfs:subClassOf" resource="rdfa:PGClass"
+							property="dcterms:description">is the class for all warnings</span>, and
+	<code>rdfa:Info</code> <span about="rdfa:Info" rel="rdfs:subClassOf" resource="rdfa:PGClass"
+							property="dcterms:description">is the class for all informations</span>.</p>
+	
+	<p><a href="http://www.w3.org/TR/rdfa-core/#processor-status">RDFa&nbsp;1.1 Core</a> defines the following error and warning
+	conditions:</p>
+	
+	<ul>
+	  <li>
+		<code>rdfa:DocumentError</code>:
+		<span about="rdfa:DocumentError" rel="rdfs:subClassOf" resource="rdfa:Error" property="dcterms:description">error condition; to be used when the document fails to be fully processed as a result of non-conformant host language markup</span></li>
+	  <li>
+	  <li>
+		<code>rdfa:VocabReferenceError</code>:
+		<span about="rdfa:VocabReferenceError" rel="rdfs:subClassOf" resource="rdfa:Warning" property="dcterms:description">warning; to be used when the value of a @vocab attribute cannot be dereferenced, hence the vocabulary expansion cannot be completed</span></li>
+		<code>rdfa:UnresolvedCURIE</code>:
+		<span about="rdfa:UnresolvedCURIE" rel="rdfs:subClassOf" resource="rdfa:Warning" property="dcterms:description">warning; to be used when a CURIE prefix fails to be resolved</span></li>
+	  <li><code>rdfa:UnresolvedTerm</code>:
+		<span about="rdfa:UnresolvedTerm" rel="rdfs:subClassOf" resource="rdfa:Warning" property="dcterms:description">warning; to be used when a Term fails to be resolved</span></li>
+	  <li><code>rdfa:PrefixRedefinition</code>:
+		<span about="rdfa:PrefixRedefinition" rel="rdfs:subClassOf" resource="rdfa:Warning" property="dcterms:description">warning; to be used when a prefix, either from the initial context or inherited from an ancestor node, is redefined in an element</span></li>
+	</ul>
+	
+	<p>RDFa processors may add their own subclasses in their own namespace.</p>
+	
+	<p>A specific property, <code>rdfa:context</code>, 
+	<span about="rdfa:context" rel="rdfs:domain" resource="rdfa:PGClass" typeof="owl:ObjectProperty rdf:Property"
+		  property="dcterms:description">provides extra context for the error, eg, http response, an XPointer/XPath information, or simply the URI that created the error</span>.</p>
+	
+	<h2>Term for vocabulary expansion</h2>
+	
+	<p>A specific property, <code>usesVocabulary</code>, 
+	<span about="rdfa:usesVocabulary" typeof="owl:ObjectProperty rdf:Property"
+		  property="dcterms:description">provides a relationship between the host document and a vocabulary
+	defined using the @vocab facility of RDFa1.1</span>.</p>
+
+	<h2>Property Copying Terms</h2>
+
+	<p>The terms for property copying allow properties associated with a resource to be copied to another resource; for more details see the <a href="http://www.w3.org/TR/rdfa-in-html/#property-copying">relevant section in the HTML+RDFa 1.1</a> document. The terms being used are:</p>
+
+	<ul>
+		<li>
+		<code>rdfa:Pattern</code>:
+		<span about="rdfa:Pattern" typeof="rdfs:Class owl:Class" property="dcterms:description">Class to identify an (RDF) resource whose properties are to be copied to another resource</span></li>
+		</li>
+		<li>
+        <code>rdfa:copy</code>:
+		<span about="rdfa:copy" typeof="owl:ObjectProperty rdf:Property" property="dcterms:description">identifies the resource (i.e., pattern) whose properties and values should be copied to replace the current triple (retaining the subject of the triple).</span></li>
+		</li>
+	</ul>
+
+	<hr />
+	<address >
+	  <span rel="dcterms:creator" >
+		<span about="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person">
+			<span property="foaf:name" datatype=""><a href="http://www.w3.org/People/Ivan">Ivan Herman</a></span>,
+			<a rel="foaf:mbox" href="mailto:ivan@w3.org">ivan@w3.org</a>,
+			<a rel="foaf:workplaceHomepage" href="http://www.w3.org">W3C</a>,
+			<span rel="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf" property="foaf:title">Semantic Web Activity Lead</span>,
+		</span>
+	  </span>
+	  <span property="dcterms:date">2013-01-18</span>
+	  <br />
+	  <span property="owl:versionInfo">$Date: 2013/03/11 07:54:17 $</span>
+	</address>
+  </body>
+</html>

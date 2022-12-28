@@ -1,0 +1,426 @@
+{
+    "@context": {
+      "dcam": "http://purl.org/dc/dcam/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "@graph": [
+      {
+        "@id": "http://purl.org/dc/dcmitype/",
+        "dcterms:modified": {
+          "@value": "2012-06-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:publisher": {
+          "@id": "http://purl.org/dc/aboutdcmi#DCMI"
+        },
+        "http://purl.org/vocab/vann/preferredNamespaceUri": "http://purl.org/dc/dcmitype/",
+        "dcterms:title": {
+          "@value": "DCMI Type Vocabulary",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/Collection",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "A collection is described as a group; its parts may also be separately described.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Collection-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "An aggregation of resources.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Collection",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/Dataset",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include lists, tables, and databases.  A dataset may be useful for direct machine processing.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Dataset-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "Data encoded in a defined structure.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Dataset",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/Event",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Metadata for an event provides descriptive information that is the basis for discovery of the purpose, location, duration, and responsible agents associated with an event. Examples include an exhibition, webcast, conference, workshop, open day, performance, battle, trial, wedding, tea party, conflagration.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Event-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A non-persistent, time-based occurrence.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Event",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/Image",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include images and photographs of physical objects, paintings, prints, drawings, other images and graphics, animations and moving pictures, film, diagrams, maps, musical notation.  Note that Image may include both electronic and physical representations.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Image-004"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A visual representation other than text.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Image",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/InteractiveResource",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include forms on Web pages, applets, multimedia learning objects, chat services, or virtual reality environments.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#InteractiveResource-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A resource requiring interaction from the user to be understood, executed, or experienced.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Interactive Resource",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/MovingImage",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include animations, movies, television programs, videos, zoetropes, or visual output from a simulation.  Instances of the type Moving Image must also be describable as instances of the broader type Image.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#MovingImage-003"
+        },
+        "dcterms:issued": {
+          "@value": "2003-11-18",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A series of visual representations imparting an impression of motion when shown in succession.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Moving Image",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "http://purl.org/dc/dcmitype/Image"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/PhysicalObject",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Note that digital representations of, or surrogates for, these objects should use Image, Text or one of the other types.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#PhysicalObject-003"
+        },
+        "dcterms:issued": {
+          "@value": "2002-07-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "An inanimate, three-dimensional object or substance.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Physical Object",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/Service",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include a photocopying service, a banking service, an authentication service, interlibrary loans, a Z39.50 or Web server.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Service-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A system that provides one or more functions.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Service",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/Software",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include a C source file, MS-Windows .exe executable, or Perl script.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Software-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A computer program in source or compiled form.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Software",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/Sound",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include a music playback file format, an audio compact disc, and recorded speech or sounds.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Sound-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A resource primarily intended to be heard.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Sound",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/StillImage",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include paintings, drawings, graphic designs, plans and maps. Recommended best practice is to assign the type Text to images of textual materials. Instances of the type Still Image must also be describable as instances of the broader type Image.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#StillImage-003"
+        },
+        "dcterms:issued": {
+          "@value": "2003-11-18",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A static visual representation.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Still Image",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "http://purl.org/dc/dcmitype/Image"
+        }
+      },
+      {
+        "@id": "http://purl.org/dc/dcmitype/Text",
+        "dcam:memberOf": {
+          "@id": "dcterms:DCMIType"
+        },
+        "dcterms:description": {
+          "@value": "Examples include books, letters, dissertations, poems, newspapers, articles, archives of mailing lists. Note that facsimiles or images of texts are still of the genre Text.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Text-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A resource consisting primarily of words for reading.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        },
+        "rdfs:label": {
+          "@value": "Text",
+          "@language": "en"
+        }
+      }
+    ]
+  }

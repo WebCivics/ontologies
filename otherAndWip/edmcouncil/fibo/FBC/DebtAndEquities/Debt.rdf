@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY dct "http://purl.org/dc/terms/">
+	<!ENTITY fibo-be-le-lp "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/">
+	<!ENTITY fibo-fbc-dae-dbt "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/">
+	<!ENTITY fibo-fbc-pas-fpas "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/">
+	<!ENTITY fibo-fnd-acc-aeq "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/">
+	<!ENTITY fibo-fnd-acc-cur "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/">
+	<!ENTITY fibo-fnd-agr-agr "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Agreements/">
+	<!ENTITY fibo-fnd-agr-ctr "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/">
+	<!ENTITY fibo-fnd-arr-arr "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/">
+	<!ENTITY fibo-fnd-arr-asmt "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/">
+	<!ENTITY fibo-fnd-dt-bd "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/">
+	<!ENTITY fibo-fnd-dt-fd "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/">
+	<!ENTITY fibo-fnd-law-lcap "https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/">
+	<!ENTITY fibo-fnd-oac-own "https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/">
+	<!ENTITY fibo-fnd-pas-pas "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/">
+	<!ENTITY fibo-fnd-pas-psch "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/">
+	<!ENTITY fibo-fnd-plc-loc "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Locations/">
+	<!ENTITY fibo-fnd-pty-pty "https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/">
+	<!ENTITY fibo-fnd-pty-rl "https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Roles/">
+	<!ENTITY fibo-fnd-rel-rel "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/">
+	<!ENTITY fibo-fnd-utl-alx "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/">
+	<!ENTITY fibo-fnd-utl-av "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/">
+	<!ENTITY lcc-lr "https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY sm "http://www.omg.org/techprocess/ab/SpecificationMetadata/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:fibo-be-le-lp="https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/"
+	xmlns:fibo-fbc-dae-dbt="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"
+	xmlns:fibo-fbc-pas-fpas="https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/"
+	xmlns:fibo-fnd-acc-aeq="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/"
+	xmlns:fibo-fnd-acc-cur="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/"
+	xmlns:fibo-fnd-agr-agr="https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Agreements/"
+	xmlns:fibo-fnd-agr-ctr="https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/"
+	xmlns:fibo-fnd-arr-arr="https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/"
+	xmlns:fibo-fnd-arr-asmt="https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/"
+	xmlns:fibo-fnd-dt-bd="https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/"
+	xmlns:fibo-fnd-dt-fd="https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/"
+	xmlns:fibo-fnd-law-lcap="https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/"
+	xmlns:fibo-fnd-oac-own="https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/"
+	xmlns:fibo-fnd-pas-pas="https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/"
+	xmlns:fibo-fnd-pas-psch="https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/"
+	xmlns:fibo-fnd-plc-loc="https://spec.edmcouncil.org/fibo/ontology/FND/Places/Locations/"
+	xmlns:fibo-fnd-pty-pty="https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/"
+	xmlns:fibo-fnd-pty-rl="https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Roles/"
+	xmlns:fibo-fnd-rel-rel="https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/"
+	xmlns:fibo-fnd-utl-alx="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/"
+	xmlns:fibo-fnd-utl-av="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/"
+	xmlns:lcc-lr="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:sm="http://www.omg.org/techprocess/ab/SpecificationMetadata/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/">
+		<rdfs:label>Debt Ontology</rdfs:label>
+		<dct:abstract>This ontology defines concepts that are common to all debt instruments, such as debt, borrower, lender, debtor, creditor, interest, principal, and the like. It is designed to be used by various other FIBO specifications, including but not limited to SEC/Debt and LOAN.</dct:abstract>
+		<dct:license rdf:datatype="&xsd;anyURI">http://opensource.org/licenses/MIT</dct:license>
+		<sm:contentLanguage rdf:datatype="&xsd;anyURI">https://www.w3.org/TR/owl2-quick-reference/</sm:contentLanguage>
+		<sm:copyright>Copyright (c) 2016-2022 EDM Council, Inc.</sm:copyright>
+		<sm:copyright>Copyright (c) 2016-2022 Object Management Group, Inc.</sm:copyright>
+		<sm:dependsOn rdf:resource="https://spec.edmcouncil.org/fibo/ontology/BE/"/>
+		<sm:dependsOn rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/"/>
+		<sm:dependsOn rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/"/>
+		<sm:fileAbbreviation>fibo-fbc-dae-dbt</sm:fileAbbreviation>
+		<sm:filename>Debt.rdf</sm:filename>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LegalPersons/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/AccountingEquity/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Agreements/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Arrangements/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Law/LegalCapacity/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/OwnershipAndControl/Ownership/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Parties/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Parties/Roles/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Places/Locations/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/"/>
+		<owl:imports rdf:resource="https://www.omg.org/spec/LCC/Languages/LanguageRepresentation/"/>
+		<owl:versionIRI rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/20220801/DebtAndEquities/Debt/"/>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FBC/20180801/DebtAndEquities/Debt/ version of this ontology was added to the FBC domain via the FIBO 2.0 RFC in support of several FIBO debt-oriented initiatives.</skos:changeNote>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FBC/20180801/DebtAndEquities/Debt/ version of this ontology was modified to use the generic statistical measures and measurements now in FND.</skos:changeNote>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FBC/20190501/DebtAndEquities/Debt/ version of this ontology was modified to add several common day count conventions used to calculate the amount of accrued interest or the present value when the next coupon payment is less than a full coupon period away, to support collateral agreements such as deeds of trust, UCC filings and the like, to add the concept of a rate reset time of day, to eliminate duplication of concepts in LCC, to simplify addresses, and to merge countries with locations.</skos:changeNote>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FBC/20200301/DebtAndEquities/Debt/ version of this ontology was modified to make redemption provision a child of contractual commitment and move it to financial instruments, as such provisions apply to preferred shares and other instruments in addition to debt.</skos:changeNote>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FBC/20200801/DebtAndEquities/Debt/ version of this ontology was modified to move the concept of an extension provision from Debt to Contracts to support representation of preferred shares and other extendable contracts, eliminate remaining circular definitions, integrate concepts defining credit facilities, and refine the concept of collateral to differentiate collateral that is real property from financial assets such as cash, various accounts, securities, and receivables.</skos:changeNote>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FBC/20210301/DebtAndEquities/Debt/ version of this ontology was modified to (1) add concepts including credit agreement whose principal is repaid at maturity and those whose principal is repaid over the course of the agreement, (2) move properties related to maturity to this ontology from FinancialInstruments and restructure the relationship between these two ontologies, (3) add the concept of a borrower identifier and the related scheme, (4) add the concept of an interest rate cap as a potential provision with respect to interest rate terms, and (5) clarified the definition of promissory note.</skos:changeNote>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FBC/20220301/DebtAndEquities/Debt/ version of this ontology was modified to add more detailed schedule information to support management of the various kinds of events that can impact a given contract as well as the concept of a revolving line of credit.</skos:changeNote>
+		<skos:changeNote>The https://spec.edmcouncil.org/fibo/ontology/FBC/20220601/DebtAndEquities/Debt/ version of this ontology was modified to address text formatting issues uncovered by hygiene testing.</skos:changeNote>
+		<fibo-fnd-utl-av:hasMaturityLevel rdf:resource="&fibo-fnd-utl-av;Release"/>
+	</owl:Ontology>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Accrual">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-pty-rl;ThingInRole"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;appliesTo"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;Interest"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>accrual</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>the process of accumulating interest or other income that has been earned but not paid</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>There are legal contractual terms for the accrual of interest, as distinct from the payment of interest.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Amortization">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-pty-rl;ThingInRole"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isAmortizationOf"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>amortization</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>the process of reduction of debt or other costs through periodic charges to assets or liabilities, such as through principal payments on mortgages</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;AmortizationSchedule">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;ProjectedContractEventSchedule"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-pas-psch;PaymentSchedule"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;embodies"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Amortization"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>amortization schedule</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>schedule of periodic payments (repayment installments) that specify changes in the balance of the debt over time</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>Payments are divided into equal amounts for the duration of the loan or debt instrument, making it the simplest repayment model. A greater amount of the payment is applied to interest at the beginning of the amortization schedule, while more money is applied to principal at the end.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Borrower">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;Debtor"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-ctr;ContractParty"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-pas-pas;Customer"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;owes"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-pty-rl;isPlayedBy"/>
+				<owl:someValuesFrom>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&fibo-fnd-pty-pty;isAPartyTo"/>
+						<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;CreditAgreement"/>
+					</owl:Restriction>
+				</owl:someValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>borrower</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>party to a credit agreement that is obligated to repay the amount borrowed (principal) with interest and other fees according to the terms of the instrument</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;BorrowerIdentificationScheme">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-pty-pty;PartyInRoleIdentificationScheme"/>
+		<rdfs:label>borrower identification scheme</rdfs:label>
+		<rdfs:seeAlso rdf:resource="https://www.fincen.gov/resources/statutes-regulations/guidance/guidance-customer-identification-regulations-financial"/>
+		<skos:definition>system for allocating identifiers to borrowers</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>Many banks and other financial institutions have internal systems for assigning identifiers to borrowers. In the United States, larger banks may use a Customer Information File (CIF) number, assigned as a part of their federally mandated Customer Information Program (CIP).</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;BorrowerIdentifier">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-pty-pty;PartyInRoleIdentifier"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&lcc-lr;identifies"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;Borrower"/>
+				<owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;isDefinedIn"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;BorrowerIdentificationScheme"/>
+				<owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>borrower identifier</rdfs:label>
+		<rdfs:seeAlso rdf:resource="https://www.fdic.gov/news/financial-institution-letters/1997/fil9786.pdf"/>
+		<skos:definition>sequence of characters, capable of uniquely identifying a borrower</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>A given identifier identifies a particular borrower with respect to at least some number of notes/facilities inside a particular institution according to some policy for minting identifiers. Optimally, there would be a single identifier for a given borrower, but due to operational issues, this is often not the case. A CIF number, or Customer Information File number, is used to link accounts across an institution to all notes/facilities owed by a given borrower.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;BorrowingCapacity">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-acc-cur;MonetaryAmount"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-agr-ctr;isEvidencedBy"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fnd-arr-asmt;AssessmentReport"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-arr-asmt;hasDateOfAssessment"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fnd-dt-fd;ExplicitDate"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;appliesTo"/>
+				<owl:someValuesFrom rdf:resource="&fibo-be-le-lp;LegalPerson"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>borrowing capacity</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>upper bound on the total amount of money that a lender believes a party has the ability to repay an obligation when due, as of some point in time</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>The notion of borrowing capacity is related to management decisions pertaining to credit, i.e., the creditworthiness of the borrower, loan amount, risk tolerance, and so forth, and may be reassessed from time to time depending on the type of credit agreement and regulatory requirements. Determining borrowing capacity is typically done as a part of loan origination, especially for residential mortgages.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Collateral">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-pty-pty;Undergoer"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isCollateralizationOf"/>
+				<owl:onClass rdf:resource="&fibo-fnd-oac-own;TangibleAsset"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>collateral</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>something pledged as security to ensure fulfillment of an obligation to another party, to lend money, extend credit, or provision securities</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;CollateralAgreement">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-ctr;WrittenContract"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;involves"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;Collateral"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>collateral agreement</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>written contract that specifies terms, over and above those specified in a promissory note, loan, or other debt instrument, under which the collateral must be made available to the lender</skos:definition>
+		<skos:example>Examples include deeds of trust and uniform commercial code (UCC) agreements.</skos:example>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;CommittedCreditFacility">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;CreditFacility"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-arr-arr;hasConstituent"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;CommittedSubFacility"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label xml:lang="en">committed credit facility</rdfs:label>
+		<owl:disjointWith rdf:resource="&fibo-fbc-dae-dbt;UncommittedCreditFacility"/>
+		<skos:definition xml:lang="en">credit facility that is a confirmed source of financing for the borrower, as long as the borrower meets the conditions of the agreement</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;CommittedSubFacility">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;SubFacility"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-arr-arr;isConstituentOf"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;CommittedCreditFacility"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label xml:lang="en">committed sub-facility</rdfs:label>
+		<owl:disjointWith rdf:resource="&fibo-fbc-dae-dbt;UncommittedSubFacility"/>
+		<skos:definition xml:lang="en">contractually committed portion of a credit facility that is available to the borrower and may be associated with some specific collateral</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;CreditAgreement">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-ctr;MutualContractualAgreement"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-ctr;WrittenContract"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isCollateralizedBy"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;Collateral"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasMaturityDate"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-fd;ExplicitDate"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-agr-ctr;hasContractParty"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Creditor"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-agr-ctr;hasContractParty"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Debtor"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-agr-ctr;hasContractualElement"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;DebtTerms"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>credit agreement</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>contractual agreement in which a debtor receives something of value and typically agrees to repay the creditor by some date in the future, in some form (e.g., cash, securities, etc.), generally with interest</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;CreditAgreementRepaidAtMaturity">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;CreditAgreement"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasMaturityDate"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fnd-dt-fd;ExplicitDate"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>credit agreement repaid at maturity</rdfs:label>
+		<skos:definition>credit agreement in which accrued interest may be periodically repaid or paid at maturity, but principal is paid at maturity</skos:definition>
+		<skos:example>The most common example of a credit agreement repaid at maturity is a bond.</skos:example>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;CreditAgreementRepaidPeriodically">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;CreditAgreement"/>
+		<rdfs:label>credit agreement repaid periodically</rdfs:label>
+		<skos:definition>credit agreement in which the principal and accrued interest may be periodically repaid or exchanged</skos:definition>
+		<skos:example>Examples include revolving lines of credit, commercial loans, construction loans, residential mortgages and so forth.</skos:example>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;CreditFacility">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;CreditAgreementRepaidPeriodically"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-arr-arr;hasConstituent"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;SubFacility"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-agr-ctr;hasContractualElement"/>
+				<owl:onClass rdf:resource="&fibo-fnd-agr-ctr;ConditionPrecedent"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-acc-cur;hasMonetaryAmount"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fnd-acc-cur;MonetaryAmount"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-arr-arr;hasConstituent"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;PromissoryNote"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label xml:lang="en">credit facility</rdfs:label>
+		<skos:definition xml:lang="en">credit agreement that allows the borrower to periodically take out money over an extended period of time rather than reapplying for a loan every time they need funds</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Credit facilities include revolving loans/lines of credit, committed facilities, letters of credit, and most retail credit accounts. They may define sub-facilities to which the lender is prepared to commit for specific purposes.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym xml:lang="en">master commitment</fibo-fnd-utl-av:synonym>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Creditor">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-agr;Obligee"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;hasIdentity"/>
+				<owl:allValuesFrom rdf:resource="&fibo-be-le-lp;LegalPerson"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isOwed"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>creditor</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>a party to whom an obligation, such as an amount of money, or good, or performance of some service exists</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;DayCountConvention">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-dt-bd;BusinessRecurrenceIntervalConvention"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-utl-alx;Expression"/>
+		<rdfs:label>day-count convention</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>a business recurrence interval convention that is used to calculate the number of days in an interest payment, which applies to the amount of accrued interest or the present value for debt instruments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>Day-count conventions apply to swaps, mortgages and forward rate agreements as well as bonds, each of which has its own day-count convention, which varies depending on the type of instrument, whether the interest rate is fixed or floating, and the country of issuance. Among the most common conventions are 30/360 or 365, actual/360 or 365, and actual/actual. A 30/360 convention assumes 30 days in a month and 360 days in a year. An actual/360 convention assumes the actual number of days in the given month and 360 days in the year. An actual/ actual convention uses the actual number of days in the given interest period and year.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-30360BondBasis">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention 30/360 bond basis</rdfs:label>
+		<skos:definition>day-count convention that uses 30 days in a month and 360 days in a year for calculating interest payments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>See ISDA 2006 Section 4.16(f), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym>30A/360</fibo-fnd-utl-av:synonym>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-30360US">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention 30/360 US</rdfs:label>
+		<skos:definition>day-count convention that uses 30 days in a month and 360 days in a year for calculating interest payments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>See ISDA 2006 Section 4.16(f), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote>This convention is used for US corporate bonds and many US agency issues. It is most commonly referred to as &apos;30/360&apos;, but the term &apos;30/360&apos; may also refer to any of the other conventions of this class, depending on the context. See ISDA 2006 Section 4.16(f), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym>30/360</fibo-fnd-utl-av:synonym>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-30365">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention 30/365</rdfs:label>
+		<skos:definition>day-count convention that uses 30 days in a month and 365 days in a year for calculating interest payments</skos:definition>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-30E360">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention 30E/360</rdfs:label>
+		<skos:definition>day-count convention that uses 30 days in a month and 360 days in a year for calculating interest payments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>See ICMA Rule 251.1(ii), 251.2, and ISDA 2006 Section 4.16(g), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym>30/360 ICMA</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>30S/360</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>Eurobond basis (ISDA 2006)</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>Special German</fibo-fnd-utl-av:synonym>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-30E360ISDA">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention 30E/360 ISDA</rdfs:label>
+		<skos:definition>day-count convention that uses 30 days in a month and 360 days in a year for calculating interest payments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>See ISDA 2006 Section 4.16(h), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym>30/360 ICMA</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>Eurobond basis (ISDA 2006)</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>German</fibo-fnd-utl-av:synonym>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-Actual360">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention actual/360</rdfs:label>
+		<skos:definition>day-count convention that uses the actual number of days in each month and 360 days in a year for calculating interest payments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>See ICMA Rule 251.1(i) (not sterling), ISDA 2006 Section 4.16(e), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote>This convention is used in money markets for short-term lending of currencies, including the US dollar and Euro, and is applied in ESCB monetary policy operations. It is the convention used with repurchase agreements.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym>French</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>a/360</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>act/360</fibo-fnd-utl-av:synonym>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-Actual365Fixed">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention actual/365 fixed</rdfs:label>
+		<skos:definition>day-count convention that uses the actual number of days in each month and 365 days in a year for calculating interest payments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>See ISDA 2006 Section 4.16(d), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym>English</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>a/365 fixed</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>a/365f</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>act/365 fixed</fibo-fnd-utl-av:synonym>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-ActualActualICMA">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention actual/actual ICMA</rdfs:label>
+		<skos:definition>day-count convention that uses the actual number of days in each month and actual number of days in that year for calculating interest payments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>See ICMA Rule 251.1(iii), ISDA 2006 Section 4.16(c), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote>This method ensures that all coupon payments are always for the same amount. It also ensures that all days in a coupon period are valued equally. This is the convention used for US Treasury bonds and notes, among other securities.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym>ISMA-99</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>act/act ICMA</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>act/act ISMA</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>actual/actual</fibo-fnd-utl-av:synonym>
+	</owl:NamedIndividual>
+	
+	<owl:NamedIndividual rdf:about="&fibo-fbc-dae-dbt;DayCountConvention-ActualActualISDA">
+		<rdf:type rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<rdfs:label>day-count convention actual/actual ISDA</rdfs:label>
+		<skos:definition>day-count convention that uses the actual number of days in each month and actual number of days in that year for calculating interest payments</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>See ISDA 2006 Section 4.16(b), https://web.archive.org/web/20140913145444/http://www.hsbcnet.com/gbm/attachments/standalone/2006-isda-definitions.pdf for more details on the calculation.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote>This convention accounts for days in the period based on the portion in a leap year and the portion in a non-leap year.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:synonym>act/365</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>act/act</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>actual/365</fibo-fnd-utl-av:synonym>
+		<fibo-fnd-utl-av:synonym>actual/actual</fibo-fnd-utl-av:synonym>
+	</owl:NamedIndividual>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Debt">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-agr;Commitment"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isOwedBy"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Debtor"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isOwedTo"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Creditor"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>debt</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>an obligation to pay something, such as an amount of money, good, service, or instrument</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>In cases where the debtor and payer are the same legal person, then a debt is equivalent to a payment obligation.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;DebtTerms">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-ctr;ContractualCommitment"/>
+		<rdfs:label>debt terms</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>contract terms that specify the formal rights and obligations of borrower and lender under a contract in which funds are lent from the one party to the other</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>These may be terms in a loan contract (including for example a mortgage contract) or they may be the contractual terms of a debt security.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Debtor">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-agr;Obligor"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;hasIdentity"/>
+				<owl:allValuesFrom rdf:resource="&fibo-be-le-lp;LegalPerson"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;owes"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>debtor</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>a party that owes a debt or other obligation to another party</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;ExplicitContractEventSchedule">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-dt-fd;AdHocSchedule"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;appliesTo"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;CreditAgreement"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>explicit contract event schedule</rdfs:label>
+		<skos:definition>schedule of events, including but not limited to payment events, rate reset events and others that will occur over the lifetime of the credit agreement</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>This is a schedule of actual dates and events that are terms of the contract.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;FixedInterestRate">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-acc-cur;InterestRate"/>
+		<rdfs:label>fixed interest rate</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>an interest rate that does not fluctuate over the lifetime of a loan or other debt instrument</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;FloatingInterestRate">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;VariableInterestRate"/>
+		<rdfs:label>floating interest rate</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:seeAlso rdf:resource="http://recomparison.com/comparisons/100975/floating-vs-variable-vs-adjustable-interest-rate/"/>
+		<skos:definition>a variable interest rate that is based on a specific index or benchmark rate</skos:definition>
+		<skos:example>Certain revolving credit, such as credit-card related debt, may adjust after a specified period of time to an absolute rate stated in the agreement (variable but not floating) rather than based on a benchmark rate (variable, floating).</skos:example>
+		<fibo-fnd-utl-av:explanatoryNote>The index used to determine the specific interest rate is generally included in the terms of the loan. In most cases, lenders will also charge a spread, or added percentage points on top of the established index rate. If a loan is billed as prime plus 2.5 percent, for a prime rate of 3.5 percent, the terms of the loan will require the borrower to pay off a 6 percent interest. Floating interest rates typically involve periodic reset dates for the loan, particularly when the index rate changes. Resets may also occur online at market predetermined intervals, with yearly adjustments being a common arrangement.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;FullAmortization">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;Amortization"/>
+		<rdfs:label>full amortization</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>amortization in which the very last payment (which, if the schedule was calculated correctly, should be equal to all others) pays off all remaining principal and interest on the loan</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Interest">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-acc-cur;MonetaryAmount"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasInterestRate"/>
+				<owl:allValuesFrom rdf:resource="&fibo-fnd-acc-cur;InterestRate"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-dt-fd;hasDatePeriod"/>
+				<owl:allValuesFrom rdf:resource="&fibo-fnd-dt-fd;DatePeriod"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isInterestOn"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>interest</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>the cost of using credit, or another&apos;s money, expressed as a rate per period of time, payable by a debtor to a creditor in consideration of the credit extended to the debtor</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;InterestPaymentTerms">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;DebtTerms"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasAccrualBasis"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasInterestRate"/>
+				<owl:onClass rdf:resource="&fibo-fnd-acc-cur;InterestRate"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasInterestRateCap"/>
+				<owl:onClass rdf:resource="&fibo-fnd-acc-cur;InterestRate"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasInterestPaymentDay"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-bd;DayOfMonth"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasInitialInterestAccrualDate"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-fd;Date"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasInitialInterestPaymentDate"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-fd;Date"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasCompoundingFrequency"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-fd;RecurrenceInterval"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasInterestPaymentFrequency"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-fd;RecurrenceInterval"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;governsPaymentOf"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Interest"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>interest payment terms</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>contract terms for payment of interest on a debt</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>Interest is usually payable on any outstanding principal amount, therefore interest relates to the amount of debt outstanding at any given point of time, not to the principal amount advanced at the time that the loan was advanced or the debt security issued (aside from the initial payment).</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote>Note that in most cases, the dates and payment frequencies for interest will coincide with the dates and payment frequencies related to the principal.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Lender">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;Creditor"/>
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-ctr;ContractParty"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-pty-rl;isPlayedBy"/>
+				<owl:someValuesFrom>
+					<owl:Restriction>
+						<owl:onProperty rdf:resource="&fibo-fnd-pty-pty;isAPartyTo"/>
+						<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;CreditAgreement"/>
+					</owl:Restriction>
+				</owl:someValuesFrom>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>lender</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>a party that extends credit or money to a borrower with the expectation of being repaid, usually with interest</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;ManagedInterestRate">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;VariableInterestRate"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;isManagedBy"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-pas-fpas;FinancialServiceProvider"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>managed interest rate</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>a variable interest rate charged by a financial institution for borrowing that is not prescribed as a margin over base rate but is set from time to time by the institution</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;NegativeAmortization">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;Amortization"/>
+		<rdfs:label>negative amortization</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>amortization in which the payments made do not cover the interest due</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;NonPhysicalCollateral">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;Collateral"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isCollateralizationOf"/>
+				<owl:onClass rdf:resource="&fibo-fnd-acc-aeq;FinancialAsset"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>non-physical collateral</rdfs:label>
+		<owl:disjointWith rdf:resource="&fibo-fbc-dae-dbt;PhysicalCollateral"/>
+		<skos:definition>asset pledged as collateral that is a financial asset, rather than physical asset</skos:definition>
+		<skos:example>Examples of non-physical collateral include, but are not limited to, bank deposits, accounts receivable, stocks, bonds, other securities, and the like.</skos:example>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;PartialAmortization">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;Amortization"/>
+		<rdfs:label>partial amortization</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>amortization in which the very last payment the last payment due may be a large balloon payment of all remaining principal and interest</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;PhysicalCollateral">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;Collateral"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isCollateralizationOf"/>
+				<owl:onClass rdf:resource="&fibo-fnd-acc-aeq;PhysicalAsset"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>physical collateral</rdfs:label>
+		<skos:definition>asset pledged as collateral that has a material form, i.e., is a physical asset of the obligor</skos:definition>
+		<skos:example>Examples of physical collateral include, but are not limited to, real estate, equipment, vehicles, spare parts, inventory, goods, supplies, fixtures, and leasehold improvements.</skos:example>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;Principal">
+		<rdfs:subClassOf>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&fibo-fnd-acc-cur;MonetaryAmount">
+					</rdf:Description>
+					<rdf:Description rdf:about="&fibo-fnd-pas-pas;NegotiableCommodity">
+					</rdf:Description>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isPrincipalOf"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>principal</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:seeAlso rdf:resource="http://www.finra.org/investors/bond-glossary#p"/>
+		<skos:definition>with respect to a debt: the value of an obligation, such as a bond or loan, raised and that must be repaid at maturity; for investments: the original amount of money invested, separate from any associated interest, dividends or capital gains</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;PrincipalRepaymentTerms">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;DebtTerms"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-agr-ctr;hasExtensionProvision"/>
+				<owl:onClass rdf:resource="&fibo-fnd-agr-ctr;ExtensionProvision"/>
+				<owl:maxQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasPrincipalPaymentDay"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-bd;DayOfMonth"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasInitialPrincipalPaymentDate"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-fd;Date"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasPrincipalRepaymentDate"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-fd;Date"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;hasPrincipalPaymentFrequency"/>
+				<owl:onClass rdf:resource="&fibo-fnd-dt-fd;RecurrenceInterval"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;governsPaymentOf"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;Principal"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>principal repayment terms</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>contract terms that specify requirements for repayment of the principal</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;ProjectedContractEventSchedule">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-dt-fd;RegularSchedule"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-rel-rel;appliesTo"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fbc-dae-dbt;CreditAgreement"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>projected contract event schedule</rdfs:label>
+		<skos:definition>schedule of events, including but not limited to anticipated payment events, rate reset events and others that are expected to occur over the lifetime of the credit agreement</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>This is a regular schedule that provides a way of documenting the anchor dates and frequency of occurrences, using rules, rather than an explicit list of dates, that are terms of the contract. This method will project future event dates (transaction event dates), based on the frequencies specified and would be adjusted due to calendar restrictions and other rules to deal with holidays, weekends, and so forth.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;PromissoryNote">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;CreditAgreement"/>
+		<rdfs:label>promissory note</rdfs:label>
+		<skos:definition>negotiable instrument that is a written promise by one party to another that commits that party to pay a specified sum on demand or within a specified time frame under specified terms</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>Promissory notes are generally fully fungible.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;RateResetTimeOfDay">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-dt-fd;TimeOfDay"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-plc-loc;hasBusinessCenter"/>
+				<owl:onClass rdf:resource="&fibo-fnd-plc-loc;BusinessCenter"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label>rate reset time of day</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>time of day that an interest rate is reset, as indicated by some interest rate authority or market data provider</skos:definition>
+		<skos:example>Examples include certain rates published by the Federal Reserve Board in their H.15 schedule, which are published at 4:15 pm on business days that are not holidays in the US.</skos:example>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;RetailCreditFacility">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;CommittedCreditFacility"/>
+		<rdfs:label xml:lang="en">retail credit facility</rdfs:label>
+		<skos:definition xml:lang="en">credit facility that is a loan or line of credit used by retailers and real estate companies</skos:definition>
+		<skos:example xml:lang="en">Most consumer credit cards are retail credit facilities, for example.</skos:example>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;RevolvingLineOfCredit">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;CommittedCreditFacility"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fbc-dae-dbt;isCollateralizedBy"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;Collateral"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label xml:lang="en">revolving line of credit</rdfs:label>
+		<skos:definition xml:lang="en">credit facility that enables the borrower to withdraw funds, repay, and withdraw again</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Revolving credit facilities are essentially lines of credit with variable interest rates.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;SubFacility">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-agr-ctr;MutualContractualAgreement"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-arr-arr;isConstituentOf"/>
+				<owl:onClass rdf:resource="&fibo-fbc-dae-dbt;CreditFacility"/>
+				<owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&fibo-fnd-acc-cur;hasMonetaryAmount"/>
+				<owl:someValuesFrom rdf:resource="&fibo-fnd-acc-cur;MonetaryAmount"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label xml:lang="en">sub-facility</rdfs:label>
+		<skos:definition xml:lang="en">portion of a credit facility extended to the borrower for some purpose, possibly per some schedule specified in the facility</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Each sub-facility may have separate terms, and may be or include individual promissory notes, depending on the facility. The amount of associated with the individual sub-facilities sums to the total credit facility amount. Sub-facilities may, individually, have a stated purpose, such as to cover inventory, equipment, accounts receivable, working capital, letters of credit, and so forth.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;UncommittedCreditFacility">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;CreditFacility"/>
+		<rdfs:label xml:lang="en">uncommitted credit facility</rdfs:label>
+		<skos:definition xml:lang="en">credit facility that has yet to be confirmed as a source of financing for the borrower</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;UncommittedSubFacility">
+		<rdfs:subClassOf rdf:resource="&fibo-fbc-dae-dbt;SubFacility"/>
+		<rdfs:label xml:lang="en">uncommitted sub-facility</rdfs:label>
+		<skos:definition xml:lang="en">sub-facility that has yet to be confirmed as a source of financing for the borrower</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&fibo-fbc-dae-dbt;VariableInterestRate">
+		<rdfs:subClassOf rdf:resource="&fibo-fnd-acc-cur;InterestRate"/>
+		<rdfs:label>variable interest rate</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<owl:disjointWith rdf:resource="&fibo-fbc-dae-dbt;FixedInterestRate"/>
+		<skos:definition>an interest rate that is allowed to vary over the maturity of a loan or other debt instrument</skos:definition>
+		<fibo-fnd-utl-av:synonym>adjustable rate</fibo-fnd-utl-av:synonym>
+	</owl:Class>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;governsPaymentOf">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-rel-rel;governs"/>
+		<rdfs:label>governs payment of</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;DebtTerms"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>links contractual terms embedded in a contract, such as interest or repayment terms to the element those terms apply to</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasAccrualBasis">
+		<rdfs:subPropertyOf rdf:resource="&lcc-lr;has"/>
+		<rdfs:label>has accrual basis</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;DayCountConvention"/>
+		<skos:definition>identifies the convention that defines how interest accrues on something, that is the number of days in a month and days in a year that are counted when performing interest accrual calculations</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasAvailableAmount">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-acc-cur;hasMonetaryAmount"/>
+		<rdfs:label>has available amount</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fnd-acc-cur;MonetaryAmount"/>
+		<skos:definition>indicates an amount of money available for an individual or organization to borrow</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasBorrower">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-agr-ctr;hasContractParty"/>
+		<rdfs:label>has borrower</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;Borrower"/>
+		<skos:definition>relates a contract, such as a debt instrument or credit agreement, to one or more parties that are incurring the debt</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasCompoundingFrequency">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasRecurrenceInterval"/>
+		<rdfs:label>has compounding frequency</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;RecurrenceInterval"/>
+		<skos:definition>the frequency at which interest is added to the principal of the debt over the course of the agreement</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasDebtAmount">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-acc-cur;hasMonetaryAmount"/>
+		<rdfs:label>has debt amount</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;CreditAgreement"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fnd-acc-cur;MonetaryAmount"/>
+		<skos:definition>indicates the monetary amount of the debt</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>Represents the total debt amount including principal and interest</fibo-fnd-utl-av:explanatoryNote>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasDenomination">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-acc-cur;hasMonetaryAmount"/>
+		<rdfs:label>has denomination</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fnd-acc-cur;MonetaryAmount"/>
+		<skos:definition>the face value of currency units, coins, or securities</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasFinalInterestPaymentDate">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasEndDate"/>
+		<rdfs:label>has final interest payment date</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;Date"/>
+		<skos:definition>the date on which the last interest payment is due</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasInitialInterestAccrualDate">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasStartDate"/>
+		<rdfs:label>has initial interest accrual date</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;Date"/>
+		<skos:definition>the date from which interest begins to accrue</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasInitialInterestPaymentDate">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasStartDate"/>
+		<rdfs:label>has initial interest payment date</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;Date"/>
+		<skos:definition>the date on which the first interest payment is due</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasInitialPrincipalPaymentDate">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasStartDate"/>
+		<rdfs:label>has initial principal payment date</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;Date"/>
+		<skos:definition>the date on which the first payment against the principal is due</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasInterestPaymentDay">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasRecurrenceInterval"/>
+		<rdfs:label>has interest payment day</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;RecurrenceInterval"/>
+		<skos:definition>the day of the month on which interest payments must be made on the debt</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasInterestPaymentFrequency">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasRecurrenceInterval"/>
+		<rdfs:label>has interest payment frequency</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;RecurrenceInterval"/>
+		<skos:definition>the frequency at which interest payments must be made on the debt</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasInterestRate">
+		<rdfs:subPropertyOf rdf:resource="&lcc-lr;has"/>
+		<rdfs:label>has interest rate</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fnd-acc-cur;InterestRate"/>
+		<skos:definition>relates something, such as an agreement, or debt instrument, to the rate (typically annual) of interest that is to be paid by the debtor to the creditor on the debt</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasInterestRateCap">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fbc-dae-dbt;hasInterestRate"/>
+		<rdfs:label>has interest rate cap</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-acc-cur;InterestRate"/>
+		<skos:definition>relates something, such as an agreement, or debt instrument, to the upper bound (ceiling) rate (typically annual) of interest on variable-rate debt that is to be paid by the debtor to the creditor on the debt</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasLender">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-agr-ctr;hasContractParty"/>
+		<rdfs:label>has lender</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;Lender"/>
+		<skos:definition>relates a contract, such as a debt instrument or credit agreement, to one or more parties that are financing the debt</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasMaturityDate">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasEndDate"/>
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasExplicitDate"/>
+		<rdfs:label>has maturity date</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;ExplicitDate"/>
+		<skos:definition>indicates the date on which the principal amount of an instrument is due to be repaid to the investor and interest or coupon payments stop, and/or the date on which the instrument may be redeemed</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>Maturity dates typically apply to debt instruments, such as notes, drafts, bonds, and other loans, but may also apply to preferred shares and other financial instruments.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasOriginalTimeToMaturity">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasDuration"/>
+		<rdfs:label>has time to maturity</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;ExplicitDuration"/>
+		<skos:definition>indicates the lifespan of credit agreement or offering, from the date of issuance to the scheduled maturity date</skos:definition>
+		<fibo-fnd-utl-av:synonym>has term to maturity</fibo-fnd-utl-av:synonym>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasOutstandingAmount">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-acc-cur;hasMonetaryAmount"/>
+		<rdfs:label>has outstanding amount</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fnd-acc-cur;MonetaryAmount"/>
+		<skos:definition>indicates an amount of money representing the principal, interest, or other amount owed at a specific point in time</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasPrincipal">
+		<rdfs:subPropertyOf rdf:resource="&lcc-lr;has"/>
+		<rdfs:label>has principal</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;Principal"/>
+		<skos:definition>indicates the face value of an obligation, such as a bond or loan, that must be repaid at maturity, i.e., the base amount raised by a mortgage or other debt instrument</skos:definition>
+		<skos:editorialNote>This is not the balance of the debt at a point in time, but the amount drawn down at a specific point in time, after which (for interest bearing debts) interest becomes payable. Semantic Modeling note This term is over-ridden for specific kinds of debt (securities, loans) and is therefore not needed in any data model. It is included here to define part of the meaning of the Debt Finance term. It is a Relationship Fact and strictly speaking should be regarded as being specialized and over-ridden by the terms in the Loan and Security classes, however it is modeled here as a &quot;Referenceable Archetype&quot; meaning that it appears in diagrams as a textual entry not a relationship line, and so it is not possible to formally show this specialization.</skos:editorialNote>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasPrincipalPaymentDay">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasRecurrenceInterval"/>
+		<rdfs:label>has principal payment day</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;RecurrenceInterval"/>
+		<skos:definition>the day of the month on which payments on the principal must be made</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasPrincipalPaymentFrequency">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasRecurrenceInterval"/>
+		<rdfs:label>has principal payment frequency</rdfs:label>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;RecurrenceInterval"/>
+		<skos:definition>the frequency at which payments on the principal must be made</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;hasPrincipalRepaymentDate">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-dt-fd;hasEndDate"/>
+		<rdfs:label>has principal repayment date</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;PrincipalRepaymentTerms"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fnd-dt-fd;Date"/>
+		<skos:definition>relates an instrument to the date by which the principal must be repaid in full</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote>Depending on the terms of the instrument (debt security, such as a bond, loan, etc.), this may be the date of a single payment of the debt principal or of the completion of scheduled partial redemption payments.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isAmortizationOf">
+		<rdfs:label>is amortization of</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;Amortization"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>links the process of reduction of debt or other costs through periodic charges to the relevant asset or liability</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isBasedOn">
+		<rdfs:subPropertyOf rdf:resource="&fibo-fnd-rel-rel;appliesTo"/>
+		<rdfs:label>is based on</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>relates something to something else on which it rests, or that supports it in some way</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isCollateralizationOf">
+		<rdfs:label>is collateralization of</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;Collateral"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>relates some collateral to a credit agreement or debt instrument for which the property has been pledged as security for the debt</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isCollateralizedBy">
+		<rdfs:label>is collateralized by</rdfs:label>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;Collateral"/>
+		<skos:definition>relates a credit agreement or debt instrument to property pledged as security for the debt</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isInterestOn">
+		<rdfs:label>is interest on</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;Interest"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>links a monetary amount that is the cost of using credit to the debt that it applies to</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isOwed">
+		<rdfs:label>is owed</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;Creditor"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+		<skos:definition>links a creditor to a debt that is outstanding and payable to them</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isOwedBy">
+		<rdfs:label>is owed by</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;Debtor"/>
+		<owl:inverseOf rdf:resource="&fibo-fbc-dae-dbt;owes"/>
+		<skos:definition>links a debt to the party that owes it</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isOwedTo">
+		<rdfs:label>is owed to</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;Creditor"/>
+		<skos:definition>links a debt to the party to which it is payable</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;isPrincipalOf">
+		<rdfs:label>is principal of</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;Principal"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<skos:definition>links the value of a debt, excluding any interest or other costs of using credit, to the debt that it applies to</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&fibo-fbc-dae-dbt;owes">
+		<rdfs:label>owes</rdfs:label>
+		<rdfs:domain rdf:resource="&fibo-fbc-dae-dbt;Debtor"/>
+		<rdfs:isDefinedBy rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/"/>
+		<rdfs:range rdf:resource="&fibo-fbc-dae-dbt;Debt"/>
+		<skos:definition>links a party to a debt that they owe</skos:definition>
+	</owl:ObjectProperty>
+
+</rdf:RDF>

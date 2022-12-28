@@ -1,0 +1,404 @@
+{
+  "@context": {
+    "wot": "http://xmlns.com/wot/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "ns0": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "wot:",
+      "@type": "owl:Ontology",
+      "dc11:date": "2004-02-23",
+      "dc11:description": "Web Of Trust (wot) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language.",
+      "dc11:title": "Web Of Trust vocabulary",
+      "rdfs:seeAlso": {
+        "@id": "foaf:"
+      },
+      "owl:imports": [
+        {
+          "@id": "http://www.w3.org/2000/01/rdf-schema"
+        },
+        {
+          "@id": "http://www.w3.org/2002/07/owl"
+        }
+      ]
+    },
+    {
+      "@id": "wot:EncryptedDocument",
+      "@type": "owl:Class",
+      "rdfs:comment": "An encrypted document intended for a set of recipients.",
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Encrypted Document",
+      "rdfs:subClassOf": [
+        {
+          "@id": "foaf:Document"
+        },
+        {
+          "@id": "http://xmlns.com/wordnet/1.6/Endorsement-4"
+        }
+      ],
+      "owl:disjointWith": [
+        {
+          "@id": "wot:Endorsement"
+        },
+        {
+          "@id": "wot:PubKey"
+        },
+        {
+          "@id": "wot:SigEvent"
+        },
+        {
+          "@id": "wot:User"
+        }
+      ],
+      "ns0:term_status": "unstable"
+    },
+    {
+      "@id": "wot:Endorsement",
+      "@type": "owl:Class",
+      "rdfs:comment": "An endorsement resource containing a detached ascii signature.",
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Endorsement",
+      "rdfs:subClassOf": [
+        {
+          "@id": "foaf:Document"
+        },
+        {
+          "@id": "http://xmlns.com/wordnet/1.6/Endorsement-4"
+        }
+      ],
+      "owl:disjointWith": [
+        {
+          "@id": "wot:EncryptedDocument"
+        },
+        {
+          "@id": "wot:PubKey"
+        },
+        {
+          "@id": "wot:SigEvent"
+        },
+        {
+          "@id": "wot:User"
+        }
+      ],
+      "ns0:term_status": "unstable"
+    },
+    {
+      "@id": "wot:PubKey",
+      "@type": "owl:Class",
+      "rdfs:comment": "A class used to represent a PGP/GPG public key for a user (an agent, person, group or organization).",
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Public Key",
+      "rdfs:subClassOf": {
+        "@id": "http://xmlns.com/wordnet/1.6/Credential"
+      },
+      "owl:disjointWith": [
+        {
+          "@id": "wot:EncryptedDocument"
+        },
+        {
+          "@id": "wot:Endorsement"
+        },
+        {
+          "@id": "wot:SigEvent"
+        },
+        {
+          "@id": "wot:User"
+        }
+      ],
+      "ns0:term_status": "stable"
+    },
+    {
+      "@id": "wot:SigEvent",
+      "@type": "owl:Class",
+      "rdfs:comment": "An event describing the action of a public key being signed by some other public key.",
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Key Signing Event",
+      "rdfs:subClassOf": [
+        {
+          "@id": "http://www.w3.org/2002/12/cal/ical#Vevent"
+        },
+        {
+          "@id": "http://xmlns.com/wordnet/1.6/Event"
+        }
+      ],
+      "owl:disjointWith": [
+        {
+          "@id": "wot:EncryptedDocument"
+        },
+        {
+          "@id": "wot:Endorsement"
+        },
+        {
+          "@id": "wot:PubKey"
+        },
+        {
+          "@id": "wot:User"
+        }
+      ],
+      "ns0:term_status": "testing"
+    },
+    {
+      "@id": "wot:User",
+      "@type": "owl:Class",
+      "rdfs:comment": "A user (agent, person, group or organization) of a PGP/GPG public key.",
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Key User",
+      "rdfs:subClassOf": {
+        "@id": "foaf:Agent"
+      },
+      "owl:disjointWith": [
+        {
+          "@id": "wot:EncryptedDocument"
+        },
+        {
+          "@id": "wot:Endorsement"
+        },
+        {
+          "@id": "wot:PubKey"
+        },
+        {
+          "@id": "wot:SigEvent"
+        }
+      ],
+      "ns0:term_status": "stable"
+    },
+    {
+      "@id": "wot:assurance",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": "A property linking a document to an endorsement resource containing a detached ascii signature.",
+      "rdfs:domain": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Assurance",
+      "rdfs:range": {
+        "@id": "wot:Endorsement"
+      },
+      "ns0:term_status": "stable"
+    },
+    {
+      "@id": "wot:encryptedTo",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": "A property linking an encrypted document to a recipient.",
+      "rdfs:domain": {
+        "@id": "wot:EncryptedDocument"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Encrypted to",
+      "rdfs:range": {
+        "@id": "wot:PubKey"
+      },
+      "ns0:term_status": "unstable"
+    },
+    {
+      "@id": "wot:encrypter",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": "A property linking an encrypted document to the public key that was used to encrypt it.",
+      "rdfs:domain": {
+        "@id": "wot:EncryptedDocument"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Encrypted by",
+      "rdfs:range": {
+        "@id": "wot:PubKey"
+      },
+      "ns0:term_status": "unstable"
+    },
+    {
+      "@id": "wot:fingerprint",
+      "@type": [
+        "owl:DatatypeProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "rdfs:comment": "A public key hex fingerprint string (40 digits, white space insignificant).",
+      "rdfs:domain": {
+        "@id": "wot:PubKey"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Fingerprint",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "ns0:term_status": "testing"
+    },
+    {
+      "@id": "wot:hasKey",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": "A property to link a PubKey from a User",
+      "rdfs:domain": {
+        "@id": "wot:User"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "has Key",
+      "rdfs:range": {
+        "@id": "wot:PubKey"
+      },
+      "ns0:term_status": "testing",
+      "owl:inverseOf": {
+        "@id": "wot:identity"
+      }
+    },
+    {
+      "@id": "wot:hex_id",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "A public key hex identifier string (8 digits).",
+      "rdfs:domain": {
+        "@id": "wot:PubKey"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Hex identifier",
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "ns0:term_status": "stable"
+    },
+    {
+      "@id": "wot:identity",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": "A property linking a public key to the user of the key.",
+      "rdfs:domain": {
+        "@id": "wot:PubKey"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Identity",
+      "rdfs:range": {
+        "@id": "wot:User"
+      },
+      "ns0:term_status": "testing"
+    },
+    {
+      "@id": "wot:length",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "A numeric string representing the length, in bytes, of a public key.",
+      "rdfs:domain": {
+        "@id": "wot:PubKey"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Length",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      },
+      "ns0:term_status": "stable"
+    },
+    {
+      "@id": "wot:pubkeyAddress",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": "The location of an ascii version of a public key.",
+      "rdfs:domain": {
+        "@id": "wot:PubKey"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Address",
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "ns0:term_status": "testing"
+    },
+    {
+      "@id": "wot:sigdate",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "The date of a public key signature event.",
+      "rdfs:domain": {
+        "@id": "wot:SigEvent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Signature date",
+      "rdfs:range": {
+        "@id": "xsd:date"
+      },
+      "ns0:term_status": "testing"
+    },
+    {
+      "@id": "wot:signed",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": "A property linking a public key to a public key signature event.",
+      "rdfs:domain": {
+        "@id": "wot:PubKey"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Signed",
+      "rdfs:range": {
+        "@id": "wot:SigEvent"
+      },
+      "ns0:term_status": "testing"
+    },
+    {
+      "@id": "wot:signer",
+      "@type": [
+        "owl:FunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": "A property linking a public key signature event to the public key that was used to sign.",
+      "rdfs:domain": {
+        "@id": "wot:SigEvent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Signer",
+      "rdfs:range": {
+        "@id": "wot:PubKey"
+      },
+      "ns0:term_status": "unstable"
+    },
+    {
+      "@id": "wot:sigtime",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": "The time (of day) of a public key signature event.",
+      "rdfs:domain": {
+        "@id": "wot:SigEvent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "wot:"
+      },
+      "rdfs:label": "Signature time",
+      "rdfs:range": {
+        "@id": "xsd:time"
+      },
+      "ns0:term_status": "unstable"
+    }
+  ]
+}

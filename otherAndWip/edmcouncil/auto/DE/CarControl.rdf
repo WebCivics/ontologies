@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY auto-cc "https://spec.edmcouncil.org/auto/ontology/DE/CarControl/">
+	<!ENTITY auto-mo "https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/">
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/">
+	<!ENTITY dct "http://purl.org/dc/terms/">
+	<!ENTITY fibo-fnd-utl-av "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/">
+	<!ENTITY owl "http://www.w3.org/2002/07/owl#">
+	<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+	<!ENTITY skos "http://www.w3.org/2004/02/skos/core#">
+	<!ENTITY sm "http://www.omg.org/techprocess/ab/SpecificationMetadata/">
+	<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+]>
+<rdf:RDF xml:base="https://spec.edmcouncil.org/auto/ontology/DE/CarControl/"
+	xmlns="https://spec.edmcouncil.org/auto/ontology/DE/CarControl/"
+	xmlns:auto-cc="https://spec.edmcouncil.org/auto/ontology/DE/CarControl/"
+	xmlns:auto-mo="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:fibo-fnd-utl-av="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:sm="http://www.omg.org/techprocess/ab/SpecificationMetadata/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+	
+	<owl:Ontology rdf:about="https://spec.edmcouncil.org/auto/ontology/DE/CarControl/">
+		<rdfs:label xml:lang="en">Car control ontology (CC)</rdfs:label>
+		<rdfs:comment xml:lang="en">The Car Control Ontology (CC) has been initially created by Lihua Zhao and Yutaka Sasaki at the Computational Intelligence Laboratory, Toyota Technological Institute, Nagoya, Japan (see https://www.toyota-ti.ac.jp/Lab/Denshi/COIN/Ontology/TTICore-0.03/) and published by the Toyota Technological Institute Smart Vehicle Research Project. CCO, as created by the Computational Intelligence Laboratory, is available under the Creative Commons - Attribution-NonCommercial-ShareAlike
+4.0 International (http://creativecommons.org/licenses/by-nc-sa/4.0/).</rdfs:comment>
+		<dct:abstract xml:lang="en">The Car Control Ontology (CC) has been constructed to describe driving actions and paths of autonomous vehicles.</dct:abstract>
+		<dct:license rdf:resource="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
+		<sm:contentLanguage rdf:datatype="&xsd;anyURI">http://www.w3.org/standards/techs/owl#w3c_all</sm:contentLanguage>
+		<sm:dependsOn rdf:datatype="&xsd;anyURI">https://spec.edmcouncil.org/auto/ontology/EC/</sm:dependsOn>
+		<sm:fileAbbreviation>auto-de-cc</sm:fileAbbreviation>
+		<sm:filename>CarControl.rdf</sm:filename>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/auto/ontology/MO/MiddleOntology/"/>
+		<owl:imports rdf:resource="https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/"/>
+		<fibo-fnd-utl-av:hasMaturityLevel rdf:resource="&fibo-fnd-utl-av;Provisional"/>
+	</owl:Ontology>
+	
+	<owl:AnnotationProperty rdf:about="&skos;altLabel">
+	</owl:AnnotationProperty>
+	
+	<owl:Class rdf:about="&auto-cc;Acceleration">
+		<rdfs:subClassOf rdf:resource="&auto-cc;SpeedProfile"/>
+		<rdfs:label xml:lang="en">acceleration</rdfs:label>
+		<skos:definition>increase in the speed of something</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;BackwardCollisionWarning">
+		<rdfs:subClassOf rdf:resource="&auto-cc;CollisionWarning"/>
+		<rdfs:label xml:lang="en">backward collision warning</rdfs:label>
+		<skos:definition xml:lang="en">notice of a possible collision with an object behind the vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;CollisionWarning">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Warning"/>
+		<rdfs:label xml:lang="en">collision warning</rdfs:label>
+		<skos:definition xml:lang="en">notice of a possible collision</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;ConstantSpeed">
+		<rdfs:subClassOf rdf:resource="&auto-mo;Quality"/>
+		<rdfs:label xml:lang="en">constant speed</rdfs:label>
+		<skos:definition xml:lang="en">value representing the speed of a vehicle and indicating that the speed is constant</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;CurrentLaneSafeDist">
+		<rdfs:subClassOf rdf:resource="&auto-cc;RoadCondition"/>
+		<rdfs:label xml:lang="en">current lane safe distance</rdfs:label>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;Deceleration">
+		<rdfs:subClassOf rdf:resource="&auto-cc;SpeedProfile"/>
+		<rdfs:label xml:lang="en">deceleration</rdfs:label>
+		<skos:definition xml:lang="en">decrease in the speed of something</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;DestinationSelection">
+		<rdfs:subClassOf rdf:resource="&auto-cc;StrategicFunction"/>
+		<rdfs:label xml:lang="en">destination selection</rdfs:label>
+		<skos:definition xml:lang="en">decision where to go</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;DrivingAction">
+		<rdfs:subClassOf rdf:resource="&auto-mo;Action"/>
+		<rdfs:label xml:lang="en">driving action</rdfs:label>
+		<skos:definition xml:lang="en">action which consists of the driver controlling and guiding the movement of a vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;DynamicDrivingTask">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Task"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&auto-cc;hasRealizationIn"/>
+				<owl:onClass rdf:resource="&auto-cc;OperateMotorVehicle"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&auto-mo;hasPart"/>
+				<owl:someValuesFrom rdf:resource="&auto-cc;EnhancingConspicuity"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&auto-mo;hasPart"/>
+				<owl:someValuesFrom rdf:resource="&auto-cc;LateralVehicleMotionControl"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&auto-mo;hasPart"/>
+				<owl:someValuesFrom rdf:resource="&auto-cc;LongitudinalVehicleMotionControl"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&auto-mo;hasPart"/>
+				<owl:someValuesFrom rdf:resource="&auto-cc;ManeuverPlanning"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&auto-mo;hasPart"/>
+				<owl:someValuesFrom rdf:resource="&auto-cc;Monitor"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&auto-mo;hasPart"/>
+				<owl:someValuesFrom rdf:resource="&auto-cc;ObjectAndEventDetectionAndResponse"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label xml:lang="en">dynamic driving task</rdfs:label>
+		<skos:definition xml:lang="en">all of the real-time operational and tactical functions required to operate a vehicle in on-road traffic, excluding the strategic functions</skos:definition>
+		<fibo-fnd-utl-av:abbreviation>DDT</fibo-fnd-utl-av:abbreviation>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.13</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Figure 1 displays a schematic view of the driving task.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">For purposes of DDT performance: 
+- level 1 encompasses automation of part of the innermost loop (i.e., either lateral vehicle motion control functionality or longitudinal vehicle motion control functionality and limited OEDR associated with the given axis of vehicle motion control); 
+- level 2 encompasses automation of the innermost loop (lateral and longitudinal vehicle motion control and limited OEDR associated with vehicle motion control), and 
+- levels 3-5 encompass automation of both inner loops (lateral and longitudinal vehicle motion control and complete OEDR). Note that DDT performance does not include strategic aspects of driving (e.g., determining whether, when and where to travel).</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">For simplification and to provide a useful shorthand term, subtasks: 
+- Monitoring the driving environment via object and event detection, recognition, classification, and response preparation (operational and tactical) and
+- Object and event response execution 
+are referred to collectively as object and event detection and response (OEDR).</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">In this document, reference is made to “complete(ing) the DDT.” This means fully performing all of the subtasks of the DDT, whether by the (human) driver, by the driving automation system, or by both.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;DynamicDrivingTaskSubtask">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Task"/>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&auto-mo;isPartOf"/>
+				<owl:onClass rdf:resource="&auto-cc;DynamicDrivingTask"/>
+				<owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">0</owl:minQualifiedCardinality>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:label xml:lang="en">dynamic driving task subtask</rdfs:label>
+		<skos:definition xml:lang="en">specific real-time tactical or operational function required to operate a vehicle in on-road traffic</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;EnhancingConspicuity">
+		<rdfs:subClassOf rdf:resource="&auto-cc;TacticalFunction"/>
+		<rdfs:label xml:lang="en">enhancing conspicuity</rdfs:label>
+		<skos:definition xml:lang="en">DDT subtask comprising activities which make the vehicle more visible and distinguishable from its surroundings, such as by lightning, sounding the horn, gesturing etc.</skos:definition>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Enhancing conspicuity via lighting, signaling and gesturing, etc.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;ForwardCollisionWarning">
+		<rdfs:subClassOf rdf:resource="&auto-cc;CollisionWarning"/>
+		<rdfs:label xml:lang="en">forward collision warning</rdfs:label>
+		<skos:definition xml:lang="en">notice of a possible collision with an object in front of the vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;Go">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">go</rdfs:label>
+		<rdfs:comment>1</rdfs:comment>
+		<skos:definition xml:lang="en">action resulting in the vehicle changing its position</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;GoBackward">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">go backward</rdfs:label>
+		<rdfs:comment>5</rdfs:comment>
+		<skos:definition xml:lang="en">action resulting in the vehicle moving backwards</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;GoForward">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">go forward</rdfs:label>
+		<rdfs:comment>4</rdfs:comment>
+		<skos:definition xml:lang="en">action resulting in the vehicle moving forward</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;GreenGo">
+		<rdfs:subClassOf rdf:resource="&auto-cc;TrafficSignalControl"/>
+		<rdfs:label xml:lang="en">green go</rdfs:label>
+		<skos:definition xml:lang="en">color of the traffic signal, evoked by light with a dominant wavelength of roughly 495-570 nm that signalizes that vehicle is allowed to and should go forward</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;LaneChange">
+		<rdfs:subClassOf rdf:resource="&auto-mo;Action"/>
+		<rdfs:label xml:lang="en">lane change</rdfs:label>
+		<skos:definition xml:lang="en">action during which the vehicle changes lanes</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;LaneDepartureWarning">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Warning"/>
+		<rdfs:label xml:lang="en">lane departure warning</rdfs:label>
+		<skos:definition xml:lang="en">notice of the departure from the lane</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;LateralVehicleMotionControl">
+		<rdfs:subClassOf rdf:resource="&auto-cc;OperationalFunction"/>
+		<rdfs:label xml:lang="en">lateral vehicle motion control</rdfs:label>
+		<skos:definition xml:lang="en">the DDT subtask comprising the activities necessary for the real-time, sustained regulation of the y-axis component of vehicle motion</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.15</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Lateral vehicle motion control includes the detection of the vehicle positioning relative to lane boundaries and application of steering and/or differential braking inputs to maintain appropriate lateral positioning.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;LeftLaneChange">
+		<rdfs:subClassOf rdf:resource="&auto-cc;LaneChange"/>
+		<rdfs:label xml:lang="en">left lane change</rdfs:label>
+		<skos:definition xml:lang="en">action during which a vehicle changes lanes, moving to the one on the left</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;LongitudinalVehicleMotionControl">
+		<rdfs:subClassOf rdf:resource="&auto-cc;OperationalFunction"/>
+		<rdfs:label xml:lang="en">longitudinal vehicle motion control</rdfs:label>
+		<skos:definition xml:lang="en">the DDT subtask comprising the activities necessary for the real-time, sustained regulation of the x-axis component of vehicle motion</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.16</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Longitudinal vehicle motion control includes maintaining set speed as well as detecting a preceding vehicle in the path of the subject vehicle, maintaining an appropriate gap to the preceding vehicle and applying propulsion or braking inputs to cause the vehicle to maintain that speed or gap.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;ManeuverPlanning">
+		<rdfs:subClassOf rdf:resource="&auto-cc;TacticalFunction"/>
+		<rdfs:label xml:lang="en">maneuver planning</rdfs:label>
+		<skos:definition xml:lang="en">function that includes deciding whether and when to overtake another vehicle or change lanes</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;Monitor">
+		<rdfs:subClassOf rdf:resource="&auto-cc;OperationalFunction"/>
+		<rdfs:subClassOf rdf:resource="&auto-cc;TacticalFunction"/>
+		<rdfs:label xml:lang="en">monitor</rdfs:label>
+		<skos:definition xml:lang="en">a range of functions involving real-time human or machine sensing and processing of data used to operate a vehicle, or to support its operation</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.19</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">The driver state or condition of being receptive to alerts or other indicators of a DDT performance-relevant system failure, as assumed in level 3, is not a form of monitoring. The difference between receptivity and monitoring is best illustrated by example: A person who becomes aware of a fire alarm or a telephone ringing may not necessarily have been monitoring the fire alarm or the telephone. Likewise, a user who becomes aware of a trailer hitch falling off may not necessarily have been monitoring the trailer hitch. By contrast, a driver in a vehicle with an active level 1 adaptive cruise control (ACC) system is expected to monitor both the driving environment and the ACC performance and otherwise not to wait for an alert to draw his/her attention to a situation requiring a response (see 3.23).</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">The following four terms (1 – monitor the user, 2 – monitor the driving environment, 3 – monitor vehicle performance, and 4 – monitor driving automation system performance) describe categories of monitoring (see Scope regarding primary actors).</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">The terms below describing types of monitoring should be used when the general term “monitor” and its derivatives are insufficiently precise.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;MonitorDrivingAutomationSystemPerformance">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Monitor"/>
+		<rdfs:label xml:lang="en">monitor driving automation system performance</rdfs:label>
+		<skos:definition xml:lang="en">the activities automated routines for evaluating whether the driving automation system is performing part or all of the DDT appropriately</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.19.4</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">At higher levels of driving automation (levels 3-5), the ADS monitors its own performance of the complete DDT.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">At levels 1-2, the driver monitors the driving automation system’s performance.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Recognizing requests to intervene issued by a driving automation system is not a form of monitoring driving automation system performance, but rather a form of receptivity.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">The term monitor driving automation system performance should not be used in lieu of supervise, which includes both monitoring and responding as needed to perform the DDT and is therefore more comprehensive.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:usageNote xml:lang="en">A conventional driver verifies that an engaged ACC system is maintaining an appropriate gap while following a preceding vehicle in a curve.</fibo-fnd-utl-av:usageNote>
+		<fibo-fnd-utl-av:usageNote xml:lang="en">A remote driver engaging a level 2 automated parking feature monitors the pathway of the vehicle to ensure that the feature is responsive to pedestrians and obstacles.</fibo-fnd-utl-av:usageNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;MonitorDrivingEnvironment">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Monitor"/>
+		<rdfs:label xml:lang="en">monitor the driving environment</rdfs:label>
+		<skos:definition xml:lang="en">the activities automated routines that accomplish real-time roadway environmental object and event detection, recognition, classification, and response preparation (excluding actual response), as needed to operate a vehicle</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.19.2</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Monitoring the driving environment via object and event detection, recognition, classification, and response preparation</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">When operating conventional vehicles that are not equipped with an engaged ADS, drivers visually sample the road scene sufficiently to competently perform the DDT while also performing secondary tasks that require short periods of eyes-off-road time (e.g., adjusting cabin comfort settings, scanning road signs, tuning a radio, etc.). Thus, monitoring the driving environment does not necessarily entail continuous eyes- on-road time by the driver.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;MonitorUser">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Monitor"/>
+		<rdfs:label xml:lang="en">monitor the user</rdfs:label>
+		<skos:definition xml:lang="en">the activities and/or automated routines designed to assess whether and to what degree the user is performing the role specified for him/her</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.19.1</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">User monitoring in the context of driving automation is most likely to be deployed as a countermeasure for misuse or abuse (including over-reliance due to complacency) of a driving automation system but may also serve other purposes.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">User monitoring is primarily useful for levels 2 and 3, as evidence from the field on the use of level 1 features has not identified significant incidence of misuse or abuse of driving automation technology, and above these levels the ADS is by definition capable of achieving a minimal risk condition automatically.</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;MonitorVehiclePerformanceForDDTPerformanceRelevantSystemFailures">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Monitor"/>
+		<rdfs:label xml:lang="en">monitor vehicle performance for DDT performance-relevant system failures</rdfs:label>
+		<skos:definition xml:lang="en">the activities and/or automated routines that accomplish real-time evaluation of the vehicle performance, and response preparation, as needed to operate a vehicle</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.19.3</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">While performing the DDT, level 4 and 5 ADSs monitor vehicle performance. However, for level 3 ADSs, as well as for level 1 and 2 driving automation systems, the human driver is assumed to be receptive to vehicle conditions that adversely affect performance of the DDT (see definition of receptivity at 3.23).</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:usageNote xml:lang="en">While a level 2 driving automation system is engaged in stop-and-go traffic, a malfunctioning brake caliper causes the vehicle to pull slightly to the left when the brakes are applied.</fibo-fnd-utl-av:usageNote>
+		<fibo-fnd-utl-av:usageNote xml:lang="en">While a level 4 ADS is engaged in stop-and-go traffic, a malfunctioning brake caliper causes the vehicle to pull to the left when the brakes are applied.</fibo-fnd-utl-av:usageNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;ObjectAndEventDetectionAndResponse">
+		<rdfs:subClassOf rdf:resource="&auto-cc;OperationalFunction"/>
+		<rdfs:subClassOf rdf:resource="&auto-cc;TacticalFunction"/>
+		<rdfs:label xml:lang="en">object and event detection and response</rdfs:label>
+		<skos:altLabel xml:lang="en">Object and event response execution</skos:altLabel>
+		<skos:definition xml:lang="en">the subtasks of the DDT that include monitoring the driving environment (detecting, recognizing, and classifying objects and events and preparing to respond as needed) and executing an appropriate response to such objects and events (i.e., as needed to complete the DDT and/or DDT fallback)</skos:definition>
+		<fibo-fnd-utl-av:abbreviation>OEDR</fibo-fnd-utl-av:abbreviation>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.20</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;OperateMotorVehicle">
+		<rdfs:subClassOf rdf:resource="&auto-mo;Action"/>
+		<rdfs:label xml:lang="en">operate a motor vehicle</rdfs:label>
+		<skos:definition xml:lang="en">the activities performed by a (human) driver (with or without support from one or more level 1 or 2 driving automation features ) or by an ADS (level 3-5) to perform the entire DDT for a given vehicle during a trip</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 3.21</fibo-fnd-utl-av:adaptedFrom>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">Although use of the term operate/operating implies the existence of a vehicle “operator,” this term is not defined or used in this document, which otherwise provides very specific terms and definitions for the various types of ADS-equipped vehicle users.</fibo-fnd-utl-av:explanatoryNote>
+		<fibo-fnd-utl-av:explanatoryNote xml:lang="en">The term “drive” is not used in this document, however, in many cases it could be used correctly in lieu of “operate.”</fibo-fnd-utl-av:explanatoryNote>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;OperationalFunction">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DynamicDrivingTaskSubtask"/>
+		<rdfs:label xml:lang="en">operational effort</rdfs:label>
+		<skos:definition xml:lang="en">a function that involves split-second reactions that can be considered pre-cognitive or innate, such as making micro-corrections to steering, braking and accelerating to maintain lane position in traffic or to avoid a sudden obstacle or hazardous event in the vehicle’s pathway</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 8.11</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;OverSpeedWarning">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Warning"/>
+		<rdfs:label xml:lang="en">overspeed warning</rdfs:label>
+		<skos:definition xml:lang="en">notice that the speed of a vehicle is above the legally determined value</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;RedStop">
+		<rdfs:subClassOf rdf:resource="&auto-cc;TrafficSignalControl"/>
+		<rdfs:label xml:lang="en">red stop</rdfs:label>
+		<skos:definition xml:lang="en">color of a traffic signal, evoked by light with a dominant wavelength of roughly 625-740 nm, which indicates that the vehicle is not allowed to go forward and should stop</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;RightLaneChange">
+		<rdfs:subClassOf rdf:resource="&auto-cc;LaneChange"/>
+		<rdfs:label xml:lang="en">right lane change</rdfs:label>
+		<skos:definition xml:lang="en">action during which a vehicle changes lanes, moving to the one on the right</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;RoadCondition">
+		<rdfs:subClassOf rdf:resource="&auto-mo;Quality"/>
+		<rdfs:label xml:lang="en">road condition</rdfs:label>
+		<skos:definition xml:lang="en">structured value representing the current condition of a road</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;SideCollisionWarning">
+		<rdfs:subClassOf rdf:resource="&auto-cc;CollisionWarning"/>
+		<rdfs:label xml:lang="en">side collision warning</rdfs:label>
+		<skos:definition xml:lang="en">notice of a possible collision with an object located at the side of the vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;SmoothAcceleration">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Acceleration"/>
+		<rdfs:label xml:lang="en">smooth acceleration</rdfs:label>
+		<skos:definition xml:lang="en">gradual increase in the speed of a vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;SmoothDeceleration">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Deceleration"/>
+		<rdfs:label xml:lang="en">smooth deceleration</rdfs:label>
+		<skos:definition xml:lang="en">gradual decrease in the speed of a vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;SpeedProfile">
+		<rdfs:subClassOf rdf:resource="&auto-mo;Process"/>
+		<rdfs:label xml:lang="en">speed profile</rdfs:label>
+		<skos:definition xml:lang="en">juxtaposition of all changes in the speed of a vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;Stop">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">stop</rdfs:label>
+		<rdfs:comment>0</rdfs:comment>
+		<skos:definition xml:lang="en">action resulting in the vehicle stopping any movement</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;StrategicFunction">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Task"/>
+		<rdfs:label xml:lang="en">strategic function</rdfs:label>
+		<rdfs:comment xml:lang="en">destiantion and waypoints planning</rdfs:comment>
+		<skos:definition xml:lang="en">function that involves deciding whether, where and when to go, how to travel, which best routes to take, etc.</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;SuddenAcceleration">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Acceleration"/>
+		<rdfs:label xml:lang="en">sudden acceleration</rdfs:label>
+		<skos:definition xml:lang="en">sudden increase in the speed of a vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;SuddenDeceleration">
+		<rdfs:subClassOf rdf:resource="&auto-cc;Deceleration"/>
+		<rdfs:label xml:lang="en">sudden deceleration</rdfs:label>
+		<skos:definition xml:lang="en">sudden decrease in the speed of a vehicle</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;TacticalFunction">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DynamicDrivingTaskSubtask"/>
+		<rdfs:label xml:lang="en">tactical effort</rdfs:label>
+		<skos:definition xml:lang="en">a function that involves maneuvering the vehicle in traffic during a trip, including deciding whether and when to overtake another vehicle or change lanes, selecting an appropriate speed, checking mirrors, etc</skos:definition>
+		<fibo-fnd-utl-av:adaptedFrom xml:lang="en">J3016 JUN2018, section 8.11</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;Task">
+		<rdfs:subClassOf rdf:resource="&auto-mo;Disposition"/>
+		<rdfs:label xml:lang="en">task</rdfs:label>
+		<skos:definition xml:lang="en">function that a human or an automated driver can perform</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;ToLeft">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">to left</rdfs:label>
+		<rdfs:comment>2</rdfs:comment>
+		<skos:definition xml:lang="en">action resulting in the vehicle making a below 90 degrees turn to the left</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;ToRight">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">to right</rdfs:label>
+		<rdfs:comment>3</rdfs:comment>
+		<skos:definition xml:lang="en">action resulting in the vehicle making a below 90 degrees turn to the right</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;TrafficSignalControl">
+		<rdfs:subClassOf rdf:resource="&auto-mo;GenericallyDependentContinuant"/>
+		<rdfs:label xml:lang="en">traffic signal control</rdfs:label>
+		<skos:definition xml:lang="en">highway traffic signal by which traffic is alternately directed to stop and permitted to proceed</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;TripScheduling">
+		<rdfs:subClassOf rdf:resource="&auto-cc;StrategicFunction"/>
+		<rdfs:label xml:lang="en">trip scheduling</rdfs:label>
+		<skos:definition xml:lang="en">decision when to go</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;TurnLeft">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">turn left</rdfs:label>
+		<rdfs:comment>6</rdfs:comment>
+		<skos:definition xml:lang="en">action resulting in the vehicle making an above, or equal to 90 degrees turn to the left</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;TurnRight">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">turn right</rdfs:label>
+		<rdfs:comment>7</rdfs:comment>
+		<skos:definition xml:lang="en">action resulting in the vehicle making an above, or equal to 90 degrees turn to the right</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;WaitThenGo">
+		<rdfs:subClassOf rdf:resource="&auto-cc;DrivingAction"/>
+		<rdfs:label xml:lang="en">wait then go</rdfs:label>
+		<rdfs:comment>8</rdfs:comment>
+		<skos:definition xml:lang="en">action that consists of the vehicle firstly not moving, and then moving</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;Warning">
+		<rdfs:subClassOf rdf:resource="&auto-mo;Process"/>
+		<rdfs:label xml:lang="en">warning</rdfs:label>
+		<skos:definition xml:lang="en">notice of possible danger or a problem</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;WaypointSelection">
+		<rdfs:subClassOf rdf:resource="&auto-cc;StrategicFunction"/>
+		<rdfs:label xml:lang="en">waypoint selection</rdfs:label>
+		<skos:definition xml:lang="en">selection of a waypoint</skos:definition>
+	</owl:Class>
+	
+	<owl:Class rdf:about="&auto-cc;Yellow">
+		<rdfs:subClassOf rdf:resource="&auto-cc;TrafficSignalControl"/>
+		<rdfs:label xml:lang="en">yellow</rdfs:label>
+		<skos:definition xml:lang="en">color of a traffic signal, evoked by light with a dominant wavelength of roughly 575-585 nm which is an intermediate between red and green</skos:definition>
+	</owl:Class>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;approachTo">
+		<rdfs:label xml:lang="en">approach to</rdfs:label>
+		<skos:definition xml:lang="en">relates a vehicle to an intersection it is approaching</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;collisionWarningWith">
+		<rdfs:label xml:lang="en">collision warning with</rdfs:label>
+		<skos:definition xml:lang="en">indicates incoming collisions between our vehicle and other vehicles</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;endLane">
+		<rdfs:label xml:lang="en">end lane</rdfs:label>
+		<skos:definition xml:lang="en">relates a path to its end lane</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;enterOf">
+		<rdfs:subPropertyOf rdf:resource="&auto-cc;isNodeOf"/>
+		<rdfs:label>enter of</rdfs:label>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;exitOf">
+		<rdfs:subPropertyOf rdf:resource="&auto-cc;isNodeOf"/>
+		<rdfs:label>exit of</rdfs:label>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;giveWay">
+		<rdfs:label xml:lang="en">give way</rdfs:label>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;hasAgent">
+		<rdfs:label xml:lang="en">has agent</rdfs:label>
+		<rdfs:range rdf:resource="&auto-mo;Agent"/>
+		<owl:inverseOf rdf:resource="&auto-cc;isAgentOf"/>
+		<skos:definition xml:lang="en">relates something to an agent</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;hasNode">
+		<rdfs:label xml:lang="en">has node</rdfs:label>
+		<skos:definition xml:lang="en">relates a way, a path or a road to a given node</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;hasPathSegment">
+		<rdfs:label>has path segment</rdfs:label>
+		<owl:inverseOf rdf:resource="&auto-cc;isPathSegmentOf"/>
+		<skos:definition xml:lang="en">relates a way, a path or a road to a given path segment</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;hasRealizationIn">
+		<rdfs:label xml:lang="en">has realization in</rdfs:label>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;isAgentOf">
+		<rdfs:label xml:lang="en">is agent of</rdfs:label>
+		<rdfs:domain rdf:resource="&auto-mo;Agent"/>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;isNodeOf">
+		<rdfs:label xml:lang="en">is node of</rdfs:label>
+		<skos:definition xml:lang="en">relates a node to a given way, path or road</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;isPathSegmentOf">
+		<rdfs:label>is path segment of</rdfs:label>
+		<skos:definition xml:lang="en">relates a path segment to a given way, path or road</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;nextNode">
+		<rdfs:label>next node</rdfs:label>
+		<owl:inverseOf rdf:resource="&auto-cc;prevNode"/>
+		<skos:definition xml:lang="en">relates a node to a subsequent one</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;nextPathSegment">
+		<rdfs:label>next path segment</rdfs:label>
+		<owl:inverseOf rdf:resource="&auto-cc;prevPathSegment"/>
+		<skos:definition xml:lang="en">relates a path segment to a subsequent one</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:DatatypeProperty rdf:about="&auto-cc;nodePos">
+		<rdfs:label>node position</rdfs:label>
+		<skos:definition xml:lang="en">relates a node to its position expressed in longitude, latitude and optionally altitude</skos:definition>
+	</owl:DatatypeProperty>
+	
+	<owl:DatatypeProperty rdf:about="&auto-cc;pathSegmentID">
+		<rdfs:label>path segment ID</rdfs:label>
+		<rdfs:range rdf:resource="&xsd;string"/>
+		<skos:definition xml:lang="en">relates a path segment to its ID</skos:definition>
+	</owl:DatatypeProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;prevNode">
+		<rdfs:label>previous node</rdfs:label>
+		<skos:definition xml:lang="en">relates a node to a previous one</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;prevPathSegment">
+		<rdfs:label>previous path segment</rdfs:label>
+		<skos:definition xml:lang="en">relates a path segment to a previous one</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-cc;startLane">
+		<rdfs:label xml:lang="en">start lane</rdfs:label>
+		<skos:definition xml:lang="en">relates a path to its starting lane</skos:definition>
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-mo;hasPart">
+	</owl:ObjectProperty>
+	
+	<owl:ObjectProperty rdf:about="&auto-mo;isPartOf">
+	</owl:ObjectProperty>
+	
+	<owl:AnnotationProperty rdf:about="&fibo-fnd-utl-av;abbreviation">
+	</owl:AnnotationProperty>
+	
+	<owl:AnnotationProperty rdf:about="&fibo-fnd-utl-av;explanatoryNote">
+	</owl:AnnotationProperty>
+	
+	<owl:AnnotationProperty rdf:about="&fibo-fnd-utl-av;usageNote">
+	</owl:AnnotationProperty>
+	
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;Acceleration"/>
+		<owl:annotatedTarget>increase in the speed of something</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>https://dictionary.cambridge.org/dictionary/english/acceleration</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;DestinationSelection"/>
+		<owl:annotatedTarget xml:lang="en">decision where to go</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>J3016 JUN2018, section 8.11</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;DynamicDrivingTaskSubtask"/>
+		<owl:annotatedTarget xml:lang="en">specific real-time tactical or operational function required to operate a vehicle in on-road traffic</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>J3016 JUN2018, section 3.10</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;EnhancingConspicuity"/>
+		<owl:annotatedTarget xml:lang="en">DDT subtask comprising activities which make the vehicle more visible and distinguishable from its surroundings, such as by lightning, sounding the horn, gesturing etc.</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>J3016 JUN2018, section 3.10</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;ManeuverPlanning"/>
+		<owl:annotatedTarget xml:lang="en">function that includes deciding whether and when to overtake another vehicle or change lanes</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>J3016 JUN2018, section 8.11</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;StrategicFunction"/>
+		<owl:annotatedTarget xml:lang="en">function that involves deciding whether, where and when to go, how to travel, which best routes to take, etc.</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>J3016 JUN2018, section 8.11</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;TrafficSignalControl"/>
+		<owl:annotatedTarget xml:lang="en">highway traffic signal by which traffic is alternately directed to stop and permitted to proceed</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>https://mutcd.fhwa.dot.gov/htm/2003r1/part4/part4b.htm</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;TripScheduling"/>
+		<owl:annotatedTarget xml:lang="en">decision when to go</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>J3016 JUN2018, section 8.11</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+	<owl:Axiom>
+		<owl:annotatedProperty rdf:resource="&skos;definition"/>
+		<owl:annotatedSource rdf:resource="&auto-cc;Warning"/>
+		<owl:annotatedTarget xml:lang="en">notice of possible danger or a problem</owl:annotatedTarget>
+		<fibo-fnd-utl-av:adaptedFrom>https://dictionary.cambridge.org/dictionary/english/warning</fibo-fnd-utl-av:adaptedFrom>
+	</owl:Axiom>
+</rdf:RDF>

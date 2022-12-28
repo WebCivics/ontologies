@@ -1,0 +1,29 @@
+# /dx/prof
+# Requested by Nicholas Car 20190402
+
+
+RewriteEngine on
+RewriteBase /ns/dx/prof/
+
+# PROF ontology URIs
+RewriteRule ^ResourceDescriptor$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^ResourceRole$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^Profile$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^hasArtifact$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^isInheritedFrom$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^isProfileOf$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^isTransitiveProfileOf$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^hasResource$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^hasRole$ /TR/dx-prof/rdf/prof.ttl [L]
+RewriteRule ^hasToken$ /TR/dx-prof/rdf/prof.ttl [L]
+
+# If requested with text/turtle
+RewriteCond "%{HTTP_ACCEPT}" "text/turtle"
+RewriteRule ^$ /ns/dx/prof/profilesont.ttl [L]
+
+# If requested with application/rdf+xml
+RewriteCond "%{HTTP_ACCEPT}" "application/rdf\+xml"
+RewriteRule ^$ /ns/dx/prof/profilesont.rdf [L]
+
+
+

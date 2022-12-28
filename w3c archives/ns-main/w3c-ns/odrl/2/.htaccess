@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /ns/odrl/2
+
+DirectoryIndex ODRL22.var
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule . - [L]
+
+RewriteRule ^(.+)$		/ns/odrl/2/ [R=303,L]

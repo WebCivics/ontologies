@@ -1,0 +1,7 @@
+URI: person
+
+URI: person.html
+Content-Type: text/html
+
+URI: person.ttl
+Content-Type: text/turtle

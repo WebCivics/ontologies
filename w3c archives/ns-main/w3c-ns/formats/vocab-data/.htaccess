@@ -1,0 +1,8 @@
+# $Id: .htaccess,v 1.1 2010/05/12 08:16:37 ivan Exp $
+<Files ~ "\.html">
+ForceType 'text/html; charset=UTF-8'
+</Files>
+
+<Files ~ "\.ttl">
+ForceType 'text/turtle; charset=UTF-8'
+</Files>

@@ -1,0 +1,35 @@
+body {
+	background-image: url('W3C-CG-ODRL-DS.png');
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: left;
+	font-size: inherit;
+	font: 100%;
+}
+th {
+	font-weight: bold;
+}
+td {
+	font-weight: normal;
+	vertical-align: top;
+}
+th, td {
+	text-align:left;
+	padding:3px 0.25em 5px 0.25em;
+	border-bottom:1px solid #E6E6E6;
+}
+code {
+	color: #770000;
+}
+pre {
+	border: solid thin #d3d3d3;
+	background: #fcfcfc;
+	color: black;
+	padding: 0.5em 1em;
+	position: relative;
+}
+pre > code {
+	color: black;
+}

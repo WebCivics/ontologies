@@ -1,0 +1,19 @@
+URI: ODRL22
+
+URI: ODRL22.html
+Content-Type: text/html;qs=1.0
+
+URI: ODRL22.xsd
+Content-Type: application/xml;qs=0.9
+
+URI: ODRL22.ttl
+Content-Type: text/turtle;qs=0.9
+
+URI: ODRL22.nt
+Content-Type: text/plain;qs=0.8
+
+URI: ODRL22.rdf
+Content-Type: application/rdf+xml;qs=0.5
+
+URI: ODRL22.json
+Content-Type: application/json;qs-0.9

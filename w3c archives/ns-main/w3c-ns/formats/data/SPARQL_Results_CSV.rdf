@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:formats="http://www.w3.org/ns/formats/"
+>
+  <rdf:Description rdf:about="http://www.w3.org/ns/formats/data/SPARQL_Results_CSV.html">
+    <dcterms:title>Information Resource for the SPARQL Results File Format in CSV</dcterms:title>
+  </rdf:Description>
+  <formats:Format rdf:about="http://www.w3.org/ns/formats/SPARQL_Results_CSV">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/sparql11-results-csv-tsv/"/>
+    <rdfs:comment>SPARQL Results in CSV is defined by the “SPARQL 1.1 Query Results CSV and TSV Formats” W3C Recommendation.</rdfs:comment>
+    <dcterms:description>Unique identifier for the SPARQL Results in CSV file format</dcterms:description>
+    <dcterms:creator>
+      <foaf:Person rdf:about="http://www.ivan-herman.net/foaf#me">
+        <rdfs:seeAlso rdf:resource="http://www.ivan-herman.net/foaf"/>
+        <foaf:title>Semantic Web Activity Lead</foaf:title>
+        <foaf:mbox rdf:resource="mailto:ivan@w3.org"/>
+        <foaf:workplaceHomepage rdf:resource="http://www.w3.org"/>
+        <foaf:name>Ivan Herman</foaf:name>
+      </foaf:Person>
+    </dcterms:creator>
+    <rdfs:seeAlso rdf:resource="http://www.rfc-editor.org/rfc/rfc4180.txt"/>
+    <formats:media_type>text/csv</formats:media_type>
+    <dcterms:created>2011-10-19</dcterms:created>
+    <dcterms:modified>2021-10-13</dcterms:modified>
+    <formats:preferred_suffix>.csv</formats:preferred_suffix>
+  </formats:Format>
+</rdf:RDF>
+

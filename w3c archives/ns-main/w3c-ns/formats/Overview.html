@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="formats: http://www.w3.org/ns/formats/">
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<title>Unique URIs for File Formats</title>
+	<link rel="stylesheet" type="text/css" href="http://www.w3.org/StyleSheets/TR/base"/>
+  </head>
+	
+  <body resource="formats:" typeof="owl:Ontology">
+	<p class="banner">
+		<a href="/2001/sw/">
+			<img src="/Icons/SW/sw-horz-w3c.png" width="241" height="48" alt="W3C SW Logo"/>
+		</a>
+	</p>
+	
+	<h1 property="dc:description">Unique URIs for File Formats</h1>
+		
+	<div resource="formats:Format" typeof="rdfs:Class owl:Class">
+	  <p >'<code>http://www.w3.org/ns/formats/Format</code>' is <span property="dc:description">a unique, top-level Class URI for specific file formats. Media types do not uniquely identify file formats (eg, serialization formats for various abstract concepts), because not all specific cases do have distinct media types, instances in this class can be used instead for proper identification.</span></p>
+	  
+	  <p>Although the URI-s themselves refer to non-informational resources (ie, they are abstract identifiers), they can be dereferenced. Dereferencing leads to informational resources in XHTML, RDF/XML, or Turtle equivalents, depending on content negotiation.</p>
+	  
+	  <p>Here is the list for the URI-s currently registered:</p>	  
+	  <ul rev="rdf:type">
+		<li>JSON-LD: <code><a href="http://www.w3.org/ns/formats/JSON-LD" style="text-decoration:none">http://www.w3.org/ns/formats/JSON-LD</a></code></li>
+		<li>N3: <code><a href="http://www.w3.org/ns/formats/N3" style="text-decoration:none">http://www.w3.org/ns/formats/N3</a></code></li>
+		<li>N-Triples: <code><a href="http://www.w3.org/ns/formats/N-Triples" style="text-decoration:none">http://www.w3.org/ns/formats/N-Triples</a></code></li>
+		<li>N-Quads: <code><a href="http://www.w3.org/ns/formats/N-Quads" style="text-decoration:none">http://www.w3.org/ns/formats/N-Quads</a></code></li>
+		<li>LD Patch: <code><a href="http://www.w3.org/ns/formats/LD_Patch" style="text-decoration:none">http://www.w3.org/ns/formats/LD_Patch</a></code></li>
+		<li>Microdata: <code><a href="http://www.w3.org/ns/formats/microdata" style="text-decoration:none">http://www.w3.org/ns/formats/microdata</a></code></li>
+		<li>OWL XML Serialization: <code><a href="http://www.w3.org/ns/formats/OWL_XML" style="text-decoration:none">http://www.w3.org/ns/formats/OWL_XML</a></code></li>
+		<li>OWL Functional Syntax: <code><a href="http://www.w3.org/ns/formats/OWL_Functional" style="text-decoration:none">http://www.w3.org/ns/formats/OWL_Functional</a></code></li>
+		<li>OWL Manchester Syntax: <code><a href="http://www.w3.org/ns/formats/OWL_Manchester" style="text-decoration:none">http://www.w3.org/ns/formats/OWL_Manchester</a></code></li>
+		<li>POWDER: <code><a href="http://www.w3.org/ns/formats/POWDER" style="text-decoration:none">http://www.w3.org/ns/formats/POWDER</a></code></li>
+		<li>POWDER-S: <code><a href="http://www.w3.org/ns/formats/POWDER-S" style="text-decoration:none">http://www.w3.org/ns/formats/POWDER-S</a></code></li>
+		<li>PROV-N: <code><a href="http://www.w3.org/ns/formats/PROV-N" style="text-decoration:none">http://www.w3.org/ns/formats/PROV-N</a></code></li>
+		<li>PROV-XML: <code><a href="http://www.w3.org/ns/formats/PROV-XML" style="text-decoration:none">http://www.w3.org/ns/formats/PROV-XML</a></code></li>
+		<li>RDFa: <code><a href="http://www.w3.org/ns/formats/RDFa" style="text-decoration:none">http://www.w3.org/ns/formats/RDFa</a></code></li>
+		<li>RDF/JSON: <code><a href="http://www.w3.org/ns/formats/RDF_JSON" style="text-decoration:none">http://www.w3.org/ns/formats/RDF_JSON</a></code></li>
+		<li>RDF/XML: <code><a href="http://www.w3.org/ns/formats/RDF_XML" style="text-decoration:none">http://www.w3.org/ns/formats/RDF_XML</a></code></li>
+		<li>RIF XML Syntax: <code><a href="http://www.w3.org/ns/formats/RIF_XML" style="text-decoration:none">http://www.w3.org/ns/formats/RIF_XML</a></code></li>
+		<li>SPARQL Results in XML: <code><a href="http://www.w3.org/ns/formats/SPARQL_Results_XML" style="text-decoration:none">http://www.w3.org/ns/formats/SPARQL_Results_XML</a></code></li>
+		<li>SPARQL Results in JSON: <code><a href="http://www.w3.org/ns/formats/SPARQL_Results_JSON" style="text-decoration:none">http://www.w3.org/ns/formats/SPARQL_Results_JSON</a></code></li>
+		<li>SPARQL Results in CSV: <code><a href="http://www.w3.org/ns/formats/SPARQL_Results_CSV" style="text-decoration:none">http://www.w3.org/ns/formats/SPARQL_Results_CSV</a></code></li>
+		<li>SPARQL Results in TSV: <code><a href="http://www.w3.org/ns/formats/SPARQL_Results_TSV" style="text-decoration:none">http://www.w3.org/ns/formats/SPARQL_Results_TSV</a></code></li>
+		<li>Turtle: <code><a href="http://www.w3.org/ns/formats/Turtle" style="text-decoration:none">http://www.w3.org/ns/formats/Turtle</a></code></li>
+		<li>TriG: <code><a href="http://www.w3.org/ns/formats/TriG" style="text-decoration:none">http://www.w3.org/ns/formats/TriG</a></code></li>
+	  </ul>
+	</div>
+	
+	<p>In RDF the description of a file format may use the properties
+	<span resource="formats:media_type" typeof="rdfs:Property owl:DatatypeProperty">'http://www.w3.org/ns/formats/media_type'</span> and
+	<span resource="formats:preferred_suffix" typeof="rdfs:Property owl:DatatypeProperty">'http://www.w3.org/ns/formats/preferred_suffix'</span>,
+	if defined for that specific file format.</p>
+	
+	<hr />
+	<address >
+	  <span property="dc:creator" resource="http://www.ivan-herman.net/foaf#me" typeof="foaf:Person">
+		<span property="foaf:name" datatype=""><a href="http://www.w3.org/People/Ivan">Ivan Herman</a></span>,
+		<a property="foaf:mbox" href="mailto:ivan@w3.org">ivan@w3.org</a>,
+		<a property="foaf:workplaceHomepage" href="http://www.w3.org">W3C</a>,
+		<span property="rdfs:seeAlso" resource="http://www.ivan-herman.net/foaf">
+	  </span>
+	  created: <span property="dc:created">2010-10-19</span>, modified: <span property="dc:modified">2014-12-23</span>. 
+	  <span property="owl:versionInfo">$Date: 2015/02/27 20:59:20 $</span>
+	  <span style="display:none" property="owl:versionIRI" resource="formats:"/>
+	</address>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:formats="http://www.w3.org/ns/formats/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <formats:Format rdf:about="http://www.w3.org/ns/formats/POWDER">
+    <rdfs:comment>POWDER is defined by the “Protocol for Web Description Resources (POWDER): Description Resources” W3C Recommendation.</rdfs:comment>
+    <dcterms:created>2010-05-04</dcterms:created>
+    <dcterms:creator>
+      <foaf:Person rdf:about="http://www.ivan-herman.net/foaf#me">
+        <foaf:name>Ivan Herman</foaf:name>
+        <foaf:title>Semantic Web Activity Lead</foaf:title>
+        <foaf:mbox rdf:resource="mailto:ivan@w3.org"/>
+        <rdfs:seeAlso rdf:resource="http://www.ivan-herman.net/foaf"/>
+        <foaf:workplaceHomepage rdf:resource="http://www.w3.org"/>
+      </foaf:Person>
+    </dcterms:creator>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/powder-dr/"/>
+    <dcterms:modified>2013-03-25</dcterms:modified>
+    <formats:media_type>powder+xml</formats:media_type>
+    <dcterms:description>Unique identifier for the POWDER file format</dcterms:description>
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/powder-dr/#appB"/>
+  </formats:Format>
+</rdf:RDF>
+

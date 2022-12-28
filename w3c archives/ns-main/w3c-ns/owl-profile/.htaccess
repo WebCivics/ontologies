@@ -1,0 +1,19 @@
+# $Id: .htaccess,v 1.7 2011/12/06 08:19:41 ivan Exp $
+<Files ~ "\.html">
+ForceType 'text/html; charset=UTF-8'
+</Files>
+
+<Files ~ "\.ttl">
+ForceType 'text/turtle; charset=UTF-8'
+</Files>
+
+RewriteEngine On
+RewriteBase /ns/owl-profile/
+
+RewriteRule ^$ Profile
+
+RewriteRule ^DL$ data/DL [R=303]
+RewriteRule ^QL$ data/QL [R=303]
+RewriteRule ^RL$ data/RL [R=303]
+RewriteRule ^EL$ data/EL [R=303]
+RewriteRule ^Full$ data/Full [R=303]

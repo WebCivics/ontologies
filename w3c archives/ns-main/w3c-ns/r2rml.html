@@ -1,0 +1,3079 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0"
+	  xmlns:dcterms="http://purl.org/dc/terms/"
+	  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	  xmlns:owl="http://www.w3.org/2002/07/owl#"
+	  xmlns:r2rml="http://www.w3.org/ns/r2rml#">
+	  
+  <head about="http://www.w3.org/ns/r2rml.html">
+	<base href="http://www.w3.org/ns/r2rml"/>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>R2RML: RDB to RDF Mapping Language Schema</title>
+    <link type="text/css" rel="stylesheet" href="/StyleSheets/TR/base.css"/>
+    <style type="text/css">
+        .issue { background-color: #fdd; border: 1px solid #800; margin: 1em 0em; padding: 1em; page-break-inside: avoid ; font-style: italic; }
+        .issue a.tracker { font-style: normal; font-weight: bold; }
+        th { text-align: left; }
+        table.term-index th code { font-weight: normal; }
+        table.term-index th, table.term-index td { padding: 0.1em 0.5em; }
+    </style>
+  </head>
+  <body about="[r2rml:]">
+    <div class="head">
+      <p><a href="http://www.w3.org/">
+		  <img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/>
+		</a>
+      </p>
+      <h1 property="dcterms:title">R2RML: RDB to RDF Mapping Language Schema</h1>
+    </div>
+
+
+	<h2>Purpose</h2>
+	<p>
+	This document defines an RDF Schema as defined by the W3C <a
+	href="http://www.w3.org/2001/sw/rdb2rdf/">RDB2RDF Working Group</a> in the
+	<a href=" http://www.w3.org/TR/r2rml/">R2RML: RDB to RDF Mapping
+	Language</a> document, which can be used to specify a mapping of relational
+	data to RDF.
+	</p>
+	
+<!--  <p class="issue">
+  <a class="tracker" href="http://www.w3.org/2001/sw/rdb2rdf/track/issues/53">ISSUE-53</a>: This document is still work in progress. An RDFS/OWL version of the vocabulary should be made too.</p> -->
+
+	<h2>Usage</h2>
+	<dl>
+	 	<dt>The namespace URI is:</dt>
+	 	<dd>http://www.w3.org/ns/r2rml#</dd>
+	 	<dt>The preferred prefix is:</dt>
+	 	<dd>rr</dd>
+	</dl>
+	
+	<h2>Comments</h2>
+	<p>
+	 Comments regarding this document should be sent to <a href="mailto:public-rdb2rdf-comments@w3.org">public-rdb2rdf-comments@w3.org</a>, a mailing list with a 
+	 <a href="http://lists.w3.org/Archives/Public/public-rdb2rdf-comments/">public archive</a>.
+	</p>
+
+  <h2 id="index">Index of R2RML Vocabulary Terms</h2>
+
+	<div class="toc" id="classes">
+	<h2>Classes</h2>
+	<p>
+	  	    <a href="#BaseTableOrView">Base Table Or View</a>,	<a href="#BlankNode">Blank Node</a>, 	  	    <a href="#GraphMap">Graph Map</a>, 	  	    <a href="#IRI">IRI</a>, 	  	    <a href="#Join">Join</a>, 	  	    <a href="#Literal">Literal</a>, 	  	    <a href="#LogicalTable">Logical Table</a>, 	  	    <a href="#ObjectMap">Object Map</a>, 	  	    <a href="#PredicateMap">Predicate Map</a>, 	  	    <a href="#PredicateObjectMap">Predicate Object Map</a>, 	  	    <a href="#RefObjectMap">Ref Object Map</a>,	<a href="#R2RMLView">R2RML View</a>,	  	    <a href="#SubjectMap">Subject Map</a>, 	  	    <a href="#TriplesMap">Triples Map</a>, 	  	    <a href="#TermMap">Term Map</a>	  	</p>
+	</div>
+
+
+		  <div class="details classes">
+
+	<div class="term" id="md5-1ce7b7d44a62ccd5547840f8407047f49" about="http://www.w3.org/ns/r2rml#BaseTableOrView">
+
+
+  <h3 id="anchor8082424139"> <a id="BaseTableOrView"></a><span class="parrot-element-title parrot-class-title">Base Table Or View</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Denotes a base database table or view</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#BaseTableOrView</code></span></p>
+
+	
+		    
+  </div>
+  
+<div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#tableName">table Name</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div> 
+
+    
+  </div>
+</div> 
+  </div>
+
+  <hr />  	
+		  <div class="details classes">
+
+
+		  
+
+
+	<div class="term" id="md5-1ce7b7d44a62ccd5547840f8407047f48" about="http://www.w3.org/ns/r2rml#BlankNode">
+
+
+  <h3 id="anchor8082424138"> <a id="BlankNode"></a><span class="parrot-element-title parrot-class-title">Blank Node</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Denotes a blank node, used with termType</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#BlankNode</code></span></p>
+
+	
+		    
+  </div>
+  
+
+    
+  </div>
+</div> 
+  </div>
+
+  <hr />      
+
+		<div class="details classes">
+
+
+	<div class="term" id="md5-d159ab1c00dca0519a351ac9ccbb039f" about="http://www.w3.org/ns/r2rml#GraphMap">
+
+
+  <h3 id="anchor489263861"> <a id="GraphMap"></a><span class="parrot-element-title parrot-class-title">Graph Map</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	   	      </span> 
+  </h3>
+  
+        <p class="description">Represents a graph map.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#GraphMap</code></span></p>
+
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#graphMap">graph Map</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-5d77c2d6f4cbfad14c5060b46b615941" about="http://www.w3.org/ns/r2rml#IRI">
+
+
+  <h3 id="anchor199612887"> <a id="IRI"></a><span class="parrot-element-title parrot-class-title">IRI</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Denotes an IRI, used with termpType.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#IRI</code></span></p>
+
+	
+		    
+  </div>
+  
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-9c34590c342144d8e5cc463c72efa655" about="http://www.w3.org/ns/r2rml#Join">
+
+
+  <h3 id="anchor1893090033"> <a id="Join"></a><span class="parrot-element-title parrot-class-title">Join</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	 	      </span> 
+  </h3>
+  
+        <p class="description">Represents a join condition.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#Join</code></span></p>
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#child">child</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#joinCondition">join Condition</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#parent">parent</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+
+  		<hr />
+		
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-1466697bc27e9dce25d3fef579dd00db" about="http://www.w3.org/ns/r2rml#Literal">
+
+
+  <h3 id="anchor1441921574"> <a id="Literal"></a><span class="parrot-element-title parrot-class-title">Literal</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Denotes a Literal, used with termType.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#Literal</code></span></p>
+
+	
+		    
+  </div>
+  
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-174e12d6d5a64684e51c866ce2b0fe3b" about="http://www.w3.org/ns/r2rml#LogicalTable">
+
+
+  <h3 id="anchor-1250227444"> <a id="LogicalTable"></a><span class="parrot-element-title parrot-class-title">Logical Table</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Represents a logical table.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#LogicalTable</code></span></p>
+
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#logicalTable">logical Table</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-d508a70e01334ca37383ecc4f082f1a" about="http://www.w3.org/ns/r2rml#ObjectMap">
+
+
+  <h3 id="anchor1966551316"> <a id="ObjectMap"></a><span class="parrot-element-title parrot-class-title">Object Map</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	        </span> 
+  </h3>
+  
+        <p class="description">Represents an object map.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#ObjectMap</code></span></p>
+
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#datatype">datatype</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#language">language</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#objectMap">object Map</a></span>
+		  		  
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-6eaf557d616ade9eefd8e6efb91a31b9" about="http://www.w3.org/ns/r2rml#PredicateMap">
+
+
+  <h3 id="anchor-1927720468"> <a id="PredicateMap"></a><span class="parrot-element-title parrot-class-title">Predicate Map</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	 	      </span> 
+  </h3>
+  
+        <p class="description">Represents a predicate map.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#PredicateMap</code></span></p>
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#predicateMap">predicate Map</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-d17000f034499357abfcbc027a67c0" about="http://www.w3.org/ns/r2rml#PredicateObjectMap">
+
+
+  <h3 id="anchor-797105811"> <a id="PredicateObjectMap"></a><span class="parrot-element-title parrot-class-title">Predicate Object Map</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Represents a predicate-object map.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#PredicateObjectMap</code></span></p>
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#objectMap">object Map</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#predicateMap">predicate Map</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#predicateObjectMap">predicate Object Map</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-8e8e6a51a4bb8341a9dabe7bd3bd8e91" about="http://www.w3.org/ns/r2rml#RefObjectMap">
+
+
+  <h3 id="anchor2023352337"> <a id="RefObjectMap"></a><span class="parrot-element-title parrot-class-title">Ref Object Map</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Denotes a reference to an object map.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#RefObjectMap</code></span></p>
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#joinCondition">join Condition</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#parentTriplesMap">parent Triples Map</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-8ed90311cd9932751a68f063b08282b1" about="http://www.w3.org/ns/r2rml#R2RMLView">
+
+
+  <h3 id="anchor-806731689"> <a id="R2RMLView"></a><span class="parrot-element-title parrot-class-title">R2RML View</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	   	      </span> 
+  </h3>
+  
+        <p class="description">Represents a R2RML view.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#R2RMLView</code></span></p>
+
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#sqlQuery">sql Query</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#sqlVersion">sql Version</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+		
+  
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-8ed90311cd9932751a68f063b08282b" about="http://www.w3.org/ns/r2rml#SubjectMap">
+
+
+  <h3 id="anchor-8067316891"> <a id="SubjectMap"></a><span class="parrot-element-title parrot-class-title">Subject Map</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Represents a subject map.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#SubjectMap</code></span></p>
+
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#class">class</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#subjectMap">subject Map</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-7ef4042515927a988db64446a15dfed8" about="http://www.w3.org/ns/r2rml#TriplesMap">
+
+
+  <h3 id="anchor671197454"> <a id="TriplesMap"></a><span class="parrot-element-title parrot-class-title">Triples Map</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Represents a triples map.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#TriplesMap</code></span></p>
+
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#logicalTable">logical Table</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#parentTriplesMap">parent Triples Map</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#subjectMap">subject Map</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />	
+		
+  <div class="details classes">
+
+
+
+
+	<div class="term" id="md5-7ef4042515927a988db64446a15dfed81" about="http://www.w3.org/ns/r2rml#TermMap">
+
+
+  <h3 id="anchor6711974542"> <a id="TermMap"></a><span class="parrot-element-title parrot-class-title">TermMap</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#Class">(OWL Class)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">A function that generates an RDF term from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this class is <span><code>http://www.w3.org/ns/r2rml#TermMap</code></span></p>
+
+	
+		    
+  </div>
+  
+    <div class="inuse">
+  <h4>In use</h4>
+  		  
+   	    <table>
+	  			  <tr>
+		  <td>This class is used in</td>
+		  <td> 	  
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#column">column</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#inverseExpression">inverse Expression</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#template">template</a></span>
+		  		  <span class="parrot-element-ref parrot-property-ref"><a href="#termType">term Type</a></span>
+		  		  </td>
+		  </tr>
+				
+			
+			</table>
+	  </div>
+    
+    
+  </div>
+</div> 
+  </div>
+		<hr />	
+		
+		
+		
+	<div class="toc" id="properties">
+	<h2>Properties</h2>
+	<p>
+	  		<a href="#child">child</a>, 	  		<a href="#class">class</a>, 	  		<a href="#column">column</a>, <a href="#constant">constant</a>, 	  		<a href="#datatype">datatype</a>, 	  		<a href="#graph">graph</a>, 	  		<a href="#graphMap">graph Map</a>, 	  		<a href="#inverseExpression">inverse Expression</a>, 	  		<a href="#joinCondition">join Condition</a>, 	  		<a href="#language">language</a>, 	  		<a href="#logicalTable">logical Table</a>, 	  		<a href="#object">object</a>, 	  		<a href="#objectMap">object Map</a>, 	  		<a href="#parent">parent</a>, 	  		<a href="#parentTriplesMap">parent Triples Map</a>, 	  		<a href="#predicate">predicate</a>, 	  		<a href="#predicateMap">predicate Map</a>, 	  		<a href="#predicateObjectMap">predicate Object Map</a>, 	 	  		<a href="#sqlQuery">sql Query</a>, 	  		<a href="#sqlVersion">sql Version</a>, 	  		<a href="#subject">subject</a>, 	  		<a href="#subjectMap">subject Map</a>, 	  		<a href="#tableName">table Name</a>, 	  		<a href="#template">template</a>, 	  		<a href="#termType">term Type</a>	  	</p>
+	</div>
+	
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-1bbbe8145be34707913b558bafe0c1a1" about="http://www.w3.org/ns/r2rml#child">
+
+
+  <h3 id="anchor-1420872525"> <a id="child"></a><span class="parrot-element-title parrot-property-title">child</span> (Property)
+  	  	
+	<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span>		
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Names a column in the child table of a join.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#child</code></span></p>
+	   
+        	<p>This property is a  
+
+    	    	    	    	    	    	    	    
+    	    	<strong>data</strong> property.    
+    	    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#Join">            	<a href="#Join">Join</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#string">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string#anchor-487667913">xsd:string</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-fe54c11478914c20043a3cb18d2f0e2d" about="http://www.w3.org/ns/r2rml#class">
+
+
+  <h3 id="anchor-1420760817"> <a id="class"></a><span class="parrot-element-title parrot-property-title">class</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>	
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">The subject value generated for a logical table row will be asserted as an instance of this RDFS class.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#class</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#SubjectMap">            	<a href="#SubjectMap">Subject Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Class">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23Class#anchor-1874262145">rdfs:Class</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-a2192c38b18fe2c4f1e1911dedb20424" about="http://www.w3.org/ns/r2rml#column">
+
+
+  <h3 id="anchor-1090813187"> <a id="column"></a><span class="parrot-element-title parrot-property-title">column</span> (Property)
+  	  	
+	<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span>		
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Name of a column in the logical table. When generating RDF triples from a logical table row, value from the specified column is used as the subject, predicate, or object (based upon the specific domain).</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#column</code></span></p>
+	   
+        	<p>This property is a  
+
+    	    	    	    	    	    	    	    
+    	    	<strong>data</strong> property.    
+    	    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#TermMap">          <a href="#TermMap">Term Map</a>   
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#string">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string#anchor-487667913">xsd:string</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-f1c308317c2342382926e1e3718f6c86" about="http://www.w3.org/ns/r2rml#constant">
+
+
+  <h3 id="anchor-857923731"> <a id="constant"></a><span class="parrot-element-title parrot-property-title">constant</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">A property for indicating whether a term map is a constant-valued term map.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#constant</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+       </div>
+  </div>
+</div>   
+</div>
+
+    	<hr />
+		
+		
+		
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-1cb2c544a3013158fee3101b9dac17de" about="http://www.w3.org/ns/r2rml#datatype">
+
+
+  <h3 id="anchor2113963915"> <a id="datatype"></a><span class="parrot-element-title parrot-property-title">datatype</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>	
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Specifies the datatype of the object component for the generated triple from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#datatype</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#ObjectMap">            	<a href="#ObjectMap">Object Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Datatype">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23Datatype#anchor-471952613">rdfs:Datatype</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-9ca9ec2d12960e8d5ce7b9248665e59c" about="http://www.w3.org/ns/r2rml#graph">
+
+
+  <h3 id="anchor-1416888091"> <a id="graph"></a><span class="parrot-element-title parrot-property-title">graph</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>	
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">An IRI reference for use as the graph name of all triples generated with the GraphMap.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#graph</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-12aaeacf065f89691d8fc2d7e812f81f" about="http://www.w3.org/ns/r2rml#graphMap">
+
+
+  <h3 id="anchor424619733"> <a id="graphMap"></a><span class="parrot-element-title parrot-property-title">graph Map</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>	
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Specifies a GraphMap. When used with a SubjectMap element, all the RDF triples generated from a logical row will be stored in the specified named graph. Otherwise, the RDF triple generated using the (predicate, object) pair will be stored in the specified named graph.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#graphMap</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/ns/r2rml#GraphMap">            	<a href="#GraphMap">Graph Map</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-31899867eab0a4ac11fcb31465aee7bf" about="http://www.w3.org/ns/r2rml#inverseExpression">
+
+
+  <h3 id="anchor-2007312001"> <a id="inverseExpression"></a><span class="parrot-element-title parrot-property-title">inverse Expression</span> (Property)
+  	  	
+	<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span>		
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">An expression that allows, at query processing time, use of index-based access to the the (underlying) relational tables, instead of simply retrieving the table rows first and then applying a filter. This property is useful for retrieval based on conditions involving subject, predicate, or object generated from logical table column(s) and involves some transformation.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#inverseExpression</code></span></p>
+	   
+        	<p>This property is a  
+
+    	    	    	    	    	    	    	    
+    	    	<strong>data</strong> property.    
+    	    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#TermMap">          <a href="#TermMap">Term Map</a>   
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#string">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string#anchor-487667913">xsd:string</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-6c2a0d33ee46b99559d77f1fe771fb22" about="http://www.w3.org/ns/r2rml#joinCondition">
+
+
+  <h3 id="anchor-2016467288"> <a id="joinCondition"></a><span class="parrot-element-title parrot-property-title">join Condition</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>	
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Specifies the join condition for joining the child logical table with the parent logical table of the foreign key constraint.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#joinCondition</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#RefObjectMap">            	<a href="#RefObjectMap">Ref Object Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/ns/r2rml#Join">            	<a href="#Join">Join</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-a185ae7740411e9d6b04f8816c3d5065" about="http://www.w3.org/ns/r2rml#language">
+
+
+  <h3 id="anchor-1289649921"> <a id="language"></a><span class="parrot-element-title parrot-property-title">language</span> (Property)
+  	  	
+	<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span>		
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Specified the language for the object component for the generated triple from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#language</code></span></p>
+	   
+        	<p>This property is a  
+
+    	    	    	    	    	    	    	    
+    	    	<strong>data</strong> property.    
+    	    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#ObjectMap">            	<a href="#ObjectMap">Object Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#string">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string#anchor-487667913">xsd:string</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-afd9573ea60fc4e6d378b8a2f6d8d1e7" about="http://www.w3.org/ns/r2rml#logicalTable">
+
+
+  <h3 id="anchor-1414547732"> <a id="logicalTable"></a><span class="parrot-element-title parrot-property-title">logical Table</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Definition of logical table to be mapped.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#logicalTable</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#TriplesMap">            	<a href="#TriplesMap">Triples Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/ns/r2rml#LogicalTable">            	<a href="#LogicalTable">Logical Table</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-898c8334384d7aae141e24771169c417" about="http://www.w3.org/ns/r2rml#object">
+
+
+  <h3 id="anchor-759344410"> <a id="object"></a><span class="parrot-element-title parrot-property-title">object</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Specifies the object for the generated triple from the logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#object</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2000/01/rdf-schema#Resource">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23Resource#anchor1691925829">rdfs:Resource</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-4e101574ad08e27d0bcc5194fcbc94c2" about="http://www.w3.org/ns/r2rml#objectMap">
+
+
+  <h3 id="anchor-37416652"> <a id="objectMap"></a><span class="parrot-element-title parrot-property-title">object Map</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">An ObjectMap element to generate the object component of the (predicate, object) pair from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#objectMap</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#PredicateObjectMap">            	<a href="#PredicateObjectMap">Predicate Object Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/ns/r2rml#ObjectMap">            	<a href="#ObjectMap">Object Map</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-6fab47ea04d4f79201dea4cbe5dfb51b" about="http://www.w3.org/ns/r2rml#parent">
+
+
+  <h3 id="anchor-731400111"> <a id="parent"></a><span class="parrot-element-title parrot-property-title">parent</span> (Property)
+  	  	
+	<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Names a column in the parent table of a join.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#parent</code></span></p>
+	   
+        	<p>This property is a  
+
+    	    	    	    	    	    	    	    
+    	    	<strong>data</strong> property.    
+    	    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#Join">            	<a href="#Join">Join</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#string">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string#anchor-487667913">xsd:string</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+
+    	<hr />
+		
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-566c769e006ac43e5d47c8288ef6f172" about="http://www.w3.org/ns/r2rml#parentTriplesMap">
+
+
+  <h3 id="anchor-511402184"> <a id="parentTriplesMap"></a><span class="parrot-element-title parrot-property-title">parent Triples Map</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Specifies the TriplesMap element corresponding to the parent logical table of the foreign key constraint.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#parentTriplesMap</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#RefObjectMap">            	<a href="#RefObjectMap">Ref Object Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/ns/r2rml#TriplesMap">            	<a href="#TriplesMap">Triples Map</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-5cc6796d279e7f535e39f957351c102d" about="http://www.w3.org/ns/r2rml#predicate">
+
+
+  <h3 id="anchor104164686"> <a id="predicate"></a><span class="parrot-element-title parrot-property-title">predicate</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Specifies the predicate for the generated triple from the logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#predicate</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+    
+        <table>
+    
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23Property#anchor1234008884">rdf:Property</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-3ff91bbb359bc60da76886bfd3de3ba3" about="http://www.w3.org/ns/r2rml#predicateMap">
+
+
+  <h3 id="anchor-2092040756"> <a id="predicateMap"></a><span class="parrot-element-title parrot-property-title">predicate Map</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">A PredicateMap element to generate the predicate component of the (predicate, object) pair from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#predicateMap</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#PredicateObjectMap">            	<a href="#PredicateObjectMap">Predicate Object Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/ns/r2rml#PredicateMap">            	<a href="#PredicateMap">Predicate Map</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-a86530a943566ddb388b2500c552f01f" about="http://www.w3.org/ns/r2rml#predicateObjectMap">
+
+
+  <h3 id="anchor1656317261"> <a id="predicateObjectMap"></a><span class="parrot-element-title parrot-property-title">predicate Object Map</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">A PredicateObjectMap element to generate (predicate, object) pair from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#predicateObjectMap</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+        <table>
+    
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/ns/r2rml#PredicateObjectMap">            	<a href="#PredicateObjectMap">Predicate Object Map</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+	
+
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-53294bb34d6657f72e67bf8308a8433a" about="http://www.w3.org/ns/r2rml#sqlQuery">
+
+
+  <h3 id="anchor-737294015"> <a id="sqlQuery"></a><span class="parrot-element-title parrot-property-title">sql Query</span> (Property)
+  	  	
+	<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">A valid SQL query.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#sqlQuery</code></span></p>
+	   
+        	<p>This property is a  
+
+    	    	    	    	    	    	    	    
+    	    	<strong>data</strong> property.    
+    	    	    	    	</p>
+        <table>
+
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#R2RMLView">            	<a href="#R2RMLView">R2RML View</a>
+      </span></td>
+      </tr>		
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#string">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string#anchor-487667913">xsd:string</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-c6c2ad415a7c0d6dd9c7084144c1cb6e" about="http://www.w3.org/ns/r2rml#sqlVersion">
+
+
+  <h3 id="anchor-173465903"> <a id="sqlVersion"></a><span class="parrot-element-title parrot-property-title">sql Version</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">An identifier for a SQL version.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#sqlVersion</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+						
+        <table>
+
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#R2RMLView">            	<a href="#R2RMLView">R2RML View</a>
+      </span></td>
+      </tr>		
+    
+    
+       
+    
+        </table>
+						
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-eb1aa0e8c3968e6321a712b0909f6df6" about="http://www.w3.org/ns/r2rml#subject">
+
+
+  <h3 id="anchor2021889731"> <a id="subject"></a><span class="parrot-element-title parrot-property-title">subject</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">An IRI reference for use as subject for all the RDF triples generated from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#subject</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-ba260498eb5f0ec88a4655e6e9711929" about="http://www.w3.org/ns/r2rml#subjectMap">
+
+
+  <h3 id="anchor1494770743"> <a id="subjectMap"></a><span class="parrot-element-title parrot-property-title">subject Map</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">A SubjectMap element to generate a subject from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#subjectMap</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+    
+        <table>
+    
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#TriplesMap">            	<a href="#TriplesMap">Triples Map</a>
+      </span></td>
+      </tr>
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/ns/r2rml#SubjectMap">            	<a href="#SubjectMap">Subject Map</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-2250a2a84f83c5e0365502becb707bd0" about="http://www.w3.org/ns/r2rml#tableName">
+
+
+  <h3 id="anchor-536520944"> <a id="tableName"></a><span class="parrot-element-title parrot-property-title">table Name</span> (Property)
+  	  	
+	<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">Schema-qualified name of a table or view.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#tableName</code></span></p>
+	   
+        	<p>This property is a  
+
+    	    	    	    	    	    	    	    
+    	    	<strong>data</strong> property.    
+    	    	    	    	</p>
+   
+        <table>
+
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#BaseTableOrView">            	<a href="#BaseTableOrView">Base Table Or View</a>
+      </span></td>
+      </tr>
+		
+    
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#string">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string#anchor-487667913">xsd:string</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-c3d4ef29ba790404767b2ebc4cbe54cd" about="http://www.w3.org/ns/r2rml#template">
+
+
+  <h3 id="anchor-997606879"> <a id="template"></a><span class="parrot-element-title parrot-property-title">template</span> (Property)
+  	  	
+	<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">A template (format string) to specify how to generate a value for a subject, predicate, or object, using one or more columns from a logical table row.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#template</code></span></p>
+	   
+        	<p>This property is a  
+
+    	    	    	    	    	    	    	    
+    	    	<strong>data</strong> property.    
+    	    	    	    	</p>
+    
+        <table>
+    
+              <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#TermMap">          <a href="#TermMap">Term Map</a>   
+      </span></td>
+      </tr>
+
+          <tr>
+      <td>The range of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#string">              <a class="external-link" href="?documentUri=http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23string#anchor-487667913">xsd:string</a>
+      </span></td>
+      </tr>
+       
+    
+       
+    
+        </table>
+       </div>
+    
+    
+    
+    
+  </div>
+</div>   </div>
+    	<hr />
+		<div class="details properties">
+
+
+
+
+
+	<div class="term" id="md5-f1c308317c2342382926e1e3718f6c861" about="http://www.w3.org/ns/r2rml#termType">
+
+
+  <h3 id="anchor-8579237311"> <a id="termType"></a><span class="parrot-element-title parrot-property-title">term Type</span> (Property)
+  	  	
+		<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span>
+			
+		   	
+   	        
+        <span class="menu"> 
+	  	  	  	      </span>   </h3>
+
+        <p class="description">A string indicating whether subject or object generated using the value from column name specified for rr:column should be an IRI reference, blank node, or a literal.</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+
+			<p>The <strong>URI</strong> of this property is <span><code>http://www.w3.org/ns/r2rml#termType</code></span></p>
+	   
+        	<p>This property is an  
+
+    	    	    	    	    	    	    	    
+    	    	    	<strong>object</strong> property.  
+    	    	    	</p>
+
+        <table>
+          <tr>
+      <td>The domain of this property is</td>
+      <td><span class="parrot-element-ref parrot-class-ref" rel="rdfs:domain" href="http://www.w3.org/ns/r2rml#TermMap">          <a href="#TermMap">Term Map</a>   
+      </span></td>
+      </tr>
+
+		</table>
+       </div>
+  </div>
+</div>   
+</div>
+
+    	<hr />
+		
+<!-- Individuals -->
+	<div class="toc" id="individuals">
+	<h2>Individuals</h2>
+	<p>
+	  	    <a href="#SQL2008">SQL2008</a>, <a href="#defaultGraph">defaultGraph</a> </p>
+	</div>
+	
+		  <div class="details individuals">
+
+
+
+
+	<div class="term" id="md5-1ce7b7d44a62ccd5547840f8407047f41" about="http://www.w3.org/ns/r2rml#SQL2008">
+
+
+  <h3 id="anchor8082424131"> <a id="SQL2008"></a><span class="parrot-element-title parrot-class-title">SQL 2008 version identifier</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#NamedIndividual">(NamedIndividual)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Indicates that the SQL query conforms to Core SQL 2008</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this individual is <span><code>http://www.w3.org/ns/r2rml#SQL2008</code></span></p>
+
+	
+		    
+  </div>
+  
+
+    
+  </div>
+</div> 
+  </div>
+
+		<hr />    
+		
+		<div class="details individuals">
+
+
+
+
+	<div class="term" id="md5-1ce7b7d44a62ccd5547840f8407047f46" about="http://www.w3.org/ns/r2rml#defaultGraph">
+
+
+  <h3 id="anchor8082424137"> <a id="defaultGraph"></a><span class="parrot-element-title parrot-class-title">default Graph</span>
+
+			<span rel="rdf:type" href="http://www.w3.org/2002/07/owl#NamedIndividual">(NamedIndividual)</span> 
+	
+  
+      <span class="menu"> 
+	  	  	  	      </span> 
+  </h3>
+  
+        <p class="description">Denotes a default graph</p>
+    
+  <div>
+  
+  
+    <div class="ti"> 
+  <h4>Definition</h4> 
+			<p>The <strong>URI</strong> of this individual is <span><code>http://www.w3.org/ns/r2rml#defaultGraph</code></span></p>
+
+	
+		    
+  </div>
+  
+
+    
+  </div>
+</div> 
+  </div>
+  
+      	<hr />
+
+
+<!-- RDFa Meta-data for machines -->
+<div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns="http://www.w3.org/1999/xhtml" version="XHTML+RDFa 1.0"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns1="http://purl.org/vocommons/voaf#"
+     xmlns:vaem="http://www.linkedmodel.org/schema/vaem#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     class="rdf2rdfa">
+   <div class="description" about="http://www.w3.org/2000/01/rdf-schema#Class"
+        typeof="owl:Class"/>
+   <div class="description" about="http://www.w3.org/2000/01/rdf-schema#Resource"
+        typeof="owl:Class"/>
+   <div class="description" about="http://www.w3.org/ns/r2rml#" typeof="ns1:Vocabulary">
+      <div rel="rdf:type" resource="http://www.w3.org/2002/07/owl#Ontology"/>
+      <div rel="dc:contributor">
+         <div class="description" about="http://www.w3.org/People/Ivan/" typeof="foaf:Person">
+            <div property="foaf:name" content="Ivan Herman"/>
+         </div>
+      </div>
+      <div rel="dc:contributor">
+         <div class="description" about="http://boris.villazon.terrazas.name"
+              typeof="foaf:Person">
+            <div property="foaf:name" content="Boris Villazon-Terrazas"/>
+         </div>
+      </div>
+      <div rel="dc:creator">
+         <div class="description" about="http://richard.cyganiak.de/foaf.rdf#cygri"
+              typeof="foaf:Person">
+            <div property="foaf:name" content="Richard Cyganiak"/>
+         </div>
+      </div>
+      <div property="dc:descripion" content="RDB to RDF Mapping Language - Vocabulary"
+           xml:lang="en"/>
+      <div xmlns:d1e363="http://www.w3.org/2001/XMLSchema#" property="dc:issued"
+           content="2012-01-24"
+           datatype="xsd:date"/>
+      <div rel="cc:license" resource="http://creativecommons.org/licenses/by/3.0/"/>
+      <div xmlns:d1e370="http://www.w3.org/2001/XMLSchema#" property="dc:modified"
+           content="2012-07-16"
+           datatype="xsd:date"/>
+      <div property="vann:preferredNamespacePrefix" content="rr"/>
+      <div property="vann:preferredNamespaceUri" content="http://www.w3.org/ns/r2rml#"/>
+      <div rel="dc:publisher">
+         <div class="description" about="http://www.w3.org/" typeof="foaf:Organization">
+            <div property="vaem:acronym" content="W3C"/>
+            <div property="rdfs:label" content="The World Wide Web Consortium (W3C)"
+                 xml:lang="en"/>
+         </div>
+      </div>
+      <div property="dc:title" content="R2RML vocabulary" xml:lang="en"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#BaseTableOrView"
+        typeof="owl:Class">
+      <div rel="rdfs:subClassOf">
+         <div class="description" about="http://www.w3.org/ns/r2rml#LogicalTable"
+              typeof="owl:Class"/>
+      </div>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#BlankNode"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Denotes a blank node, used with termType"
+           xml:lang="en"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#GraphMap"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Represents a graph map." xml:lang="en"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" about="http://www.w3.org/ns/r2rml#TermMap"
+              typeof="owl:Class"/>
+      </div>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#IRI" typeof="owl:Class">
+      <div property="rdfs:comment" content="Denotes an IRI, used with termpType."
+           xml:lang="en"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#Join" typeof="owl:Class">
+      <div property="rdfs:comment" content="Represents a join condition." xml:lang="en"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e110="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:minQualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#child"
+                    typeof="owl:DatatypeProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e117="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:minQualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#parent"
+                    typeof="owl:DatatypeProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e124="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:maxQualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#parent"
+                    typeof="owl:DatatypeProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e131="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:maxQualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#child"
+                    typeof="owl:DatatypeProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#Literal"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Denotes a Literal, used with termType."
+           xml:lang="en"/>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#LogicalTable"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Represents a logical table." xml:lang="en"/>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#ObjectMap"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Represents an object map." xml:lang="en"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e47="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:minQualifiedCardinality"
+                 content="0"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onClass">
+               <div class="description" about="http://www.w3.org/2000/01/rdf-schema#Datatype"
+                    typeof="owl:Class"/>
+            </div>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#datatype"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e54="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:minQualifiedCardinality"
+                 content="0"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#language"
+                    typeof="owl:DatatypeProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e61="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:maxQualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onClass" resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#object"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e69="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:minQualifiedCardinality"
+                 content="0"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onClass" resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#object"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf">
+         <div class="description" about="http://www.w3.org/ns/r2rml#TermMap"
+              typeof="owl:Class"/>
+      </div>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#PredicateMap"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Represents a predicate map." xml:lang="en"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" about="http://www.w3.org/ns/r2rml#TermMap"
+              typeof="owl:Class"/>
+      </div>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div rel="owl:onClass">
+               <div class="description" about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+                    typeof="owl:Class"/>
+            </div>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#predicate"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+            <div xmlns:d1e22="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:qualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#PredicateObjectMap"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Represents a predicate-object map."
+           xml:lang="en"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div rel="owl:onClass" resource="http://www.w3.org/ns/r2rml#ObjectMap"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#objectMap"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+            <div xmlns:d1e145="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:qualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e153="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:minQualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onClass" resource="http://www.w3.org/ns/r2rml#PredicateMap"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#predicateMap"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#R2RMLView"
+        typeof="owl:Class">
+      <div rel="rdfs:subClassOf">
+         <div class="description" about="http://www.w3.org/ns/r2rml#LogicalTable"
+              typeof="owl:Class"/>
+      </div>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#RefObjectMap"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Denotes a reference to an object map."
+           xml:lang="en"/>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#SQL2008"
+        typeof="owl:NamedIndividual">
+      <div property="rdfs:comment" content="Core SQL 2008" xml:lang="en"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#SubjectMap"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Represents a subject map." xml:lang="en"/>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/ns/r2rml#TermMap"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div xmlns:d1e165="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:minQualifiedCardinality"
+                 content="0"
+                 datatype="xsd:nonNegativeInteger"/>
+            <div rel="owl:onClass" resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#class"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#TermMap"
+        typeof="owl:Class">
+      <div property="rdfs:comment"
+           content="A function that generates an RDF term from a logical table row."
+           xml:lang="en"/>
+      <div property="rdfs:label" content="Term Map" xml:lang="en"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#TriplesMap"
+        typeof="owl:Class">
+      <div property="rdfs:comment" content="Represents a triples map." xml:lang="en"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div rel="owl:onClass">
+               <div class="description" about="http://www.w3.org/ns/r2rml#SubjectMap"
+                    typeof="owl:Class"/>
+            </div>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#subjectMap"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+            <div xmlns:d1e89="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:qualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+         </div>
+      </div>
+      <div rel="rdfs:subClassOf" resource="http://www.w3.org/2002/07/owl#Thing"/>
+      <div rel="rdfs:subClassOf">
+         <div class="description" typeof="owl:Restriction">
+            <div rel="owl:onClass">
+               <div class="description" about="http://www.w3.org/ns/r2rml#LogicalTable"
+                    typeof="owl:Class"/>
+            </div>
+            <div rel="owl:onProperty">
+               <div class="description" about="http://www.w3.org/ns/r2rml#logicalTable"
+                    typeof="owl:ObjectProperty"/>
+            </div>
+            <div xmlns:d1e98="http://www.w3.org/2001/XMLSchema#"
+                 property="owl:qualifiedCardinality"
+                 content="1"
+                 datatype="xsd:nonNegativeInteger"/>
+         </div>
+      </div>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#child"
+        typeof="owl:DatatypeProperty">
+      <div property="rdfs:comment" content="Names a column in the child table of a join."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#Join"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#class"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="The subject value generated for a logical table row will be asserted as an instance of this RDFS class."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#SubjectMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#column"
+        typeof="owl:DatatypeProperty">
+      <div property="rdfs:comment"
+           content="Name of a column in the logical table. When generating RDF triples from a logical table row, value from the specified column is used as the subject, predicate, or object (based upon the specific domain)."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#TermMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#constant"
+        typeof="owl:ObjectProperty"/>
+   <div class="description" about="http://www.w3.org/ns/r2rml#datatype"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="Specifies the datatype of the object component for the generated triple from a logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#ObjectMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2000/01/rdf-schema#Datatype"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#defaultGraph"
+        typeof="owl:NamedIndividual">
+      <div property="rdfs:comment" content="Denotes a default graph" xml:lang="en"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#graph"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="An IRI reference for use as the graph name of all triples generated with the GraphMap."
+           xml:lang="en"/>
+      <div rel="rdfs:domain">
+         <div class="description" typeof="owl:Class">
+            <div rel="owl:intersectionOf">
+               <div xmlns="http://www.w3.org/1999/xhtml" typeof="rdf:List">
+                  <div rel="rdf:first">
+                     <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                          about="http://www.w3.org/ns/r2rml#GraphMap"
+                          typeof="owl:Class"/>
+                  </div>
+                  <div rel="rdf:rest">
+                     <div typeof="rdf:List">
+                        <div rel="rdf:first">
+                           <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                                typeof="owl:Restriction">
+                              <div xmlns:d1e208="http://www.w3.org/2001/XMLSchema#"
+                                   property="owl:maxQualifiedCardinality"
+                                   content="0"
+                                   datatype="xsd:nonNegativeInteger"/>
+                              <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+                              <div rel="owl:onProperty">
+                                 <div class="description" about="http://www.w3.org/ns/r2rml#template"
+                                      typeof="owl:DatatypeProperty"/>
+                              </div>
+                           </div>
+                        </div>
+                        <div rel="rdf:rest" resource="[rdf:nil]"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#graphMap"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="Specifies a GraphMap. When used with a SubjectMap element, all the RDF triples generated from a logical row will be stored in the specified named graph. Otherwise, the RDF triple generated using the (predicate, object) pair will be stored in the specified named graph."
+           xml:lang="en"/>
+      <div rel="rdfs:domain">
+         <div class="description" typeof="owl:Class">
+            <div rel="owl:unionOf">
+               <div xmlns="http://www.w3.org/1999/xhtml" typeof="rdf:List">
+                  <div rel="rdf:first">
+                     <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                          about="http://www.w3.org/ns/r2rml#PredicateObjectMap"
+                          typeof="owl:Class"/>
+                  </div>
+                  <div rel="rdf:rest">
+                     <div typeof="rdf:List">
+                        <div rel="rdf:first">
+                           <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                                about="http://www.w3.org/ns/r2rml#SubjectMap"
+                                typeof="owl:Class"/>
+                        </div>
+                        <div rel="rdf:rest" resource="[rdf:nil]"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:range" resource="http://www.w3.org/ns/r2rml#GraphMap"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#inverseExpression"
+        typeof="owl:DatatypeProperty">
+      <div property="rdfs:comment"
+           content="An expression that allows, at query processing time, use of index-based access to the the (underlying) relational tables, instead of simply retrieving the table rows first and then applying a filter. This property is useful for retrieval based on conditions involving subject, predicate, or object generated from logical table column(s) and involves some transformation."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#TermMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#joinCondition"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="Specifies the join condition for joining the child logical table with the parent logical table of the foreign key constraint."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#RefObjectMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/ns/r2rml#Join"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#language"
+        typeof="owl:DatatypeProperty">
+      <div property="rdfs:comment"
+           content="Specified the language for the object component for the generated triple from a logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#ObjectMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#logicalTable"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment" content="Definition of logical table to be mapped."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#TriplesMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/ns/r2rml#LogicalTable"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#object"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="Specifies the object for the generated triple from the logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain">
+         <div class="description" typeof="owl:Class">
+            <div rel="owl:intersectionOf">
+               <div xmlns="http://www.w3.org/1999/xhtml" typeof="rdf:List">
+                  <div rel="rdf:first">
+                     <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                          about="http://www.w3.org/ns/r2rml#ObjectMap"
+                          typeof="owl:Class"/>
+                  </div>
+                  <div rel="rdf:rest">
+                     <div typeof="rdf:List">
+                        <div rel="rdf:first">
+                           <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                                typeof="owl:Restriction">
+                              <div xmlns:d1e251="http://www.w3.org/2001/XMLSchema#"
+                                   property="owl:maxQualifiedCardinality"
+                                   content="0"
+                                   datatype="xsd:nonNegativeInteger"/>
+                              <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+                              <div rel="owl:onProperty">
+                                 <div class="description" about="http://www.w3.org/ns/r2rml#column"
+                                      typeof="owl:DatatypeProperty"/>
+                              </div>
+                           </div>
+                        </div>
+                        <div rel="rdf:rest" resource="[rdf:nil]"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:range" resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#objectMap"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="An ObjectMap element to generate the object component of the (predicate, object) pair from a logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#PredicateObjectMap"/>
+      <div rel="rdfs:range">
+         <div class="description" typeof="owl:Class">
+            <div rel="owl:unionOf">
+               <div xmlns="http://www.w3.org/1999/xhtml" typeof="rdf:List">
+                  <div rel="rdf:first">
+                     <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                          about="http://www.w3.org/ns/r2rml#ObjectMap"
+                          typeof="owl:Class"/>
+                  </div>
+                  <div rel="rdf:rest">
+                     <div typeof="rdf:List">
+                        <div rel="rdf:first">
+                           <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                                about="http://www.w3.org/ns/r2rml#RefObjectMap"
+                                typeof="owl:Class"/>
+                        </div>
+                        <div rel="rdf:rest" resource="[rdf:nil]"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#parent"
+        typeof="owl:DatatypeProperty">
+      <div property="rdfs:comment" content="Names a column in the parent table of a join."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#Join"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#parentTriplesMap"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="Specifies the TriplesMap element corresponding to the parent logical table of the foreign key constraint."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#RefObjectMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/ns/r2rml#TriplesMap"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#predicate"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="Specifies the predicate for the generated triple from the logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain">
+         <div class="description" typeof="owl:Class">
+            <div rel="owl:intersectionOf">
+               <div xmlns="http://www.w3.org/1999/xhtml" typeof="rdf:List">
+                  <div rel="rdf:first">
+                     <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                          about="http://www.w3.org/ns/r2rml#PredicateMap"
+                          typeof="owl:Class"/>
+                  </div>
+                  <div rel="rdf:rest">
+                     <div typeof="rdf:List">
+                        <div rel="rdf:first">
+                           <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                                typeof="owl:Restriction">
+                              <div xmlns:d1e194="http://www.w3.org/2001/XMLSchema#"
+                                   property="owl:maxQualifiedCardinality"
+                                   content="0"
+                                   datatype="xsd:nonNegativeInteger"/>
+                              <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+                              <div rel="owl:onProperty">
+                                 <div class="description" about="http://www.w3.org/ns/r2rml#column"
+                                      typeof="owl:DatatypeProperty"/>
+                              </div>
+                           </div>
+                        </div>
+                        <div rel="rdf:rest" resource="[rdf:nil]"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div rel="rdfs:range" resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#predicateMap"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="A PredicateMap element to generate the predicate component of the (predicate, object) pair from a logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#PredicateObjectMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/ns/r2rml#PredicateMap"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#predicateObjectMap"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="A PredicateObjectMap element to generate (predicate, object) pair from a logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/ns/r2rml#PredicateObjectMap"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#sqlQuery"
+        typeof="owl:DatatypeProperty">
+      <div property="rdfs:comment" content="A valid SQL query." xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#R2RMLView"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#sqlVersion"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment" content="An identifier for a SQL version."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#R2RMLView"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#subject"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="An IRI reference for use as subject for all the RDF triples generated from a logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain">
+         <div class="description" typeof="owl:Class">
+            <div rel="owl:intersectionOf">
+               <div xmlns="http://www.w3.org/1999/xhtml" typeof="rdf:List">
+                  <div rel="rdf:first">
+                     <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                          about="http://www.w3.org/ns/r2rml#SubjectMap"
+                          typeof="owl:Class"/>
+                  </div>
+                  <div rel="rdf:rest">
+                     <div typeof="rdf:List">
+                        <div rel="rdf:first">
+                           <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                                typeof="owl:Restriction">
+                              <div xmlns:d1e181="http://www.w3.org/2001/XMLSchema#"
+                                   property="owl:maxQualifiedCardinality"
+                                   content="0"
+                                   datatype="xsd:nonNegativeInteger"/>
+                              <div rel="owl:onDataRange" resource="http://www.w3.org/2001/XMLSchema#string"/>
+                              <div rel="owl:onProperty">
+                                 <div class="description" about="http://www.w3.org/ns/r2rml#column"
+                                      typeof="owl:DatatypeProperty"/>
+                              </div>
+                           </div>
+                        </div>
+                        <div rel="rdf:rest" resource="[rdf:nil]"/>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#subjectMap"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="A SubjectMap element to generate a subject from a logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#TriplesMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/ns/r2rml#SubjectMap"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#tableName"
+        typeof="owl:DatatypeProperty">
+      <div property="rdfs:comment" content="Schema-qualified name of a table or view."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#BaseTableOrView"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#template"
+        typeof="owl:DatatypeProperty">
+      <div property="rdfs:comment"
+           content="A template (format string) to specify how to generate a value for a subject, predicate, or object, using one or more columns from a logical table row."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#TermMap"/>
+      <div rel="rdfs:range" resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </div>
+   <div class="description" about="http://www.w3.org/ns/r2rml#termType"
+        typeof="owl:ObjectProperty">
+      <div property="rdfs:comment"
+           content="A string indicating whether subject or object generated using the value from column name specified for rr:column should be an IRI reference, blank node, or a literal."
+           xml:lang="en"/>
+      <div rel="rdfs:domain" resource="http://www.w3.org/ns/r2rml#TermMap"/>
+      <div rel="rdfs:range">
+         <div class="description" typeof="owl:Class">
+            <div rel="owl:unionOf">
+               <div xmlns="http://www.w3.org/1999/xhtml" typeof="rdf:List">
+                  <div rel="rdf:first">
+                     <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                          about="http://www.w3.org/ns/r2rml#BlankNode"
+                          typeof="owl:Class"/>
+                  </div>
+                  <div rel="rdf:rest">
+                     <div typeof="rdf:List">
+                        <div rel="rdf:first">
+                           <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                                about="http://www.w3.org/ns/r2rml#IRI"
+                                typeof="owl:Class"/>
+                        </div>
+                        <div rel="rdf:rest">
+                           <div typeof="rdf:List">
+                              <div rel="rdf:first">
+                                 <div xmlns="http://www.w3.org/1999/xhtml" class="description"
+                                      about="http://www.w3.org/ns/r2rml#Literal"
+                                      typeof="owl:Class"/>
+                              </div>
+                              <div rel="rdf:rest" resource="[rdf:nil]"/>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+	<address >
+	  <span rel="dc:creator" >
+		<span typeof="foaf:Person">
+			<span property="foaf:name" datatype="">Boris Villazón Terrazas</span>,
+			<a rel="foaf:mbox" href="mailto:bvillazon@fi.upm.es">bvillazon@fi.upm.es</a>,
+			<a rel="foaf:workplaceHomepage" href="http://www.oeg-upm.net">OEG-UPM</a>,
+		</span>
+	  </span>
+		<br />mantained by		
+Ivan Herman,
+			<a href="mailto:ivan@w3.org">ivan@w3.org</a>,
+			<a  href="http://www.w3.org">W3C</a>,
+			Semantic Web Activity Lead,
+	  <br/>
+	  <span >2012-07-17</span>
+	  <br />
+	  <span property="owl:versionInfo">$Date: 2012/09/17 15:21:58 $</span>
+	</address>
+
+  </body>
+</html>
+

@@ -1,0 +1,57 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix formats: <http://www.w3.org/ns/formats/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+formats:Format a rdfs:Class,
+        owl:Class ;
+    dc:description "a unique, top-level Class URI for specific file formats. Media types do not uniquely identify file formats (eg, serialization formats for various abstract concepts), because not all specific cases do have distinct media types, instances in this class can be used instead for proper identification." ;
+    rdfs:seeAlso formats:JSON-LD,
+        formats:N-Quads,
+        formats:N-Triples,
+        formats:N3,
+        formats:OWL_Functional,
+        formats:OWL_Manchester,
+        formats:OWL_XML,
+        formats:POWDER,
+        formats:POWDER-S,
+        formats:PROV-N,
+        formats:PROV-XML,
+        formats:RDF_JSON,
+        formats:RDF_XML,
+        formats:RDFa,
+        formats:RIF_XML,
+        formats:SPARQL_Results_CSV,
+        formats:SPARQL_Results_JSON,
+        formats:SPARQL_Results_TSV,
+        formats:SPARQL_Results_XML,
+        formats:TriG,
+        formats:Turtle,
+        formats:LD_Patch .
+
+formats:media_type a rdfs:Property,
+        owl:DatatypeProperty .
+
+formats:preferred_suffix a rdfs:Property,
+        owl:DatatypeProperty .
+
+<http://www.ivan-herman.net/foaf#me> a foaf:Person ;
+    rdfs:seeAlso <http://www.ivan-herman.net/foaf> ;
+    foaf:mbox <mailto:ivan@w3.org> ;
+    foaf:name "Ivan Herman" ;
+    foaf:title "Semantic Web Activity Lead" ;
+    foaf:workplaceHomepage <http://www.w3.org> .
+
+formats: a owl:Ontology ;
+    dc:created "2010-10-19" ;
+    dc:creator <http://www.ivan-herman.net/foaf#me> ;
+    dc:description "Unique URIs for File Formats" ;
+    dc:modified "2013-11-09" ;
+    owl:versionIRI formats: ;
+    owl:versionInfo "$Date: 2015/02/27 20:59:20 $" .
+
+

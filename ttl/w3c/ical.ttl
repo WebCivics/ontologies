@@ -1,0 +1,1300 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0: <http://www.w3.org/2002/12/cal/icalSpec#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/2002/12/cal/ical>
+  a owl:Thing ;
+  dc11:source <http://www.ietf.org/rfc/rfc2445.txt> ;
+  owl:versionInfo "$Id: ical.rdf,v 1.14 2004/04/07 18:45:16 connolly Exp $", "subject to change with notice to www-rdf-calendar@w3.org" ;
+  rdfs:seeAlso <http://www.w3.org/2002/12/cal/>, <http://lists.w3.org/Archives/Public/www-rdf-calendar/>, <http://esw.w3.org/topic/RdfCalendar> .
+
+<http://www.ietf.org/rfc/rfc2445.txt> a owl:Thing .
+<http://www.w3.org/2002/12/cal/icalSpec#valueType> a owl:AnnotationProperty .
+<http://www.w3.org/2002/12/cal/icalSpec#valueListType> a owl:AnnotationProperty .
+dc11:source a owl:ObjectProperty .
+<http://www.w3.org/2002/12/cal/ical#Vevent>
+  a owl:Class ;
+  rdfs:label "VEVENT" ;
+  rdfs:comment "Provide a grouping of component properties that describe an event." ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attach> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#categories> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#class> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#comment> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#description> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#geo> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#location> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#priority> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#resources> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#status> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#summary> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtend> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtstart> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#duration> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#transp> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attendee> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#contact> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#organizer> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#relatedTo> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#url> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#uid> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#exrule> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#rdate> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#rrule> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#exdate> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#recurrenceId> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#trigger> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#created> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtstamp> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#lastModified> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#sequence> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#requestStatus> ;
+    owl:minCardinality 0
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Vtodo>
+  a owl:Class ;
+  rdfs:label "VTODO" ;
+  rdfs:comment "Provide a grouping of calendar properties that describe a to-do." ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attach> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#categories> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#class> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#comment> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#description> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#geo> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#location> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#percentComplete> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#priority> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#resources> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#status> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#summary> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#completed> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#due> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtstart> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#duration> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attendee> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#contact> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#organizer> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#relatedTo> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#url> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#uid> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#exrule> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#rdate> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#rrule> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#exdate> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#recurrenceId> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#trigger> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#created> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtstamp> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#lastModified> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#sequence> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#requestStatus> ;
+    owl:minCardinality 0
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Vjournal>
+  a owl:Class ;
+  rdfs:label "VJOURNAL" ;
+  rdfs:comment "Provide a grouping of component properties that describe a journal entry." ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attach> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#categories> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#class> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#comment> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#description> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#status> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#summary> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attendee> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#contact> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#organizer> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#relatedTo> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#url> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#uid> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#exrule> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#rdate> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#rrule> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#exdate> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#recurrenceId> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#created> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtstamp> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#lastModified> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#sequence> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#requestStatus> ;
+    owl:minCardinality 0
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+  a owl:Class ;
+  rdfs:label "VFREEBUSY" ;
+  rdfs:comment "Provide a grouping of component properties that describe either a request for free/busy time, describe a response to a request for free/busy time or describe a published set of busy time." ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#comment> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtend> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtstart> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#duration> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#freebusy> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attendee> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#contact> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#organizer> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#url> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#uid> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtstamp> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#requestStatus> ;
+    owl:minCardinality 0
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Vtimezone>
+  a owl:Class ;
+  rdfs:label "VTIMEZONE" ;
+  rdfs:comment "Provide a grouping of component properties that defines a time zone." ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#comment> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#dtstart> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#tzid> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#tzname> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#tzoffsetfrom> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#tzoffsetto> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#tzurl> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#rdate> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#rrule> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#exdate> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#recurrenceId> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#lastModified> ;
+    owl:minCardinality 0
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Valarm>
+  a owl:Class ;
+  rdfs:label "VALARM" ;
+  rdfs:comment "Provide a grouping of component properties that define an alarm." ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attach> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#description> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#summary> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#duration> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#attendee> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#action> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#repeat> ;
+    owl:minCardinality 0
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2002/12/cal/ical#trigger> ;
+    owl:minCardinality 0
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#calscale>
+  rdfs:label "CALSCALE" ;
+  rdfs:comment "This property defines the calendar scale used for the calendar information specified in the iCalendar object.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string .
+
+xsd:string a rdfs:Datatype .
+<http://www.w3.org/2002/12/cal/ical#method>
+  rdfs:label "METHOD" ;
+  rdfs:comment "This property defines the iCalendar object method associated with the calendar object.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string .
+
+<http://www.w3.org/2002/12/cal/ical#prodid>
+  rdfs:label "PRODID" ;
+  rdfs:comment "This property specifies the identifier for the product that created the iCalendar object.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string .
+
+<http://www.w3.org/2002/12/cal/ical#version>
+  rdfs:label "VERSION" ;
+  rdfs:comment "This property specifies the identifier corresponding to the highest version number or the minimum and maximum range of the iCalendar specification that is required in order to interpret the iCalendar object.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string .
+
+<http://www.w3.org/2002/12/cal/ical#attach>
+  rdfs:label "ATTACH" ;
+  rdfs:comment "The property provides the capability to associate a document object with a calendar component.", """
+	    default value type: URI""" ;
+  ns0:valueType "URI" ;
+  a owl:ObjectProperty ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#categories>
+  rdfs:label "CATEGORIES" ;
+  rdfs:comment "This property defines the categories for a calendar component.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#class>
+  rdfs:label "CLASS" ;
+  rdfs:comment "This property defines the access classification for a calendar component.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#comment>
+  rdfs:label "COMMENT" ;
+  rdfs:comment "This property specifies non-processing information intended to provide a comment to the calendar user.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#description>
+  rdfs:label "DESCRIPTION" ;
+  rdfs:comment "This property provides a more complete description of the calendar component, than that provided by the \"SUMMARY\" property.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#geo>
+  rdfs:label "GEO" ;
+  rdfs:comment "This property specifies information related to the global position for the activity specified by a calendar component.", """
+	    value type: list of FLOAT""" ;
+  ns0:valueListType "FLOAT" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#List_of_Float> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#List_of_Float> a owl:Class .
+<http://www.w3.org/2002/12/cal/ical#location>
+  rdfs:label "LOCATION" ;
+  rdfs:comment "The property defines the intended venue for the activity defined by a calendar component.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#percentComplete>
+  rdfs:label "PERCENT-COMPLETE" ;
+  rdfs:comment "This property is used by an assignee or delegatee of a to-do to convey the percent completion of a to-do to the Organizer.", """
+	    value type: INTEGER""" ;
+  ns0:valueType "INTEGER" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:integer ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#Vtodo> .
+
+xsd:integer a rdfs:Datatype .
+<http://www.w3.org/2002/12/cal/ical#priority>
+  rdfs:label "PRIORITY" ;
+  rdfs:comment "The property defines the relative priority for a calendar component.", """
+	    value type: INTEGER""" ;
+  ns0:valueType "INTEGER" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:integer ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#resources>
+  rdfs:label "RESOURCES" ;
+  rdfs:comment "This property defines the equipment or resources anticipated for an activity specified by a calendar entity..", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#status>
+  rdfs:label "STATUS" ;
+  rdfs:comment "This property defines the overall status or confirmation for the calendar component.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#summary>
+  rdfs:label "SUMMARY" ;
+  rdfs:comment "This property defines a short summary or subject for the calendar component.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#completed>
+  rdfs:label "COMPLETED" ;
+  rdfs:comment "This property defines the date and time that a to-do was actually completed.", """
+	    value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME> ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#Vtodo> .
+
+<http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME> a owl:Class .
+<http://www.w3.org/2002/12/cal/ical#dtend>
+  rdfs:label "DTEND" ;
+  rdfs:comment "This property specifies the date and time that a calendar component ends.", """
+	    default value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+   )
+  ] ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Value_DATE> a owl:Class .
+<http://www.w3.org/2002/12/cal/ical#due>
+  rdfs:label "DUE" ;
+  rdfs:comment "This property defines the date and time that a to-do is expected to be completed.", """
+	    default value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+   )
+  ] ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#Vtodo> .
+
+<http://www.w3.org/2002/12/cal/ical#dtstart>
+  rdfs:label "DTSTART" ;
+  rdfs:comment "This property specifies when the calendar component begins.", """
+	    default value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+   )
+  ] ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#duration>
+  rdfs:label "DURATION" ;
+  rdfs:comment "The property specifies a positive duration of time.", """
+	    value type: DURATION""" ;
+  ns0:valueType "DURATION" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_DURATION> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Value_DURATION> a owl:Class .
+<http://www.w3.org/2002/12/cal/ical#freebusy>
+  rdfs:label "FREEBUSY" ;
+  rdfs:comment "The property defines one or more free or busy time intervals.", """
+	    value type: PERIOD""" ;
+  ns0:valueType "PERIOD" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_PERIOD> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Value_PERIOD> a owl:Class .
+<http://www.w3.org/2002/12/cal/ical#transp>
+  rdfs:label "TRANSP" ;
+  rdfs:comment "This property defines whether an event is transparent or not to busy time searches.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#Vevent> .
+
+<http://www.w3.org/2002/12/cal/ical#tzid>
+  rdfs:label "TZID" ;
+  rdfs:comment "This property specifies the text value that uniquely identifies the \"VTIMEZONE\" calendar component.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#Vtimezone> .
+
+<http://www.w3.org/2002/12/cal/ical#tzname>
+  rdfs:label "TZNAME" ;
+  rdfs:comment "This property specifies the customary designation for a time zone description.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#Vtimezone> .
+
+<http://www.w3.org/2002/12/cal/ical#tzoffsetfrom>
+  rdfs:label "TZOFFSETFROM" ;
+  rdfs:comment "This property specifies the offset which is in use prior to this time zone observance.", """
+	    value type: UTC-OFFSET""" ;
+  ns0:valueType "UTC-OFFSET" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#tzoffsetto>
+  rdfs:label "TZOFFSETTO" ;
+  rdfs:comment "This property specifies the offset which is in use in this time zone observance.", """
+	    value type: UTC-OFFSET""" ;
+  ns0:valueType "UTC-OFFSET" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#Vtimezone> .
+
+<http://www.w3.org/2002/12/cal/ical#tzurl>
+  rdfs:label "TZURL" ;
+  rdfs:comment "The TZURL provides a means for a VTIMEZONE component to point to a network location that can be used to retrieve an up-to- date version of itself.", """
+	    value type: URI""" ;
+  ns0:valueType "URI" ;
+  a owl:ObjectProperty ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#attendee>
+  rdfs:label "ATTENDEE" ;
+  rdfs:comment "The property defines an \"Attendee\" within a calendar component.", """
+	    value type: CAL-ADDRESS""" ;
+  ns0:valueType "CAL-ADDRESS" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS> a owl:Class .
+<http://www.w3.org/2002/12/cal/ical#contact>
+  rdfs:label "CONTACT" ;
+  rdfs:comment "The property is used to represent contact information or alternately a reference to contact information associated with the calendar component.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#organizer>
+  rdfs:label "ORGANIZER" ;
+  rdfs:comment "The property defines the organizer for a calendar component.", """
+	    value type: CAL-ADDRESS""" ;
+  ns0:valueType "CAL-ADDRESS" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_CAL-ADDRESS> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#recurrenceId>
+  rdfs:label "RECURRENCE-ID" ;
+  rdfs:comment "This property is used in conjunction with the \"UID\" and \"SEQUENCE\" property to identify a specific instance of a recurring \"VEVENT\", \"VTODO\" or \"VJOURNAL\" calendar component. The property value is the effective value of the \"DTSTART\" property of the recurrence instance.", """
+	    default value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+   )
+  ] ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#DomainOf_rrule> .
+
+<http://www.w3.org/2002/12/cal/ical#DomainOf_rrule> a owl:Class .
+<http://www.w3.org/2002/12/cal/ical#relatedTo>
+  rdfs:label "RELATED-TO" ;
+  rdfs:comment "The property is used to represent a relationship or reference between one calendar component and another.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#url>
+  rdfs:label "URL" ;
+  rdfs:comment "This property defines a Uniform Resource Locator (URL) associated with the iCalendar object.", """
+	    value type: URI""" ;
+  ns0:valueType "URI" ;
+  a owl:ObjectProperty ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#uid>
+  rdfs:label "UID" ;
+  rdfs:comment "This property defines the persistent, globally unique identifier for the calendar component.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#exdate>
+  rdfs:label "EXDATE" ;
+  rdfs:comment "This property defines the list of date/time exceptions for a recurring calendar component.", """
+	    default value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+   )
+  ] ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#DomainOf_rrule> .
+
+<http://www.w3.org/2002/12/cal/ical#exrule>
+  rdfs:label "EXRULE" ;
+  rdfs:comment "This property defines a rule or repeating pattern for an exception to a recurrence set.", """
+	    value type: RECUR""" ;
+  ns0:valueType "RECUR" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_RECUR> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#Value_RECUR> a owl:Class .
+<http://www.w3.org/2002/12/cal/ical#rdate>
+  rdfs:label "RDATE" ;
+  rdfs:comment "This property defines the list of date/times for a recurrence set.", """
+	    default value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+     <http://www.w3.org/2002/12/cal/ical#Value_PERIOD>
+   )
+  ] ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#rrule>
+  rdfs:label "RRULE" ;
+  rdfs:comment "This property defines a rule or repeating pattern for recurring events, to-dos, or time zone definitions.", """
+	    value type: RECUR""" ;
+  ns0:valueType "RECUR" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_RECUR> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#action>
+  rdfs:label "ACTION" ;
+  rdfs:comment "This property defines the action to be invoked when an alarm is triggered.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#repeat>
+  rdfs:label "REPEAT" ;
+  rdfs:comment "This property defines the number of time the alarm should be repeated, after the initial trigger.", """
+	    value type: INTEGER""" ;
+  ns0:valueType "INTEGER" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:integer ;
+  rdfs:domain <http://www.w3.org/2002/12/cal/ical#Valarm> .
+
+<http://www.w3.org/2002/12/cal/ical#trigger>
+  rdfs:label "TRIGGER" ;
+  rdfs:comment "This property specifies when an alarm will trigger.", """
+	    default value type: DURATION""" ;
+  ns0:valueType "DURATION" ;
+  a owl:ObjectProperty ;
+  rdfs:range [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Value_DURATION>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+     <http://www.w3.org/2002/12/cal/ical#Value_DATE>
+   )
+  ] ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+     <http://www.w3.org/2002/12/cal/ical#Valarm>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#created>
+  rdfs:label "CREATED" ;
+  rdfs:comment "This property specifies the date and time that the calendar information was created by the calendar user agent in the calendar store. Note: This is analogous to the creation date and time for a file in the file system.", """
+	    value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#dtstamp>
+  rdfs:label "DTSTAMP" ;
+  rdfs:comment "The property indicates the date/time that the instance of the iCalendar object was created.", """
+	    value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#lastModified>
+  rdfs:label "LAST-MODIFIED" ;
+  rdfs:comment "The property specifies the date and time that the information associated with the calendar component was last revised in the calendar store. Note: This is analogous to the modification date and time for a file in the file system.", """
+	    value type: DATE-TIME""" ;
+  ns0:valueType "DATE-TIME" ;
+  a owl:ObjectProperty ;
+  rdfs:range <http://www.w3.org/2002/12/cal/ical#Value_DATE-TIME> ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vtimezone>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#sequence>
+  rdfs:label "SEQUENCE" ;
+  rdfs:comment "This property defines the revision sequence number of the calendar component within a sequence of revisions.", """
+	    value type: integer""" ;
+  ns0:valueType "integer" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:integer ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+   )
+  ] .
+
+<http://www.w3.org/2002/12/cal/ical#X->
+  rdfs:label "Any property name with a \"X-\" prefix" ;
+  rdfs:comment "This class of property provides a framework for defining non-standard properties.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string .
+
+<http://www.w3.org/2002/12/cal/ical#requestStatus>
+  rdfs:label "REQUEST-STATUS" ;
+  rdfs:comment "This property defines the status code returned for a scheduling request.", """
+	    value type: TEXT""" ;
+  ns0:valueType "TEXT" ;
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:string ;
+  rdfs:domain [
+    a owl:Class ;
+    owl:unionOf (
+     <http://www.w3.org/2002/12/cal/ical#Vevent>
+     <http://www.w3.org/2002/12/cal/ical#Vtodo>
+     <http://www.w3.org/2002/12/cal/ical#Vjournal>
+     <http://www.w3.org/2002/12/cal/ical#Vfreebusy>
+   )
+  ] .

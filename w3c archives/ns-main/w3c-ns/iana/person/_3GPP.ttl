@@ -1,0 +1,67 @@
+@prefix : <#>.
+@prefix n1: <../media-types/application/3gpdash-qoe-report+xml#>.
+@prefix reg: <https://www.w3.org/ns/assignments/reg#>.
+@prefix cccex: <../media-types/application/cccex#>.
+@prefix mbm: <../media-types/application/mbms-associated-procedure-description+xml#>.
+@prefix mb: <../media-types/application/mbms-deregister+xml#>.
+@prefix mbms: <../media-types/application/mbms-envelope+xml#>.
+@prefix m: <../media-types/application/mbms-msk-response+xml#>.
+@prefix n2: <../media-types/application/mbms-msk+xml#>.
+@prefix n3: <../media-types/application/mbms-protection-description+xml#>.
+@prefix n4: <../media-types/application/mbms-reception-report+xml#>.
+@prefix n5: <../media-types/application/mbms-register-response+xml#>.
+@prefix n6: <../media-types/application/mbms-register+xml#>.
+@prefix n7: <../media-types/application/mbms-schedule+xml#>.
+@prefix n8: <../media-types/application/mbms-user-service-description+xml#>.
+@prefix ses: <../media-types/application/session-info#>.
+@prefix sim: <../media-types/application/simpleSymbolContainer#>.
+@prefix EVS: <../media-types/audio/EVS#>.
+@prefix rtp: <../media-types/audio/rtp-enc-aescm128#>.
+@prefix medi: <../media-types/media-types.ttl#>.
+@prefix rt: <../media-types/text/rtp-enc-aescm128#>.
+@prefix r: <../media-types/video/rtp-enc-aescm128#>.
+
+n1:Resource reg:xref :.
+
+cccex:Resource reg:xref :.
+
+mbm:Resource reg:xref :.
+
+mb:Resource reg:xref :.
+
+mbms:Resource reg:xref :.
+
+m:Resource reg:xref :.
+
+n2:Resource reg:xref :.
+
+n3:Resource reg:xref :.
+
+n4:Resource reg:xref :.
+
+n5:Resource reg:xref :.
+
+n6:Resource reg:xref :.
+
+n7:Resource reg:xref :.
+
+n8:Resource reg:xref :.
+
+ses:Resource reg:xref :.
+
+sim:Resource reg:xref :.
+
+EVS:Resource reg:xref :.
+
+rtp:Resource reg:xref :.
+
+medi:n0 reg:person :.
+
+rt:Resource reg:xref :.
+
+r:Resource reg:xref :.
+
+:
+    reg:id "_3GPP";
+    reg:name "3GPP - Third Generation Partnership Project";
+    reg:uri "mailto:3gppContact&etsi.org".

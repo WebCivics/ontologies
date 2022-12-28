@@ -1,0 +1,3194 @@
+{
+    "@context": {
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "dcam": "http://purl.org/dc/dcam/",
+      "dcterms": "http://purl.org/dc/terms/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "@graph": [
+      {
+        "@id": "http://purl.org/dc/terms/",
+        "dcterms:modified": {
+          "@value": "2012-06-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:publisher": {
+          "@id": "http://purl.org/dc/aboutdcmi#DCMI"
+        },
+        "http://purl.org/vocab/vann/preferredNamespaceUri": "http://purl.org/dc/terms/",
+        "dcterms:title": {
+          "@value": "DCMI Metadata Terms - other",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:Agent",
+        "dcterms:description": {
+          "@value": "Examples of Agent include person, organization, and software agent.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Agent-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": [
+          "dcterms:AgentClass",
+          "rdfs:Class"
+        ],
+        "rdfs:comment": {
+          "@value": "A resource that acts or has the power to act.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Agent",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:AgentClass",
+        "dcterms:description": {
+          "@value": "Examples of Agent Class include groups seen as classes, such as students, women, charities, lecturers.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#AgentClass-003"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2012-06-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A group of agents.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Agent Class",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "rdfs:Class"
+        }
+      },
+      {
+        "@id": "dcterms:BibliographicResource",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#BibliographicResource-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A book, article, or other documentary resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Bibliographic Resource",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:Box",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Box-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of regions in space defined by their geographic coordinates according to the DCMI Box Encoding Scheme.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "DCMI Box",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://dublincore.org/documents/dcmi-box/"
+        }
+      },
+      {
+        "@id": "dcterms:DCMIType",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#DCMIType-005"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2012-06-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of classes specified by the DCMI Type Vocabulary, used to categorize the nature or genre of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "DCMI Type Vocabulary",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://purl.org/dc/dcmitype/"
+        }
+      },
+      {
+        "@id": "dcterms:DDC",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#DDC-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of conceptual resources specified by the Dewey Decimal Classification.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "DDC",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.oclc.org/dewey/"
+        }
+      },
+      {
+        "@id": "dcterms:FileFormat",
+        "dcterms:description": {
+          "@value": "Examples include the formats defined by the list of Internet Media Types.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#FileFormat-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A digital resource format.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "File Format",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "dcterms:MediaType"
+        }
+      },
+      {
+        "@id": "dcterms:Frequency",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Frequency-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A rate at which something recurs.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Frequency",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:IMT",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#IMT-004"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of media types specified by the Internet Assigned Numbers Authority.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "IMT",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.iana.org/assignments/media-types/"
+        }
+      },
+      {
+        "@id": "dcterms:ISO3166",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#ISO3166-004"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of codes listed in ISO 3166-1 for the representation of names of countries.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "ISO 3166",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.iso.org/iso/en/prods-services/iso3166ma/02iso-3166-code-lists/list-en1.html"
+        }
+      },
+      {
+        "@id": "dcterms:ISO639-2",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#ISO639-2-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The three-letter alphabetic codes listed in ISO639-2 for the representation of names of languages.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "ISO 639-2",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://lcweb.loc.gov/standards/iso639-2/langhome.html"
+        }
+      },
+      {
+        "@id": "dcterms:ISO639-3",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#ISO639-3-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of three-letter codes listed in ISO 639-3 for the representation of names of languages.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "ISO 639-3",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.sil.org/iso639-3/"
+        }
+      },
+      {
+        "@id": "dcterms:Jurisdiction",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Jurisdiction-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "The extent or range of judicial, law enforcement, or other authority.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Jurisdiction",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "dcterms:LocationPeriodOrJurisdiction"
+        }
+      },
+      {
+        "@id": "dcterms:LCC",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#LCC-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of conceptual resources specified by the Library of Congress Classification.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "LCC",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://lcweb.loc.gov/catdir/cpso/lcco/lcco.html"
+        }
+      },
+      {
+        "@id": "dcterms:LCSH",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#LCSH-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of labeled concepts specified by the Library of Congress Subject Headings.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "LCSH",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:LicenseDocument",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#LicenseDocument-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A legal document giving official permission to do something with a Resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "License Document",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "dcterms:RightsStatement"
+        }
+      },
+      {
+        "@id": "dcterms:LinguisticSystem",
+        "dcterms:description": {
+          "@value": "Examples include written, spoken, sign, and computer languages.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#LinguisticSystem-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A system of signs, symbols, sounds, gestures, or rules used in communication.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Linguistic System",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:Location",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Location-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A spatial region or named place.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Location",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "dcterms:LocationPeriodOrJurisdiction"
+        }
+      },
+      {
+        "@id": "dcterms:LocationPeriodOrJurisdiction",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#LocationPeriodOrJurisdiction-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A location, period of time, or jurisdiction.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Location, Period, or Jurisdiction",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:MESH",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#MESH-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of labeled concepts specified by the Medical Subject Headings.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "MeSH",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.nlm.nih.gov/mesh/meshhome.html"
+        }
+      },
+      {
+        "@id": "dcterms:MediaType",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#MediaType-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A file format or physical medium.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Media Type",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "dcterms:MediaTypeOrExtent"
+        }
+      },
+      {
+        "@id": "dcterms:MediaTypeOrExtent",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#MediaTypeOrExtent-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A media type or extent.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Media Type or Extent",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:MethodOfAccrual",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#MethodOfAccrual-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A method by which resources are added to a collection.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Method of Accrual",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:MethodOfInstruction",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#MethodOfInstruction-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A process that is used to engender knowledge, attitudes, and skills.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Method of Instruction",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:NLM",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#NLM-002"
+        },
+        "dcterms:issued": {
+          "@value": "2005-06-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of conceptual resources specified by the National Library of Medicine Classification.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "NLM",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://wwwcf.nlm.nih.gov/class/"
+        }
+      },
+      {
+        "@id": "dcterms:Period",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Period-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of time intervals defined by their limits according to the DCMI Period Encoding Scheme.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "DCMI Period",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://dublincore.org/documents/dcmi-period/"
+        }
+      },
+      {
+        "@id": "dcterms:PeriodOfTime",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#PeriodOfTime-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "An interval of time that is named or defined by its start and end dates.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Period of Time",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "dcterms:LocationPeriodOrJurisdiction"
+        }
+      },
+      {
+        "@id": "dcterms:PhysicalMedium",
+        "dcterms:description": {
+          "@value": "Examples include paper, canvas, or DVD.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#PhysicalMedium-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A physical material or carrier.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Physical Medium",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "dcterms:MediaType"
+        }
+      },
+      {
+        "@id": "dcterms:PhysicalResource",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#PhysicalResource-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A material thing.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Physical Resource",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:Point",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Point-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of points in space defined by their geographic coordinates according to the DCMI Point Encoding Scheme.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "DCMI Point",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://dublincore.org/documents/dcmi-point/"
+        }
+      },
+      {
+        "@id": "dcterms:Policy",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Policy-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A plan or course of action by an authority, intended to influence and determine decisions, actions, and other matters.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Policy",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:ProvenanceStatement",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#ProvenanceStatement-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity, and interpretation.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Provenance Statement",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:RFC1766",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#RFC1766-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of tags, constructed according to RFC 1766, for the identification of languages.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "RFC 1766",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.ietf.org/rfc/rfc1766.txt"
+        }
+      },
+      {
+        "@id": "dcterms:RFC3066",
+        "dcterms:description": {
+          "@value": "RFC 3066 has been obsoleted by RFC 4646.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#RFC3066-002"
+        },
+        "dcterms:issued": {
+          "@value": "2002-07-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of tags constructed according to RFC 3066 for the identification of languages.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "RFC 3066",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.ietf.org/rfc/rfc3066.txt"
+        }
+      },
+      {
+        "@id": "dcterms:RFC4646",
+        "dcterms:description": {
+          "@value": "RFC 4646 obsoletes RFC 3066.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#RFC4646-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of tags constructed according to RFC 4646 for the identification of languages.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "RFC 4646",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.ietf.org/rfc/rfc4646.txt"
+        }
+      },
+      {
+        "@id": "dcterms:RFC5646",
+        "dcterms:description": {
+          "@value": "RFC 5646 obsoletes RFC 4646.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#RFC5646-001"
+        },
+        "dcterms:issued": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of tags constructed according to RFC 5646 for the identification of languages.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "RFC 5646",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.ietf.org/rfc/rfc5646.txt"
+        }
+      },
+      {
+        "@id": "dcterms:RightsStatement",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#RightsStatement-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A statement about the intellectual property rights (IPR) held in or over a Resource, a legal document giving official permission to do something with a resource, or a statement about access rights.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Rights Statement",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:SizeOrDuration",
+        "dcterms:description": {
+          "@value": "Examples include a number of pages, a specification of length, width, and breadth, or a period in hours, minutes, and seconds.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#SizeOrDuration-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A dimension or extent, or a time taken to play or execute.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Size or Duration",
+          "@language": "en"
+        },
+        "rdfs:subClassOf": {
+          "@id": "dcterms:MediaTypeOrExtent"
+        }
+      },
+      {
+        "@id": "dcterms:Standard",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#Standard-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Class",
+        "rdfs:comment": {
+          "@value": "A basis for comparison; a reference point against which other things can be evaluated.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Standard",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:TGN",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#TGN-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of places specified by the Getty Thesaurus of Geographic Names.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "TGN",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.getty.edu/research/tools/vocabulary/tgn/index.html"
+        }
+      },
+      {
+        "@id": "dcterms:UDC",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#UDC-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "dcam:VocabularyEncodingScheme",
+        "rdfs:comment": {
+          "@value": "The set of conceptual resources specified by the Universal Decimal Classification.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "UDC",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.udcc.org/"
+        }
+      },
+      {
+        "@id": "dcterms:URI",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#URI-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of identifiers constructed according to the generic syntax for Uniform Resource Identifiers as specified by the Internet Engineering Task Force.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "URI",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.ietf.org/rfc/rfc3986.txt"
+        }
+      },
+      {
+        "@id": "dcterms:W3CDTF",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#W3CDTF-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdfs:Datatype",
+        "rdfs:comment": {
+          "@value": "The set of dates and times constructed according to the W3C Date and Time Formats Specification.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "W3C-DTF",
+          "@language": "en"
+        },
+        "rdfs:seeAlso": {
+          "@id": "http://www.w3.org/TR/NOTE-datetime"
+        }
+      },
+      {
+        "@id": "dcterms:abstract",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#abstract-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A summary of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Abstract",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/description"
+          },
+          {
+            "@id": "dcterms:description"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:accessRights",
+        "dcterms:description": {
+          "@value": "Access Rights may include information regarding access or restrictions based on privacy, security, or other policies.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#accessRights-002"
+        },
+        "dcterms:issued": {
+          "@value": "2003-02-15",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Information about who can access the resource or an indication of its security status.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Access Rights",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:RightsStatement"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/rights"
+          },
+          {
+            "@id": "dcterms:rights"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:accrualMethod",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#accrualMethod-003"
+        },
+        "dcterms:issued": {
+          "@value": "2005-06-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The method by which items are added to a collection.",
+          "@language": "en"
+        },
+        "rdfs:domain": {
+          "@id": "http://purl.org/dc/dcmitype/Collection"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Accrual Method",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:MethodOfAccrual"
+        }
+      },
+      {
+        "@id": "dcterms:accrualPeriodicity",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#accrualPeriodicity-003"
+        },
+        "dcterms:issued": {
+          "@value": "2005-06-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The frequency with which items are added to a collection.",
+          "@language": "en"
+        },
+        "rdfs:domain": {
+          "@id": "http://purl.org/dc/dcmitype/Collection"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Accrual Periodicity",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:Frequency"
+        }
+      },
+      {
+        "@id": "dcterms:accrualPolicy",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#accrualPolicy-003"
+        },
+        "dcterms:issued": {
+          "@value": "2005-06-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The policy governing the addition of items to a collection.",
+          "@language": "en"
+        },
+        "rdfs:domain": {
+          "@id": "http://purl.org/dc/dcmitype/Collection"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Accrual Policy",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:Policy"
+        }
+      },
+      {
+        "@id": "dcterms:alternative",
+        "dcterms:description": {
+          "@value": "The distinction between titles and alternative titles is application-specific.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#alternative-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "An alternative name for the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Alternative Title",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/title"
+          },
+          {
+            "@id": "dcterms:title"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:audience",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#audience-003"
+        },
+        "dcterms:issued": {
+          "@value": "2001-05-21",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A class of entity for whom the resource is intended or useful.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Audience",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:AgentClass"
+        }
+      },
+      {
+        "@id": "dcterms:available",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#available-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Date (often a range) that the resource became or will become available.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date Available",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+          },
+          {
+            "@id": "dcterms:date"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:bibliographicCitation",
+        "dcterms:description": {
+          "@value": "Recommended practice is to include sufficient bibliographic detail to identify the resource as unambiguously as possible.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#bibliographicCitation-002"
+        },
+        "dcterms:issued": {
+          "@value": "2003-02-15",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A bibliographic reference for the resource.",
+          "@language": "en"
+        },
+        "rdfs:domain": {
+          "@id": "dcterms:BibliographicResource"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Bibliographic Citation",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+          },
+          {
+            "@id": "dcterms:identifier"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:conformsTo",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#conformsTo-003"
+        },
+        "dcterms:issued": {
+          "@value": "2001-05-21",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "An established standard to which the described resource conforms.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Conforms To",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:Standard"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:contributor",
+        "dcterms:description": {
+          "@value": "Examples of a Contributor include a person, an organization, or a service.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#contributorT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "An entity responsible for making contributions to the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Contributor",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:Agent"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/contributor"
+        }
+      },
+      {
+        "@id": "dcterms:coverage",
+        "dcterms:description": {
+          "@value": "Spatial topic and spatial applicability may be a named place or a location specified by its geographic coordinates. Temporal topic may be a named period, date, or date range. A jurisdiction may be a named administrative entity or a geographic place to which the resource applies. Recommended best practice is to use a controlled vocabulary such as the Thesaurus of Geographic Names [TGN]. Where appropriate, named places or time periods can be used in preference to numeric identifiers such as sets of coordinates or date ranges.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#coverageT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The spatial or temporal topic of the resource, the spatial applicability of the resource, or the jurisdiction under which the resource is relevant.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Coverage",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:LocationPeriodOrJurisdiction"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/coverage"
+        }
+      },
+      {
+        "@id": "dcterms:created",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#created-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Date of creation of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date Created",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+          },
+          {
+            "@id": "dcterms:date"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:creator",
+        "dcterms:description": {
+          "@value": "Examples of a Creator include a person, an organization, or a service.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#creatorT-002"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "An entity primarily responsible for making the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Creator",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:Agent"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/creator"
+          },
+          {
+            "@id": "dcterms:contributor"
+          }
+        ],
+        "owl:equivalentProperty": {
+          "@id": "http://xmlns.com/foaf/0.1/maker"
+        }
+      },
+      {
+        "@id": "dcterms:date",
+        "dcterms:description": {
+          "@value": "Date may be used to express temporal information at any level of granularity.  Recommended best practice is to use an encoding scheme, such as the W3CDTF profile of ISO 8601 [W3CDTF].",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#dateT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A point or period of time associated with an event in the lifecycle of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/date"
+        }
+      },
+      {
+        "@id": "dcterms:dateAccepted",
+        "dcterms:description": {
+          "@value": "Examples of resources to which a Date Accepted may be relevant are a thesis (accepted by a university department) or an article (accepted by a journal).",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#dateAccepted-002"
+        },
+        "dcterms:issued": {
+          "@value": "2002-07-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Date of acceptance of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date Accepted",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+          },
+          {
+            "@id": "dcterms:date"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:dateCopyrighted",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#dateCopyrighted-002"
+        },
+        "dcterms:issued": {
+          "@value": "2002-07-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Date of copyright.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date Copyrighted",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+          },
+          {
+            "@id": "dcterms:date"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:dateSubmitted",
+        "dcterms:description": {
+          "@value": "Examples of resources to which a Date Submitted may be relevant are a thesis (submitted to a university department) or an article (submitted to a journal).",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#dateSubmitted-002"
+        },
+        "dcterms:issued": {
+          "@value": "2002-07-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Date of submission of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date Submitted",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+          },
+          {
+            "@id": "dcterms:date"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:description",
+        "dcterms:description": {
+          "@value": "Description may include but is not limited to: an abstract, a table of contents, a graphical representation, or a free-text account of the resource.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#descriptionT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "An account of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Description",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/description"
+        }
+      },
+      {
+        "@id": "dcterms:educationLevel",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#educationLevel-002"
+        },
+        "dcterms:issued": {
+          "@value": "2002-07-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A class of entity, defined in terms of progression through an educational or training context, for which the described resource is intended.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Audience Education Level",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:AgentClass"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "dcterms:audience"
+        }
+      },
+      {
+        "@id": "dcterms:extent",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#extent-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The size or duration of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Extent",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:SizeOrDuration"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/format"
+          },
+          {
+            "@id": "dcterms:format"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:format",
+        "dcterms:description": {
+          "@value": "Examples of dimensions include size and duration. Recommended best practice is to use a controlled vocabulary such as the list of Internet Media Types [MIME].",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#formatT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The file format, physical medium, or dimensions of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Format",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:MediaTypeOrExtent"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/format"
+        }
+      },
+      {
+        "@id": "dcterms:hasFormat",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#hasFormat-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that is substantially the same as the pre-existing described resource, but in another format.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Has Format",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:hasPart",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#hasPart-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that is included either physically or logically in the described resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Has Part",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:hasVersion",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#hasVersion-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that is a version, edition, or adaptation of the described resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Has Version",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:identifier",
+        "dcterms:description": {
+          "@value": "Recommended best practice is to identify the resource by means of a string conforming to a formal identification system. ",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#identifierT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "An unambiguous reference to the resource within a given context.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Identifier",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/identifier"
+        }
+      },
+      {
+        "@id": "dcterms:instructionalMethod",
+        "dcterms:description": {
+          "@value": "Instructional Method will typically include ways of presenting instructional materials or conducting instructional activities, patterns of learner-to-learner and learner-to-instructor interactions, and mechanisms by which group and individual levels of learning are measured.  Instructional methods include all aspects of the instruction and learning processes from planning and implementation through evaluation and feedback.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#instructionalMethod-002"
+        },
+        "dcterms:issued": {
+          "@value": "2005-06-13",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A process, used to engender knowledge, attitudes and skills, that the described resource is designed to support.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Instructional Method",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:MethodOfInstruction"
+        }
+      },
+      {
+        "@id": "dcterms:isFormatOf",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#isFormatOf-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that is substantially the same as the described resource, but in another format.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Is Format Of",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:isPartOf",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#isPartOf-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource in which the described resource is physically or logically included.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Is Part Of",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:isReferencedBy",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#isReferencedBy-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that references, cites, or otherwise points to the described resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Is Referenced By",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:isReplacedBy",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#isReplacedBy-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that supplants, displaces, or supersedes the described resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Is Replaced By",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:isRequiredBy",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#isRequiredBy-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that requires the described resource to support its function, delivery, or coherence.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Is Required By",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:isVersionOf",
+        "dcterms:description": {
+          "@value": "Changes in version imply substantive changes in content rather than differences in format.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#isVersionOf-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource of which the described resource is a version, edition, or adaptation.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Is Version Of",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:issued",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#issued-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Date of formal issuance (e.g., publication) of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date Issued",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+          },
+          {
+            "@id": "dcterms:date"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:language",
+        "dcterms:description": {
+          "@value": "Recommended best practice is to use a controlled vocabulary such as RFC 4646 [RFC4646].",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#languageT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A language of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Language",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:LinguisticSystem"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/language"
+        }
+      },
+      {
+        "@id": "dcterms:license",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#license-002"
+        },
+        "dcterms:issued": {
+          "@value": "2004-06-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A legal document giving official permission to do something with the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "License",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:LicenseDocument"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/rights"
+          },
+          {
+            "@id": "dcterms:rights"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:mediator",
+        "dcterms:description": {
+          "@value": "In an educational context, a mediator might be a parent, teacher, teaching assistant, or care-giver.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#mediator-003"
+        },
+        "dcterms:issued": {
+          "@value": "2001-05-21",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "An entity that mediates access to the resource and for whom the resource is intended or useful.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Mediator",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:AgentClass"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "dcterms:audience"
+        }
+      },
+      {
+        "@id": "dcterms:medium",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#medium-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The material or physical carrier of the resource.",
+          "@language": "en"
+        },
+        "rdfs:domain": {
+          "@id": "dcterms:PhysicalResource"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Medium",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:PhysicalMedium"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/format"
+          },
+          {
+            "@id": "dcterms:format"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:modified",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#modified-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Date on which the resource was changed.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date Modified",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+          },
+          {
+            "@id": "dcterms:date"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:provenance",
+        "dcterms:description": {
+          "@value": "The statement may include a description of any changes successive custodians made to the resource.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#provenance-002"
+        },
+        "dcterms:issued": {
+          "@value": "2004-09-20",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A statement of any changes in ownership and custody of the resource since its creation that are significant for its authenticity, integrity, and interpretation.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Provenance",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:ProvenanceStatement"
+        }
+      },
+      {
+        "@id": "dcterms:publisher",
+        "dcterms:description": {
+          "@value": "Examples of a Publisher include a person, an organization, or a service.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#publisherT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "An entity responsible for making the resource available.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Publisher",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:Agent"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/publisher"
+        }
+      },
+      {
+        "@id": "dcterms:references",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#references-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that is referenced, cited, or otherwise pointed to by the described resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "References",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:relation",
+        "dcterms:description": {
+          "@value": "Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system. ",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#relationT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Relation",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/relation"
+        },
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:replaces",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#replaces-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that is supplanted, displaced, or superseded by the described resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Replaces",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:requires",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#requires-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource that is required by the described resource to support its function, delivery, or coherence.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Requires",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/relation"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:rights",
+        "dcterms:description": {
+          "@value": "Typically, rights information includes a statement about various property rights associated with the resource, including intellectual property rights.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#rightsT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Information about rights held in and over the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Rights",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:RightsStatement"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/rights"
+        }
+      },
+      {
+        "@id": "dcterms:rightsHolder",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#rightsHolder-002"
+        },
+        "dcterms:issued": {
+          "@value": "2004-06-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A person or organization owning or managing rights over the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Rights Holder",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:Agent"
+        }
+      },
+      {
+        "@id": "dcterms:source",
+        "dcterms:description": {
+          "@value": "The described resource may be derived from the related resource in whole or in part. Recommended best practice is to identify the related resource by means of a string conforming to a formal identification system.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#sourceT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A related resource from which the described resource is derived.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Source",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+          },
+          {
+            "@id": "dcterms:relation"
+          }
+        ],
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:spatial",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#spatial-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Spatial characteristics of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Spatial Coverage",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:Location"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/coverage"
+          },
+          {
+            "@id": "dcterms:coverage"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:subject",
+        "dcterms:description": {
+          "@value": "Typically, the subject will be represented using keywords, key phrases, or classification codes. Recommended best practice is to use a controlled vocabulary.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#subjectT-002"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2012-06-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The topic of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Subject",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/subject"
+        },
+        "http://www.w3.org/2004/02/skos/core#note": {
+          "@value": "This term is intended to be used with non-literal values as defined in the DCMI Abstract Model (http://dublincore.org/documents/abstract-model/).  As of December 2007, the DCMI Usage Board is seeking a way to express this intention with a formal range declaration.",
+          "@language": "en"
+        }
+      },
+      {
+        "@id": "dcterms:tableOfContents",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#tableOfContents-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A list of subunits of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Table Of Contents",
+          "@language": "en"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/description"
+          },
+          {
+            "@id": "dcterms:description"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:temporal",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#temporal-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Temporal characteristics of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Temporal Coverage",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "dcterms:PeriodOfTime"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/coverage"
+          },
+          {
+            "@id": "dcterms:coverage"
+          }
+        ]
+      },
+      {
+        "@id": "dcterms:title",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#titleT-002"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2010-10-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "A name given to the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Title",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/title"
+        }
+      },
+      {
+        "@id": "dcterms:type",
+        "dcterms:description": {
+          "@value": "Recommended best practice is to use a controlled vocabulary such as the DCMI Type Vocabulary [DCMITYPE]. To describe the file format, physical medium, or dimensions of the resource, use the Format element.",
+          "@language": "en"
+        },
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#typeT-001"
+        },
+        "dcterms:issued": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "The nature or genre of the resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Type",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Class"
+        },
+        "rdfs:subPropertyOf": {
+          "@id": "http://purl.org/dc/elements/1.1/type"
+        }
+      },
+      {
+        "@id": "dcterms:valid",
+        "dcterms:hasVersion": {
+          "@id": "http://dublincore.org/usage/terms/history/#valid-003"
+        },
+        "dcterms:issued": {
+          "@value": "2000-07-11",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "dcterms:modified": {
+          "@value": "2008-01-14",
+          "@type": "http://www.w3.org/2001/XMLSchema#date"
+        },
+        "@type": "rdf:Property",
+        "rdfs:comment": {
+          "@value": "Date (often a range) of validity of a resource.",
+          "@language": "en"
+        },
+        "rdfs:isDefinedBy": {
+          "@id": "http://purl.org/dc/terms/"
+        },
+        "rdfs:label": {
+          "@value": "Date Valid",
+          "@language": "en"
+        },
+        "rdfs:range": {
+          "@id": "rdfs:Literal"
+        },
+        "rdfs:subPropertyOf": [
+          {
+            "@id": "http://purl.org/dc/elements/1.1/date"
+          },
+          {
+            "@id": "dcterms:date"
+          }
+        ]
+      }
+    ]
+  }

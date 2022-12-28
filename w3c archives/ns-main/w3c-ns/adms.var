@@ -1,0 +1,7 @@
+URI: adms
+
+URI: adms.ttl
+Content-Type: text/turtle
+
+URI: adms.rdf
+Content-Type: application/rdf+xml

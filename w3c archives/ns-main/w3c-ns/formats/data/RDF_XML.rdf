@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:formats="http://www.w3.org/ns/formats/"
+>
+  <formats:Format rdf:about="http://www.w3.org/ns/formats/RDF_XML">
+    <rdfs:seeAlso rdf:resource="http://www.w3.org/TR/rdf-syntax-grammar/#section-MIME-Type"/>
+    <dcterms:creator>
+      <foaf:Person rdf:about="http://www.ivan-herman.net/foaf#me">
+        <rdfs:seeAlso rdf:resource="http://www.ivan-herman.net/foaf"/>
+        <foaf:workplaceHomepage rdf:resource="http://www.w3.org"/>
+        <foaf:name>Ivan Herman</foaf:name>
+        <foaf:mbox rdf:resource="mailto:ivan@w3.org"/>
+        <foaf:title>Semantic Web Activity Lead</foaf:title>
+      </foaf:Person>
+    </dcterms:creator>
+    <dcterms:description>Unique identifier for the RDF serialization in XML (RDF/XML)</dcterms:description>
+    <formats:preferred_suffix>.rdf</formats:preferred_suffix>
+    <dcterms:modified>2013-03-25</dcterms:modified>
+    <rdfs:comment>RDF/XML is defined by the “RDF/XML Syntax Specification” W3C Recommendation.</rdfs:comment>
+    <dcterms:created>2010-05-04</dcterms:created>
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/TR/rdf-syntax-grammar/"/>
+    <formats:media_type>application/rdf+xml</formats:media_type>
+  </formats:Format>
+</rdf:RDF>
+

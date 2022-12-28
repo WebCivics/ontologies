@@ -1,0 +1,12 @@
+@prefix : <#>.
+@prefix f: <../media-types/application/fastinfoset#>.
+@prefix reg: <https://www.w3.org/ns/assignments/reg#>.
+@prefix f0: <../media-types/application/fastsoap#>.
+@prefix so: <../media-types/application/soap+fastinfoset#>.
+
+f:Resource reg:xref :.
+
+f0:Resource reg:xref :.
+
+so:Resource reg:xref :.
+

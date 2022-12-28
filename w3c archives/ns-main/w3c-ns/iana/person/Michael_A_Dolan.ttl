@@ -1,0 +1,50 @@
+@prefix : <#>.
+@prefix vnd: <../media-types/application/vnd.dece-zip#>.
+@prefix reg: <https://www.w3.org/ns/assignments/reg#>.
+@prefix vn: <../media-types/application/vnd.dece.data#>.
+@prefix v: <../media-types/application/vnd.dece.ttml+xml#>.
+@prefix n1: <../media-types/application/vnd.dece.unspecified#>.
+@prefix n2: <../media-types/audio/vnd.dece.audio#>.
+@prefix n3: <../media-types/image/vnd.dece.graphic#>.
+@prefix medi: <../media-types/media-types.ttl#>.
+@prefix n4: <../media-types/video/vnd.dece-mp4#>.
+@prefix n5: <../media-types/video/vnd.dece.hd#>.
+@prefix n6: <../media-types/video/vnd.dece.mobile#>.
+@prefix n7: <../media-types/video/vnd.dece.pd#>.
+@prefix n8: <../media-types/video/vnd.dece.sd#>.
+@prefix n9: <../media-types/video/vnd.dece.video#>.
+@prefix n10: <../media-types/video/vnd.uvvu-mp4#>.
+
+vnd:Resource reg:xref :.
+
+vn:Resource reg:xref :.
+
+v:Resource reg:xref :.
+
+n1:Resource reg:xref :.
+
+n2:Resource reg:xref :.
+
+n3:Resource reg:xref :.
+
+medi:n0 reg:person :.
+
+n4:Resource reg:xref :.
+
+n5:Resource reg:xref :.
+
+n6:Resource reg:xref :.
+
+n7:Resource reg:xref :.
+
+n8:Resource reg:xref :.
+
+n9:Resource reg:xref :.
+
+n10:Resource reg:xref :.
+
+:
+    reg:id "Michael_A_Dolan";
+    reg:name "Michael A Dolan";
+    reg:updated "2011-09-06";
+    reg:uri "mailto:md.iana&newtbt.com".

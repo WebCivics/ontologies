@@ -1,0 +1,13 @@
+URI: json-ld
+
+URI: json-ld.json
+Content-Type: application/json; qs=0.4
+
+URI: json-ld.jsonld
+Content-Type: application/ld+json
+
+URI: json-ld.ttl
+Content-Type: text/turtle; qs=0.3
+
+URI: json-ld.html
+Content-Type: text/html

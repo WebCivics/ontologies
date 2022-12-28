@@ -1,0 +1,35 @@
+@prefix : <#>.
+@prefix vnd: <../media-types/application/vnd.kde.karbon#>.
+@prefix reg: <https://www.w3.org/ns/assignments/reg#>.
+@prefix vn: <../media-types/application/vnd.kde.kchart#>.
+@prefix v: <../media-types/application/vnd.kde.kformula#>.
+@prefix n1: <../media-types/application/vnd.kde.kivio#>.
+@prefix n2: <../media-types/application/vnd.kde.kontour#>.
+@prefix n3: <../media-types/application/vnd.kde.kpresenter#>.
+@prefix n4: <../media-types/application/vnd.kde.kspread#>.
+@prefix n5: <../media-types/application/vnd.kde.kword#>.
+@prefix medi: <../media-types/media-types.ttl#>.
+
+vnd:Resource reg:xref :.
+
+vn:Resource reg:xref :.
+
+v:Resource reg:xref :.
+
+n1:Resource reg:xref :.
+
+n2:Resource reg:xref :.
+
+n3:Resource reg:xref :.
+
+n4:Resource reg:xref :.
+
+n5:Resource reg:xref :.
+
+medi:n0 reg:person :.
+
+:
+    reg:id "David_Faure";
+    reg:name "David Faure";
+    reg:updated "2002-08-20";
+    reg:uri "mailto:faure&kde.org".

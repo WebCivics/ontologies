@@ -1,0 +1,165 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://www.w3.org/2006/timezone>
+  a owl:Ontology ;
+  rdfs:comment """
+      A time zone ontology.
+    """ ;
+  rdfs:seeAlso <http://www.w3.org/TR/owl-time> ;
+  owl:imports <http://www.daml.org/2001/09/countries/iso-3166-ont>, <http://www.daml.ri.cmu.edu/ont/USRegionState.daml> .
+
+<http://www.w3.org/2006/timezone#Region> a owl:Class .
+<http://www.w3.org/2006/timezone#PoliticalRegion>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2006/timezone#Region>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#name> ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#hasParentRegion> ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#hasTimeZone> ;
+    owl:maxCardinality "3"^^xsd:nonNegativeInteger
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#observesDaylightSavingsTime> ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#hasDaylightSavingsPolicy> ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#exceptionalRegion> ;
+    owl:minCardinality "0"^^xsd:nonNegativeInteger
+  ], [
+    a owl:Restriction ;
+    owl:minCardinality "0"^^xsd:nonNegativeInteger ;
+    owl:onProperty <http://www.w3.org/2006/timezone#timeZonePart>
+  ] .
+
+<http://www.w3.org/2006/timezone#Country>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2006/timezone#PoliticalRegion> .
+
+<http://www.w3.org/2006/timezone#State>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2006/timezone#PoliticalRegion> ;
+  owl:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#hasParentRegion> ;
+    owl:allValuesFrom <http://www.w3.org/2006/timezone#Country>
+  ] .
+
+<http://www.w3.org/2006/timezone#County>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2006/timezone#PoliticalRegion> ;
+  owl:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#hasParentRegion> ;
+    owl:allValuesFrom <http://www.w3.org/2006/timezone#State>
+  ] .
+
+<http://www.w3.org/2006/timezone#Reservation>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2006/timezone#PoliticalRegion> ;
+  owl:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#hasParentRegion> ;
+    owl:allValuesFrom <http://www.w3.org/2006/timezone#Country>
+  ] .
+
+<http://www.w3.org/2006/timezone#City>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2006/timezone#PoliticalRegion> .
+
+<http://www.w3.org/2006/timezone#TimeZone>
+  a owl:Class ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#name> ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#GMToffset> ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+  ] .
+
+<http://www.w3.org/2006/timezone#DaylightSavingsPolicy> a owl:Class .
+<http://www.w3.org/2006/timezone#EnumeratedDaylightSavingsPolicy>
+  a owl:Class ;
+  rdfs:subClassOf <http://www.w3.org/2006/timezone#DaylightSavingsPolicy>, [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#DLSstartDate> ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+  ], [
+    a owl:Restriction ;
+    owl:onProperty <http://www.w3.org/2006/timezone#DLSendDate> ;
+    owl:maxCardinality "1"^^xsd:nonNegativeInteger
+  ] .
+
+<http://www.w3.org/2006/timezone#hasAncestorRegion>
+  a owl:ObjectProperty, owl:TransitiveProperty ;
+  rdfs:domain <http://www.w3.org/2006/timezone#Region> ;
+  rdfs:range <http://www.w3.org/2006/timezone#Region> .
+
+<http://www.w3.org/2006/timezone#hasParentRegion>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf <http://www.w3.org/2006/timezone#hasAncestorRegion> .
+
+<http://www.w3.org/2006/timezone#hasTimeZone>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.w3.org/2006/timezone#Region> ;
+  rdfs:range <http://www.w3.org/2006/timezone#TimeZone> .
+
+<http://www.w3.org/2006/timezone#exceptionalRegion>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.w3.org/2006/timezone#Region> ;
+  rdfs:range <http://www.w3.org/2006/timezone#Region> .
+
+<http://www.w3.org/2006/timezone#timeZonePart>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.w3.org/2006/timezone#Region> ;
+  rdfs:range <http://www.w3.org/2006/timezone#Region> .
+
+<http://www.w3.org/2006/timezone#countryOf>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf <http://www.w3.org/2006/timezone#hasParentRegion> ;
+  rdfs:range <http://www.w3.org/2006/timezone#Country> .
+
+<http://www.w3.org/2006/timezone#stateOf>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf <http://www.w3.org/2006/timezone#hasParentRegion> ;
+  rdfs:range <http://www.w3.org/2006/timezone#State> .
+
+<http://www.w3.org/2006/timezone#name>
+  a owl:DatatypeProperty ;
+  owl:equivalentProperty <http://www.daml.org/2001/09/countries/iso-3166-ont#name> .
+
+<http://www.w3.org/2006/timezone#hasDaylightSavingsPolicy>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://www.w3.org/2006/timezone#Region> ;
+  rdfs:range <http://www.w3.org/2006/timezone#DaylightSavingsPolicy> .
+
+<http://www.w3.org/2006/timezone#observesDaylightSavingsTime>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://www.w3.org/2006/timezone#Region> ;
+  rdfs:range xsd:boolean .
+
+<http://www.w3.org/2006/timezone#DLSstartDate>
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:date .
+
+<http://www.w3.org/2006/timezone#DLSendDate>
+  a owl:DatatypeProperty ;
+  rdfs:range xsd:date .
+
+<http://www.w3.org/2006/timezone#GMToffset>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://www.w3.org/2006/timezone#TimeZone> ;
+  rdfs:range xsd:duration .

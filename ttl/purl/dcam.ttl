@@ -1,0 +1,40 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://purl.org/dc/dcam/>
+  dc:title "Metadata terms for vocabulary description"@en ;
+  dc:publisher <http://purl.org/dc/aboutdcmi#DCMI> ;
+  dc:modified "2012-06-14"^^xsd:date .
+
+<http://purl.org/dc/dcam/VocabularyEncodingScheme>
+  rdfs:label "Vocabulary Encoding Scheme"@en ;
+  rdfs:comment "An enumerated set of resources."@en ;
+  a rdfs:Class ;
+  rdfs:seeAlso <https://www.dublincore.org/specifications/dublin-core/2007/06/04/abstract-model/> ;
+  dc:issued "2008-01-14"^^xsd:date ;
+  rdfs:isDefinedBy <http://purl.org/dc/dcam/> .
+
+<http://purl.org/dc/dcam/domainIncludes>
+  rdfs:label "Domain Includes"@en ;
+  rdfs:comment "A suggested class for subjects of this property."@en ;
+  a rdf:Property ;
+  dc:issued "2020-01-20"^^xsd:date ;
+  rdfs:isDefinedBy <http://purl.org/dc/dcam/> .
+
+<http://purl.org/dc/dcam/memberOf>
+  rdfs:label "Member Of"@en ;
+  rdfs:comment "A relationship between a resource and a vocabulary encoding scheme which indicates that the resource is a member of a set."@en ;
+  a rdf:Property ;
+  rdfs:range <http://purl.org/dc/dcam/VocabularyEncodingScheme> ;
+  rdfs:seeAlso <https://www.dublincore.org/specifications/dublin-core/2007/06/04/abstract-model/> ;
+  dc:issued "2008-01-14"^^xsd:date ;
+  rdfs:isDefinedBy <http://purl.org/dc/dcam/> .
+
+<http://purl.org/dc/dcam/rangeIncludes>
+  rdfs:label "Range Includes"@en ;
+  rdfs:comment "A suggested class for values of this property."@en ;
+  a rdf:Property ;
+  dc:issued "2020-01-20"^^xsd:date ;
+  rdfs:isDefinedBy <http://purl.org/dc/dcam/> .

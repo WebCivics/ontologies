@@ -1,0 +1,1524 @@
+{
+  "@context": {
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "dc11": "http://purl.org/dc/elements/1.1/",
+    "wot": "http://xmlns.com/wot/0.1/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "ns0": "http://www.w3.org/2003/06/sw-vocab-status/ns#",
+    "schema": "http://schema.org/",
+    "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
+    "dc": "http://purl.org/dc/terms/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "@graph": [
+    {
+      "@id": "foaf:",
+      "@type": "owl:Ontology",
+      "dc11:title": "Friend of a Friend (FOAF) vocabulary",
+      "dc11:description": "The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+    },
+    {
+      "@id": "wot:assurance",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "wot:src_assurance",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc11:description",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc11:title",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "dc11:date",
+      "@type": "owl:AnnotationProperty"
+    },
+    {
+      "@id": "rdfs:Class",
+      "@type": "owl:Class"
+    },
+    {
+      "@id": "foaf:LabelProperty",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "Label Property",
+      "rdfs:comment": "A foaf:LabelProperty is any RDF property with texual values that serve as labels.",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:Person",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": "Person",
+      "rdfs:comment": "A person.",
+      "ns0:term_status": "stable",
+      "owl:equivalentClass": [
+        {
+          "@id": "schema:Person"
+        },
+        {
+          "@id": "http://www.w3.org/2000/10/swap/pim/contact#Person"
+        }
+      ],
+      "rdfs:subClassOf": [
+        {
+          "@id": "foaf:Agent"
+        },
+        {
+          "@id": "geo:SpatialThing"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:disjointWith": [
+        {
+          "@id": "foaf:Organization"
+        },
+        {
+          "@id": "foaf:Project"
+        }
+      ]
+    },
+    {
+      "@id": "foaf:Agent",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "Agent",
+      "rdfs:comment": "An agent (eg. person, group, software or physical artifact).",
+      "owl:equivalentClass": {
+        "@id": "dc:Agent"
+      }
+    },
+    {
+      "@id": "geo:SpatialThing",
+      "@type": "owl:Class",
+      "rdfs:label": "Spatial Thing"
+    },
+    {
+      "@id": "foaf:Document",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": "Document",
+      "rdfs:comment": "A document.",
+      "ns0:term_status": "stable",
+      "owl:equivalentClass": {
+        "@id": "schema:CreativeWork"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:disjointWith": [
+        {
+          "@id": "foaf:Organization"
+        },
+        {
+          "@id": "foaf:Project"
+        }
+      ]
+    },
+    {
+      "@id": "foaf:Organization",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": "Organization",
+      "rdfs:comment": "An organization.",
+      "ns0:term_status": "stable",
+      "rdfs:subClassOf": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:disjointWith": [
+        {
+          "@id": "foaf:Person"
+        },
+        {
+          "@id": "foaf:Document"
+        }
+      ]
+    },
+    {
+      "@id": "foaf:Group",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "Group",
+      "rdfs:comment": "A class of Agents.",
+      "rdfs:subClassOf": {
+        "@id": "foaf:Agent"
+      }
+    },
+    {
+      "@id": "foaf:Project",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "Project",
+      "rdfs:comment": "A project (a collective endeavour of some kind).",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:disjointWith": [
+        {
+          "@id": "foaf:Person"
+        },
+        {
+          "@id": "foaf:Document"
+        }
+      ]
+    },
+    {
+      "@id": "foaf:Image",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "Image",
+      "rdfs:comment": "An image.",
+      "owl:equivalentClass": {
+        "@id": "schema:ImageObject"
+      },
+      "rdfs:subClassOf": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:PersonalProfileDocument",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:label": "PersonalProfileDocument",
+      "rdfs:comment": "A personal profile RDF document.",
+      "ns0:term_status": "testing",
+      "rdfs:subClassOf": {
+        "@id": "foaf:Document"
+      }
+    },
+    {
+      "@id": "foaf:OnlineAccount",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "Online Account",
+      "rdfs:comment": "An online account.",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:subClassOf": {
+        "@id": "owl:Thing"
+      }
+    },
+    {
+      "@id": "owl:Thing",
+      "rdfs:label": "Thing"
+    },
+    {
+      "@id": "foaf:OnlineGamingAccount",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "Online Gaming Account",
+      "rdfs:comment": "An online gaming account.",
+      "rdfs:subClassOf": {
+        "@id": "foaf:OnlineAccount"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:OnlineEcommerceAccount",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "Online E-commerce Account",
+      "rdfs:comment": "An online e-commerce account.",
+      "rdfs:subClassOf": {
+        "@id": "foaf:OnlineAccount"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:OnlineChatAccount",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "Online Chat Account",
+      "rdfs:comment": "An online chat account.",
+      "rdfs:subClassOf": {
+        "@id": "foaf:OnlineAccount"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:mbox",
+      "@type": [
+        "rdf:Property",
+        "owl:InverseFunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "personal mailbox",
+      "rdfs:comment": "A  personal mailbox, ie. an Internet mailbox associated with exactly one owner, the first owner of this mailbox. This is a 'static inverse functional property', in that  there is (across time and change) at most one individual that ever has any particular value for foaf:mbox.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:mbox_sha1sum",
+      "@type": [
+        "rdf:Property",
+        "owl:InverseFunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "sha1sum of a personal mailbox URI name",
+      "rdfs:comment": "The sha1sum of the URI of an Internet mailbox associated with exactly one owner, the  first owner of the mailbox.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:gender",
+      "@type": [
+        "rdf:Property",
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "gender",
+      "rdfs:comment": "The gender of this Agent (typically but not necessarily 'male' or 'female').",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:geekcode",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "archaic",
+      "rdfs:label": "geekcode",
+      "rdfs:comment": "A textual geekcode for this person, see http://www.geekcode.com/geek.html",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:dnaChecksum",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "archaic",
+      "rdfs:label": "DNA checksum",
+      "rdfs:comment": "A checksum for the DNA of some thing. Joke.",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "foaf:sha1",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "sha1sum (hex)",
+      "rdfs:comment": "A sha1sum hash, in hex.",
+      "rdfs:domain": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:based_near",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "based near",
+      "rdfs:comment": "A location that something is based near, for some broadly human notion of near.",
+      "rdfs:domain": {
+        "@id": "geo:SpatialThing"
+      },
+      "rdfs:range": {
+        "@id": "geo:SpatialThing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:title",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "title",
+      "rdfs:comment": "Title (Mr, Mrs, Ms, Dr. etc)",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:nick",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "nickname",
+      "rdfs:comment": "A short informal nickname characterising an agent (includes login identifiers, IRC and other chat nicknames).",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:jabberID",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "jabber ID",
+      "rdfs:comment": "A jabber ID for something.",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "foaf:aimChatID",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "AIM chat ID",
+      "rdfs:comment": "An AIM chat ID",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:nick"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "foaf:skypeID",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "Skype ID",
+      "rdfs:comment": "A Skype ID",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:nick"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "foaf:icqChatID",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "ICQ chat ID",
+      "rdfs:comment": "An ICQ chat ID",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:nick"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "foaf:yahooChatID",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "Yahoo chat ID",
+      "rdfs:comment": "A Yahoo chat ID",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:nick"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "foaf:msnChatID",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "MSN chat ID",
+      "rdfs:comment": "An MSN chat ID",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:nick"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "foaf:name",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "name",
+      "rdfs:comment": "A name for some thing.",
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "rdfs:label"
+      }
+    },
+    {
+      "@id": "foaf:firstName",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "firstName",
+      "rdfs:comment": "The first name of a person.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:lastName",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "lastName",
+      "rdfs:comment": "The last name of a person.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:givenName",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "Given name",
+      "rdfs:comment": "The given name of some person.",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:givenname",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "archaic",
+      "rdfs:label": "Given name",
+      "rdfs:comment": "The given name of some person.",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:surname",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "archaic",
+      "rdfs:label": "Surname",
+      "rdfs:comment": "The surname of some person.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:family_name",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "archaic",
+      "rdfs:label": "family_name",
+      "rdfs:comment": "The family name of some person.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:familyName",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "familyName",
+      "rdfs:comment": "The family name of some person.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:phone",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "phone",
+      "rdfs:comment": "A phone,  specified using fully qualified tel: URI scheme (refs: http://www.w3.org/Addressing/schemes.html#tel).",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:homepage",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "homepage",
+      "rdfs:comment": "A homepage for some thing.",
+      "rdfs:subPropertyOf": [
+        {
+          "@id": "foaf:page"
+        },
+        {
+          "@id": "foaf:isPrimaryTopicOf"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:weblog",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "weblog",
+      "rdfs:comment": "A weblog of some thing (whether person, group, company etc.).",
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:page"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:openid",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "openid",
+      "rdfs:comment": "An OpenID for an Agent.",
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:isPrimaryTopicOf"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:tipjar",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "tipjar",
+      "rdfs:comment": "A tipjar document for this agent, describing means for payment and reward.",
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:page"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:plan",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "plan",
+      "rdfs:comment": "A .plan comment, in the tradition of finger and '.plan' files.",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      }
+    },
+    {
+      "@id": "foaf:made",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "made",
+      "rdfs:comment": "Something that was made by this agent.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:inverseOf": {
+        "@id": "foaf:maker"
+      }
+    },
+    {
+      "@id": "foaf:maker",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "maker",
+      "rdfs:comment": "An agent that  made this thing.",
+      "owl:equivalentProperty": {
+        "@id": "dc:creator"
+      },
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:inverseOf": {
+        "@id": "foaf:made"
+      }
+    },
+    {
+      "@id": "foaf:img",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "image",
+      "rdfs:comment": "An image that can be used to represent some thing (ie. those depictions which are particularly representative of something, eg. one's photo on a homepage).",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Image"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:depiction"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:depiction",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "depiction",
+      "rdfs:comment": "A depiction of some thing.",
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Image"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:inverseOf": {
+        "@id": "foaf:depicts"
+      }
+    },
+    {
+      "@id": "foaf:depicts",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "depicts",
+      "rdfs:comment": "A thing depicted in this representation.",
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:domain": {
+        "@id": "foaf:Image"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:inverseOf": {
+        "@id": "foaf:depiction"
+      }
+    },
+    {
+      "@id": "foaf:thumbnail",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "thumbnail",
+      "rdfs:comment": "A derived thumbnail image.",
+      "rdfs:domain": {
+        "@id": "foaf:Image"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Image"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:myersBriggs",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "myersBriggs",
+      "rdfs:comment": "A Myers Briggs (MBTI) personality classification.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:workplaceHomepage",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "workplace homepage",
+      "rdfs:comment": "A workplace homepage of some person; the homepage of an organization they work for.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:workInfoHomepage",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "work info homepage",
+      "rdfs:comment": "A work info homepage of some person; a page about their work for some organization.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:schoolHomepage",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "schoolHomepage",
+      "rdfs:comment": "A homepage of a school attended by the person.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:knows",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "knows",
+      "rdfs:comment": "A person known by this person (indicating some level of reciprocated interaction between the parties).",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:interest",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "interest",
+      "rdfs:comment": "A page about a topic of interest to this person.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:topic_interest",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "topic_interest",
+      "rdfs:comment": "A thing of interest to this person.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:publications",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "publications",
+      "rdfs:comment": "A link to the publications of this person.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:currentProject",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "current project",
+      "rdfs:comment": "A current project this person works on.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:pastProject",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "past project",
+      "rdfs:comment": "A project this person has previously worked on.",
+      "rdfs:domain": {
+        "@id": "foaf:Person"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:fundedBy",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "archaic",
+      "rdfs:label": "funded by",
+      "rdfs:comment": "An organization funding a project or person.",
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:logo",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "logo",
+      "rdfs:comment": "A logo representing some thing.",
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:topic",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "topic",
+      "rdfs:comment": "A topic of some page or document.",
+      "rdfs:domain": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "owl:inverseOf": {
+        "@id": "foaf:page"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:primaryTopic",
+      "@type": [
+        "rdf:Property",
+        "owl:FunctionalProperty",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "primary topic",
+      "rdfs:comment": "The primary topic of some page or document.",
+      "rdfs:domain": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "owl:inverseOf": {
+        "@id": "foaf:isPrimaryTopicOf"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:focus",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "focus",
+      "rdfs:comment": "The underlying or 'focal' entity associated with some SKOS-described concept.",
+      "rdfs:domain": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "skos:Concept",
+      "rdfs:label": "Concept"
+    },
+    {
+      "@id": "foaf:isPrimaryTopicOf",
+      "@type": [
+        "rdf:Property",
+        "owl:InverseFunctionalProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "is primary topic of",
+      "rdfs:comment": "A document that this thing is the primary topic of.",
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:page"
+      },
+      "owl:inverseOf": {
+        "@id": "foaf:primaryTopic"
+      },
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:page",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "page",
+      "rdfs:comment": "A page or document about this thing.",
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      },
+      "owl:inverseOf": {
+        "@id": "foaf:topic"
+      }
+    },
+    {
+      "@id": "foaf:theme",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "archaic",
+      "rdfs:label": "theme",
+      "rdfs:comment": "A theme.",
+      "rdfs:domain": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:range": {
+        "@id": "owl:Thing"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:account",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "account",
+      "rdfs:comment": "Indicates an account held by this agent.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "foaf:OnlineAccount"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:holdsAccount",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "archaic",
+      "rdfs:label": "account",
+      "rdfs:comment": "Indicates an account held by this agent.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "foaf:OnlineAccount"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:accountServiceHomepage",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "account service homepage",
+      "rdfs:comment": "Indicates a homepage of the service provide for this online account.",
+      "rdfs:domain": {
+        "@id": "foaf:OnlineAccount"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:accountName",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "testing",
+      "rdfs:label": "account name",
+      "rdfs:comment": "Indicates the name (identifier) associated with this online account.",
+      "rdfs:domain": {
+        "@id": "foaf:OnlineAccount"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:member",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "ns0:term_status": "stable",
+      "rdfs:label": "member",
+      "rdfs:comment": "Indicates a member of a Group",
+      "rdfs:domain": {
+        "@id": "foaf:Group"
+      },
+      "rdfs:range": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:membershipClass",
+      "@type": [
+        "rdf:Property",
+        "owl:AnnotationProperty"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "membershipClass",
+      "rdfs:comment": "Indicates the class of individuals that are a member of a Group",
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:birthday",
+      "@type": [
+        "rdf:Property",
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "birthday",
+      "rdfs:comment": "The birthday of this Agent, represented in mm-dd string form, eg. '12-31'.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:age",
+      "@type": [
+        "rdf:Property",
+        "owl:FunctionalProperty",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "age",
+      "rdfs:comment": "The age in years of some agent.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    },
+    {
+      "@id": "foaf:status",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "ns0:term_status": "unstable",
+      "rdfs:label": "status",
+      "rdfs:comment": "A string expressing what the user is happy for the general public (normally) to know about their current activity.",
+      "rdfs:domain": {
+        "@id": "foaf:Agent"
+      },
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "foaf:"
+      }
+    }
+  ]
+}
