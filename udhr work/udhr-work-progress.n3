@@ -1,0 +1,1726 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.udhr.org/ontology/udhr#HumanRights>
+  a rdfs:Class ;
+  rdfs:label "Human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q139963>, <http://dbpedia.org/resource/Human_rights>, <http://www.wikidata.org/entity/Q65659>, <http://www.wikidata.org/entity/Q7366> .
+
+<http://www.udhr.org/ontology/udhr#Equality>
+  a rdfs:Class ;
+  rdfs:label "Equality"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1270>, <http://dbpedia.org/resource/Equality>, <http://www.wikidata.org/entity/Q23907>, <http://www.wikidata.org/entity/Q3295428>, <http://www.wikidata.org/entity/Q3918> .
+
+<http://www.udhr.org/ontology/udhr#Dignity>
+  a rdfs:Class ;
+  rdfs:label "Dignity"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q10460>, <http://dbpedia.org/resource/Dignity> .
+
+<http://www.udhr.org/ontology/udhr#Reason>
+  a rdfs:Class ;
+  rdfs:label "Reason"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1850>, <http://dbpedia.org/resource/Reason> .
+
+<http://www.udhr.org/ontology/udhr#Conscience>
+  a rdfs:Class ;
+  rdfs:label "Conscience"@en, "Freedom of conscience"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1736>, <http://dbpedia.org/resource/Conscience>, <http://www.wikidata.org/entity/Q3295390>, <http://dbpedia.org/resource/Freedom_of_conscience> .
+
+<http://www.udhr.org/ontology/udhr#Brotherhood>
+  a rdfs:Class ;
+  rdfs:label "Brotherhood"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q684746>, <http://dbpedia.org/resource/Brotherhood> .
+
+<http://www.udhr.org/ontology/udhr#Rights>
+  a rdfs:Class ;
+  rdfs:label "Rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q16935>, <http://dbpedia.org/resource/Rights> .
+
+<http://www.udhr.org/ontology/udhr#Freedom>
+  a rdfs:Class ;
+  rdfs:label "Freedom"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q9680>, <http://dbpedia.org/resource/Freedom>, <http://www.wikidata.org/entity/Q3910> .
+
+<http://www.udhr.org/ontology/udhr#Race>
+  a rdfs:Class ;
+  rdfs:label "Race"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q16897>, <http://dbpedia.org/resource/Race> .
+
+<http://www.udhr.org/ontology/udhr#Colour>
+  a rdfs:Class ;
+  rdfs:label "Colour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q12792>, <http://dbpedia.org/resource/Color> .
+
+<http://www.udhr.org/ontology/udhr#Sex>
+  a rdfs:Class ;
+  rdfs:label "Sex"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q48270>, <http://dbpedia.org/resource/Sex> .
+
+<http://www.udhr.org/ontology/udhr#Language>
+  a rdfs:Class ;
+  rdfs:label "Language"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q34770>, <http://dbpedia.org/resource/Language> .
+
+<http://www.udhr.org/ontology/udhr#Religion>
+  a rdfs:Class ;
+  rdfs:label "Religion"@en, "Freedom of religion"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q16970>, <http://dbpedia.org/resource/Religion>, <http://www.wikidata.org/entity/Q3950>, <http://dbpedia.org/resource/Freedom_of_religion> .
+
+<http://www.udhr.org/ontology/udhr#PoliticalOpinion>
+  a rdfs:Class ;
+  rdfs:label "Political opinion"@en, "Prohibition of discrimination on the grounds of political or other opinion"@en, "Freedom of opinion and expression"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1381770>, <http://dbpedia.org/resource/Political_opinion>, <http://www.wikidata.org/entity/Q3295436>, <http://dbpedia.org/resource/Prohibition_of_discrimination_on_the_grounds_of_political_or_other_opinion>, <http://www.wikidata.org/entity/Q3295451>, <http://dbpedia.org/resource/Freedom_of_opinion_and_expression> .
+
+<http://www.udhr.org/ontology/udhr#NationalOrigin>
+  a rdfs:Class ;
+  rdfs:label "National origin"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q206855>, <http://dbpedia.org/resource/Nationality> .
+
+<http://www.udhr.org/ontology/udhr#SocialOrigin>
+  a rdfs:Class ;
+  rdfs:label "Social origin"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q206855>, <http://dbpedia.org/resource/Nationality> .
+
+<http://www.udhr.org/ontology/udhr#Property>
+  a rdfs:Class ;
+  rdfs:label "Property"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3384141>, <http://dbpedia.org/resource/Property> .
+
+<http://www.udhr.org/ontology/udhr#Birth>
+  a rdfs:Class ;
+  rdfs:label "Birth"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q5>, <http://dbpedia.org/resource/Birth> .
+
+<http://www.udhr.org/ontology/udhr#OtherStatus>
+  a rdfs:Class ;
+  rdfs:label "Other status"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q18084221>, <http://dbpedia.org/resource/Other_status> .
+
+<http://www.udhr.org/ontology/udhr#CivilRights>
+  a rdfs:Class ;
+  rdfs:label "Civil rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q191867>, <http://dbpedia.org/resource/Civil_rights> .
+
+<http://www.udhr.org/ontology/udhr#PoliticalRights>
+  a rdfs:Class ;
+  rdfs:label "Political rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1263829>, <http://dbpedia.org/resource/Political_rights>, <http://www.wikidata.org/entity/Q3295364> .
+
+<http://www.udhr.org/ontology/udhr#EconomicRights>
+  a rdfs:Class ;
+  rdfs:label "Economic rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q343637>, <http://dbpedia.org/resource/Economic_rights> .
+
+<http://www.udhr.org/ontology/udhr#SocialRights>
+  a rdfs:Class ;
+  rdfs:label "Social rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1553692>, <http://dbpedia.org/resource/Social_rights> .
+
+<http://www.udhr.org/ontology/udhr#CulturalRights>
+  a rdfs:Class ;
+  rdfs:label "Cultural rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q370175>, <http://dbpedia.org/resource/Cultural_rights> .
+
+<http://www.udhr.org/ontology/udhr#Discrimination>
+  a rdfs:Class ;
+  rdfs:label "Discrimination"@en, "Non-discrimination"@en, "Prohibition of discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q772596>, <http://dbpedia.org/resource/Discrimination>, <http://www.wikidata.org/entity/Q200180>, <http://www.wikidata.org/entity/Q3295431>, <http://dbpedia.org/resource/Non-discrimination>, <http://www.wikidata.org/entity/Q3295599>, <http://dbpedia.org/resource/Prohibition_of_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#EqualProtection>
+  a rdfs:Class ;
+  rdfs:label "Equal protection"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q191330>, <http://dbpedia.org/resource/Equal_protection> .
+
+<http://www.udhr.org/ontology/udhr#Universality>
+  a rdfs:Class ;
+  rdfs:label "Universality"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q145852>, <http://dbpedia.org/resource/Universality> .
+
+<http://www.udhr.org/ontology/udhr#NonDiscrimination>
+  a rdfs:Class ;
+  rdfs:label "Non-discrimination"@en, "Prohibition of discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q347548>, <http://dbpedia.org/resource/Non-discrimination>, <http://www.wikidata.org/entity/Q623636>, <http://www.wikidata.org/entity/Q3295490>, <http://dbpedia.org/resource/Prohibition_of_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#Indivisibility>
+  a rdfs:Class ;
+  rdfs:label "Indivisibility"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q388380>, <http://dbpedia.org/resource/Indivisibility> .
+
+<http://www.udhr.org/ontology/udhr#Interdependence>
+  a rdfs:Class ;
+  rdfs:label "Interdependence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q973287>, <http://dbpedia.org/resource/Interdependence> .
+
+<http://www.udhr.org/ontology/udhr#Solidarity>
+  a rdfs:Class ;
+  rdfs:label "Solidarity"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q148025>, <http://dbpedia.org/resource/Solidarity> .
+
+<http://www.udhr.org/ontology/udhr#DueProcess>
+  a rdfs:Class ;
+  rdfs:label "Due process"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q191332>, <http://dbpedia.org/resource/Due_process> .
+
+<http://www.udhr.org/ontology/udhr#PresumptionInnocence>
+  a rdfs:Class ;
+  rdfs:label "Presumption of innocence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1623033>, <http://dbpedia.org/resource/Presumption_of_innocence>, <http://www.wikidata.org/entity/Q322415> .
+
+<http://www.udhr.org/ontology/udhr#Trial>
+  a rdfs:Class ;
+  rdfs:label "Trial"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q8999>, <http://dbpedia.org/resource/Trial> .
+
+<http://www.udhr.org/ontology/udhr#PenalOffence>
+  a rdfs:Class ;
+  rdfs:label "Penal offence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q174180>, <http://dbpedia.org/resource/Penal_offence> .
+
+<http://www.udhr.org/ontology/udhr#Defence>
+  a rdfs:Class ;
+  rdfs:label "Defence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q247787>, <http://dbpedia.org/resource/Defence> .
+
+<http://www.udhr.org/ontology/udhr#ActOmission>
+  a rdfs:Class ;
+  rdfs:label "Act or omission"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q606718>, <http://dbpedia.org/resource/Act_or_omission> .
+
+<http://www.udhr.org/ontology/udhr#HeavierPenalty>
+  a rdfs:Class ;
+  rdfs:label "Heavier penalty"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q6054874>, <http://dbpedia.org/resource/Heavier_penalty> .
+
+<http://www.udhr.org/ontology/udhr#HumanDignity>
+  a rdfs:Class ;
+  rdfs:label "Human dignity"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q139963>, <http://dbpedia.org/resource/Human_dignity>, <http://www.wikidata.org/entity/Q7366> .
+
+<http://www.udhr.org/ontology/udhr#FundamentalFreedoms>
+  a rdfs:Class ;
+  rdfs:label "Fundamental freedoms"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q161061>, <http://dbpedia.org/resource/Fundamental_freedoms> .
+
+<http://www.udhr.org/ontology/udhr#FreedomThought>
+  a rdfs:Class ;
+  rdfs:label "Freedom of thought"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q9756>, <http://dbpedia.org/resource/Freedom_of_thought> .
+
+<http://www.udhr.org/ontology/udhr#FreedomOpinion>
+  a rdfs:Class ;
+  rdfs:label "Freedom of opinion"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1381770>, <http://dbpedia.org/resource/Freedom_of_opinion> .
+
+<http://www.udhr.org/ontology/udhr#FreedomExpression>
+  a rdfs:Class ;
+  rdfs:label "Freedom of expression"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q146588>, <http://dbpedia.org/resource/Freedom_of_expression> .
+
+<http://www.udhr.org/ontology/udhr#FreedomInformation>
+  a rdfs:Class ;
+  rdfs:label "Freedom of information"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q146595>, <http://dbpedia.org/resource/Freedom_of_information> .
+
+<http://www.udhr.org/ontology/udhr#FreedomAssociation>
+  a rdfs:Class ;
+  rdfs:label "Freedom of association"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q391478>, <http://dbpedia.org/resource/Freedom_of_association> .
+
+<http://www.udhr.org/ontology/udhr#FreedomAssembly>
+  a rdfs:Class ;
+  rdfs:label "Freedom of assembly"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q725944>, <http://dbpedia.org/resource/Freedom_of_assembly> .
+
+<http://www.udhr.org/ontology/udhr#FreedomReligion>
+  a rdfs:Class ;
+  rdfs:label "Freedom of religion"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q16970>, <http://dbpedia.org/resource/Freedom_of_religion> .
+
+<http://www.udhr.org/ontology/udhr#FreedomMovement>
+  a rdfs:Class ;
+  rdfs:label "Freedom of movement"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q694883>, <http://dbpedia.org/resource/Freedom_of_movement> .
+
+<http://www.udhr.org/ontology/udhr#FreedomResidence>
+  a rdfs:Class ;
+  rdfs:label "Freedom of residence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1493814>, <http://dbpedia.org/resource/Freedom_of_residence> .
+
+<http://www.udhr.org/ontology/udhr#FreedomEmigration>
+  a rdfs:Class ;
+  rdfs:label "Freedom of emigration"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q391482>, <http://dbpedia.org/resource/Freedom_of_emigration> .
+
+<http://www.udhr.org/ontology/udhr#FreedomImmigration>
+  a rdfs:Class ;
+  rdfs:label "Freedom of immigration"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q634104>, <http://dbpedia.org/resource/Freedom_of_immigration> .
+
+<http://www.udhr.org/ontology/udhr#Work>
+  a rdfs:Class ;
+  rdfs:label "Work"@en, "Right to work"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1354170>, <http://dbpedia.org/resource/Work>, <http://www.wikidata.org/entity/Q3295400>, <http://dbpedia.org/resource/Right_to_work>, <http://www.wikidata.org/entity/Q3295461> .
+
+<http://www.udhr.org/ontology/udhr#FreeChoiceEmployment>
+  a rdfs:Class ;
+  rdfs:label "Free choice of employment"@en, "Right to free choice of employment"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1427235>, <http://dbpedia.org/resource/Free_choice_of_employment>, <http://www.wikidata.org/entity/Q3295401>, <http://www.wikidata.org/entity/Q3295462>, <http://dbpedia.org/resource/Right_to_free_choice_of_employment> .
+
+<http://www.udhr.org/ontology/udhr#JustRemuneration>
+  a rdfs:Class ;
+  rdfs:label "Just and favourable remuneration"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1515087>, <http://dbpedia.org/resource/Just_and_favourable_remuneration> .
+
+<http://www.udhr.org/ontology/udhr#ConditionsWork>
+  a rdfs:Class ;
+  rdfs:label "Conditions of work"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q2305370>, <http://dbpedia.org/resource/Conditions_of_work> .
+
+<http://www.udhr.org/ontology/udhr#RestLeisure>
+  a rdfs:Class ;
+  rdfs:label "Rest, leisure, and reasonable limitation of working hours"@en, "Right to rest and leisure"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295309>, <http://dbpedia.org/resource/Rest_leisure_and_reasonable_limitation_of_working_hours>, <http://www.wikidata.org/entity/Q3295405>, <http://dbpedia.org/resource/Right_to_rest_and_leisure> .
+
+<http://www.udhr.org/ontology/udhr#SafetyHealth>
+  a rdfs:Class ;
+  rdfs:label "Safety and health of workers"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295314>, <http://dbpedia.org/resource/Safety_and_health_of_workers> .
+
+<http://www.udhr.org/ontology/udhr#ProtectionMotherhood>
+  a rdfs:Class ;
+  rdfs:label "Protection of motherhood"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295317>, <http://dbpedia.org/resource/Protection_of_motherhood>, <http://www.wikidata.org/entity/Q3295403>, <http://www.wikidata.org/entity/Q3295464> .
+
+<http://www.udhr.org/ontology/udhr#EqualPay>
+  a rdfs:Class ;
+  rdfs:label "Equal pay for equal work"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295321>, <http://dbpedia.org/resource/Equal_pay_for_equal_work> .
+
+<http://www.udhr.org/ontology/udhr#ProtectionChildren>
+  a rdfs:Class ;
+  rdfs:label "Protection of children"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q182398>, <http://dbpedia.org/resource/Protection_of_children>, <http://www.wikidata.org/entity/Q3295380> .
+
+<http://www.udhr.org/ontology/udhr#RightEducation>
+  a rdfs:Class ;
+  rdfs:label "Right to education"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3968>, <http://dbpedia.org/resource/Right_to_education> .
+
+<http://www.udhr.org/ontology/udhr#TechnicalEducation>
+  a rdfs:Class ;
+  rdfs:label "Technical and professional education"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295329>, <http://dbpedia.org/resource/Technical_and_professional_education>, <http://www.wikidata.org/entity/Q3295415> .
+
+<http://www.udhr.org/ontology/udhr#EducationalOpportunities>
+  a rdfs:Class ;
+  rdfs:label "Equal educational opportunities"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295330>, <http://dbpedia.org/resource/Equal_educational_opportunities> .
+
+<http://www.udhr.org/ontology/udhr#CulturalSocietalValues>
+  a rdfs:Class ;
+  rdfs:label "Respect for the rights and freedoms of others"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295331>, <http://dbpedia.org/resource/Respect_for_the_rights_and_freedoms_of_others> .
+
+<http://www.udhr.org/ontology/udhr#Marriage>
+  a rdfs:Class ;
+  rdfs:label "Marriage"@en, "Right to marry and found a family"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q2307>, <http://dbpedia.org/resource/Marriage>, <http://www.wikidata.org/entity/Q3295422>, <http://dbpedia.org/resource/Right_to_marry_and_found_a_family>, <http://www.wikidata.org/entity/Q3295479> .
+
+<http://www.udhr.org/ontology/udhr#PrivateFamilyLife>
+  a rdfs:Class ;
+  rdfs:label "Private and family life"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295345>, <http://dbpedia.org/resource/Private_and_family_life> .
+
+<http://www.udhr.org/ontology/udhr#Home>
+  a rdfs:Class ;
+  rdfs:label "Home"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3950>, <http://dbpedia.org/resource/Home> .
+
+<http://www.udhr.org/ontology/udhr#Correspondence>
+  a rdfs:Class ;
+  rdfs:label "Correspondence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q844703>, <http://dbpedia.org/resource/Correspondence> .
+
+<http://www.udhr.org/ontology/udhr#ArbitraryInterference>
+  a rdfs:Class ;
+  rdfs:label "Arbitrary interference"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295350>, <http://dbpedia.org/resource/Arbitrary_interference> .
+
+<http://www.udhr.org/ontology/udhr#ProtectionLaw>
+  a rdfs:Class ;
+  rdfs:label "Protection by law"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295351>, <http://dbpedia.org/resource/Protection_by_law> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrial>
+  a rdfs:Class ;
+  rdfs:label "Public trial"@en, "Right to a fair and public hearing"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q395042>, <http://dbpedia.org/resource/Public_trial>, <http://www.wikidata.org/entity/Q3295499>, <http://dbpedia.org/resource/Right_to_a_fair_and_public_hearing> .
+
+<http://www.udhr.org/ontology/udhr#DueProcessLaw>
+  a rdfs:Class ;
+  rdfs:label "Due process of law"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q644463>, <http://dbpedia.org/resource/Due_process_of_law> .
+
+<http://www.udhr.org/ontology/udhr#RightDefense>
+  a rdfs:Class ;
+  rdfs:label "Right to a fair and public hearing"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295360>, <http://dbpedia.org/resource/Right_to_a_fair_and_public_hearing> .
+
+<http://www.udhr.org/ontology/udhr#JudicialControlDetention>
+  a rdfs:Class ;
+  rdfs:label "Judicial control of detention"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295361>, <http://dbpedia.org/resource/Judicial_control_of_detention> .
+
+<http://www.udhr.org/ontology/udhr#ProtectionPunishment>
+  a rdfs:Class ;
+  rdfs:label "Protection against torture and other cruel, inhuman, or degrading treatment or punishment"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295362>, <http://dbpedia.org/resource/Protection_against_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment> .
+
+<http://www.udhr.org/ontology/udhr#EqualProtectionLaw>
+  a rdfs:Class ;
+  rdfs:label "Equal protection of the law"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295363>, <http://dbpedia.org/resource/Equal_protection_of_the_law>, <http://www.wikidata.org/entity/Q3295430>, <http://www.wikidata.org/entity/Q3295491> .
+
+<http://www.udhr.org/ontology/udhr#RightVote>
+  a rdfs:Class ;
+  rdfs:label "Right to vote"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295375>, <http://dbpedia.org/resource/Right_to_vote> .
+
+<http://www.udhr.org/ontology/udhr#PoliticalFreedom>
+  a rdfs:Class ;
+  rdfs:label "Political freedom"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295376>, <http://dbpedia.org/resource/Political_freedom> .
+
+<http://www.udhr.org/ontology/udhr#PublicAssembly>
+  a rdfs:Class ;
+  rdfs:label "Freedom of assembly"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1224>, <http://dbpedia.org/resource/Freedom_of_assembly> .
+
+<http://www.udhr.org/ontology/udhr#Association>
+  a rdfs:Class ;
+  rdfs:label "Freedom of association"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295381>, <http://dbpedia.org/resource/Freedom_of_association> .
+
+<http://www.udhr.org/ontology/udhr#Expression>
+  a rdfs:Class ;
+  rdfs:label "Freedom of expression"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3950>, <http://dbpedia.org/resource/Freedom_of_expression> .
+
+<http://www.udhr.org/ontology/udhr#Opinion>
+  a rdfs:Class ;
+  rdfs:label "Freedom of opinion"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295385>, <http://dbpedia.org/resource/Freedom_of_opinion> .
+
+<http://www.udhr.org/ontology/udhr#Information>
+  a rdfs:Class ;
+  rdfs:label "Freedom of information"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295386>, <http://dbpedia.org/resource/Freedom_of_information> .
+
+<http://www.udhr.org/ontology/udhr#Media>
+  a rdfs:Class ;
+  rdfs:label "Freedom of the media"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295387>, <http://dbpedia.org/resource/Freedom_of_the_media> .
+
+<http://www.udhr.org/ontology/udhr#Worship>
+  a rdfs:Class ;
+  rdfs:label "Freedom of worship"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295389>, <http://dbpedia.org/resource/Freedom_of_worship> .
+
+<http://www.udhr.org/ontology/udhr#Thought>
+  a rdfs:Class ;
+  rdfs:label "Freedom of thought"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295391>, <http://dbpedia.org/resource/Freedom_of_thought> .
+
+<http://www.udhr.org/ontology/udhr#ReligiousBelief>
+  a rdfs:Class ;
+  rdfs:label "Freedom to change one's religion or belief"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295392>, <http://dbpedia.org/resource/Freedom_to_change_one%27s_religion_or_belief> .
+
+<http://www.udhr.org/ontology/udhr#JustConditionsWork>
+  a rdfs:Class ;
+  rdfs:label "Just and favourable conditions of work"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295402>, <http://dbpedia.org/resource/Just_and_favourable_conditions_of_work>, <http://www.wikidata.org/entity/Q3295463> .
+
+<http://www.udhr.org/ontology/udhr#Motherhood>
+  a rdfs:Class ;
+  rdfs:label "Motherhood"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295404>, <http://dbpedia.org/resource/Motherhood> .
+
+<http://www.udhr.org/ontology/udhr#Vacation>
+  a rdfs:Class ;
+  rdfs:label "Right to periodic holidays with pay"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295406>, <http://dbpedia.org/resource/Right_to_periodic_holidays_with_pay> .
+
+<http://www.udhr.org/ontology/udhr#StandardLiving>
+  a rdfs:Class ;
+  rdfs:label "Right to a standard of living adequate for the health and well-being of oneself and one's family"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295407>, <http://dbpedia.org/resource/Right_to_a_standard_of_living_adequate_for_the_health_and_well-being_of_oneself_and_one%27s_family> .
+
+<http://www.udhr.org/ontology/udhr#Health>
+  a rdfs:Class ;
+  rdfs:label "Right to health"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295411>, <http://dbpedia.org/resource/Right_to_health> .
+
+<http://www.udhr.org/ontology/udhr#SocialSecurity>
+  a rdfs:Class ;
+  rdfs:label "Right to social security"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295412>, <http://dbpedia.org/resource/Right_to_social_security> .
+
+<http://www.udhr.org/ontology/udhr#Childhood>
+  a rdfs:Class ;
+  rdfs:label "Childhood"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295378>, <http://dbpedia.org/resource/Childhood> .
+
+<http://www.udhr.org/ontology/udhr#ChildhoodRights>
+  a rdfs:Class ;
+  rdfs:label "Children's rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295379>, <http://dbpedia.org/resource/Children%27s_rights> .
+
+<http://www.udhr.org/ontology/udhr#Education>
+  a rdfs:Class ;
+  rdfs:label "Right to education"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295388>, <http://dbpedia.org/resource/Right_to_education> .
+
+<http://www.udhr.org/ontology/udhr#CompulsoryEducation>
+  a rdfs:Class ;
+  rdfs:label "Compulsory education"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295413>, <http://dbpedia.org/resource/Compulsory_education> .
+
+<http://www.udhr.org/ontology/udhr#FreeElementaryEducation>
+  a rdfs:Class ;
+  rdfs:label "Free elementary education"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295414>, <http://dbpedia.org/resource/Free_elementary_education> .
+
+<http://www.udhr.org/ontology/udhr#BenefitScience>
+  a rdfs:Class ;
+  rdfs:label "Benefit of science"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295416>, <http://dbpedia.org/resource/Benefit_of_science> .
+
+<http://www.udhr.org/ontology/udhr#CulturalDevelopment>
+  a rdfs:Class ;
+  rdfs:label "Cultural development"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295417>, <http://dbpedia.org/resource/Cultural_development> .
+
+<http://www.udhr.org/ontology/udhr#InternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295418>, <http://dbpedia.org/resource/International_cooperation> .
+
+<http://www.udhr.org/ontology/udhr#EconomicSocialCulturalRights>
+  a rdfs:Class ;
+  rdfs:label "Economic, social and cultural rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295419>, <http://dbpedia.org/resource/Economic_social_and_cultural_rights> .
+
+<http://www.udhr.org/ontology/udhr#RightProperty>
+  a rdfs:Class ;
+  rdfs:label "Right to own property"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295420>, <http://dbpedia.org/resource/Right_to_own_property> .
+
+<http://www.udhr.org/ontology/udhr#ProtectionProperty>
+  a rdfs:Class ;
+  rdfs:label "Protection of property"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295421>, <http://dbpedia.org/resource/Protection_of_property> .
+
+<http://www.udhr.org/ontology/udhr#Family>
+  a rdfs:Class ;
+  rdfs:label "Right to family"@en, "Right to form a family"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295423>, <http://dbpedia.org/resource/Right_to_family>, <http://www.wikidata.org/entity/Q3295477>, <http://dbpedia.org/resource/Right_to_form_a_family> .
+
+<http://www.udhr.org/ontology/udhr#ParentalCare>
+  a rdfs:Class ;
+  rdfs:label "Right to parental care"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295424>, <http://dbpedia.org/resource/Right_to_parental_care> .
+
+<http://www.udhr.org/ontology/udhr#ProtectionChildrenAbuse>
+  a rdfs:Class ;
+  rdfs:label "Protection of children from abuse"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295425>, <http://dbpedia.org/resource/Protection_of_children_from_abuse> .
+
+<http://www.udhr.org/ontology/udhr#EqualityBeforeLaw>
+  a rdfs:Class ;
+  rdfs:label "Equality before the law"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295429>, <http://dbpedia.org/resource/Equality_before_the_law> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationRace>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of race"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295432>, <http://dbpedia.org/resource/Prohibition_of_discrimination_on_the_grounds_of_race> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationSex>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of sex"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295433>, <http://dbpedia.org/resource/Prohibition_of_discrimination_on_the_grounds_of_sex> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationReligion>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of religion"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295434>, <http://dbpedia.org/resource/Prohibition_of_discrimination_on_the_grounds_of_religion> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationLanguage>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of language"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295435>, <http://dbpedia.org/resource/Prohibition_of_discrimination_on_the_grounds_of_language> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationNationalOrigin>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of national or social origin"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295437>, <http://dbpedia.org/resource/Prohibition_of_discrimination_on_the_grounds_of_national_or_social_origin> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationProperty>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of property"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295438>, <http://dbpedia.org/resource/Prohibition_of_discrimination_on_the_grounds_of_property> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationBirth>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of birth"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295439>, <http://dbpedia.org/resource/Prohibition_of_discrimination_on_the_grounds_of_birth> .
+
+<http://www.udhr.org/ontology/udhr#Asylum>
+  a rdfs:Class ;
+  rdfs:label "Right to asylum"@en, "Right to seek and enjoy in other countries asylum from persecution"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295442>, <http://dbpedia.org/resource/Right_to_asylum>, <http://www.wikidata.org/entity/Q3295485>, <http://dbpedia.org/resource/Right_to_seek_and_enjoy_in_other_countries_asylum_from_persecution> .
+
+<http://www.udhr.org/ontology/udhr#RightTravel>
+  a rdfs:Class ;
+  rdfs:label "Right to freedom of movement"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295443>, <http://dbpedia.org/resource/Right_to_freedom_of_movement> .
+
+<http://www.udhr.org/ontology/udhr#RightResidence>
+  a rdfs:Class ;
+  rdfs:label "Right to choose one's residence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295444>, <http://dbpedia.org/resource/Right_to_choose_one%27s_residence> .
+
+<http://www.udhr.org/ontology/udhr#FreedomLeavingCountry>
+  a rdfs:Class ;
+  rdfs:label "Freedom to leave any country"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295445>, <http://dbpedia.org/resource/Freedom_to_leave_any_country> .
+
+<http://www.udhr.org/ontology/udhr#RightReturn>
+  a rdfs:Class ;
+  rdfs:label "Right to return to one's country"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295446>, <http://dbpedia.org/resource/Right_to_return_to_one%27s_country> .
+
+<http://www.udhr.org/ontology/udhr#Nationality>
+  a rdfs:Class ;
+  rdfs:label "Right to a nationality"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295447>, <http://dbpedia.org/resource/Right_to_a_nationality>, <http://www.wikidata.org/entity/Q3295483> .
+
+<http://www.udhr.org/ontology/udhr#ChangeNationality>
+  a rdfs:Class ;
+  rdfs:label "Right to change one's nationality"@en, "Right to change nationality"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295448>, <http://dbpedia.org/resource/Right_to_change_one%27s_nationality>, <http://www.wikidata.org/entity/Q3295484>, <http://dbpedia.org/resource/Right_to_change_nationality> .
+
+<http://www.udhr.org/ontology/udhr#FreelyAssociation>
+  a rdfs:Class ;
+  rdfs:label "Freedom of association"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295449>, <http://dbpedia.org/resource/Freedom_of_association> .
+
+<http://www.udhr.org/ontology/udhr#PeacefulAssembly>
+  a rdfs:Class ;
+  rdfs:label "Right of peaceful assembly"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295450>, <http://dbpedia.org/resource/Right_of_peaceful_assembly> .
+
+<http://www.udhr.org/ontology/udhr#SeekReceiveInformation>
+  a rdfs:Class ;
+  rdfs:label "Freedom to seek, receive and impart information"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295452>, <http://dbpedia.org/resource/Freedom_to_seek_receive_and_impart_information> .
+
+<http://www.udhr.org/ontology/udhr#ArtsSciences>
+  a rdfs:Class ;
+  rdfs:label "Freedom of the arts and sciences"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295453>, <http://dbpedia.org/resource/Freedom_of_the_arts_and_sciences> .
+
+<http://www.udhr.org/ontology/udhr#FreeEducation>
+  a rdfs:Class ;
+  rdfs:label "Right to free education"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295454>, <http://dbpedia.org/resource/Right_to_free_education> .
+
+<http://www.udhr.org/ontology/udhr#EducationDirectedMan>
+  a rdfs:Class ;
+  rdfs:label "Education directed to the full development of the human personality"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295455>, <http://dbpedia.org/resource/Education_directed_to_the_full_development_of_the_human_personality> .
+
+<http://www.udhr.org/ontology/udhr#EducationFreeFromDiscrimination>
+  a rdfs:Class ;
+  rdfs:label "Education without discrimination of any kind"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295456>, <http://dbpedia.org/resource/Education_without_discrimination_of_any_kind> .
+
+<http://www.udhr.org/ontology/udhr#TechnicalScientificProgress>
+  a rdfs:Class ;
+  rdfs:label "Education in conformity with the needs of the time"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295457>, <http://dbpedia.org/resource/Education_in_conformity_with_the_needs_of_the_time> .
+
+<http://www.udhr.org/ontology/udhr#EducationLeastRestrictiveMeans>
+  a rdfs:Class ;
+  rdfs:label "Education provided through the least restrictive means"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295458>, <http://dbpedia.org/resource/Education_provided_through_the_least_restrictive_means> .
+
+<http://www.udhr.org/ontology/udhr#MotherTongue>
+  a rdfs:Class ;
+  rdfs:label "Education in the mother tongue"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295459>, <http://dbpedia.org/resource/Education_in_the_mother_tongue> .
+
+<http://www.udhr.org/ontology/udhr#ParentsChoiceEducation>
+  a rdfs:Class ;
+  rdfs:label "Right of parents to choose the kind of education given to their children"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295460>, <http://dbpedia.org/resource/Right_of_parents_to_choose_the_kind_of_education_given_to_their_children> .
+
+<http://www.udhr.org/ontology/udhr#Child>
+  a rdfs:Class ;
+  rdfs:label "Right to a standard of living adequate for the child's physical, mental, spiritual, moral and social development"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295465>, <http://dbpedia.org/resource/Right_to_a_standard_of_living_adequate_for_the_child%27s_physical_mental_spiritual_moral_and_social_development> .
+
+<http://www.udhr.org/ontology/udhr#ChildCare>
+  a rdfs:Class ;
+  rdfs:label "Right to assistance and protection for the child"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295466>, <http://dbpedia.org/resource/Right_to_assistance_and_protection_for_the_child> .
+
+<http://www.udhr.org/ontology/udhr#ChildWork>
+  a rdfs:Class ;
+  rdfs:label "Right of the child to be protected from economic and social exploitation"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295467>, <http://dbpedia.org/resource/Right_of_the_child_to_be_protected_from_economic_and_social_exploitation> .
+
+<http://www.udhr.org/ontology/udhr#ChildRestLeisure>
+  a rdfs:Class ;
+  rdfs:label "Right of the child to rest and leisure"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295468>, <http://dbpedia.org/resource/Right_of_the_child_to_rest_and_leisure> .
+
+<http://www.udhr.org/ontology/udhr#ChildPlay>
+  a rdfs:Class ;
+  rdfs:label "Right of the child to play"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295469>, <http://dbpedia.org/resource/Right_of_the_child_to_play> .
+
+<http://www.udhr.org/ontology/udhr#ChildEducation>
+  a rdfs:Class ;
+  rdfs:label "Right of the child to education"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295470>, <http://dbpedia.org/resource/Right_of_the_child_to_education> .
+
+<http://www.udhr.org/ontology/udhr#ChildEducationDirectedMan>
+  a rdfs:Class ;
+  rdfs:label "Education directed to the development of the child's personality"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295471>, <http://dbpedia.org/resource/Education_directed_to_the_development_of_the_child%27s_personality> .
+
+<http://www.udhr.org/ontology/udhr#ChildEducationFreeFromDiscrimination>
+  a rdfs:Class ;
+  rdfs:label "Education without discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295472>, <http://dbpedia.org/resource/Education_without_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#ChildEducationLeastRestrictiveMeans>
+  a rdfs:Class ;
+  rdfs:label "Education provided through the least restrictive means"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295473>, <http://dbpedia.org/resource/Education_provided_through_the_least_restrictive_means> .
+
+<http://www.udhr.org/ontology/udhr#ChildEducationMotherTongue>
+  a rdfs:Class ;
+  rdfs:label "Education in the mother tongue"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295474>, <http://dbpedia.org/resource/Education_in_the_mother_tongue> .
+
+<http://www.udhr.org/ontology/udhr#ChildEducationTechnicalScientificProgress>
+  a rdfs:Class ;
+  rdfs:label "Education in conformity with the needs of the time"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295475>, <http://dbpedia.org/resource/Education_in_conformity_with_the_needs_of_the_time> .
+
+<http://www.udhr.org/ontology/udhr#ChildEducationParentsChoice>
+  a rdfs:Class ;
+  rdfs:label "Right of parents to choose the kind of education given to their children"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295476>, <http://dbpedia.org/resource/Right_of_parents_to_choose_the_kind_of_education_given_to_their_children> .
+
+<http://www.udhr.org/ontology/udhr#PrivacyFamilyHome>
+  a rdfs:Class ;
+  rdfs:label "Right to privacy in the family and home"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295478>, <http://dbpedia.org/resource/Right_to_privacy_in_the_family_and_home> .
+
+<http://www.udhr.org/ontology/udhr#MarriageFreeConsent>
+  a rdfs:Class ;
+  rdfs:label "Marriage based on the free consent of the intending spouses"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295480>, <http://dbpedia.org/resource/Marriage_based_on_the_free_consent_of_the_intending_spouses> .
+
+<http://www.udhr.org/ontology/udhr#MarriageEqualRights>
+  a rdfs:Class ;
+  rdfs:label "Marriage with equal rights of husband and wife"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295481>, <http://dbpedia.org/resource/Marriage_with_equal_rights_of_husband_and_wife> .
+
+<http://www.udhr.org/ontology/udhr#MarriageProtectionLaw>
+  a rdfs:Class ;
+  rdfs:label "Protection of the family by law"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295482>, <http://dbpedia.org/resource/Protection_of_the_family_by_law> .
+
+<http://www.udhr.org/ontology/udhr#Expulsion>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of expulsion"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295486>, <http://dbpedia.org/resource/Prohibition_of_expulsion> .
+
+<http://www.udhr.org/ontology/udhr#ExpulsionThreatLifeLiberty>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of expulsion except on grounds of national security, public order, or the interests of the country"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295487>, <http://dbpedia.org/resource/Prohibition_of_expulsion_except_on_grounds_of_national_security_public_order_or_the_interests_of_the_country> .
+
+<http://www.udhr.org/ontology/udhr#StatelessPerson>
+  a rdfs:Class ;
+  rdfs:label "Right of a stateless person to a nationality"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295488>, <http://dbpedia.org/resource/Right_of_a_stateless_person_to_a_nationality> .
+
+<http://www.udhr.org/ontology/udhr#MovableProperty>
+  a rdfs:Class ;
+  rdfs:label "Right to own property"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295489>, <http://dbpedia.org/resource/Right_to_own_property> .
+
+<http://www.udhr.org/ontology/udhr#EqualBeforeLaw>
+  a rdfs:Class ;
+  rdfs:label "Equality before the law"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295492>, <http://dbpedia.org/resource/Equality_before_the_law> .
+
+<http://www.udhr.org/ontology/udhr#EqualProtectionLawAll>
+  a rdfs:Class ;
+  rdfs:label "Equal protection of the law without discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295493>, <http://dbpedia.org/resource/Equal_protection_of_the_law_without_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#EqualProtectionLawNonDiscrimination>
+  a rdfs:Class ;
+  rdfs:label "Equal protection of the law against discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295494>, <http://dbpedia.org/resource/Equal_protection_of_the_law_against_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#EqualProtectionLawNonDiscriminationNationality>
+  a rdfs:Class ;
+  rdfs:label "Equal protection of the law against discrimination based on nationality"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295495>, <http://dbpedia.org/resource/Equal_protection_of_the_law_against_discrimination_based_on_nationality> .
+
+<http://www.udhr.org/ontology/udhr#JudicialRemedy>
+  a rdfs:Class ;
+  rdfs:label "Right to an effective remedy by the competent national tribunals"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295496>, <http://dbpedia.org/resource/Right_to_an_effective_remedy_by_the_competent_national_tribunals> .
+
+<http://www.udhr.org/ontology/udhr#JudicialRemedyNonDiscrimination>
+  a rdfs:Class ;
+  rdfs:label "Right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted by the constitution or by law"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295497>, <http://dbpedia.org/resource/Right_to_an_effective_remedy_by_the_competent_national_tribunals_for_acts_violating_the_fundamental_rights_granted_by_the_constitution_or_by_law> .
+
+<http://www.udhr.org/ontology/udhr#JudicialRemedyVictimization>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of victimization"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295498>, <http://dbpedia.org/resource/Prohibition_of_victimization> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialIndependenceJudges>
+  a rdfs:Class ;
+  rdfs:label "Independence of the judges"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295500>, <http://dbpedia.org/resource/Independence_of_the_judges> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialEqualArms>
+  a rdfs:Class ;
+  rdfs:label "Equal arms of the parties"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295501>, <http://dbpedia.org/resource/Equal_arms_of_the_parties> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialPresumedInnocent>
+  a rdfs:Class ;
+  rdfs:label "Presumption of innocence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295502>, <http://dbpedia.org/resource/Presumption_of_innocence> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialMinimumGuarantees>
+  a rdfs:Class ;
+  rdfs:label "Minimum guarantees in criminal procedure"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295503>, <http://dbpedia.org/resource/Minimum_guarantees_in_criminal_procedure> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightDefence>
+  a rdfs:Class ;
+  rdfs:label "Right to defence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295504>, <http://dbpedia.org/resource/Right_to_defence> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightInterpretation>
+  a rdfs:Class ;
+  rdfs:label "Right to be informed promptly and in detail of the charges against him"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295505>, <http://dbpedia.org/resource/Right_to_be_informed_promptly_and_in_detail_of_the_charges_against_him> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightConsultationLawyer>
+  a rdfs:Class ;
+  rdfs:label "Right to have adequate time and facilities for the preparation of his defence"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295506>, <http://dbpedia.org/resource/Right_to_have_adequate_time_and_facilities_for_the_preparation_of_his_defence> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightFreeAssistanceInterpreter>
+  a rdfs:Class ;
+  rdfs:label "Right to be tried without undue delay"@en, "Right to free assistance of an interpreter if he cannot understand or speak the language used in court"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295507>, <http://dbpedia.org/resource/Right_to_be_tried_without_undue_delay>, <http://www.wikidata.org/entity/Q3295508>, <http://dbpedia.org/resource/Right_to_free_assistance_of_an_interpreter_if_he_cannot_understand_or_speak_the_language_used_in_court> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightCounsel>
+  a rdfs:Class ;
+  rdfs:label "Right to counsel"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295509>, <http://dbpedia.org/resource/Right_to_counsel> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightCounselFreeLegalAid>
+  a rdfs:Class ;
+  rdfs:label "Right to free legal aid if the interests of justice so require and if he does not have sufficient means to pay for it"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295510>, <http://dbpedia.org/resource/Right_to_free_legal_aid_if_the_interests_of_justice_so_require_and_if_he_does_not_have_sufficient_means_to_pay_for_it> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightChallengeAccusersWitnesses>
+  a rdfs:Class ;
+  rdfs:label "Right to examine witnesses against him and to obtain the attendance and examination of witnesses on his behalf under the same conditions as witnesses against him"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295511>, <http://dbpedia.org/resource/Right_to_examine_witnesses_against_him_and_to_obtain_the_attendance_and_examination_of_witnesses_on_his_behalf_under_the_same_conditions_as_witnesses_against_him> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightFreeAppeal>
+  a rdfs:Class ;
+  rdfs:label "Right to free assistance of an interpreter if he is illiterate or if the language used in the proceedings is not his own"@en, "Right to free legal assistance if the interests of justice so require and if he does not have sufficient means to pay for it"@en, "Right to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him"@en, "Right to appeal to a higher tribunal"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295512>, <http://dbpedia.org/resource/Right_to_free_assistance_of_an_interpreter_if_he_is_illiterate_or_if_the_language_used_in_the_proceedings_is_not_his_own>, <http://www.wikidata.org/entity/Q3295513>, <http://dbpedia.org/resource/Right_to_free_legal_assistance_if_the_interests_of_justice_so_require_and_if_he_does_not_have_sufficient_means_to_pay_for_it>, <http://www.wikidata.org/entity/Q3295514>, <http://dbpedia.org/resource/Right_to_a_fair_and_public_hearing_by_an_independent_and_impartial_tribunal_in_the_determination_of_his_rights_and_obligations_and_of_any_criminal_charge_against_him>, <http://www.wikidata.org/entity/Q3295515>, <http://dbpedia.org/resource/Right_to_appeal_to_a_higher_tribunal> .
+
+<http://www.udhr.org/ontology/udhr#PublicTrialRightCompensation>
+  a rdfs:Class ;
+  rdfs:label "Right to compensation for damages suffered as a result of unlawful arrest"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295516>, <http://dbpedia.org/resource/Right_to_compensation_for_damages_suffered_as_a_result_of_unlawful_arrest> .
+
+<http://www.udhr.org/ontology/udhr#Torture>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295517>, <http://dbpedia.org/resource/Prohibition_of_torture>, <http://www.wikidata.org/entity/Q3295543>, <http://www.wikidata.org/entity/Q3295607> .
+
+<http://www.udhr.org/ontology/udhr#TortureNoException>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of torture and cruel, inhuman or degrading treatment or punishment"@en, "No exceptional circumstances whatsoever, whether a state of war or a threat of war, internal political instability or any other public emergency, may be invoked as a justification of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295518>, <http://dbpedia.org/resource/Prohibition_of_torture_and_cruel_inhuman_or_degrading_treatment_or_punishment>, <http://www.wikidata.org/entity/Q3295519>, <http://dbpedia.org/resource/No_exceptional_circumstances_whatsoever_whether_a_state_of_war_or_a_threat_of_war_internal_political_instability_or_any_other_public_emergency_may_be_invoked_as_a_justification_of_torture> .
+
+<http://www.udhr.org/ontology/udhr#TortureCompensation>
+  a rdfs:Class ;
+  rdfs:label "Compensation and rehabilitation for victims of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295520>, <http://dbpedia.org/resource/Compensation_and_rehabilitation_for_victims_of_torture> .
+
+<http://www.udhr.org/ontology/udhr#TorturePrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of torture and other cruel, inhuman or degrading treatment or punishment"@en, "Prevention of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295521>, <http://dbpedia.org/resource/Prevention_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment>, <http://www.wikidata.org/entity/Q3295544>, <http://dbpedia.org/resource/Prevention_of_torture>, <http://www.wikidata.org/entity/Q3295608> .
+
+<http://www.udhr.org/ontology/udhr#TortureJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over torture and other cruel, inhuman or degrading treatment or punishment"@en, "Jurisdiction over torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295522>, <http://dbpedia.org/resource/Jurisdiction_over_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment>, <http://www.wikidata.org/entity/Q3295529>, <http://www.wikidata.org/entity/Q3295545>, <http://dbpedia.org/resource/Jurisdiction_over_torture>, <http://www.wikidata.org/entity/Q3295609> .
+
+<http://www.udhr.org/ontology/udhr#TortureExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of torture and other cruel, inhuman or degrading treatment or punishment"@en, "Extradition of persons accused of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295523>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment>, <http://www.wikidata.org/entity/Q3295546>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_torture>, <http://www.wikidata.org/entity/Q3295610> .
+
+<http://www.udhr.org/ontology/udhr#TortureComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of torture and other cruel, inhuman or degrading treatment or punishment"@en, "Complaints of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295524>, <http://dbpedia.org/resource/Complaints_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment>, <http://www.wikidata.org/entity/Q3295547>, <http://dbpedia.org/resource/Complaints_of_torture>, <http://www.wikidata.org/entity/Q3295611> .
+
+<http://www.udhr.org/ontology/udhr#TortureInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of torture and other cruel, inhuman or degrading treatment or punishment"@en, "Investigation of complaints of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295526>, <http://dbpedia.org/resource/Investigation_of_complaints_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment>, <http://www.wikidata.org/entity/Q3295548>, <http://dbpedia.org/resource/Investigation_of_complaints_of_torture>, <http://www.wikidata.org/entity/Q3295612> .
+
+<http://www.udhr.org/ontology/udhr#TortureProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of torture and other cruel, inhuman or degrading treatment or punishment"@en, "Prosecution of persons accused of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295527>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment>, <http://www.wikidata.org/entity/Q3295549>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_torture>, <http://www.wikidata.org/entity/Q3295613> .
+
+<http://www.udhr.org/ontology/udhr#TortureInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of torture and other cruel, inhuman or degrading treatment or punishment"@en, "International cooperation in the prevention of torture"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295528>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment>, <http://www.wikidata.org/entity/Q3295550>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_torture>, <http://www.wikidata.org/entity/Q3295614> .
+
+<http://www.udhr.org/ontology/udhr#SlaveTrade>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of the slave trade"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295530>, <http://dbpedia.org/resource/Prohibition_of_the_slave_trade>, <http://www.wikidata.org/entity/Q3295551> .
+
+<http://www.udhr.org/ontology/udhr#Slavery>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of slavery and servitude"@en, "Prohibition of slavery"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295531>, <http://dbpedia.org/resource/Prohibition_of_slavery_and_servitude>, <http://www.wikidata.org/entity/Q3295552>, <http://dbpedia.org/resource/Prohibition_of_slavery>, <http://www.wikidata.org/entity/Q3295630> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabour>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295532>, <http://dbpedia.org/resource/Prohibition_of_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourExceptions>
+  a rdfs:Class ;
+  rdfs:label "Exceptions to the prohibition of forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295533>, <http://dbpedia.org/resource/Exceptions_to_the_prohibition_of_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourCompensation>
+  a rdfs:Class ;
+  rdfs:label "Compensation for forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295534>, <http://dbpedia.org/resource/Compensation_for_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourPrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295535>, <http://dbpedia.org/resource/Prevention_of_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295536>, <http://dbpedia.org/resource/Jurisdiction_over_forced_labour>, <http://www.wikidata.org/entity/Q3295542> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295537>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295538>, <http://dbpedia.org/resource/Complaints_of_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295539>, <http://dbpedia.org/resource/Investigation_of_complaints_of_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295540>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#ForcedLabourInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of forced labour"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295541>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_forced_labour> .
+
+<http://www.udhr.org/ontology/udhr#SlaveryPrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of slavery"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295553>, <http://dbpedia.org/resource/Prevention_of_slavery>, <http://www.wikidata.org/entity/Q3295631> .
+
+<http://www.udhr.org/ontology/udhr#SlaveryJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over slavery"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295554>, <http://dbpedia.org/resource/Jurisdiction_over_slavery>, <http://www.wikidata.org/entity/Q3295632> .
+
+<http://www.udhr.org/ontology/udhr#SlaveryExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of slavery"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295555>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_slavery>, <http://www.wikidata.org/entity/Q3295633> .
+
+<http://www.udhr.org/ontology/udhr#SlaveryComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of slavery"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295556>, <http://dbpedia.org/resource/Complaints_of_slavery>, <http://www.wikidata.org/entity/Q3295634> .
+
+<http://www.udhr.org/ontology/udhr#SlaveryInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of slavery"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295557>, <http://dbpedia.org/resource/Investigation_of_complaints_of_slavery>, <http://www.wikidata.org/entity/Q3295635> .
+
+<http://www.udhr.org/ontology/udhr#SlaveryProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of slavery"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295558>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_slavery>, <http://www.wikidata.org/entity/Q3295636> .
+
+<http://www.udhr.org/ontology/udhr#SlaveryInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of slavery"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295559>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_slavery>, <http://www.wikidata.org/entity/Q3295637> .
+
+<http://www.udhr.org/ontology/udhr#ForcedMarriage>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of forced marriage"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295560>, <http://dbpedia.org/resource/Prohibition_of_forced_marriage> .
+
+<http://www.udhr.org/ontology/udhr#ForcedMarriagePrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of forced marriage"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295561>, <http://dbpedia.org/resource/Prevention_of_forced_marriage> .
+
+<http://www.udhr.org/ontology/udhr#ForcedMarriageJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over forced marriage"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295562>, <http://dbpedia.org/resource/Jurisdiction_over_forced_marriage> .
+
+<http://www.udhr.org/ontology/udhr#ForcedMarriageExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of forced marriage"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295563>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_forced_marriage> .
+
+<http://www.udhr.org/ontology/udhr#ForcedMarriageComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of forced marriage"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295564>, <http://dbpedia.org/resource/Complaints_of_forced_marriage> .
+
+<http://www.udhr.org/ontology/udhr#ForcedMarriageInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of forced marriage"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295565>, <http://dbpedia.org/resource/Investigation_of_complaints_of_forced_marriage> .
+
+<http://www.udhr.org/ontology/udhr#ForcedMarriageProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of forced marriage"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295566>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_forced_marriage> .
+
+<http://www.udhr.org/ontology/udhr#ForcedMarriageInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of forced marriage"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295567>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_forced_marriage> .
+
+<http://www.udhr.org/ontology/udhr#TrafficInPersons>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of traffic in persons"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295568>, <http://dbpedia.org/resource/Prohibition_of_traffic_in_persons> .
+
+<http://www.udhr.org/ontology/udhr#TrafficInPersonsPrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of traffic in persons"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295569>, <http://dbpedia.org/resource/Prevention_of_traffic_in_persons> .
+
+<http://www.udhr.org/ontology/udhr#TrafficInPersonsJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over traffic in persons"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295570>, <http://dbpedia.org/resource/Jurisdiction_over_traffic_in_persons> .
+
+<http://www.udhr.org/ontology/udhr#TrafficInPersonsExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of traffic in persons"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295571>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_traffic_in_persons> .
+
+<http://www.udhr.org/ontology/udhr#TrafficInPersonsComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of traffic in persons"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295572>, <http://dbpedia.org/resource/Complaints_of_traffic_in_persons> .
+
+<http://www.udhr.org/ontology/udhr#TrafficInPersonsInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of traffic in persons"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295573>, <http://dbpedia.org/resource/Investigation_of_complaints_of_traffic_in_persons> .
+
+<http://www.udhr.org/ontology/udhr#TrafficInPersonsProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of traffic in persons"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295574>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_traffic_in_persons> .
+
+<http://www.udhr.org/ontology/udhr#TrafficInPersonsInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of traffic in persons"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295575>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_traffic_in_persons> .
+
+<http://www.udhr.org/ontology/udhr#Apartheid>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of apartheid"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295576>, <http://dbpedia.org/resource/Prohibition_of_apartheid> .
+
+<http://www.udhr.org/ontology/udhr#ApartheidPrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of apartheid"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295577>, <http://dbpedia.org/resource/Prevention_of_apartheid> .
+
+<http://www.udhr.org/ontology/udhr#ApartheidJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over apartheid"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295578>, <http://dbpedia.org/resource/Jurisdiction_over_apartheid> .
+
+<http://www.udhr.org/ontology/udhr#ApartheidExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of apartheid"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295579>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_apartheid> .
+
+<http://www.udhr.org/ontology/udhr#ApartheidComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of apartheid"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295580>, <http://dbpedia.org/resource/Complaints_of_apartheid> .
+
+<http://www.udhr.org/ontology/udhr#ApartheidInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of apartheid"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295581>, <http://dbpedia.org/resource/Investigation_of_complaints_of_apartheid> .
+
+<http://www.udhr.org/ontology/udhr#ApartheidProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of apartheid"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295582>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_apartheid> .
+
+<http://www.udhr.org/ontology/udhr#ApartheidInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of apartheid"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295583>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_apartheid> .
+
+<http://www.udhr.org/ontology/udhr#Genocide>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of genocide"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295584>, <http://dbpedia.org/resource/Prohibition_of_genocide> .
+
+<http://www.udhr.org/ontology/udhr#GenocidePrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of genocide"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295585>, <http://dbpedia.org/resource/Prevention_of_genocide> .
+
+<http://www.udhr.org/ontology/udhr#GenocideJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over genocide"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295586>, <http://dbpedia.org/resource/Jurisdiction_over_genocide> .
+
+<http://www.udhr.org/ontology/udhr#GenocideExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of genocide"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295587>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_genocide> .
+
+<http://www.udhr.org/ontology/udhr#GenocideComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of genocide"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295588>, <http://dbpedia.org/resource/Complaints_of_genocide> .
+
+<http://www.udhr.org/ontology/udhr#GenocideInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of genocide"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295589>, <http://dbpedia.org/resource/Invest>, <http://dbpedia.org/resource/Investigation_of_complaints_of_genocide> .
+
+<http://www.udhr.org/ontology/udhr#GenocideProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of genocide"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295590>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_genocide> .
+
+<http://www.udhr.org/ontology/udhr#GenocideInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of genocide"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295591>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_genocide> .
+
+<http://www.udhr.org/ontology/udhr#Disappearance>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295592>, <http://dbpedia.org/resource/Prohibition_of_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#DisappearancePrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295593>, <http://dbpedia.org/resource/Prevention_of_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#DisappearanceJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295594>, <http://dbpedia.org/resource/Jurisdiction_over_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#DisappearanceExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295595>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#DisappearanceComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295596>, <http://dbpedia.org/resource/Complaints_of_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#DisappearanceInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295597>, <http://dbpedia.org/resource/Investigation_of_complaints_of_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#DisappearanceProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295598>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#DisappearanceInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295598>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationPrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295600>, <http://dbpedia.org/resource/Prevention_of_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295601>, <http://dbpedia.org/resource/Jurisdiction_over_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295602>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295603>, <http://dbpedia.org/resource/Complaints_of_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295604>, <http://dbpedia.org/resource/Investigation_of_complaints_of_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295605>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#DiscriminationInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of discrimination"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295606>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_discrimination> .
+
+<http://www.udhr.org/ontology/udhr#ChildAbuse>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of child abuse"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295615>, <http://dbpedia.org/resource/Prohibition_of_child_abuse> .
+
+<http://www.udhr.org/ontology/udhr#ChildAbusePrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of child abuse"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295616>, <http://dbpedia.org/resource/Prevention_of_child_abuse> .
+
+<http://www.udhr.org/ontology/udhr#ChildAbuseJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over child abuse"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295617>, <http://dbpedia.org/resource/Jurisdiction_over_child_abuse> .
+
+<http://www.udhr.org/ontology/udhr#ChildAbuseExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of child abuse"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295618>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_child_abuse> .
+
+<http://www.udhr.org/ontology/udhr#ChildAbuseInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of child abuse"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295619>, <http://dbpedia.org/resource/Investigation_of_complaints_of_child_abuse> .
+
+<http://www.udhr.org/ontology/udhr#ChildAbuseProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of child abuse"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295620>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_child_abuse> .
+
+<http://www.udhr.org/ontology/udhr#ChildAbuseInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of child abuse"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295621>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_child_abuse> .
+
+<http://www.udhr.org/ontology/udhr#HumanTrafficking>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of human trafficking"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295622>, <http://dbpedia.org/resource/Prohibition_of_human_trafficking> .
+
+<http://www.udhr.org/ontology/udhr#HumanTraffickingPrevention>
+  a rdfs:Class ;
+  rdfs:label "Prevention of human trafficking"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295623>, <http://dbpedia.org/resource/Prevention_of_human_trafficking> .
+
+<http://www.udhr.org/ontology/udhr#HumanTraffickingJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over human trafficking"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295624>, <http://dbpedia.org/resource/Jurisdiction_over_human_trafficking> .
+
+<http://www.udhr.org/ontology/udhr#HumanTraffickingExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of human trafficking"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295625>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_human_trafficking> .
+
+<http://www.udhr.org/ontology/udhr#HumanTraffickingComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of human trafficking"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295626>, <http://dbpedia.org/resource/Complaints_of_human_trafficking> .
+
+<http://www.udhr.org/ontology/udhr#HumanTraffickingInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of human trafficking"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295627>, <http://dbpedia.org/resource/Investigation_of_complaints_of_human_trafficking> .
+
+<http://www.udhr.org/ontology/udhr#HumanTraffickingProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of human trafficking"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295628>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_human_trafficking> .
+
+<http://www.udhr.org/ontology/udhr#HumanTraffickingInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of human trafficking"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295629>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_human_trafficking> .
+
+<http://www.udhr.org/ontology/udhr#EnforcedDisappearance>
+  a rdfs:Class ;
+  rdfs:label "Prohibition of enforced disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295638>, <http://dbpedia.org/resource/Prohibition_of_enforced_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#EnforcedDisappearanceJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction over enforced disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295639>, <http://dbpedia.org/resource/Jurisdiction_over_enforced_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#EnforcedDisappearanceExtradition>
+  a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of enforced disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295640>, <http://dbpedia.org/resource/Extradition_of_persons_accused_of_enforced_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#EnforcedDisappearanceComplaints>
+  a rdfs:Class ;
+  rdfs:label "Complaints of enforced disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295641>, <http://dbpedia.org/resource/Complaints_of_enforced_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#EnforcedDisappearanceInvestigation>
+  a rdfs:Class ;
+  rdfs:label "Investigation of complaints of enforced disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295642>, <http://dbpedia.org/resource/Investigation_of_complaints_of_enforced_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#EnforcedDisappearanceProsecution>
+  a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of enforced disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295643>, <http://dbpedia.org/resource/Prosecution_of_persons_accused_of_enforced_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#EnforcedDisappearanceInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of enforced disappearance"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295644>, <http://dbpedia.org/resource/International_cooperation_in_the_prevention_of_enforced_disappearance> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsEducation>
+  a rdfs:Class ;
+  rdfs:label "Education in the field of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295645>, <http://dbpedia.org/resource/Education_in_the_field_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsEducationCurriculum>
+  a rdfs:Class ;
+  rdfs:label "Human rights education curriculum"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295646>, <http://dbpedia.org/resource/Human_rights_education_curriculum> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsEducationTraining>
+  a rdfs:Class ;
+  rdfs:label "Human rights education training"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295647>, <http://dbpedia.org/resource/Human_rights_education_training> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsEducationResearch>
+  a rdfs:Class ;
+  rdfs:label "Human rights education research"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295648>, <http://dbpedia.org/resource/Human_rights_education_research> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsEducationOutreach>
+  a rdfs:Class ;
+  rdfs:label "Human rights education outreach"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295649>, <http://dbpedia.org/resource/Human_rights_education_outreach> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsEducationInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in human rights education"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295650>, <http://dbpedia.org/resource/International_cooperation_in_human_rights_education> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtection>
+  a rdfs:Class ;
+  rdfs:label "Protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295651>, <http://dbpedia.org/resource/Protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295659> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionDomestic>
+  a rdfs:Class ;
+  rdfs:label "Domestic protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295652>, <http://dbpedia.org/resource/Domestic_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionInternational>
+  a rdfs:Class ;
+  rdfs:label "International protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295653>, <http://dbpedia.org/resource/International_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionCapacityBuilding>
+  a rdfs:Class ;
+  rdfs:label "Capacity-building for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295654>, <http://dbpedia.org/resource/Capacity-building_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295655>, <http://dbpedia.org/resource/International_cooperation_in_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotion>
+  a rdfs:Class ;
+  rdfs:label "Promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295656>, <http://dbpedia.org/resource/Promotion_of_human_rights>, <http://www.wikidata.org/entity/Q3295660> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionDomestic>
+  a rdfs:Class ;
+  rdfs:label "Domestic promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295657>, <http://dbpedia.org/resource/Domestic_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionInternational>
+  a rdfs:Class ;
+  rdfs:label "International promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295658>, <http://dbpedia.org/resource/International_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295659>, <http://dbpedia.org/resource/International_cooperation_in_the_promotion_of_human_rights>, <http://www.wikidata.org/entity/Q3295677> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanism>
+  a rdfs:Class ;
+  rdfs:label "Mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295660>, <http://dbpedia.org/resource/Mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295661> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismInternational>
+  a rdfs:Class ;
+  rdfs:label "International mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295661>, <http://dbpedia.org/resource/International_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295663> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismRegional>
+  a rdfs:Class ;
+  rdfs:label "Regional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295662>, <http://dbpedia.org/resource/Regional_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295664> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismDomestic>
+  a rdfs:Class ;
+  rdfs:label "Domestic mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295663>, <http://dbpedia.org/resource/Domestic_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295662> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the establishment and strengthening of mechanisms for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295664>, <http://dbpedia.org/resource/International_cooperation_in_the_establishment_and_strengthening_of_mechanisms_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionMechanism>
+  a rdfs:Class ;
+  rdfs:label "Mechanism for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295665>, <http://dbpedia.org/resource/Mechanism_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionMechanismInternational>
+  a rdfs:Class ;
+  rdfs:label "International mechanism for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295666>, <http://dbpedia.org/resource/International_mechanism_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionMechanismDomestic>
+  a rdfs:Class ;
+  rdfs:label "Domestic mechanism for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295668>, <http://dbpedia.org/resource/Domestic_mechanism_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionMechanismInternationalCooperation>
+  a rdfs:Class ;
+  rdfs:label "International cooperation in the establishment and strengthening of mechanisms for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295669>, <http://dbpedia.org/resource/International_cooperation_in_the_establishment_and_strengthening_of_mechanisms_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsInclusiveDevelopment>
+  a rdfs:Class ;
+  rdfs:label "Inclusive development and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295670>, <http://dbpedia.org/resource/Inclusive_development_and_the_promotion_and_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsInclusiveEconomicGrowth>
+  a rdfs:Class ;
+  rdfs:label "Inclusive economic growth and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295671>, <http://dbpedia.org/resource/Inclusive_economic_growth_and_the_promotion_and_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsInclusiveSocialDevelopment>
+  a rdfs:Class ;
+  rdfs:label "Inclusive social development and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295672>, <http://dbpedia.org/resource/Inclusive_social_development_and_the_promotion_and_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsInclusiveEnvironmentalProtection>
+  a rdfs:Class ;
+  rdfs:label "Inclusive environmental protection and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295673>, <http://dbpedia.org/resource/Inclusive_environmental_protection_and_the_promotion_and_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsInclusiveSustainableDevelopment>
+  a rdfs:Class ;
+  rdfs:label "Inclusive sustainable development and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295674>, <http://dbpedia.org/resource/Inclusive_sustainable_development_and_the_promotion_and_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsInclusiveGlobalization>
+  a rdfs:Class ;
+  rdfs:label "Inclusive globalization and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295675>, <http://dbpedia.org/resource/Inclusive_globalization_and_the_promotion_and_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsInclusiveTechnologyTransfer>
+  a rdfs:Class ;
+  rdfs:label "Inclusive technology transfer and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295676>, <http://dbpedia.org/resource/Inclusive_technology_transfer_and_the_promotion_and_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionEducation>
+  a rdfs:Class ;
+  rdfs:label "Education for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295678>, <http://dbpedia.org/resource/Education_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionAwareness>
+  a rdfs:Class ;
+  rdfs:label "Awareness-raising for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295679>, <http://dbpedia.org/resource/Awareness-raising_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionTraining>
+  a rdfs:Class ;
+  rdfs:label "Training for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295680>, <http://dbpedia.org/resource/Training_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionTechnicalAssistance>
+  a rdfs:Class ;
+  rdfs:label "Technical assistance for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295681>, <http://dbpedia.org/resource/Technical_assistance_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionExpertise>
+  a rdfs:Class ;
+  rdfs:label "Expertise for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295682>, <http://dbpedia.org/resource/Expertise_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionInformation>
+  a rdfs:Class ;
+  rdfs:label "Information for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295683>, <http://dbpedia.org/resource/Information_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsPromotionDialogue>
+  a rdfs:Class ;
+  rdfs:label "Dialogue for the promotion of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295684>, <http://dbpedia.org/resource/Dialogue_for_the_promotion_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#UniversalDeclarationOfHumanRights>
+  a rdfs:Class ;
+  rdfs:label "Universal Declaration of Human Rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q1656682>, <http://dbpedia.org/resource/Universal_Declaration_of_Human_Rights> .
+
+<http://www.udhr.org/ontology/udhr#Article>
+  a rdfs:Class ;
+  rdfs:label "Article of the Universal Declaration of Human Rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q294804>, <http://dbpedia.org/resource/Article_of_the_Universal_Declaration_of_Human_Rights> .
+
+<http://www.udhr.org/ontology/udhr#Justice>
+  a rdfs:Class ;
+  rdfs:label "Justice"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q155091>, <http://dbpedia.org/resource/Justice> .
+
+<http://www.udhr.org/ontology/udhr#Peace>
+  a rdfs:Class ;
+  rdfs:label "Peace"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q7366>, <http://dbpedia.org/resource/Peace> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismUniversal>
+  a rdfs:Class ;
+  rdfs:label "Universal mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295665>, <http://dbpedia.org/resource/Universal_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismVoluntary>
+  a rdfs:Class ;
+  rdfs:label "Voluntary mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295666>, <http://dbpedia.org/resource/Voluntary_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismInformal>
+  a rdfs:Class ;
+  rdfs:label "Informal mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295667>, <http://dbpedia.org/resource/Informal_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismFormal>
+  a rdfs:Class ;
+  rdfs:label "Formal mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295668>, <http://dbpedia.org/resource/Formal_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismSpecialized>
+  a rdfs:Class ;
+  rdfs:label "Specialized mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295669>, <http://dbpedia.org/resource/Specialized_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismComplaint>
+  a rdfs:Class ;
+  rdfs:label "Complaint mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295670>, <http://dbpedia.org/resource/Complaint_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismPreventive>
+  a rdfs:Class ;
+  rdfs:label "Preventive mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295671>, <http://dbpedia.org/resource/Preventive_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismProtective>
+  a rdfs:Class ;
+  rdfs:label "Protective mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295672>, <http://dbpedia.org/resource/Protective_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismRemedial>
+  a rdfs:Class ;
+  rdfs:label "Remedial mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295673>, <http://dbpedia.org/resource/Remedial_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismCompensatory>
+  a rdfs:Class ;
+  rdfs:label "Compensatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295674>, <http://dbpedia.org/resource/Compensatory_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismPunitive>
+  a rdfs:Class ;
+  rdfs:label "Punitive mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295675>, <http://dbpedia.org/resource/Punitive_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismEnforcement>
+  a rdfs:Class ;
+  rdfs:label "Enforcement mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295676>, <http://dbpedia.org/resource/Enforcement_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismPrecedent>
+  a rdfs:Class ;
+  rdfs:label "Precedent mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295677>, <http://dbpedia.org/resource/Precedent_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismJurisdiction>
+  a rdfs:Class ;
+  rdfs:label "Jurisdiction mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295678>, <http://dbpedia.org/resource/Jurisdiction_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismAdjudicatory>
+  a rdfs:Class ;
+  rdfs:label "Adjudicatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295679>, <http://dbpedia.org/resource/Adjudicatory_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismAdvisory>
+  a rdfs:Class ;
+  rdfs:label "Advisory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295680>, <http://dbpedia.org/resource/Advisory_mechanism_for_the_protection_of_human_rights> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismConsultative>
+  a rdfs:Class ;
+  rdfs:label "Consultative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295681>, <http://dbpedia.org/resource/Consultative_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295697>, <http://www.wikidata.org/entity/Q3295713> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismEvaluative>
+  a rdfs:Class ;
+  rdfs:label "Evaluative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295682>, <http://dbpedia.org/resource/Evaluative_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295698>, <http://www.wikidata.org/entity/Q3295714> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismFactFinding>
+  a rdfs:Class ;
+  rdfs:label "Fact-finding mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295683>, <http://dbpedia.org/resource/Fact-finding_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295699>, <http://www.wikidata.org/entity/Q3295715> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismInvestigative>
+  a rdfs:Class ;
+  rdfs:label "Investigative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295684>, <http://dbpedia.org/resource/Investigative_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295700>, <http://www.wikidata.org/entity/Q3295716> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismObservatory>
+  a rdfs:Class ;
+  rdfs:label "Observatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295685>, <http://dbpedia.org/resource/Observatory_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295701>, <http://www.wikidata.org/entity/Q3295717> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismPromotional>
+  a rdfs:Class ;
+  rdfs:label "Promotional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295686>, <http://dbpedia.org/resource/Promotional_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295702>, <http://www.wikidata.org/entity/Q3295718> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismProtocol>
+  a rdfs:Class ;
+  rdfs:label "Protocol mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295687>, <http://dbpedia.org/resource/Protocol_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295703> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismRecommendatory>
+  a rdfs:Class ;
+  rdfs:label "Recommendatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295688>, <http://dbpedia.org/resource/Recommendatory_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295704> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismStandardSetting>
+  a rdfs:Class ;
+  rdfs:label "Standard-setting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295689>, <http://dbpedia.org/resource/Standard-setting_mechanism_for_the_protection_of_human_rights>, <http://dbpedia.org/resource/Standard-setting_mechanism_for_the_protection_of_human>, <http://www.wikidata.org/entity/Q3295705> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismTechnical>
+  a rdfs:Class ;
+  rdfs:label "Technical mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295690>, <http://dbpedia.org/resource/Technical_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295706> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismTreaty>
+  a rdfs:Class ;
+  rdfs:label "Treaty mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295691>, <http://dbpedia.org/resource/Treaty_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295707> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismVerification>
+  a rdfs:Class ;
+  rdfs:label "Verification mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295692>, <http://dbpedia.org/resource/Verification_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295708> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismMonitoring>
+  a rdfs:Class ;
+  rdfs:label "Monitoring mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295693>, <http://dbpedia.org/resource/Monitoring_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295709> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismReporting>
+  a rdfs:Class ;
+  rdfs:label "Reporting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295694>, <http://dbpedia.org/resource/Reporting_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295710> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismSupervisory>
+  a rdfs:Class ;
+  rdfs:label "Supervisory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295695>, <http://dbpedia.org/resource/Supervisory_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295711> .
+
+<http://www.udhr.org/ontology/udhr#HumanRightsProtectionMechanismTechnicalAssistance>
+  a rdfs:Class ;
+  rdfs:label "Technical assistance mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso <http://www.wikidata.org/entity/Q3295696>, <http://dbpedia.org/resource/Technical_assistance_mechanism_for_the_protection_of_human_rights>, <http://www.wikidata.org/entity/Q3295712> .

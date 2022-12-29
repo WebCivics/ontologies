@@ -1,0 +1,2008 @@
+NOTE: ORIGINAL FILE BUT IT HAS SOME PROBLEMS, THE ONTOLOGICAL REFERENCES ARE WRONG AND I THINK THERE'S DUPLICATES. 
+
+
+@prefix udhr: <http://www.udhr.org/ontology/udhr#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+
+udhr:HumanRights a rdfs:Class ;
+  rdfs:label "Human rights"@en ;
+  rdfs:seeAlso wd:Q139963, dbr:Human_rights .
+
+udhr:Equality a rdfs:Class ;
+  rdfs:label "Equality"@en ;
+  rdfs:seeAlso wd:Q1270, dbr:Equality .
+
+udhr:Dignity a rdfs:Class ;
+  rdfs:label "Dignity"@en ;
+  rdfs:seeAlso wd:Q10460, dbr:Dignity .
+
+udhr:Reason a rdfs:Class ;
+  rdfs:label "Reason"@en ;
+  rdfs:seeAlso wd:Q1850, dbr:Reason .
+
+udhr:Conscience a rdfs:Class ;
+  rdfs:label "Conscience"@en ;
+  rdfs:seeAlso wd:Q1736, dbr:Conscience .
+
+udhr:Brotherhood a rdfs:Class ;
+  rdfs:label "Brotherhood"@en ;
+  rdfs:seeAlso wd:Q684746, dbr:Brotherhood .
+
+udhr:Rights a rdfs:Class ;
+  rdfs:label "Rights"@en ;
+  rdfs:seeAlso wd:Q16935, dbr:Rights .
+
+udhr:Freedom a rdfs:Class ;
+  rdfs:label "Freedom"@en ;
+  rdfs:seeAlso wd:Q9680, dbr:Freedom .
+
+udhr:Race a rdfs:Class ;
+  rdfs:label "Race"@en ;
+  rdfs:seeAlso wd:Q16897, dbr:Race .
+
+udhr:Colour a rdfs:Class ;
+  rdfs:label "Colour"@en ;
+  rdfs:seeAlso wd:Q12792, dbr:Color .
+
+udhr:Sex a rdfs:Class ;
+  rdfs:label "Sex"@en ;
+  rdfs:seeAlso wd:Q48270, dbr:Sex .
+
+udhr:Language a rdfs:Class ;
+  rdfs:label "Language"@en ;
+  rdfs:seeAlso wd:Q34770, dbr:Language .
+
+udhr:Religion a rdfs:Class ;
+  rdfs:label "Religion"@en ;
+  rdfs:seeAlso wd:Q16970, dbr:Religion .
+udhr:PoliticalOpinion a rdfs:Class ;
+  rdfs:label "Political opinion"@en ;
+  rdfs:seeAlso wd:Q1381770, dbr:Political_opinion .
+
+udhr:NationalOrigin a rdfs:Class ;
+  rdfs:label "National origin"@en ;
+  rdfs:seeAlso wd:Q206855, dbr:Nationality .
+
+udhr:SocialOrigin a rdfs:Class ;
+  rdfs:label "Social origin"@en ;
+  rdfs:seeAlso wd:Q206855, dbr:Nationality .
+
+udhr:Property a rdfs:Class ;
+  rdfs:label "Property"@en ;
+  rdfs:seeAlso wd:Q3384141, dbr:Property .
+
+udhr:Birth a rdfs:Class ;
+  rdfs:label "Birth"@en ;
+  rdfs:seeAlso wd:Q5, dbr:Birth .
+
+udhr:OtherStatus a rdfs:Class ;
+  rdfs:label "Other status"@en ;
+  rdfs:seeAlso wd:Q18084221, dbr:Other_status .
+
+udhr:CivilRights a rdfs:Class ;
+  rdfs:label "Civil rights"@en ;
+  rdfs:seeAlso wd:Q191867, dbr:Civil_rights .
+
+udhr:PoliticalRights a rdfs:Class ;
+  rdfs:label "Political rights"@en ;
+  rdfs:seeAlso wd:Q1263829, dbr:Political_rights .
+
+udhr:EconomicRights a rdfs:Class ;
+  rdfs:label "Economic rights"@en ;
+  rdfs:seeAlso wd:Q343637, dbr:Economic_rights .
+
+udhr:SocialRights a rdfs:Class ;
+  rdfs:label "Social rights"@en ;
+  rdfs:seeAlso wd:Q1553692, dbr:Social_rights .
+
+udhr:CulturalRights a rdfs:Class ;
+  rdfs:label "Cultural rights"@en ;
+  rdfs:seeAlso wd:Q370175, dbr:Cultural_rights .
+
+udhr:Discrimination a rdfs:Class ;
+  rdfs:label "Discrimination"@en ;
+  rdfs:seeAlso wd:Q772596, dbr:Discrimination .
+
+udhr:EqualProtection a rdfs:Class ;
+  rdfs:label "Equal protection"@en ;
+  rdfs:seeAlso wd:Q191330, dbr:Equal_protection .
+
+udhr:Universality a rdfs:Class ;
+  rdfs:label "Universality"@en ;
+  rdfs:seeAlso wd:Q145852, dbr:Universality .
+
+udhr:NonDiscrimination a rdfs:Class ;
+  rdfs:label "Non-discrimination"@en ;
+  rdfs:seeAlso wd:Q347548, dbr:Non-discrimination .
+
+udhr:Indivisibility a rdfs:Class ;
+  rdfs:label "Indivisibility"@en ;
+  rdfs:seeAlso wd:Q388380, dbr:Indivisibility .
+
+udhr:Interdependence a rdfs:Class ;
+  rdfs:label "Interdependence"@en ;
+  rdfs:seeAlso wd:Q973287, dbr:Interdependence .
+
+udhr:Solidarity a rdfs:Class ;
+  rdfs:label "Solidarity"@en ;
+  rdfs:seeAlso wd:Q148025, dbr:Solidarity .
+
+udhr:DueProcess a rdfs:Class ;
+  rdfs:label "Due process"@en ;
+  rdfs:seeAlso wd:Q191332, dbr:Due_process .
+
+udhr:PresumptionInnocence a rdfs:Class ;
+  rdfs:label "Presumption of innocence"@en ;
+  rdfs:seeAlso wd:Q1623033, dbr:Presumption_of_innocence .
+
+udhr:Trial a rdfs:Class ;
+  rdfs:label "Trial"@en ;
+  rdfs:seeAlso wd:Q8999, dbr:Trial .
+
+udhr:PenalOffence a rdfs:Class ;
+  rdfs:label "Penal offence"@en ;
+  rdfs:seeAlso wd:Q174180, dbr:Penal_offence .
+
+udhr:Defence a rdfs:Class ;
+  rdfs:label "Defence"@en ;
+  rdfs:seeAlso wd:Q247787, dbr:Defence .
+
+udhr:ActOmission a rdfs:Class ;
+  rdfs:label "Act or omission"@en ;
+  rdfs:seeAlso wd:Q606718, dbr:Act_or_omission .
+
+udhr:HeavierPenalty a rdfs:Class ;
+  rdfs:label "Heavier penalty"@en ;
+  rdfs:seeAlso wd:Q6054874, dbr:Heavier_penalty .
+
+udhr:HumanDignity a rdfs:Class ;
+  rdfs:label "Human dignity"@en ;
+  rdfs:seeAlso wd:Q139963, dbr:Human_dignity .
+
+udhr:FundamentalFreedoms a rdfs:Class ;
+  rdfs:label "Fundamental freedoms"@en ;
+  rdfs:seeAlso wd:Q161061, dbr:Fundamental_freedoms .
+
+udhr:FreedomThought a rdfs:Class ;
+  rdfs:label "Freedom of thought"@en ;
+  rdfs:seeAlso wd:Q9756, dbr:Freedom_of_thought .
+
+udhr:FreedomOpinion a rdfs:Class ;
+  rdfs:label "Freedom of opinion"@en ;
+  rdfs:seeAlso wd:Q1381770, dbr:Freedom_of_opinion .
+
+udhr:FreedomExpression a rdfs:Class ;
+  rdfs:label "Freedom of expression"@en ;
+  rdfs:seeAlso wd:Q146588, dbr:Freedom_of_expression .
+
+udhr:FreedomInformation a rdfs:Class ;
+  rdfs:label "Freedom of information"@en ;
+  rdfs:seeAlso wd:Q146595, dbr:Freedom_of_information .
+
+udhr:FreedomAssociation a rdfs:Class ;
+  rdfs:label "Freedom of association"@en ;
+  rdfs:seeAlso wd:Q391478, dbr:Freedom_of_association .
+
+udhr:FreedomAssembly a rdfs:Class ;
+  rdfs:label "Freedom of assembly"@en ;
+  rdfs:seeAlso wd:Q725944, dbr:Freedom_of_assembly .
+
+udhr:FreedomReligion a rdfs:Class ;
+  rdfs:label "Freedom of religion"@en ;
+  rdfs:seeAlso wd:Q16970, dbr:Freedom_of_religion .
+
+udhr:FreedomMovement a rdfs:Class ;
+  rdfs:label "Freedom of movement"@en ;
+  rdfs:seeAlso wd:Q694883, dbr:Freedom_of_movement .
+
+udhr:FreedomResidence a rdfs:Class ;
+  rdfs:label "Freedom of residence"@en ;
+  rdfs:seeAlso wd:Q1493814, dbr:Freedom_of_residence .
+
+udhr:FreedomEmigration a rdfs:Class ;
+  rdfs:label "Freedom of emigration"@en ;
+  rdfs:seeAlso wd:Q391482, dbr:Freedom_of_emigration .
+
+udhr:FreedomImmigration a rdfs:Class ;
+  rdfs:label "Freedom of immigration"@en ;
+  rdfs:seeAlso wd:Q634104, dbr:Freedom_of_immigration .
+
+udhr:Work a rdfs:Class ;
+  rdfs:label "Work"@en ;
+  rdfs:seeAlso wd:Q1354170, dbr:Work .
+
+udhr:FreeChoiceEmployment a rdfs:Class ;
+  rdfs:label "Free choice of employment"@en ;
+  rdfs:seeAlso wd:Q1427235, dbr:Free_choice_of_employment .
+
+udhr:JustRemuneration a rdfs:Class ;
+  rdfs:label "Just and favourable remuneration"@en ;
+  rdfs:seeAlso wd:Q1515087, dbr:Just_and_favourable_remuneration .
+
+udhr:ConditionsWork a rdfs:Class ;
+  rdfs:label "Conditions of work"@en ;
+  rdfs:seeAlso wd:Q2305370, dbr:Conditions_of_work .
+
+udhr:RestLeisure a rdfs:Class ;
+  rdfs:label "Rest, leisure, and reasonable limitation of working hours"@en ;
+  rdfs:seeAlso wd:Q3295309, dbr:Rest_leisure_and_reasonable_limitation_of_working_hours .
+
+udhr:SafetyHealth a rdfs:Class ;
+  rdfs:label "Safety and health of workers"@en ;
+  rdfs:seeAlso wd:Q3295314, dbr:Safety_and_health_of_workers .
+
+udhr:ProtectionMotherhood a rdfs:Class ;
+  rdfs:label "Protection of motherhood"@en ;
+  rdfs:seeAlso wd:Q3295317, dbr:Protection_of_motherhood .
+
+udhr:EqualPay a rdfs:Class ;
+  rdfs:label "Equal pay for equal work"@en ;
+  rdfs:seeAlso wd:Q3295321, dbr:Equal_pay_for_equal_work .
+
+udhr:ProtectionChildren a rdfs:Class ;
+  rdfs:label "Protection of children"@en ;
+  rdfs:seeAlso wd:Q182398, dbr:Protection_of_children .
+
+udhr:RightEducation a rdfs:Class ;
+  rdfs:label "Right to education"@en ;
+  rdfs:seeAlso wd:Q3968, dbr:Right_to_education .
+
+udhr:TechnicalEducation a rdfs:Class ;
+  rdfs:label "Technical and professional education"@en ;
+  rdfs:seeAlso wd:Q3295329, dbr:Technical_and_professional_education .
+
+udhr:EducationalOpportunities a rdfs:Class ;
+  rdfs:label "Equal educational opportunities"@en ;
+  rdfs:seeAlso wd:Q3295330, dbr:Equal_educational_opportunities .
+
+udhr:CulturalSocietalValues a rdfs:Class ;
+  rdfs:label "Respect for the rights and freedoms of others"@en ;
+  rdfs:seeAlso wd:Q3295331, dbr:Respect_for_the_rights_and_freedoms_of_others .
+
+udhr:HumanRights a rdfs:Class ;
+  rdfs:label "Human rights"@en ;
+  rdfs:seeAlso wd:Q65659, dbr:Human_rights .
+
+udhr:Equality a rdfs:Class ;
+  rdfs:label "Equality"@en ;
+  rdfs:seeAlso wd:Q23907, dbr:Equality .
+
+udhr:Discrimination a rdfs:Class ;
+  rdfs:label "Discrimination"@en ;
+  rdfs:seeAlso wd:Q200180, dbr:Discrimination .
+
+udhr:NonDiscrimination a rdfs:Class ;
+  rdfs:label "Non-discrimination"@en ;
+  rdfs:seeAlso wd:Q623636, dbr:Non-discrimination .
+
+udhr:Marriage a rdfs:Class ;
+  rdfs:label "Marriage"@en ;
+  rdfs:seeAlso wd:Q2307, dbr:Marriage .
+
+udhr:PrivateFamilyLife a rdfs:Class ;
+  rdfs:label "Private and family life"@en ;
+  rdfs:seeAlso wd:Q3295345, dbr:Private_and_family_life .
+
+udhr:Home a rdfs:Class ;
+  rdfs:label "Home"@en ;
+  rdfs:seeAlso wd:Q3950, dbr:Home .
+
+udhr:Correspondence a rdfs:Class ;
+  rdfs:label "Correspondence"@en ;
+  rdfs:seeAlso wd:Q844703, dbr:Correspondence .
+
+udhr:ArbitraryInterference a rdfs:Class ;
+  rdfs:label "Arbitrary interference"@en ;
+  rdfs:seeAlso wd:Q3295350, dbr:Arbitrary_interference .
+
+udhr:ProtectionLaw a rdfs:Class ;
+  rdfs:label "Protection by law"@en ;
+  rdfs:seeAlso wd:Q3295351, dbr:Protection_by_law .
+
+udhr:PublicTrial a rdfs:Class ;
+  rdfs:label "Public trial"@en ;
+  rdfs:seeAlso wd:Q395042, dbr:Public_trial .
+
+udhr:DueProcessLaw a rdfs:Class ;
+  rdfs:label "Due process of law"@en ;
+  rdfs:seeAlso wd:Q644463, dbr:Due_process_of_law .
+
+udhr:PresumptionInnocence a rdfs:Class ;
+  rdfs:label "Presumption of innocence"@en ;
+  rdfs:seeAlso wd:Q322415, dbr:Presumption_of_innocence .
+
+udhr:RightDefense a rdfs:Class ;
+  rdfs:label "Right to a fair and public hearing"@en ;
+  rdfs:seeAlso wd:Q3295360, dbr:Right_to_a_fair_and_public_hearing .
+
+udhr:JudicialControlDetention a rdfs:Class ;
+  rdfs:label "Judicial control of detention"@en ;
+  rdfs:seeAlso wd:Q3295361, dbr:Judicial_control_of_detention .
+
+udhr:ProtectionPunishment a rdfs:Class ;
+  rdfs:label "Protection against torture and other cruel, inhuman, or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295362, dbr:Protection_against_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:EqualProtectionLaw a rdfs:Class ;
+  rdfs:label "Equal protection of the law"@en ;
+  rdfs:seeAlso wd:Q3295363, dbr:Equal_protection_of_the_law .
+
+udhr:PoliticalRights a rdfs:Class ;
+  rdfs:label "Political rights"@en ;
+  rdfs:seeAlso wd:Q3295364, dbr:Political_rights .
+
+udhr:RightVote a rdfs:Class ;
+  rdfs:label "Right to vote"@en ;
+  rdfs:seeAlso wd:Q3295375, dbr:Right_to_vote .
+
+udhr:PoliticalFreedom a rdfs:Class ;
+  rdfs:label "Political freedom"@en ;
+  rdfs:seeAlso wd:Q3295376, dbr:Political_freedom .
+
+udhr:PublicAssembly a rdfs:Class ;
+  rdfs:label "Freedom of assembly"@en ;
+  rdfs:seeAlso wd:Q1224, dbr:Freedom_of_assembly .
+
+udhr:Association a rdfs:Class ;
+  rdfs:label "Freedom of association"@en ;
+  rdfs:seeAlso wd:Q3295381, dbr:Freedom_of_association .
+
+udhr:Expression a rdfs:Class ;
+  rdfs:label "Freedom of expression"@en ;
+  rdfs:seeAlso wd:Q3950, dbr:Freedom_of_expression .
+
+udhr:Opinion a rdfs:Class ;
+  rdfs:label "Freedom of opinion"@en ;
+  rdfs:seeAlso wd:Q3295385, dbr:Freedom_of_opinion .
+
+udhr:Information a rdfs:Class ;
+  rdfs:label "Freedom of information"@en ;
+  rdfs:seeAlso wd:Q3295386, dbr:Freedom_of_information .
+
+udhr:Media a rdfs:Class ;
+  rdfs:label "Freedom of the media"@en ;
+  rdfs:seeAlso wd:Q3295387, dbr:Freedom_of_the_media .
+
+udhr:Religion a rdfs:Class ;
+  rdfs:label "Freedom of religion"@en ;
+  rdfs:seeAlso wd:Q3950, dbr:Freedom_of_religion .
+
+udhr:Worship a rdfs:Class ;
+  rdfs:label "Freedom of worship"@en ;
+  rdfs:seeAlso wd:Q3295389, dbr:Freedom_of_worship .
+
+udhr:Conscience a rdfs:Class ;
+  rdfs:label "Freedom of conscience"@en ;
+  rdfs:seeAlso wd:Q3295390, dbr:Freedom_of_conscience .
+
+udhr:Thought a rdfs:Class ;
+  rdfs:label "Freedom of thought"@en ;
+  rdfs:seeAlso wd:Q3295391, dbr:Freedom_of_thought .
+
+udhr:ReligiousBelief a rdfs:Class ;
+  rdfs:label "Freedom to change one's religion or belief"@en ;
+  rdfs:seeAlso wd:Q3295392, dbr:Freedom_to_change_one%27s_religion_or_belief .
+
+udhr:Work a rdfs:Class ;
+  rdfs:label "Right to work"@en ;
+  rdfs:seeAlso wd:Q3295400, dbr:Right_to_work .
+
+udhr:FreeChoiceEmployment a rdfs:Class ;
+  rdfs:label "Free choice of employment"@en ;
+  rdfs:seeAlso wd:Q3295401, dbr:Free_choice_of_employment .
+
+udhr:JustConditionsWork a rdfs:Class ;
+  rdfs:label "Just and favourable conditions of work"@en ;
+  rdfs:seeAlso wd:Q3295402, dbr:Just_and_favourable_conditions_of_work .
+
+udhr:ProtectionMotherhood a rdfs:Class ;
+  rdfs:label "Protection of motherhood"@en ;
+  rdfs:seeAlso wd:Q3295403, dbr:Protection_of_motherhood .
+
+udhr:Motherhood a rdfs:Class ;
+  rdfs:label "Motherhood"@en ;
+  rdfs:seeAlso wd:Q3295404, dbr:Motherhood .
+
+udhr:RestLeisure a rdfs:Class ;
+  rdfs:label "Right to rest and leisure"@en ;
+  rdfs:seeAlso wd:Q3295405, dbr:Right_to_rest_and_leisure .
+
+udhr:Vacation a rdfs:Class ;
+  rdfs:label "Right to periodic holidays with pay"@en ;
+  rdfs:seeAlso wd:Q3295406, dbr:Right_to_periodic_holidays_with_pay .
+
+udhr:StandardLiving a rdfs:Class ;
+  rdfs:label "Right to a standard of living adequate for the health and well-being of oneself and one's family"@en ;
+  rdfs:seeAlso wd:Q3295407, dbr:Right_to_a_standard_of_living_adequate_for_the_health_and_well-being_of_oneself_and_one%27s_family .
+
+udhr:Health a rdfs:Class ;
+  rdfs:label "Right to health"@en ;
+  rdfs:seeAlso wd:Q3295411, dbr:Right_to_health .
+
+udhr:SocialSecurity a rdfs:Class ;
+  rdfs:label "Right to social security"@en ;
+  rdfs:seeAlso wd:Q3295412, dbr:Right_to_social_security .
+
+udhr:Childhood a rdfs:Class ;
+  rdfs:label "Childhood"@en ;
+  rdfs:seeAlso wd:Q3295378, dbr:Childhood .
+
+udhr:ChildhoodRights a rdfs:Class ;
+  rdfs:label "Children's rights"@en ;
+  rdfs:seeAlso wd:Q3295379, dbr:Children%27s_rights .
+
+udhr:ProtectionChildren a rdfs:Class ;
+  rdfs:label "Protection of children"@en ;
+  rdfs:seeAlso wd:Q3295380, dbr:Protection_of_children .
+
+udhr:Education a rdfs:Class ;
+  rdfs:label "Right to education"@en ;
+  rdfs:seeAlso wd:Q3295388, dbr:Right_to_education .
+
+udhr:CompulsoryEducation a rdfs:Class ;
+  rdfs:label "Compulsory education"@en ;
+  rdfs:seeAlso wd:Q3295413, dbr:Compulsory_education .
+
+udhr:FreeElementaryEducation a rdfs:Class ;
+  rdfs:label "Free elementary education"@en ;
+  rdfs:seeAlso wd:Q3295414, dbr:Free_elementary_education .
+
+udhr:TechnicalEducation a rdfs:Class ;
+  rdfs:label "Technical and professional education"@en ;
+  rdfs:seeAlso wd:Q3295415, dbr:Technical_and_professional_education .
+
+udhr:BenefitScience a rdfs:Class ;
+  rdfs:label "Benefit of science"@en ;
+  rdfs:seeAlso wd:Q3295416, dbr:Benefit_of_science .
+
+udhr:CulturalDevelopment a rdfs:Class ;
+  rdfs:label "Cultural development"@en ;
+  rdfs:seeAlso wd:Q3295417, dbr:Cultural_development .
+
+udhr:InternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation"@en ;
+  rdfs:seeAlso wd:Q3295418, dbr:International_cooperation .
+
+udhr:EconomicSocialCulturalRights a rdfs:Class ;
+  rdfs:label "Economic, social and cultural rights"@en ;
+  rdfs:seeAlso wd:Q3295419, dbr:Economic_social_and_cultural_rights .
+
+udhr:RightProperty a rdfs:Class ;
+  rdfs:label "Right to own property"@en ;
+  rdfs:seeAlso wd:Q3295420, dbr:Right_to_own_property .
+
+udhr:ProtectionProperty a rdfs:Class ;
+  rdfs:label "Protection of property"@en ;
+  rdfs:seeAlso wd:Q3295421, dbr:Protection_of_property .
+
+udhr:Marriage a rdfs:Class ;
+  rdfs:label "Right to marry and found a family"@en ;
+  rdfs:seeAlso wd:Q3295422, dbr:Right_to_marry_and_found_a_family .
+
+udhr:Family a rdfs:Class ;
+  rdfs:label "Right to family"@en ;
+  rdfs:seeAlso wd:Q3295423, dbr:Right_to_family .
+
+udhr:ParentalCare a rdfs:Class ;
+  rdfs:label "Right to parental care"@en ;
+  rdfs:seeAlso wd:Q3295424, dbr:Right_to_parental_care .
+
+udhr:ProtectionChildrenAbuse a rdfs:Class ;
+  rdfs:label "Protection of children from abuse"@en ;
+  rdfs:seeAlso wd:Q3295425, dbr:Protection_of_children_from_abuse .
+
+udhr:Equality a rdfs:Class ;
+  rdfs:label "Equality"@en ;
+  rdfs:seeAlso wd:Q3295428, dbr:Equality .
+
+udhr:EqualityBeforeLaw a rdfs:Class ;
+  rdfs:label "Equality before the law"@en ;
+  rdfs:seeAlso wd:Q3295429, dbr:Equality_before_the_law .
+
+udhr:EqualProtectionLaw a rdfs:Class ;
+  rdfs:label "Equal protection of the law"@en ;
+  rdfs:seeAlso wd:Q3295430, dbr:Equal_protection_of_the_law .
+
+udhr:Discrimination a rdfs:Class ;
+  rdfs:label "Non-discrimination"@en ;
+  rdfs:seeAlso wd:Q3295431, dbr:Non-discrimination .
+
+udhr:DiscriminationRace a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of race"@en ;
+  rdfs:seeAlso wd:Q3295432, dbr:Prohibition_of_discrimination_on_the_grounds_of_race .
+
+udhr:DiscriminationSex a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of sex"@en ;
+  rdfs:seeAlso wd:Q3295433, dbr:Prohibition_of_discrimination_on_the_grounds_of_sex .
+
+udhr:DiscriminationReligion a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of religion"@en ;
+  rdfs:seeAlso wd:Q3295434, dbr:Prohibition_of_discrimination_on_the_grounds_of_religion .
+
+udhr:DiscriminationLanguage a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of language"@en ;
+  rdfs:seeAlso wd:Q3295435, dbr:Prohibition_of_discrimination_on_the_grounds_of_language .
+
+udhr:PoliticalOpinion a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of political or other opinion"@en ;
+  rdfs:seeAlso wd:Q3295436, dbr:Prohibition_of_discrimination_on_the_grounds_of_political_or_other_opinion .
+
+udhr:DiscriminationNationalOrigin a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of national or social origin"@en ;
+  rdfs:seeAlso wd:Q3295437, dbr:Prohibition_of_discrimination_on_the_grounds_of_national_or_social_origin .
+
+udhr:DiscriminationProperty a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of property"@en ;
+  rdfs:seeAlso wd:Q3295438, dbr:Prohibition_of_discrimination_on_the_grounds_of_property .
+
+udhr:DiscriminationBirth a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination on the grounds of birth"@en ;
+  rdfs:seeAlso wd:Q3295439, dbr:Prohibition_of_discrimination_on_the_grounds_of_birth .
+
+udhr:Asylum a rdfs:Class ;
+  rdfs:label "Right to asylum"@en ;
+  rdfs:seeAlso wd:Q3295442, dbr:Right_to_asylum .
+
+udhr:RightTravel a rdfs:Class ;
+  rdfs:label "Right to freedom of movement"@en ;
+  rdfs:seeAlso wd:Q3295443, dbr:Right_to_freedom_of_movement .
+
+udhr:RightResidence a rdfs:Class ;
+  rdfs:label "Right to choose one's residence"@en ;
+  rdfs:seeAlso wd:Q3295444, dbr:Right_to_choose_one%27s_residence .
+
+udhr:FreedomLeavingCountry a rdfs:Class ;
+  rdfs:label "Freedom to leave any country"@en ;
+  rdfs:seeAlso wd:Q3295445, dbr:Freedom_to_leave_any_country .
+
+udhr:RightReturn a rdfs:Class ;
+  rdfs:label "Right to return to one's country"@en ;
+  rdfs:seeAlso wd:Q3295446, dbr:Right_to_return_to_one%27s_country .
+
+udhr:Nationality a rdfs:Class ;
+  rdfs:label "Right to a nationality"@en ;
+  rdfs:seeAlso wd:Q3295447, dbr:Right_to_a_nationality .
+
+udhr:ChangeNationality a rdfs:Class ;
+  rdfs:label "Right to change one's nationality"@en ;
+  rdfs:seeAlso wd:Q3295448, dbr:Right_to_change_one%27s_nationality .
+
+udhr:FreelyAssociation a rdfs:Class ;
+  rdfs:label "Freedom of association"@en ;
+  rdfs:seeAlso wd:Q3295449, dbr:Freedom_of_association .
+
+udhr:PeacefulAssembly a rdfs:Class ;
+  rdfs:label "Right of peaceful assembly"@en ;
+  rdfs:seeAlso wd:Q3295450, dbr:Right_of_peaceful_assembly .
+
+udhr:PoliticalOpinion a rdfs:Class ;
+  rdfs:label "Freedom of opinion and expression"@en ;
+  rdfs:seeAlso wd:Q3295451, dbr:Freedom_of_opinion_and_expression .
+
+udhr:SeekReceiveInformation a rdfs:Class ;
+  rdfs:label "Freedom to seek, receive and impart information"@en ;
+  rdfs:seeAlso wd:Q3295452, dbr:Freedom_to_seek_receive_and_impart_information .
+
+udhr:ArtsSciences a rdfs:Class ;
+  rdfs:label "Freedom of the arts and sciences"@en ;
+  rdfs:seeAlso wd:Q3295453, dbr:Freedom_of_the_arts_and_sciences .
+
+udhr:FreeEducation a rdfs:Class ;
+  rdfs:label "Right to free education"@en ;
+  rdfs:seeAlso wd:Q3295454, dbr:Right_to_free_education .
+
+udhr:EducationDirectedMan a rdfs:Class ;
+  rdfs:label "Education directed to the full development of the human personality"@en ;
+  rdfs:seeAlso wd:Q3295455, dbr:Education_directed_to_the_full_development_of_the_human_personality .
+
+udhr:EducationFreeFromDiscrimination a rdfs:Class ;
+  rdfs:label "Education without discrimination of any kind"@en ;
+  rdfs:seeAlso wd:Q3295456, dbr:Education_without_discrimination_of_any_kind .
+
+udhr:TechnicalScientificProgress a rdfs:Class ;
+  rdfs:label "Education in conformity with the needs of the time"@en ;
+  rdfs:seeAlso wd:Q3295457, dbr:Education_in_conformity_with_the_needs_of_the_time .
+
+udhr:EducationLeastRestrictiveMeans a rdfs:Class ;
+  rdfs:label "Education provided through the least restrictive means"@en ;
+  rdfs:seeAlso wd:Q3295458, dbr:Education_provided_through_the_least_restrictive_means .
+
+udhr:MotherTongue a rdfs:Class ;
+  rdfs:label "Education in the mother tongue"@en ;
+  rdfs:seeAlso wd:Q3295459, dbr:Education_in_the_mother_tongue .
+
+udhr:ParentsChoiceEducation a rdfs:Class ;
+  rdfs:label "Right of parents to choose the kind of education given to their children"@en ;
+  rdfs:seeAlso wd:Q3295460, dbr:Right_of_parents_to_choose_the_kind_of_education_given_to_their_children .
+
+udhr:Work a rdfs:Class ;
+  rdfs:label "Right to work"@en ;
+  rdfs:seeAlso wd:Q3295461, dbr:Right_to_work .
+
+udhr:FreeChoiceEmployment a rdfs:Class ;
+  rdfs:label "Right to free choice of employment"@en ;
+  rdfs:seeAlso wd:Q3295462, dbr:Right_to_free_choice_of_employment .
+
+udhr:JustConditionsWork a rdfs:Class ;
+  rdfs:label "Just and favourable conditions of work"@en ;
+  rdfs:seeAlso wd:Q3295463, dbr:Just_and_favourable_conditions_of_work .
+
+udhr:ProtectionMotherhood a rdfs:Class ;
+  rdfs:label "Protection of motherhood"@en ;
+  rdfs:seeAlso wd:Q3295464, dbr:Protection_of_motherhood .
+
+udhr:ProtectionMotherhood a rdfs:Class ;
+  rdfs:label "Protection of motherhood"@en ;
+  rdfs:seeAlso wd:Q3295464, dbr:Protection_of_motherhood .
+
+udhr:Child a rdfs:Class ;
+  rdfs:label "Right to a standard of living adequate for the child's physical, mental, spiritual, moral and social development"@en ;
+  rdfs:seeAlso wd:Q3295465, dbr:Right_to_a_standard_of_living_adequate_for_the_child%27s_physical_mental_spiritual_moral_and_social_development .
+
+udhr:ChildCare a rdfs:Class ;
+  rdfs:label "Right to assistance and protection for the child"@en ;
+  rdfs:seeAlso wd:Q3295466, dbr:Right_to_assistance_and_protection_for_the_child .
+
+udhr:ChildWork a rdfs:Class ;
+  rdfs:label "Right of the child to be protected from economic and social exploitation"@en ;
+  rdfs:seeAlso wd:Q3295467, dbr:Right_of_the_child_to_be_protected_from_economic_and_social_exploitation .
+
+udhr:ChildRestLeisure a rdfs:Class ;
+  rdfs:label "Right of the child to rest and leisure"@en ;
+  rdfs:seeAlso wd:Q3295468, dbr:Right_of_the_child_to_rest_and_leisure .
+
+udhr:ChildPlay a rdfs:Class ;
+  rdfs:label "Right of the child to play"@en ;
+  rdfs:seeAlso wd:Q3295469, dbr:Right_of_the_child_to_play .
+
+udhr:ChildEducation a rdfs:Class ;
+  rdfs:label "Right of the child to education"@en ;
+  rdfs:seeAlso wd:Q3295470, dbr:Right_of_the_child_to_education .
+
+udhr:ChildEducationDirectedMan a rdfs:Class ;
+  rdfs:label "Education directed to the development of the child's personality"@en ;
+  rdfs:seeAlso wd:Q3295471, dbr:Education_directed_to_the_development_of_the_child%27s_personality .
+
+udhr:ChildEducationFreeFromDiscrimination a rdfs:Class ;
+  rdfs:label "Education without discrimination"@en ;
+  rdfs:seeAlso wd:Q3295472, dbr:Education_without_discrimination .
+
+udhr:ChildEducationLeastRestrictiveMeans a rdfs:Class ;
+  rdfs:label "Education provided through the least restrictive means"@en ;
+  rdfs:seeAlso wd:Q3295473, dbr:Education_provided_through_the_least_restrictive_means .
+
+udhr:ChildEducationMotherTongue a rdfs:Class ;
+  rdfs:label "Education in the mother tongue"@en ;
+  rdfs:seeAlso wd:Q3295474, dbr:Education_in_the_mother_tongue .
+
+udhr:ChildEducationTechnicalScientificProgress a rdfs:Class ;
+  rdfs:label "Education in conformity with the needs of the time"@en ;
+  rdfs:seeAlso wd:Q3295475, dbr:Education_in_conformity_with_the_needs_of_the_time .
+
+udhr:ChildEducationParentsChoice a rdfs:Class ;
+  rdfs:label "Right of parents to choose the kind of education given to their children"@en ;
+  rdfs:seeAlso wd:Q3295476, dbr:Right_of_parents_to_choose_the_kind_of_education_given_to_their_children .
+
+udhr:Family a rdfs:Class ;
+  rdfs:label "Right to form a family"@en ;
+  rdfs:seeAlso wd:Q3295477, dbr:Right_to_form_a_family .
+
+udhr:PrivacyFamilyHome a rdfs:Class ;
+  rdfs:label "Right to privacy in the family and home"@en ;
+  rdfs:seeAlso wd:Q3295478, dbr:Right_to_privacy_in_the_family_and_home .
+
+udhr:Marriage a rdfs:Class ;
+  rdfs:label "Right to marry and found a family"@en ;
+  rdfs:seeAlso wd:Q3295479, dbr:Right_to_marry_and_found_a_family .
+
+udhr:MarriageFreeConsent a rdfs:Class ;
+  rdfs:label "Marriage based on the free consent of the intending spouses"@en ;
+  rdfs:seeAlso wd:Q3295480, dbr:Marriage_based_on_the_free_consent_of_the_intending_spouses .
+
+udhr:MarriageEqualRights a rdfs:Class ;
+  rdfs:label "Marriage with equal rights of husband and wife"@en ;
+  rdfs:seeAlso wd:Q3295481, dbr:Marriage_with_equal_rights_of_husband_and_wife .
+
+udhr:MarriageProtectionLaw a rdfs:Class ;
+  rdfs:label "Protection of the family by law"@en ;
+  rdfs:seeAlso wd:Q3295482, dbr:Protection_of_the_family_by_law .
+
+udhr:Nationality a rdfs:Class ;
+  rdfs:label "Right to a nationality"@en ;
+  rdfs:seeAlso wd:Q3295483, dbr:Right_to_a_nationality .
+
+udhr:ChangeNationality a rdfs:Class ;
+  rdfs:label "Right to change nationality"@en ;
+  rdfs:seeAlso wd:Q3295484, dbr:Right_to_change_nationality .
+
+udhr:Asylum a rdfs:Class ;
+  rdfs:label "Right to seek and enjoy in other countries asylum from persecution"@en ;
+  rdfs:seeAlso wd:Q3295485, dbr:Right_to_seek_and_enjoy_in_other_countries_asylum_from_persecution .
+
+udhr:Expulsion a rdfs:Class ;
+  rdfs:label "Prohibition of expulsion"@en ;
+  rdfs:seeAlso wd:Q3295486, dbr:Prohibition_of_expulsion .
+
+udhr:ExpulsionThreatLifeLiberty a rdfs:Class ;
+  rdfs:label "Prohibition of expulsion except on grounds of national security, public order, or the interests of the country"@en ;
+  rdfs:seeAlso wd:Q3295487, dbr:Prohibition_of_expulsion_except_on_grounds_of_national_security_public_order_or_the_interests_of_the_country .
+
+udhr:StatelessPerson a rdfs:Class ;
+  rdfs:label "Right of a stateless person to a nationality"@en ;
+  rdfs:seeAlso wd:Q3295488, dbr:Right_of_a_stateless_person_to_a_nationality .
+
+udhr:MovableProperty a rdfs:Class ;
+  rdfs:label "Right to own property"@en ;
+  rdfs:seeAlso wd:Q3295489, dbr:Right_to_own_property .
+
+udhr:NonDiscrimination a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination"@en ;
+  rdfs:seeAlso wd:Q3295490, dbr:Prohibition_of_discrimination .
+
+udhr:EqualProtectionLaw a rdfs:Class ;
+  rdfs:label "Equal protection of the law"@en ;
+  rdfs:seeAlso wd:Q3295491, dbr:Equal_protection_of_the_law .
+
+udhr:EqualBeforeLaw a rdfs:Class ;
+  rdfs:label "Equality before the law"@en ;
+  rdfs:seeAlso wd:Q3295492, dbr:Equality_before_the_law .
+
+udhr:EqualProtectionLawAll a rdfs:Class ;
+  rdfs:label "Equal protection of the law without discrimination"@en ;
+  rdfs:seeAlso wd:Q3295493, dbr:Equal_protection_of_the_law_without_discrimination .
+
+udhr:EqualProtectionLawNonDiscrimination a rdfs:Class ;
+  rdfs:label "Equal protection of the law against discrimination"@en ;
+  rdfs:seeAlso wd:Q3295494, dbr:Equal_protection_of_the_law_against_discrimination .
+
+udhr:EqualProtectionLawNonDiscriminationNationality a rdfs:Class ;
+  rdfs:label "Equal protection of the law against discrimination based on nationality"@en ;
+  rdfs:seeAlso wd:Q3295495, dbr:Equal_protection_of_the_law_against_discrimination_based_on_nationality .
+
+udhr:JudicialRemedy a rdfs:Class ;
+  rdfs:label "Right to an effective remedy by the competent national tribunals"@en ;
+  rdfs:seeAlso wd:Q3295496, dbr:Right_to_an_effective_remedy_by_the_competent_national_tribunals .
+
+udhr:JudicialRemedyNonDiscrimination a rdfs:Class ;
+  rdfs:label "Right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted by the constitution or by law"@en ;
+  rdfs:seeAlso wd:Q3295497, dbr:Right_to_an_effective_remedy_by_the_competent_national_tribunals_for_acts_violating_the_fundamental_rights_granted_by_the_constitution_or_by_law .
+
+udhr:JudicialRemedyVictimization a rdfs:Class ;
+  rdfs:label "Prohibition of victimization"@en ;
+  rdfs:seeAlso wd:Q3295498, dbr:Prohibition_of_victimization .
+
+udhr:PublicTrial a rdfs:Class ;
+  rdfs:label "Right to a fair and public hearing"@en ;
+  rdfs:seeAlso wd:Q3295499, dbr:Right_to_a_fair_and_public_hearing .
+
+udhr:PublicTrialIndependenceJudges a rdfs:Class ;
+  rdfs:label "Independence of the judges"@en ;
+  rdfs:seeAlso wd:Q3295500, dbr:Independence_of_the_judges .
+
+udhr:PublicTrialEqualArms a rdfs:Class ;
+  rdfs:label "Equal arms of the parties"@en ;
+  rdfs:seeAlso wd:Q3295501, dbr:Equal_arms_of_the_parties .
+
+udhr:PublicTrialPresumedInnocent a rdfs:Class ;
+  rdfs:label "Presumption of innocence"@en ;
+  rdfs:seeAlso wd:Q3295502, dbr:Presumption_of_innocence .
+
+udhr:PublicTrialMinimumGuarantees a rdfs:Class ;
+  rdfs:label "Minimum guarantees in criminal procedure"@en ;
+  rdfs:seeAlso wd:Q3295503, dbr:Minimum_guarantees_in_criminal_procedure .
+
+udhr:PublicTrialRightDefence a rdfs:Class ;
+  rdfs:label "Right to defence"@en ;
+  rdfs:seeAlso wd:Q3295504, dbr:Right_to_defence .
+
+udhr:PublicTrialRightInterpretation a rdfs:Class ;
+  rdfs:label "Right to be informed promptly and in detail of the charges against him"@en ;
+  rdfs:seeAlso wd:Q3295505, dbr:Right_to_be_informed_promptly_and_in_detail_of_the_charges_against_him .
+
+udhr:PublicTrialRightConsultationLawyer a rdfs:Class ;
+  rdfs:label "Right to have adequate time and facilities for the preparation of his defence"@en ;
+  rdfs:seeAlso wd:Q3295506, dbr:Right_to_have_adequate_time_and_facilities_for_the_preparation_of_his_defence .
+
+udhr:PublicTrialRightFreeAssistanceInterpreter a rdfs:Class ;
+  rdfs:label "Right to be tried without undue delay"@en ;
+  rdfs:seeAlso wd:Q3295507, dbr:Right_to_be_tried_without_undue_delay .
+
+udhr:PublicTrialRightFreeAssistanceInterpreter a rdfs:Class ;
+  rdfs:label "Right to free assistance of an interpreter if he cannot understand or speak the language used in court"@en ;
+  rdfs:seeAlso wd:Q3295508, dbr:Right_to_free_assistance_of_an_interpreter_if_he_cannot_understand_or_speak_the_language_used_in_court .
+
+udhr:PublicTrialRightCounsel a rdfs:Class ;
+  rdfs:label "Right to counsel"@en ;
+  rdfs:seeAlso wd:Q3295509, dbr:Right_to_counsel .
+
+udhr:PublicTrialRightCounselFreeLegalAid a rdfs:Class ;
+  rdfs:label "Right to free legal aid if the interests of justice so require and if he does not have sufficient means to pay for it"@en ;
+  rdfs:seeAlso wd:Q3295510, dbr:Right_to_free_legal_aid_if_the_interests_of_justice_so_require_and_if_he_does_not_have_sufficient_means_to_pay_for_it .
+
+udhr:PublicTrialRightChallengeAccusersWitnesses a rdfs:Class ;
+  rdfs:label "Right to examine witnesses against him and to obtain the attendance and examination of witnesses on his behalf under the same conditions as witnesses against him"@en ;
+  rdfs:seeAlso wd:Q3295511, dbr:Right_to_examine_witnesses_against_him_and_to_obtain_the_attendance_and_examination_of_witnesses_on_his_behalf_under_the_same_conditions_as_witnesses_against_him .
+
+udhr:PublicTrialRightFreeAppeal a rdfs:Class ;
+  rdfs:label "Right to free assistance of an interpreter if he is illiterate or if the language used in the proceedings is not his own"@en ;
+  rdfs:seeAlso wd:Q3295512, dbr:Right_to_free_assistance_of_an_interpreter_if_he_is_illiterate_or_if_the_language_used_in_the_proceedings_is_not_his_own .
+
+udhr:PublicTrialRightFreeAppeal a rdfs:Class ;
+  rdfs:label "Right to free legal assistance if the interests of justice so require and if he does not have sufficient means to pay for it"@en ;
+  rdfs:seeAlso wd:Q3295513, dbr:Right_to_free_legal_assistance_if_the_interests_of_justice_so_require_and_if_he_does_not_have_sufficient_means_to_pay_for_it .
+
+udhr:PublicTrialRightFreeAppeal a rdfs:Class ;
+  rdfs:label "Right to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him"@en ;
+  rdfs:seeAlso wd:Q3295514, dbr:Right_to_a_fair_and_public_hearing_by_an_independent_and_impartial_tribunal_in_the_determination_of_his_rights_and_obligations_and_of_any_criminal_charge_against_him .
+
+udhr:PublicTrialRightFreeAppeal a rdfs:Class ;
+  rdfs:label "Right to appeal to a higher tribunal"@en ;
+  rdfs:seeAlso wd:Q3295515, dbr:Right_to_appeal_to_a_higher_tribunal .
+
+udhr:PublicTrialRightCompensation a rdfs:Class ;
+  rdfs:label "Right to compensation for damages suffered as a result of unlawful arrest"@en ;
+  rdfs:seeAlso wd:Q3295516, dbr:Right_to_compensation_for_damages_suffered_as_a_result_of_unlawful_arrest .
+
+udhr:Torture a rdfs:Class ;
+  rdfs:label "Prohibition of torture"@en ;
+  rdfs:seeAlso wd:Q3295517, dbr:Prohibition_of_torture .
+
+udhr:TortureNoException a rdfs:Class ;
+  rdfs:label "Prohibition of torture and cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295518, dbr:Prohibition_of_torture_and_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:TortureNoException a rdfs:Class ;
+  rdfs:label "No exceptional circumstances whatsoever, whether a state of war or a threat of war, internal political instability or any other public emergency, may be invoked as a justification of torture"@en ;
+  rdfs:seeAlso wd:Q3295519, dbr:No_exceptional_circumstances_whatsoever_whether_a_state_of_war_or_a_threat_of_war_internal_political_instability_or_any_other_public_emergency_may_be_invoked_as_a_justification_of_torture .
+
+udhr:TortureCompensation a rdfs:Class ;
+  rdfs:label "Compensation and rehabilitation for victims of torture"@en ;
+  rdfs:seeAlso wd:Q3295520, dbr:Compensation_and_rehabilitation_for_victims_of_torture .
+
+udhr:TorturePrevention a rdfs:Class ;
+  rdfs:label "Prevention of torture and other cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295521, dbr:Prevention_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:TortureJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over torture and other cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295522, dbr:Jurisdiction_over_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:TortureExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of torture and other cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295523, dbr:Extradition_of_persons_accused_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:TortureComplaints a rdfs:Class ;
+  rdfs:label "Complaints of torture and other cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295524, dbr:Complaints_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:TortureInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of torture and other cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295526, dbr:Investigation_of_complaints_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:TortureProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of torture and other cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295527, dbr:Prosecution_of_persons_accused_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:TortureInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of torture and other cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295528, dbr:International_cooperation_in_the_prevention_of_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:TortureJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over torture and other cruel, inhuman or degrading treatment or punishment"@en ;
+  rdfs:seeAlso wd:Q3295529, dbr:Jurisdiction_over_torture_and_other_cruel_inhuman_or_degrading_treatment_or_punishment .
+
+udhr:SlaveTrade a rdfs:Class ;
+  rdfs:label "Prohibition of the slave trade"@en ;
+  rdfs:seeAlso wd:Q3295530, dbr:Prohibition_of_the_slave_trade .
+
+udhr:Slavery a rdfs:Class ;
+  rdfs:label "Prohibition of slavery and servitude"@en ;
+  rdfs:seeAlso wd:Q3295531, dbr:Prohibition_of_slavery_and_servitude .
+
+udhr:ForcedLabour a rdfs:Class ;
+  rdfs:label "Prohibition of forced labour"@en ;
+  rdfs:seeAlso wd:Q3295532, dbr:Prohibition_of_forced_labour .
+
+udhr:ForcedLabourExceptions a rdfs:Class ;
+  rdfs:label "Exceptions to the prohibition of forced labour"@en ;
+  rdfs:seeAlso wd:Q3295533, dbr:Exceptions_to_the_prohibition_of_forced_labour .
+
+udhr:ForcedLabourCompensation a rdfs:Class ;
+  rdfs:label "Compensation for forced labour"@en ;
+  rdfs:seeAlso wd:Q3295534, dbr:Compensation_for_forced_labour .
+
+udhr:ForcedLabourPrevention a rdfs:Class ;
+  rdfs:label "Prevention of forced labour"@en ;
+  rdfs:seeAlso wd:Q3295535, dbr:Prevention_of_forced_labour .
+
+udhr:ForcedLabourJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over forced labour"@en ;
+  rdfs:seeAlso wd:Q3295536, dbr:Jurisdiction_over_forced_labour .
+
+udhr:ForcedLabourExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of forced labour"@en ;
+  rdfs:seeAlso wd:Q3295537, dbr:Extradition_of_persons_accused_of_forced_labour .
+
+udhr:ForcedLabourComplaints a rdfs:Class ;
+  rdfs:label "Complaints of forced labour"@en ;
+  rdfs:seeAlso wd:Q3295538, dbr:Complaints_of_forced_labour .
+
+udhr:ForcedLabourInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of forced labour"@en ;
+  rdfs:seeAlso wd:Q3295539, dbr:Investigation_of_complaints_of_forced_labour .
+
+udhr:ForcedLabourProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of forced labour"@en ;
+  rdfs:seeAlso wd:Q3295540, dbr:Prosecution_of_persons_accused_of_forced_labour .
+
+udhr:ForcedLabourInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of forced labour"@en ;
+  rdfs:seeAlso wd:Q3295541, dbr:International_cooperation_in_the_prevention_of_forced_labour .
+
+udhr:ForcedLabourJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over forced labour"@en ;
+  rdfs:seeAlso wd:Q3295542, dbr:Jurisdiction_over_forced_labour .
+
+udhr:Torture a rdfs:Class ;
+  rdfs:label "Prohibition of torture"@en ;
+  rdfs:seeAlso wd:Q3295543, dbr:Prohibition_of_torture .
+
+udhr:TorturePrevention a rdfs:Class ;
+  rdfs:label "Prevention of torture"@en ;
+  rdfs:seeAlso wd:Q3295544, dbr:Prevention_of_torture .
+
+udhr:TortureJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over torture"@en ;
+  rdfs:seeAlso wd:Q3295545, dbr:Jurisdiction_over_torture .
+
+udhr:TortureExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of torture"@en ;
+  rdfs:seeAlso wd:Q3295546, dbr:Extradition_of_persons_accused_of_torture .
+
+udhr:TortureComplaints a rdfs:Class ;
+  rdfs:label "Complaints of torture"@en ;
+  rdfs:seeAlso wd:Q3295547, dbr:Complaints_of_torture .
+
+udhr:TortureInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of torture"@en ;
+  rdfs:seeAlso wd:Q3295548, dbr:Investigation_of_complaints_of_torture .
+
+udhr:TortureProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of torture"@en ;
+  rdfs:seeAlso wd:Q3295549, dbr:Prosecution_of_persons_accused_of_torture .
+
+udhr:TortureInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of torture"@en ;
+  rdfs:seeAlso wd:Q3295550, dbr:International_cooperation_in_the_prevention_of_torture .
+
+udhr:SlaveTrade a rdfs:Class ;
+  rdfs:label "Prohibition of the slave trade"@en ;
+  rdfs:seeAlso wd:Q3295551, dbr:Prohibition_of_the_slave_trade .
+
+udhr:Slavery a rdfs:Class ;
+  rdfs:label "Prohibition of slavery"@en ;
+  rdfs:seeAlso wd:Q3295552, dbr:Prohibition_of_slavery .
+
+udhr:SlaveryPrevention a rdfs:Class ;
+  rdfs:label "Prevention of slavery"@en ;
+  rdfs:seeAlso wd:Q3295553, dbr:Prevention_of_slavery .
+
+udhr:SlaveryJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over slavery"@en ;
+  rdfs:seeAlso wd:Q3295554, dbr:Jurisdiction_over_slavery .
+
+udhr:SlaveryExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of slavery"@en ;
+  rdfs:seeAlso wd:Q3295555, dbr:Extradition_of_persons_accused_of_slavery .
+
+udhr:SlaveryComplaints a rdfs:Class ;
+  rdfs:label "Complaints of slavery"@en ;
+  rdfs:seeAlso wd:Q3295556, dbr:Complaints_of_slavery .
+
+udhr:SlaveryInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of slavery"@en ;
+  rdfs:seeAlso wd:Q3295557, dbr:Investigation_of_complaints_of_slavery .
+
+udhr:SlaveryProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of slavery"@en ;
+  rdfs:seeAlso wd:Q3295558, dbr:Prosecution_of_persons_accused_of_slavery .
+
+udhr:SlaveryInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of slavery"@en ;
+  rdfs:seeAlso wd:Q3295559, dbr:International_cooperation_in_the_prevention_of_slavery .
+
+udhr:ForcedMarriage a rdfs:Class ;
+  rdfs:label "Prohibition of forced marriage"@en ;
+  rdfs:seeAlso wd:Q3295560, dbr:Prohibition_of_forced_marriage .
+
+udhr:ForcedMarriagePrevention a rdfs:Class ;
+  rdfs:label "Prevention of forced marriage"@en ;
+  rdfs:seeAlso wd:Q3295561, dbr:Prevention_of_forced_marriage .
+
+udhr:ForcedMarriageJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over forced marriage"@en ;
+  rdfs:seeAlso wd:Q3295562, dbr:Jurisdiction_over_forced_marriage .
+
+udhr:ForcedMarriageExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of forced marriage"@en ;
+  rdfs:seeAlso wd:Q3295563, dbr:Extradition_of_persons_accused_of_forced_marriage .
+
+udhr:ForcedMarriageComplaints a rdfs:Class ;
+  rdfs:label "Complaints of forced marriage"@en ;
+  rdfs:seeAlso wd:Q3295564, dbr:Complaints_of_forced_marriage .
+
+udhr:ForcedMarriageInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of forced marriage"@en ;
+  rdfs:seeAlso wd:Q3295565, dbr:Investigation_of_complaints_of_forced_marriage .
+
+udhr:ForcedMarriageProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of forced marriage"@en ;
+  rdfs:seeAlso wd:Q3295566, dbr:Prosecution_of_persons_accused_of_forced_marriage .
+
+udhr:ForcedMarriageInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of forced marriage"@en ;
+  rdfs:seeAlso wd:Q3295567, dbr:International_cooperation_in_the_prevention_of_forced_marriage .
+
+udhr:TrafficInPersons a rdfs:Class ;
+  rdfs:label "Prohibition of traffic in persons"@en ;
+  rdfs:seeAlso wd:Q3295568, dbr:Prohibition_of_traffic_in_persons .
+
+udhr:TrafficInPersonsPrevention a rdfs:Class ;
+  rdfs:label "Prevention of traffic in persons"@en ;
+  rdfs:seeAlso wd:Q3295569, dbr:Prevention_of_traffic_in_persons .
+
+udhr:TrafficInPersonsJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over traffic in persons"@en ;
+  rdfs:seeAlso wd:Q3295570, dbr:Jurisdiction_over_traffic_in_persons .
+
+udhr:TrafficInPersonsExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of traffic in persons"@en ;
+  rdfs:seeAlso wd:Q3295571, dbr:Extradition_of_persons_accused_of_traffic_in_persons .
+
+udhr:TrafficInPersonsComplaints a rdfs:Class ;
+  rdfs:label "Complaints of traffic in persons"@en ;
+  rdfs:seeAlso wd:Q3295572, dbr:Complaints_of_traffic_in_persons .
+
+udhr:TrafficInPersonsInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of traffic in persons"@en ;
+  rdfs:seeAlso wd:Q3295573, dbr:Investigation_of_complaints_of_traffic_in_persons .
+
+udhr:TrafficInPersonsProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of traffic in persons"@en ;
+  rdfs:seeAlso wd:Q3295574, dbr:Prosecution_of_persons_accused_of_traffic_in_persons .
+
+udhr:TrafficInPersonsInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of traffic in persons"@en ;
+  rdfs:seeAlso wd:Q3295575, dbr:International_cooperation_in_the_prevention_of_traffic_in_persons .
+
+udhr:Apartheid a rdfs:Class ;
+  rdfs:label "Prohibition of apartheid"@en ;
+  rdfs:seeAlso wd:Q3295576, dbr:Prohibition_of_apartheid .
+
+udhr:ApartheidPrevention a rdfs:Class ;
+  rdfs:label "Prevention of apartheid"@en ;
+  rdfs:seeAlso wd:Q3295577, dbr:Prevention_of_apartheid .
+
+udhr:ApartheidJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over apartheid"@en ;
+  rdfs:seeAlso wd:Q3295578, dbr:Jurisdiction_over_apartheid .
+
+udhr:ApartheidExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of apartheid"@en ;
+  rdfs:seeAlso wd:Q3295579, dbr:Extradition_of_persons_accused_of_apartheid .
+
+udhr:ApartheidComplaints a rdfs:Class ;
+  rdfs:label "Complaints of apartheid"@en ;
+  rdfs:seeAlso wd:Q3295580, dbr:Complaints_of_apartheid .
+
+udhr:ApartheidInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of apartheid"@en ;
+  rdfs:seeAlso wd:Q3295581, dbr:Investigation_of_complaints_of_apartheid .
+
+udhr:ApartheidProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of apartheid"@en ;
+  rdfs:seeAlso wd:Q3295582, dbr:Prosecution_of_persons_accused_of_apartheid .
+
+udhr:ApartheidInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of apartheid"@en ;
+  rdfs:seeAlso wd:Q3295583, dbr:International_cooperation_in_the_prevention_of_apartheid .
+
+udhr:Genocide a rdfs:Class ;
+  rdfs:label "Prohibition of genocide"@en ;
+  rdfs:seeAlso wd:Q3295584, dbr:Prohibition_of_genocide .
+
+udhr:GenocidePrevention a rdfs:Class ;
+  rdfs:label "Prevention of genocide"@en ;
+  rdfs:seeAlso wd:Q3295585, dbr:Prevention_of_genocide .
+
+udhr:GenocideJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over genocide"@en ;
+  rdfs:seeAlso wd:Q3295586, dbr:Jurisdiction_over_genocide .
+
+udhr:GenocideExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of genocide"@en ;
+  rdfs:seeAlso wd:Q3295587, dbr:Extradition_of_persons_accused_of_genocide .
+
+udhr:GenocideComplaints a rdfs:Class ;
+  rdfs:label "Complaints of genocide"@en ;
+  rdfs:seeAlso wd:Q3295588, dbr:Complaints_of_genocide .
+
+udhr:GenocideInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of genocide"@en ;
+  rdfs:seeAlso wd:Q3295589, dbr:Invest .
+
+udhr:GenocideInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of genocide"@en ;
+  rdfs:seeAlso wd:Q3295589, dbr:Investigation_of_complaints_of_genocide .
+
+udhr:GenocideProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of genocide"@en ;
+  rdfs:seeAlso wd:Q3295590, dbr:Prosecution_of_persons_accused_of_genocide .
+
+udhr:GenocideInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of genocide"@en ;
+  rdfs:seeAlso wd:Q3295591, dbr:International_cooperation_in_the_prevention_of_genocide .
+
+udhr:Disappearance a rdfs:Class ;
+  rdfs:label "Prohibition of disappearance"@en ;
+  rdfs:seeAlso wd:Q3295592, dbr:Prohibition_of_disappearance .
+
+udhr:DisappearancePrevention a rdfs:Class ;
+  rdfs:label "Prevention of disappearance"@en ;
+  rdfs:seeAlso wd:Q3295593, dbr:Prevention_of_disappearance .
+
+udhr:DisappearanceJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over disappearance"@en ;
+  rdfs:seeAlso wd:Q3295594, dbr:Jurisdiction_over_disappearance .
+
+udhr:DisappearanceExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of disappearance"@en ;
+  rdfs:seeAlso wd:Q3295595, dbr:Extradition_of_persons_accused_of_disappearance .
+
+udhr:DisappearanceComplaints a rdfs:Class ;
+  rdfs:label "Complaints of disappearance"@en ;
+  rdfs:seeAlso wd:Q3295596, dbr:Complaints_of_disappearance .
+
+udhr:DisappearanceInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of disappearance"@en ;
+  rdfs:seeAlso wd:Q3295597, dbr:Investigation_of_complaints_of_disappearance .
+
+udhr:DisappearanceProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of disappearance"@en ;
+  rdfs:seeAlso wd:Q3295598, dbr:Prosecution_of_persons_accused_of_disappearance .
+
+udhr:DisappearanceInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of disappearance"@en ;
+  rdfs:seeAlso wd:Q3295598, dbr:International_cooperation_in_the_prevention_of_disappearance .
+
+udhr:Discrimination a rdfs:Class ;
+  rdfs:label "Prohibition of discrimination"@en ;
+  rdfs:seeAlso wd:Q3295599, dbr:Prohibition_of_discrimination .
+
+udhr:DiscriminationPrevention a rdfs:Class ;
+  rdfs:label "Prevention of discrimination"@en ;
+  rdfs:seeAlso wd:Q3295600, dbr:Prevention_of_discrimination .
+
+udhr:DiscriminationJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over discrimination"@en ;
+  rdfs:seeAlso wd:Q3295601, dbr:Jurisdiction_over_discrimination .
+
+udhr:DiscriminationExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of discrimination"@en ;
+  rdfs:seeAlso wd:Q3295602, dbr:Extradition_of_persons_accused_of_discrimination .
+
+udhr:DiscriminationComplaints a rdfs:Class ;
+  rdfs:label "Complaints of discrimination"@en ;
+  rdfs:seeAlso wd:Q3295603, dbr:Complaints_of_discrimination .
+
+udhr:DiscriminationInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of discrimination"@en ;
+  rdfs:seeAlso wd:Q3295604, dbr:Investigation_of_complaints_of_discrimination .
+
+udhr:DiscriminationProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of discrimination"@en ;
+  rdfs:seeAlso wd:Q3295605, dbr:Prosecution_of_persons_accused_of_discrimination .
+
+udhr:DiscriminationInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of discrimination"@en ;
+  rdfs:seeAlso wd:Q3295606, dbr:International_cooperation_in_the_prevention_of_discrimination .
+
+udhr:Torture a rdfs:Class ;
+  rdfs:label "Prohibition of torture"@en ;
+  rdfs:seeAlso wd:Q3295607, dbr:Prohibition_of_torture .
+
+udhr:TorturePrevention a rdfs:Class ;
+  rdfs:label "Prevention of torture"@en ;
+  rdfs:seeAlso wd:Q3295608, dbr:Prevention_of_torture .
+
+udhr:TortureJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over torture"@en ;
+  rdfs:seeAlso wd:Q3295609, dbr:Jurisdiction_over_torture .
+
+udhr:TortureExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of torture"@en ;
+  rdfs:seeAlso wd:Q3295610, dbr:Extradition_of_persons_accused_of_torture .
+
+udhr:TortureComplaints a rdfs:Class ;
+  rdfs:label "Complaints of torture"@en ;
+  rdfs:seeAlso wd:Q3295611, dbr:Complaints_of_torture .
+
+udhr:TortureInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of torture"@en ;
+  rdfs:seeAlso wd:Q3295612, dbr:Investigation_of_complaints_of_torture .
+
+udhr:TortureProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of torture"@en ;
+  rdfs:seeAlso wd:Q3295613, dbr:Prosecution_of_persons_accused_of_torture .
+
+udhr:TortureInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of torture"@en ;
+  rdfs:seeAlso wd:Q3295614, dbr:International_cooperation_in_the_prevention_of_torture .
+
+udhr:ChildAbuse a rdfs:Class ;
+  rdfs:label "Prohibition of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295615, dbr:Prohibition_of_child_abuse .
+
+udhr:ChildAbusePrevention a rdfs:Class ;
+  rdfs:label "Prevention of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295616, dbr:Prevention_of_child_abuse .
+
+udhr:ChildAbuseJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over child abuse"@en ;
+  rdfs:seeAlso wd:Q3295617, dbr:Jurisdiction_over_child_abuse .
+
+udhr:ChildAbuseExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295618, dbr:Extradition_of_persons_accused_of_child_abuse .
+
+udhr:ChildAbuseInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295619, dbr:Investigation_of_complaints_of_child_abuse .
+
+udhr:ChildAbuseProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295620, dbr:Prosecution_of_persons_accused_of_child_abuse .
+
+udhr:ChildAbuseInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295621, dbr:International_cooperation_in_the_prevention_of_child_abuse .
+
+udhr:HumanTrafficking a rdfs:Class ;
+  rdfs:label "Prohibition of human trafficking"@en ;
+  rdfs:seeAlso wd:Q3295622, dbr:Prohibition_of_human_trafficking .
+
+udhr:HumanTraffickingPrevention a rdfs:Class ;
+  rdfs:label "Prevention of human trafficking"@en ;
+  rdfs:seeAlso wd:Q3295623, dbr:Prevention_of_human_trafficking .
+
+udhr:HumanTraffickingJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over human trafficking"@en ;
+  rdfs:seeAlso wd:Q3295624, dbr:Jurisdiction_over_human_trafficking .
+
+udhr:HumanTraffickingExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of human trafficking"@en ;
+  rdfs:seeAlso wd:Q3295625, dbr:Extradition_of_persons_accused_of_human_trafficking .
+
+udhr:HumanTraffickingComplaints a rdfs:Class ;
+  rdfs:label "Complaints of human trafficking"@en ;
+  rdfs:seeAlso wd:Q3295626, dbr:Complaints_of_human_trafficking .
+
+udhr:HumanTraffickingInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of human trafficking"@en ;
+  rdfs:seeAlso wd:Q3295627, dbr:Investigation_of_complaints_of_human_trafficking .
+
+udhr:HumanTraffickingProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of human trafficking"@en ;
+  rdfs:seeAlso wd:Q3295628, dbr:Prosecution_of_persons_accused_of_human_trafficking .
+
+udhr:ChildAbuseInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295619, dbr:Investigation_of_complaints_of_child_abuse .
+
+udhr:ChildAbuseProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295620, dbr:Prosecution_of_persons_accused_of_child_abuse .
+
+udhr:ChildAbuseInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of child abuse"@en ;
+  rdfs:seeAlso wd:Q3295621, dbr:International_cooperation_in_the_prevention_of_child_abuse .
+
+udhr:HumanTraffickingInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of human trafficking"@en ;
+  rdfs:seeAlso wd:Q3295629, dbr:International_cooperation_in_the_prevention_of_human_trafficking .
+
+udhr:Slavery a rdfs:Class ;
+  rdfs:label "Prohibition of slavery"@en ;
+  rdfs:seeAlso wd:Q3295630, dbr:Prohibition_of_slavery .
+
+udhr:SlaveryPrevention a rdfs:Class ;
+  rdfs:label "Prevention of slavery"@en ;
+  rdfs:seeAlso wd:Q3295631, dbr:Prevention_of_slavery .
+
+udhr:SlaveryJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over slavery"@en ;
+  rdfs:seeAlso wd:Q3295632, dbr:Jurisdiction_over_slavery .
+
+udhr:SlaveryExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of slavery"@en ;
+  rdfs:seeAlso wd:Q3295633, dbr:Extradition_of_persons_accused_of_slavery .
+
+udhr:SlaveryComplaints a rdfs:Class ;
+  rdfs:label "Complaints of slavery"@en ;
+  rdfs:seeAlso wd:Q3295634, dbr:Complaints_of_slavery .
+
+udhr:SlaveryInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of slavery"@en ;
+  rdfs:seeAlso wd:Q3295635, dbr:Investigation_of_complaints_of_slavery .
+
+udhr:SlaveryProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of slavery"@en ;
+  rdfs:seeAlso wd:Q3295636, dbr:Prosecution_of_persons_accused_of_slavery .
+
+udhr:SlaveryInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of slavery"@en ;
+  rdfs:seeAlso wd:Q3295637, dbr:International_cooperation_in_the_prevention_of_slavery .
+
+udhr:EnforcedDisappearance a rdfs:Class ;
+  rdfs:label "Prohibition of enforced disappearance"@en ;
+  rdfs:seeAlso wd:Q3295638, dbr:Prohibition_of_enforced_disappearance .
+
+udhr:EnforcedDisappearanceJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction over enforced disappearance"@en ;
+  rdfs:seeAlso wd:Q3295639, dbr:Jurisdiction_over_enforced_disappearance .
+
+udhr:EnforcedDisappearanceExtradition a rdfs:Class ;
+  rdfs:label "Extradition of persons accused of enforced disappearance"@en ;
+  rdfs:seeAlso wd:Q3295640, dbr:Extradition_of_persons_accused_of_enforced_disappearance .
+
+udhr:EnforcedDisappearanceComplaints a rdfs:Class ;
+  rdfs:label "Complaints of enforced disappearance"@en ;
+  rdfs:seeAlso wd:Q3295641, dbr:Complaints_of_enforced_disappearance .
+
+udhr:EnforcedDisappearanceInvestigation a rdfs:Class ;
+  rdfs:label "Investigation of complaints of enforced disappearance"@en ;
+  rdfs:seeAlso wd:Q3295642, dbr:Investigation_of_complaints_of_enforced_disappearance .
+
+udhr:EnforcedDisappearanceProsecution a rdfs:Class ;
+  rdfs:label "Prosecution of persons accused of enforced disappearance"@en ;
+  rdfs:seeAlso wd:Q3295643, dbr:Prosecution_of_persons_accused_of_enforced_disappearance .
+
+udhr:EnforcedDisappearanceInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of enforced disappearance"@en ;
+  rdfs:seeAlso wd:Q3295644, dbr:International_cooperation_in_the_prevention_of_enforced_disappearance .
+
+udhr:HumanRightsEducation a rdfs:Class ;
+  rdfs:label "Education in the field of human rights"@en ;
+  rdfs:seeAlso wd:Q3295645, dbr:Education_in_the_field_of_human_rights .
+
+udhr:HumanRightsEducationCurriculum a rdfs:Class ;
+  rdfs:label "Human rights education curriculum"@en ;
+  rdfs:seeAlso wd:Q3295646, dbr:Human_rights_education_curriculum .
+
+udhr:HumanRightsEducationTraining a rdfs:Class ;
+  rdfs:label "Human rights education training"@en ;
+  rdfs:seeAlso wd:Q3295647, dbr:Human_rights_education_training .
+
+udhr:HumanRightsEducationResearch a rdfs:Class ;
+  rdfs:label "Human rights education research"@en ;
+  rdfs:seeAlso wd:Q3295648, dbr:Human_rights_education_research .
+
+udhr:HumanRightsEducationOutreach a rdfs:Class ;
+  rdfs:label "Human rights education outreach"@en ;
+  rdfs:seeAlso wd:Q3295649, dbr:Human_rights_education_outreach .
+
+udhr:HumanRightsEducationInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in human rights education"@en ;
+  rdfs:seeAlso wd:Q3295650, dbr:International_cooperation_in_human_rights_education .
+
+udhr:HumanRightsProtection a rdfs:Class ;
+  rdfs:label "Protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295651, dbr:Protection_of_human_rights .
+
+udhr:HumanRightsProtectionDomestic a rdfs:Class ;
+  rdfs:label "Domestic protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295652, dbr:Domestic_protection_of_human_rights .
+
+udhr:HumanRightsProtectionInternational a rdfs:Class ;
+  rdfs:label "International protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295653, dbr:International_protection_of_human_rights .
+
+udhr:HumanRightsProtectionCapacityBuilding a rdfs:Class ;
+  rdfs:label "Capacity-building for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295654, dbr:Capacity-building_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295655, dbr:International_cooperation_in_the_protection_of_human_rights .
+
+udhr:HumanRightsPromotion a rdfs:Class ;
+  rdfs:label "Promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295656, dbr:Promotion_of_human_rights .
+
+udhr:HumanRightsPromotionDomestic a rdfs:Class ;
+  rdfs:label "Domestic promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295657, dbr:Domestic_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionInternational a rdfs:Class ;
+  rdfs:label "International promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295658, dbr:International_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295659, dbr:International_cooperation_in_the_promotion_of_human_rights .
+
+udhr:HumanRightsProtectionMechanism a rdfs:Class ;
+  rdfs:label "Mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295660, dbr:Mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInternational a rdfs:Class ;
+  rdfs:label "International mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295661, dbr:International_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismRegional a rdfs:Class ;
+  rdfs:label "Regional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295662, dbr:Regional_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismDomestic a rdfs:Class ;
+  rdfs:label "Domestic mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295663, dbr:Domestic_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the establishment and strengthening of mechanisms for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295664, dbr:International_cooperation_in_the_establishment_and_strengthening_of_mechanisms_for_the_protection_of_human_rights .
+
+udhr:HumanRightsPromotionMechanism a rdfs:Class ;
+  rdfs:label "Mechanism for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295665, dbr:Mechanism_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionMechanismInternational a rdfs:Class ;
+  rdfs:label "International mechanism for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295666, dbr:International_mechanism_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionMechanismDomestic a rdfs:Class ;
+  rdfs:label "Domestic mechanism for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295668, dbr:Domestic_mechanism_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionMechanismInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the establishment and strengthening of mechanisms for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295669, dbr:International_cooperation_in_the_establishment_and_strengthening_of_mechanisms_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsInclusiveDevelopment a rdfs:Class ;
+  rdfs:label "Inclusive development and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295670, dbr:Inclusive_development_and_the_promotion_and_protection_of_human_rights .
+
+udhr:HumanRightsInclusiveEconomicGrowth a rdfs:Class ;
+  rdfs:label "Inclusive economic growth and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295671, dbr:Inclusive_economic_growth_and_the_promotion_and_protection_of_human_rights .
+
+udhr:HumanRightsInclusiveSocialDevelopment a rdfs:Class ;
+  rdfs:label "Inclusive social development and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295672, dbr:Inclusive_social_development_and_the_promotion_and_protection_of_human_rights .
+
+udhr:HumanRightsInclusiveEnvironmentalProtection a rdfs:Class ;
+  rdfs:label "Inclusive environmental protection and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295673, dbr:Inclusive_environmental_protection_and_the_promotion_and_protection_of_human_rights .
+
+udhr:HumanRightsInclusiveSustainableDevelopment a rdfs:Class ;
+  rdfs:label "Inclusive sustainable development and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295674, dbr:Inclusive_sustainable_development_and_the_promotion_and_protection_of_human_rights .
+
+udhr:HumanRightsInclusiveGlobalization a rdfs:Class ;
+  rdfs:label "Inclusive globalization and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295675, dbr:Inclusive_globalization_and_the_promotion_and_protection_of_human_rights .
+
+udhr:HumanRightsInclusiveTechnologyTransfer a rdfs:Class ;
+  rdfs:label "Inclusive technology transfer and the promotion and protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295676, dbr:Inclusive_technology_transfer_and_the_promotion_and_protection_of_human_rights .
+
+udhr:HumanRightsPromotionInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295677, dbr:International_cooperation_in_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionEducation a rdfs:Class ;
+  rdfs:label "Education for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295678, dbr:Education_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionAwareness a rdfs:Class ;
+  rdfs:label "Awareness-raising for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295679, dbr:Awareness-raising_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionTraining a rdfs:Class ;
+  rdfs:label "Training for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295680, dbr:Training_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionTechnicalAssistance a rdfs:Class ;
+  rdfs:label "Technical assistance for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295681, dbr:Technical_assistance_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionExpertise a rdfs:Class ;
+  rdfs:label "Expertise for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295682, dbr:Expertise_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionInformation a rdfs:Class ;
+  rdfs:label "Information for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295683, dbr:Information_for_the_promotion_of_human_rights .
+
+udhr:HumanRightsPromotionDialogue a rdfs:Class ;
+  rdfs:label "Dialogue for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295684, dbr:Dialogue_for_the_promotion_of_human_rights .
+
+udhr:HumanRights a rdfs:Class ;
+  rdfs:label "Human rights"@en ;
+  rdfs:seeAlso wd:Q7366, dbr:Human_rights .
+
+udhr:UniversalDeclarationOfHumanRights a rdfs:Class ;
+  rdfs:label "Universal Declaration of Human Rights"@en ;
+  rdfs:seeAlso wd:Q1656682, dbr:Universal_Declaration_of_Human_Rights .
+
+udhr:Article a rdfs:Class ;
+  rdfs:label "Article of the Universal Declaration of Human Rights"@en ;
+  rdfs:seeAlso wd:Q294804, dbr:Article_of_the_Universal_Declaration_of_Human_Rights .
+
+udhr:HumanDignity a rdfs:Class ;
+  rdfs:label "Human dignity"@en ;
+  rdfs:seeAlso wd:Q7366, dbr:Human_dignity .
+
+udhr:Equality a rdfs:Class ;
+  rdfs:label "Equality"@en ;
+  rdfs:seeAlso wd:Q3918, dbr:Equality .
+
+udhr:Freedom a rdfs:Class ;
+  rdfs:label "Freedom"@en ;
+  rdfs:seeAlso wd:Q3910, dbr:Freedom .
+
+udhr:Justice a rdfs:Class ;
+  rdfs:label "Justice"@en ;
+  rdfs:seeAlso wd:Q155091, dbr:Justice .
+
+udhr:Peace a rdfs:Class ;
+  rdfs:label "Peace"@en ;
+  rdfs:seeAlso wd:Q7366, dbr:Peace .
+
+udhr:HumanRightsProtection a rdfs:Class ;
+  rdfs:label "Protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295659, dbr:Protection_of_human_rights .
+
+udhr:HumanRightsPromotion a rdfs:Class ;
+  rdfs:label "Promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295660, dbr:Promotion_of_human_rights .
+
+udhr:HumanRightsProtectionMechanism a rdfs:Class ;
+  rdfs:label "Mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295661, dbr:Mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismDomestic a rdfs:Class ;
+  rdfs:label "Domestic mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295662, dbr:Domestic_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInternational a rdfs:Class ;
+  rdfs:label "International mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295663, dbr:International_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismRegional a rdfs:Class ;
+  rdfs:label "Regional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295664, dbr:Regional_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismUniversal a rdfs:Class ;
+  rdfs:label "Universal mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295665, dbr:Universal_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismVoluntary a rdfs:Class ;
+  rdfs:label "Voluntary mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295666, dbr:Voluntary_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInformal a rdfs:Class ;
+  rdfs:label "Informal mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295667, dbr:Informal_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismFormal a rdfs:Class ;
+  rdfs:label "Formal mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295668, dbr:Formal_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismSpecialized a rdfs:Class ;
+  rdfs:label "Specialized mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295669, dbr:Specialized_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismComplaint a rdfs:Class ;
+  rdfs:label "Complaint mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295670, dbr:Complaint_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismPreventive a rdfs:Class ;
+  rdfs:label "Preventive mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295671, dbr:Preventive_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismProtective a rdfs:Class ;
+  rdfs:label "Protective mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295672, dbr:Protective_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismRemedial a rdfs:Class ;
+  rdfs:label "Remedial mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295673, dbr:Remedial_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismCompensatory a rdfs:Class ;
+  rdfs:label "Compensatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295674, dbr:Compensatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismPunitive a rdfs:Class ;
+  rdfs:label "Punitive mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295675, dbr:Punitive_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismEnforcement a rdfs:Class ;
+  rdfs:label "Enforcement mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295676, dbr:Enforcement_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismPrecedent a rdfs:Class ;
+  rdfs:label "Precedent mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295677, dbr:Precedent_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismJurisdiction a rdfs:Class ;
+  rdfs:label "Jurisdiction mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295678, dbr:Jurisdiction_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismAdjudicatory a rdfs:Class ;
+  rdfs:label "Adjudicatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295679, dbr:Adjudicatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismAdvisory a rdfs:Class ;
+  rdfs:label "Advisory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295680, dbr:Advisory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismConsultative a rdfs:Class ;
+  rdfs:label "Consultative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295681, dbr:Consultative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismEvaluative a rdfs:Class ;
+  rdfs:label "Evaluative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295682, dbr:Evaluative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismFactFinding a rdfs:Class ;
+  rdfs:label "Fact-finding mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295683, dbr:Fact-finding_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInvestigative a rdfs:Class ;
+  rdfs:label "Investigative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295684, dbr:Investigative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismObservatory a rdfs:Class ;
+  rdfs:label "Observatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295685, dbr:Observatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismPromotional a rdfs:Class ;
+  rdfs:label "Promotional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295686, dbr:Promotional_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismProtocol a rdfs:Class ;
+  rdfs:label "Protocol mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295687, dbr:Protocol_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismRecommendatory a rdfs:Class ;
+  rdfs:label "Recommendatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295688, dbr:Recommendatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismStandardSetting a rdfs:Class ;
+  rdfs:label "Standard-setting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295689, dbr:Standard-setting_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTechnical a rdfs:Class ;
+  rdfs:label "Technical mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295690, dbr:Technical_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTreaty a rdfs:Class ;
+  rdfs:label "Treaty mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295691, dbr:Treaty_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismVerification a rdfs:Class ;
+  rdfs:label "Verification mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295692, dbr:Verification_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismMonitoring a rdfs:Class ;
+  rdfs:label "Monitoring mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295693, dbr:Monitoring_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismReporting a rdfs:Class ;
+  rdfs:label "Reporting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295694, dbr:Reporting_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismSupervisory a rdfs:Class ;
+  rdfs:label "Supervisory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295695, dbr:Supervisory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTechnicalAssistance a rdfs:Class ;
+  rdfs:label "Technical assistance mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295696, dbr:Technical_assistance_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismConsultative a rdfs:Class ;
+  rdfs:label "Consultative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295681, dbr:Consultative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismEvaluative a rdfs:Class ;
+  rdfs:label "Evaluative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295682, dbr:Evaluative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismFactFinding a rdfs:Class ;
+  rdfs:label "Fact-finding mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295683, dbr:Fact-finding_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInvestigative a rdfs:Class ;
+  rdfs:label "Investigative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295684, dbr:Investigative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismObservatory a rdfs:Class ;
+  rdfs:label "Observatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295685, dbr:Observatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismPromotional a rdfs:Class ;
+  rdfs:label "Promotional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295686, dbr:Promotional_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismProtocol a rdfs:Class ;
+  rdfs:label "Protocol mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295687, dbr:Protocol_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismRecommendatory a rdfs:Class ;
+  rdfs:label "Recommendatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295688, dbr:Recommendatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismStandardSetting a rdfs:Class ;
+  rdfs:label "Standard-setting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295689, dbr:Standard-setting_mechanism_for_the_protection_of_human .
+
+udhr:HumanRightsProtectionMechanismTechnical a rdfs:Class ;
+  rdfs:label "Technical mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295690, dbr:Technical_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTreaty a rdfs:Class ;
+  rdfs:label "Treaty mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295691, dbr:Treaty_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismVerification a rdfs:Class ;
+  rdfs:label "Verification mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295692, dbr:Verification_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismMonitoring a rdfs:Class ;
+  rdfs:label "Monitoring mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295693, dbr:Monitoring_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismReporting a rdfs:Class ;
+  rdfs:label "Reporting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295694, dbr:Reporting_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismSupervisory a rdfs:Class ;
+  rdfs:label "Supervisory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295695, dbr:Supervisory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTechnicalAssistance a rdfs:Class ;
+  rdfs:label "Technical assistance mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295696, dbr:Technical_assistance_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismConsultative a rdfs:Class ;
+  rdfs:label "Consultative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295681, dbr:Consultative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismEvaluative a rdfs:Class ;
+  rdfs:label "Evaluative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295682, dbr:Evaluative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismFactFinding a rdfs:Class ;
+  rdfs:label "Fact-finding mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295683, dbr:Fact-finding_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInvestigative a rdfs:Class ;
+  rdfs:label "Investigative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295684, dbr:Investigative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismObservatory a rdfs:Class ;
+  rdfs:label "Observatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295685, dbr:Observatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismPromotional a rdfs:Class ;
+  rdfs:label "Promotional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295686, dbr:Promotional_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismProtocol a rdfs:Class ;
+  rdfs:label "Protocol mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295687, dbr:Protocol_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismRecommendatory a rdfs:Class ;
+  rdfs:label "Recommendatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295688, dbr:Recommendatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismStandardSetting a rdfs:Class ;
+  rdfs:label "Standard-setting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295689, dbr:Standard-setting_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTechnical a rdfs:Class ;
+  rdfs:label "Technical mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295690, dbr:Technical_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTreaty a rdfs:Class ;
+  rdfs:label "Treaty mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295691, dbr:Treaty_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismVerification a rdfs:Class ;
+  rdfs:label "Verification mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295692, dbr:Verification_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismMonitoring a rdfs:Class ;
+  rdfs:label "Monitoring mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295693, dbr:Monitoring_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismReporting a rdfs:Class ;
+  rdfs:label "Reporting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295694, dbr:Reporting_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismSupervisory a rdfs:Class ;
+  rdfs:label "Supervisory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295695, dbr:Supervisory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTechnicalAssistance a rdfs:Class ;
+  rdfs:label "Technical assistance mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295696, dbr:Technical_assistance_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismConsultative a rdfs:Class ;
+  rdfs:label "Consultative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295697, dbr:Consultative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismEvaluative a rdfs:Class ;
+  rdfs:label "Evaluative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295698, dbr:Evaluative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismFactFinding a rdfs:Class ;
+  rdfs:label "Fact-finding mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295699, dbr:Fact-finding_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInvestigative a rdfs:Class ;
+  rdfs:label "Investigative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295700, dbr:Investigative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismObservatory a rdfs:Class ;
+  rdfs:label "Observatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295701, dbr:Observatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismPromotional a rdfs:Class ;
+  rdfs:label "Promotional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295702, dbr:Promotional_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismProtocol a rdfs:Class ;
+  rdfs:label "Protocol mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295703, dbr:Protocol_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismRecommendatory a rdfs:Class ;
+  rdfs:label "Recommendatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295704, dbr:Recommendatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismStandardSetting a rdfs:Class ;
+  rdfs:label "Standard-setting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295705, dbr:Standard-setting_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTechnical a rdfs:Class ;
+  rdfs:label "Technical mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295706, dbr:Technical_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTreaty a rdfs:Class ;
+  rdfs:label "Treaty mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295707, dbr:Treaty_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismVerification a rdfs:Class ;
+  rdfs:label "Verification mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295708, dbr:Verification_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismMonitoring a rdfs:Class ;
+  rdfs:label "Monitoring mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295709, dbr:Monitoring_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismReporting a rdfs:Class ;
+  rdfs:label "Reporting mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295710, dbr:Reporting_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismSupervisory a rdfs:Class ;
+  rdfs:label "Supervisory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295711, dbr:Supervisory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismTechnicalAssistance a rdfs:Class ;
+  rdfs:label "Technical assistance mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295712, dbr:Technical_assistance_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismConsultative a rdfs:Class ;
+  rdfs:label "Consultative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295713, dbr:Consultative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismEvaluative a rdfs:Class ;
+  rdfs:label "Evaluative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295714, dbr:Evaluative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismFactFinding a rdfs:Class ;
+  rdfs:label "Fact-finding mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295715, dbr:Fact-finding_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismInvestigative a rdfs:Class ;
+  rdfs:label "Investigative mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295716, dbr:Investigative_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismObservatory a rdfs:Class ;
+  rdfs:label "Observatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295717, dbr:Observatory_mechanism_for_the_protection_of_human_rights .
+
+udhr:HumanRightsProtectionMechanismPromotional a rdfs:Class ;
+  rdfs:label "Promotional mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295718, dbr:Promotional_mechanism_for_the_protection_of_human_rights .
+
+
+
+
+
+
+
+
+
+
+
+udhr:HumanRightsProtectionMech
+
+
+
+udhr:HumanRightsProtectionMechanismConsult
+
+
+
+udhr:HumanRightsProtectionMechanismRecommendatory a rdfs:Class ;
+  rdfs:label "Recommendatory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295688, dbr:Recommendatory_mechanism_for_the_protection_of_human_rights
+
+
+udhr:HumanRightsProtectionMechanismAdvisory a rdfs:Class ;
+  rdfs:label "Advisory mechanism for the protection of human rights"@en ;
+  rdfs:seeAlso wd:Q3295680, dbr:Advisory_mechanism_for_the_
+
+
+
+udhr:HumanRightsProtectionMechanismProtective a r
+
+udhr:Human
+
+
+udhr:HumanRightsPromotionCooperation a rdfs:Class ;
+  rdfs:label "Cooperation for
+
+
+udhr:HumanRightsInclusiveTechnologyTransfer
+
+
+udhr:HumanRightsPromotionMechanismRegional a rdfs:Class ;
+  rdfs:label "Regional mechanism for the promotion of human rights"@en ;
+  rdfs:seeAlso wd:Q3295667, dbr:Regional_mechanism_for_
+
+
+udhr:HumanRightsPromotionCapacityBuilding a rdfs:Class ;
+  rdfs:label "Capacity-building for the promotion of human rights"
+
+udhr:EnforcedDisappearancePrevention a rdfs:Class ;
+  rdfs:label "Prevention of enforced disappearance
+
+
+udhr:DisappearanceInternationalCooperation a rdfs:Class ;
+  rdfs:label "International cooperation in the prevention of disappearance"@en ;
+  rdf
+
+
+
+FIX LATER:
+
+udhr:ForcedLabourJurisdiction a rdfs:Class ;
+  rdfs:label "Jur
+
+udhr:ChildAbuseComplaints a rdfs:Class ;
+  rdfs:label "Complaints of child
+
+udhr:EqualProtectionLawNonDiscriminationOtherStatus a rdfs:Class ;
+  rdfs:label "Equal protection of the law against discrimination based on any other status"@en ;
+  rdfs:seeAlso wd:Q3295
+
+
+
+
+
+udhr:ForcedLabourExceptions a rdfs:Class ;
+  rdfs:label "Exceptions to the prohibition of forced labour"@en ;
