@@ -1,4 +1,4 @@
-# TheCharter.eco ontology work
+# Ontology work
 
 This project aims to produce the ontological frameworks required by biosphere agents to supplement those already made for other concepts.
 
